@@ -14,6 +14,21 @@ tags: ["transformers", "safetensors", "vibevoice", "ASR", "Transcription", "Spee
 reason: "major-org"
 ---
 
+## 왜 주목받는가
+
+주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 28개, 다운로드 420회(수집 시점 2026-09-05). 같은 기관(microsoft)의 다른 발행 모델 microsoft/VibeVoice-ASR-Streaming-7B 와 함께 살펴보세요.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `automatic-speech-recognition` |
+| 파라미터 | 2.8B |
+| 라이선스 | mit |
+| 최초 등록일 | 2026-09-02 |
+| 좋아요 | 28 |
+| 다운로드 | 420 |
+
 ## 요약
 
 **VibeVoice-ASR-Streaming** is a unified streaming ASR model that transcribes **Who (Speaker)** said **What (Content)**, with support for **Customized Hotwords** and **10 languages**.
@@ -22,14 +37,10 @@ reason: "major-org"
 
 - **📝 Streaming Speaker-Attributed Transcription**: Continuously transcribes **who** said **what** as speech arrives.
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `automatic-speech-recognition`
-- 파라미터: 2.8B
-- 라이선스: mit
-- 좋아요 28 · 다운로드 420 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B)
+mit — 상업 이용 가능
 
-## 선정 이유
+## 관련 모델
 
-주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+- [VibeVoice ASR Streaming 7B](../microsoft__VibeVoice-ASR-Streaming-7B/)

@@ -14,20 +14,31 @@ tags: ["diffusion-single-file", "minimax-h3", "comfyui", "int8", "convrot", "tur
 reason: "surge"
 ---
 
+## 왜 주목받는가
+
+최근 7일 사이 좋아요·다운로드가 급증했습니다. 이 기준에 해당해 선정했습니다. 좋아요 84개, 다운로드 19,517회(수집 시점 2026-09-05). 같은 기관의 이전 모델과의 비교는 발행 이력이 부족해 제공하지 않습니다.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `image-text-to-video` |
+| 파라미터 | 정보 없음 |
+| 라이선스 | other |
+| 최초 등록일 | 2026-08-29 |
+| 좋아요 | 84 |
+| 다운로드 | 19,517 |
+
 ## 요약
 
 One 21 GB ComfyUI diffusion-model file that does MiniMax-H3 text/image-to-video **and** reference-to-video in **4 steps**, with a distilled turbo and a motion-smoothing style LoRA already folded into the weights.
 
 - **Base:** the pruned `fl2va` transformer with a rank-1024 SVD of the (`ref2va` - `fl2va`) weight delta fused in, so a single partition serves both first/last-frame and reference conditioning (`xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI`, ComfyUI conversion of `diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024`). - **Merged in:** lightx2v FL2VA Turbo **8-step v1.…
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `image-text-to-video`
-- 파라미터: 정보 없음
-- 라이선스: other
-- 좋아요 84 · 다운로드 19,517 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/MATLOWAI/minimax-h3-fused-turbo-int8-convrot)
+other — 상업 이용 제한 또는 확인 필요
 
-## 선정 이유
+## 관련 모델
 
-최근 7일 사이 좋아요·다운로드가 급증했습니다. 이 기준에 해당해 선정했습니다.
+- [MiniMax H3](../MiniMaxAI__MiniMax-H3/)

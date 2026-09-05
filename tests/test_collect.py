@@ -262,9 +262,118 @@ class HelperTests(unittest.TestCase):
         self.assertEqual(meta["created_at"], "2026-08-05")
         self.assertEqual(meta["reason"], "trending, major-org")
         self.assertEqual(meta["hf_url"], "https://huggingface.co/Qwen/Qwen3.8-27B")
-        for section in ("## 요약", "## 모델 정보", "## 선정 이유", "- 라이선스: apache-2.0"):
+        for section in ("## 왜 주목받는가", "## 핵심 스펙", "## 요약", "## 라이선스",
+                        "## 관련 모델", "| 라이선스 | apache-2.0 |"):
             self.assertIn(section, body)
         self.assertNotRegex(body, r"<[a-zA-Z]+[^>]*>")
+
+    def test_why_paragraph_contains_reason(self):
+        detail = json.loads(load_fixture("detail_Qwen__Qwen3.8-27B.json"))
+        text = collect.render_post(detail, ["trending"], "2026-09-05", "")
+        _, body = parse_frontmatter(text)
+        why_start = body.index("## 왜 주목받는가")
+        why_end = body.index("## 핵심 스펙")
+        section = body[why_start:why_end]
+        self.assertIn("트렌딩 상위", section)
+
+    def test_why_paragraph_contains_stats(self):
+        detail = json.loads(load_fixture("detail_Qwen__Qwen3.8-27B.json"))
+        text = collect.render_post(detail, ["trending"], "2026-09-05", "")
+        _, body = parse_frontmatter(text)
+        why_start = body.index("## 왜 주목받는가")
+        why_end = body.index("## 핵심 스펙")
+        section = body[why_start:why_end]
+        self.assertIn("좋아요 13,948개", section)
+        self.assertIn("다운로드 5,739,341회", section)
+        self.assertIn("2026-09-05", section)
+
+    def test_spec_table(self):
+        detail = json.loads(load_fixture("detail_Qwen__Qwen3.8-27B.json"))
+        text = collect.render_post(detail, ["trending"], "2026-09-05", "")
+        _, body = parse_frontmatter(text)
+        spec_start = body.index("## 핵심 스펙")
+        spec_end = body.index("## 요약")
+        table = body[spec_start:spec_end]
+        # 6 data rows (excluding header + separator)
+        self.assertEqual(table.count("\n| "), 8)  # 2 header/sep + 6 data rows
+        for label in ("태스크", "파라미터", "라이선스", "최초 등록일", "좋아요", "다운로드"):
+            self.assertIn("| %s |" % label, table)
+
+    def test_license_commercial(self):
+        self.assertEqual(collect.commercial_status("apache-2.0"), "상업 이용 가능")
+        self.assertEqual(collect.commercial_status("mit"), "상업 이용 가능")
+        self.assertEqual(collect.commercial_status("unknown"), "라이선스 정보 없음 — 원문 확인 필요")
+        self.assertEqual(collect.commercial_status(""), "라이선스 정보 없음 — 원문 확인 필요")
+        self.assertEqual(collect.commercial_status("proprietary"), "상업 이용 제한 또는 확인 필요")
+
+    def test_related_models_same_org(self):
+        published = {"models": {
+            "Qwen/Qwen3.8-27B": {"slug": "Qwen__Qwen3.8-27B", "published_at": "2026-09-05"},
+            "Qwen/Qwen3.8-Flash-Next": {"slug": "Qwen__Qwen3.8-Flash-Next", "published_at": "2026-09-05"},
+        }}
+        meta = {"org": "Qwen", "task": "image-text-to-text", "model_id": "Qwen/Qwen3.8-27B",
+                "slug": "Qwen__Qwen3.8-27B"}
+        related = collect.build_related_models(meta, published, None)
+        self.assertIn("Qwen3.8 Flash Next", related)
+        self.assertIn("../Qwen__Qwen3.8-Flash-Next/", related)
+        self.assertNotIn("Qwen__Qwen3.8-27B", related)
+
+    def test_related_models_empty_when_no_sibling(self):
+        published = {"models": {
+            "Qwen/Qwen3.8-27B": {"slug": "Qwen__Qwen3.8-27B", "published_at": "2026-09-05"},
+        }}
+        meta = {"org": "Qwen", "task": "image-text-to-text", "model_id": "Qwen/Qwen3.8-27B",
+                "slug": "Qwen__Qwen3.8-27B"}
+        related = collect.build_related_models(meta, published, None)
+        self.assertEqual(related, "아직 관련 모델이 발행되지 않았습니다.")
+
+    def test_regenerate_local(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+        posts = root / "content" / "models"
+        posts.mkdir(parents=True)
+        data = root / "data"
+        data.mkdir()
+        # 기존 구조 글 작성
+        old_post = (
+            '---\n'
+            'model_id: "Qwen/Qwen3.8-27B"\n'
+            'title: "Qwen3.8 27B"\n'
+            'org: "Qwen"\n'
+            'task: "image-text-to-text"\n'
+            'license: "apache-2.0"\n'
+            'params: "27.8B"\n'
+            'likes: 13948\n'
+            'downloads: 5739341\n'
+            'discovered_at: "2026-09-05"\n'
+            'created_at: "2026-08-05"\n'
+            'hf_url: "https://huggingface.co/Qwen/Qwen3.8-27B"\n'
+            'tags: ["transformers"]\n'
+            'reason: "trending"\n'
+            '---\n\n'
+            '## 요약\n\n이전 본문의 요약 문단입니다.\n\n## 모델 정보\n\n- 구 정보\n'
+        )
+        (posts / "Qwen__Qwen3.8-27B.md").write_text(old_post, encoding="utf-8")
+        (data / "published.json").write_text(json.dumps({"models": {
+            "Qwen/Qwen3.8-27B": {"slug": "Qwen__Qwen3.8-27B", "published_at": "2026-09-05"},
+        }}))
+        rewritten = collect.regenerate_local(posts, data / "published.json")
+        self.assertEqual(len(rewritten), 1)
+        new_text = (posts / "Qwen__Qwen3.8-27B.md").read_text(encoding="utf-8")
+        meta, body = parse_frontmatter(new_text)
+        # frontmatter 보존
+        self.assertEqual(meta["model_id"], "Qwen/Qwen3.8-27B")
+        # 새 구조 헤더
+        for section in ("## 왜 주목받는가", "## 핵심 스펙", "## 요약", "## 라이선스",
+                        "## 관련 모델"):
+            self.assertIn(section, body)
+        # 기존 요약 보존
+        self.assertIn("이전 본문의 요약 문단입니다.", body)
+        # 구 '## 모델 정보' 는 제거
+        self.assertNotIn("## 모델 정보", body)
+        self.assertNotIn("## 선정 이유", body)
+        self.assertIn("상업 이용 가능", body)
 
     def test_fetch_json_retries_once_then_raises(self):
         calls = []

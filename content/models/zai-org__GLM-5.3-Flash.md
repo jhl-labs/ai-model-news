@@ -14,6 +14,21 @@ tags: ["transformers", "safetensors", "glm5_next", "image-text-to-text", "conver
 reason: "trending, major-org"
 ---
 
+## 왜 주목받는가
+
+Hugging Face 트렌딩 상위 30위 안에 들었습니다. 주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 2,046개, 다운로드 654,957회(수집 시점 2026-09-05). 같은 기관(zai-org)의 다른 발행 모델 zai-org/GLM-5.3 와 함께 살펴보세요.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `image-text-to-text` |
+| 파라미터 | 321.3B |
+| 라이선스 | mit |
+| 최초 등록일 | 2026-08-25 |
+| 좋아요 | 2,046 |
+| 다운로드 | 654,957 |
+
 ## 요약
 
 👋 Join our WeChat or Discord community.
@@ -22,14 +37,15 @@ reason: "trending, major-org"
 
 📍 Use GLM-5.3-Flash API services on Z.ai API Platform.
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `image-text-to-text`
-- 파라미터: 321.3B
-- 라이선스: mit
-- 좋아요 2,046 · 다운로드 654,957 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/zai-org/GLM-5.3-Flash)
+mit — 상업 이용 가능
 
-## 선정 이유
+## 관련 모델
 
-Hugging Face 트렌딩 상위 30위 안에 들었습니다. 주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+- [GLM 5.3](../zai-org__GLM-5.3/)
+- [GLM 5.3 BF16](../zai-org__GLM-5.3-BF16/)
+- [GLM 5.3 Flash BF16](../zai-org__GLM-5.3-Flash-BF16/)
+- [North Micro Vision Instruct](../CohereLabs__North-Micro-Vision-Instruct/)
+- [Qwen Drive 1.0 4B](../Qwen__Qwen-Drive-1.0-4B/)
+- [Qwen3.8 27B](../Qwen__Qwen3.8-27B/)

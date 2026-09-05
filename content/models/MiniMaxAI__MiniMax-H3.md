@@ -14,6 +14,21 @@ tags: ["minimax-h3", "diffusers", "safetensors", "text-to-video", "image-to-vide
 reason: "trending"
 ---
 
+## 왜 주목받는가
+
+Hugging Face 트렌딩 상위 30위 안에 들었습니다. 이 기준에 해당해 선정했습니다. 좋아요 4,905개, 다운로드 5,118,457회(수집 시점 2026-09-05). 같은 기관의 이전 모델과의 비교는 발행 이력이 부족해 제공하지 않습니다.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `image-text-to-video` |
+| 파라미터 | 33.1B |
+| 라이선스 | other |
+| 최초 등록일 | 2026-07-28 |
+| 좋아요 | 4,905 |
+| 다운로드 | 5,118,457 |
+
 ## 요약
 
 Offical skills to improve prompt writing: [skills on github](https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills)
@@ -22,14 +37,10 @@ Use MiniMax\-H3 directly via API\. - Global: [platform\.minimax\.io](https://pla
 
 Use MiniMax\-H3 directly via App\. - WebApp Global: [hailuoai\.video](https://hailuoai.video/tools/minimax-h3) \| CN: [hailuoai\.com](https://hailuoai.com/) - Desktop Global: [hub\.minimax\.io](https://hub.minimax.io/) \| CN…
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `image-text-to-video`
-- 파라미터: 33.1B
-- 라이선스: other
-- 좋아요 4,905 · 다운로드 5,118,457 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/MiniMaxAI/MiniMax-H3)
+other — 상업 이용 제한 또는 확인 필요
 
-## 선정 이유
+## 관련 모델
 
-Hugging Face 트렌딩 상위 30위 안에 들었습니다. 이 기준에 해당해 선정했습니다.
+- [minimax h3 fused turbo int8 convrot](../MATLOWAI__minimax-h3-fused-turbo-int8-convrot/)

@@ -14,18 +14,33 @@ tags: ["Model Optimizer", "safetensors", "deepseek_v4", "nvidia", "ModelOpt", "D
 reason: "major-org"
 ---
 
+## 왜 주목받는가
+
+주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 29개, 다운로드 1,929회(수집 시점 2026-09-05). 같은 기관(nvidia)의 다른 발행 모델 nvidia/Nemotron-3-Diarization-preview 와 함께 살펴보세요.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `text-generation` |
+| 파라미터 | 304.2B |
+| 라이선스 | mit |
+| 최초 등록일 | 2026-08-19 |
+| 좋아요 | 29 |
+| 다운로드 | 1,929 |
+
 ## 요약
 
 The NVIDIA DeepSeek-V4-Flash-0731-NVFP4 model is the quantized version of DeepSeek AI's DeepSeek-V4-Flash-0731 model, an autoregressive Mixture-of-Experts language model that uses an optimized Transformer architecture with hybrid attention (Compressed Sparse Attention and Heavily Compressed Attention) and Manifold-Constrained Hyper-Connections. DeepSeek-V4-Flash-0731 is the official DeepSeek-V4-Flash release and includes DeepSeek's DSpark speculative decoding module in the same checkpoint. For more information, refer to the [DeepSeek-V4-Flash-0731 model card](https://huggingface.co/deepseek-ai…
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `text-generation`
-- 파라미터: 304.2B
-- 라이선스: mit
-- 좋아요 29 · 다운로드 1,929 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/nvidia/DeepSeek-V4-Flash-0731-NVFP4)
+mit — 상업 이용 가능
 
-## 선정 이유
+## 관련 모델
 
-주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+- [Nemotron 3 Diarization preview](../nvidia__Nemotron-3-Diarization-preview/)
+- [Qwen3.8 Flash Next NVFP4](../nvidia__Qwen3.8-Flash-Next-NVFP4/)
+- [K2 Horizon MoVA 36B A4B](../IFM__K2-Horizon-MoVA-36B-A4B/)
+- [Qwen3.8 27B OBLITERATED](../OBLITERATUS__Qwen3.8-27B-OBLITERATED/)
+- [Qwen3.8 2.4T A95B](../Qwen__Qwen3.8-2.4T-A95B/)

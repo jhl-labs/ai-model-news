@@ -14,20 +14,35 @@ tags: ["transformers", "safetensors", "granite", "text-generation", "granite-4.2
 reason: "major-org"
 ---
 
+## 왜 주목받는가
+
+주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 108개, 다운로드 8,035회(수집 시점 2026-09-05). 같은 기관(ibm-granite)의 다른 발행 모델 ibm-granite/granite-4.2-3b 와 함께 살펴보세요.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `text-generation` |
+| 파라미터 | 29.3B |
+| 라이선스 | apache-2.0 |
+| 최초 등록일 | 2026-08-07 |
+| 좋아요 | 108 |
+| 다운로드 | 8,035 |
+
 ## 요약
 
 Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use. Granite models are built to be versatile, safe, and efficient — covering a range of sizes and capabilities from compact edge-deployable models to large-scale reasoning systems. All Granite models are released under the Apache 2.0 license, enabling unrestricted commercial and academic use.
 
 The Granite 4.2 generation introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers. This signific…
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `text-generation`
-- 파라미터: 29.3B
-- 라이선스: apache-2.0
-- 좋아요 108 · 다운로드 8,035 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/ibm-granite/granite-4.2-30b)
+apache-2.0 — 상업 이용 가능
 
-## 선정 이유
+## 관련 모델
 
-주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+- [granite 4.2 3b](../ibm-granite__granite-4.2-3b/)
+- [granite 4.2 8b](../ibm-granite__granite-4.2-8b/)
+- [K2 Horizon MoVA 36B A4B](../IFM__K2-Horizon-MoVA-36B-A4B/)
+- [Qwen3.8 27B OBLITERATED](../OBLITERATUS__Qwen3.8-27B-OBLITERATED/)
+- [Qwen3.8 2.4T A95B](../Qwen__Qwen3.8-2.4T-A95B/)

@@ -14,6 +14,21 @@ tags: ["transformers", "safetensors", "qwen3_5", "image-text-to-text", "computer
 reason: "major-org"
 ---
 
+## 왜 주목받는가
+
+주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 21개, 다운로드 832회(수집 시점 2026-09-05). 같은 기관(tencent)의 다른 발행 모델 tencent/EVIE-Preview-4.5B 와 함께 살펴보세요.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `image-text-to-text` |
+| 파라미터 | 9.4B |
+| 라이선스 | apache-2.0 |
+| 최초 등록일 | 2026-08-14 |
+| 좋아요 | 21 |
+| 다운로드 | 832 |
+
 ## 요약
 
 **Show the workflow once. Let the agent adapt it to the task at hand.**
@@ -22,14 +37,15 @@ reason: "major-org"
 
 **UI-Mate-9B** is an open-weight foundation GUI agent for long-horizon work across applications and operating systems. It observes live screenshots, reasons over the visible state, and produces structured keyboard and mouse actions for native desktop interaction.
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `image-text-to-text`
-- 파라미터: 9.4B
-- 라이선스: apache-2.0
-- 좋아요 21 · 다운로드 832 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/tencent/UI-Mate-9B)
+apache-2.0 — 상업 이용 가능
 
-## 선정 이유
+## 관련 모델
 
-주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+- [EVIE Preview 4.5B](../tencent__EVIE-Preview-4.5B/)
+- [Hy4 preview](../tencent__Hy4-preview/)
+- [Hy4 preview FP8](../tencent__Hy4-preview-FP8/)
+- [North Micro Vision Instruct](../CohereLabs__North-Micro-Vision-Instruct/)
+- [Qwen Drive 1.0 4B](../Qwen__Qwen-Drive-1.0-4B/)
+- [Qwen3.8 27B](../Qwen__Qwen3.8-27B/)

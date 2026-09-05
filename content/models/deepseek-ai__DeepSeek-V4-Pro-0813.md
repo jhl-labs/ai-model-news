@@ -14,6 +14,21 @@ tags: ["transformers", "safetensors", "deepseek_v4", "text-generation", "convers
 reason: "major-org"
 ---
 
+## 왜 주목받는가
+
+주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 799개, 다운로드 148,929회(수집 시점 2026-09-05). 같은 기관(deepseek-ai)의 다른 발행 모델 deepseek-ai/DeepSeek-V4-Flash-Vision-Exp 와 함께 살펴보세요.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `text-generation` |
+| 파라미터 | 1.7T |
+| 라이선스 | mit |
+| 최초 등록일 | 2026-08-13 |
+| 좋아요 | 799 |
+| 다운로드 | 148,929 |
+
 ## 요약
 
 **DeepSeek-V4-Pro-0813** is the official release of **DeepSeek-V4-Pro**, superseding the preview version, with greatly enhanced agentic capabilities and performance improvements that are especially pronounced in production environments. It is built on the DeepSeek-V4-Pro (Preview) model structure, with a DSpark speculative decoding module attached.
@@ -22,14 +37,13 @@ DeepSeek-V4-Pro-0813 outperforms DeepSeek-V4-Pro (Preview) on the benchmarks lis
 
 1. For the code-agent tasks among the public benchmarks above, DeepSeek-V4-Pro-0…
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `text-generation`
-- 파라미터: 1.7T
-- 라이선스: mit
-- 좋아요 799 · 다운로드 148,929 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813)
+mit — 상업 이용 가능
 
-## 선정 이유
+## 관련 모델
 
-주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+- [DeepSeek V4 Flash Vision Exp](../deepseek-ai__DeepSeek-V4-Flash-Vision-Exp/)
+- [K2 Horizon MoVA 36B A4B](../IFM__K2-Horizon-MoVA-36B-A4B/)
+- [Qwen3.8 27B OBLITERATED](../OBLITERATUS__Qwen3.8-27B-OBLITERATED/)
+- [Qwen3.8 2.4T A95B](../Qwen__Qwen3.8-2.4T-A95B/)

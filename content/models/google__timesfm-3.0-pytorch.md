@@ -14,6 +14,21 @@ tags: ["safetensors", "time-series", "forecasting", "pretrained", "pytorch", "go
 reason: "trending, major-org"
 ---
 
+## 왜 주목받는가
+
+Hugging Face 트렌딩 상위 30위 안에 들었습니다. 주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다. 좋아요 426개, 다운로드 105,304회(수집 시점 2026-09-05). 같은 기관의 이전 모델과의 비교는 발행 이력이 부족해 제공하지 않습니다.
+
+## 핵심 스펙
+
+| 항목 | 값 |
+| --- | --- |
+| 태스크 | `time-series-forecasting` |
+| 파라미터 | 330.7M |
+| 라이선스 | other |
+| 최초 등록일 | 2026-08-24 |
+| 좋아요 | 426 |
+| 다운로드 | 105,304 |
+
 ## 요약
 
 TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.
@@ -22,14 +37,10 @@ This repository contains the official PyTorch weights and configurations for **T
 
 This model is released under the **[TimesFM Non-Commercial License v1.0](https://huggingface.co/google/timesfm-3.0-pytorch/blob/main/LICENSE)**.
 
-## 모델 정보
+## 라이선스
 
-- 태스크: `time-series-forecasting`
-- 파라미터: 330.7M
-- 라이선스: other
-- 좋아요 426 · 다운로드 105,304 (2026-09-05 수집 시점)
-- 원문: [Hugging Face 모델 페이지](https://huggingface.co/google/timesfm-3.0-pytorch)
+other — 상업 이용 제한 또는 확인 필요
 
-## 선정 이유
+## 관련 모델
 
-Hugging Face 트렌딩 상위 30위 안에 들었습니다. 주요 기관이 최근 30일 안에 공개한 신작입니다. 이 기준에 해당해 선정했습니다.
+아직 관련 모델이 발행되지 않았습니다.

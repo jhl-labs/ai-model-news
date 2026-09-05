@@ -44,7 +44,7 @@ if __package__ in (None, ""):
     # Allow `python3 scripts/collect.py` from the repository root.
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from scripts.frontmatter import KEYS, dump_frontmatter, slugify  # noqa: E402
+from scripts.frontmatter import KEYS, dump_frontmatter, parse_frontmatter, slugify  # noqa: E402
 
 HF_API = "https://huggingface.co/api/models"
 HF_WEB = "https://huggingface.co"
@@ -491,27 +491,167 @@ def build_meta(detail: dict, reasons: list, discovered_at: str) -> dict:
     }
 
 
-def render_post(detail: dict, reasons: list, discovered_at: str, readme_text: str = "") -> str:
+COMMERCIAL_LICENSES = {
+    "apache-2.0", "mit", "bsd-3-clause", "bsd-2-clause", "cc-by-4.0",
+    "cc-by-sa-4.0", "openrail++", "openrail", "llama3.1", "llama3.2",
+    "qwen", "qwen-license",
+}
+
+
+def commercial_status(license_id: str) -> str:
+    """라이선스의 상업 이용 가능 여부를 한 줄로 반환 (사실 기반)."""
+    if not license_id or license_id == "unknown":
+        return "라이선스 정보 없음 — 원문 확인 필요"
+    key = license_id.strip().lower()
+    if key in COMMERCIAL_LICENSES:
+        return "상업 이용 가능"
+    return "상업 이용 제한 또는 확인 필요"
+
+
+def build_why_paragraph(meta: dict, reasons: list, published: dict | None = None) -> str:
+    """'왜 주목받는가' 문단을 조립한다.
+
+    *meta* 는 build_meta 결과. *published* 는 published.json 의 {"models": {...}}.
+    같은 org 의 발행된 다른 모델이 있으면 그 모델과의 비교 문장을,
+    없으면 '비교 제공 불가' 안내를 덧붙인다. 모든 정보는 HF API 필드 또는
+    published.json 에서만 도출하며, 추정은 붙이지 않는다.
+    """
+    likes = int(meta.get("likes", 0))
+    downloads = int(meta.get("downloads", 0))
+    discovered_at = meta.get("discovered_at", "")
+    parts = [reason_sentence(reasons)]
+    parts.append("좋아요 %s개, 다운로드 %s회(수집 시점 %s)."
+                 % (format(likes, ","), format(downloads, ","), discovered_at))
+    org = meta.get("org", "")
+    self_id = meta.get("model_id", "")
+    sibling = None
+    if published and org:
+        models = published.get("models", {}) if isinstance(published, dict) else {}
+        for mid, info in models.items():
+            if mid == self_id:
+                continue
+            if model_org(mid) == org:
+                sibling = (mid, info)
+                break
+    if sibling is not None:
+        parts.append("같은 기관(%s)의 다른 발행 모델 %s 와 함께 살펴보세요."
+                     % (org, sibling[0]))
+    else:
+        parts.append("같은 기관의 이전 모델과의 비교는 발행 이력이 부족해 제공하지 않습니다.")
+    return " ".join(parts)
+
+
+def build_related_models(meta: dict, published: dict | None = None, posts_dir: Path | None = None) -> str:
+    """같은 org / 같은 task 의 발행된 모델 링크 목록을 마크다운으로 반환.
+
+    *published* 는 published.json {"models": {model_id: {"slug": ..., ...}}}.
+    *posts_dir* 는 글 파일이 있는 디렉터리(선택). slug 가 published.json 에 없으면
+    파일 존재 여부로 보강한다. 자기 자신과 중복은 제거하고 최대 org 3 + task 3 개.
+    """
+    if published is None:
+        return "아직 관련 모델이 발행되지 않았습니다."
+    models = published.get("models", {}) if isinstance(published, dict) else {}
+    org = meta.get("org", "")
+    task = meta.get("task", "")
+    self_id = meta.get("model_id", "")
+    self_slug = meta.get("slug") or slugify(self_id)
+
+    def link_for(mid: str, info: dict) -> str | None:
+        if mid == self_id:
+            return None
+        slug = (info or {}).get("slug") or slugify(mid)
+        if posts_dir is not None and not (posts_dir / ("%s.md" % slug)).exists():
+            return None
+        if slug == self_slug:
+            return None
+        title = title_from_id(mid)
+        return "- [%s](../%s/)" % (title, slug)
+
+    seen: set[str] = set()
+    lines: list[str] = []
+
+    # 같은 org
+    for mid, info in models.items():
+        if len(lines) >= 3:
+            break
+        if model_org(mid) != org:
+            continue
+        ln = link_for(mid, info)
+        if ln and ln not in seen:
+            seen.add(ln)
+            lines.append(ln)
+
+    # 같은 task
+    task_count = 0
+    for mid, info in models.items():
+        if task_count >= 3:
+            break
+        ln = link_for(mid, info)
+        if ln is None or ln in seen:
+            continue
+        # task 정보는 published.json 에 없으므로 파일에서 frontmatter를 읽어야 한다.
+        if posts_dir is not None:
+            slug = (info or {}).get("slug") or slugify(mid)
+            p = posts_dir / ("%s.md" % slug)
+            if not p.exists():
+                continue
+            try:
+                text = p.read_text(encoding="utf-8")
+                fm, _ = parse_frontmatter(text)
+                if fm.get("task") != task:
+                    continue
+            except Exception:
+                continue
+        else:
+            # posts_dir 이 없으면 task 비교를 건너뛴다(과도한 추정 방지).
+            continue
+        seen.add(ln)
+        lines.append(ln)
+        task_count += 1
+
+    if not lines:
+        return "아직 관련 모델이 발행되지 않았습니다."
+    return "\n".join(lines)
+
+
+def render_post(detail: dict, reasons: list, discovered_at: str, readme_text: str = "",
+                published: dict | None = None, posts_dir: Path | None = None) -> str:
     meta = build_meta(detail, reasons, discovered_at)
     assert all(k in meta for k in KEYS)
     params = meta["params"] or "정보 없음"
+    created_at = meta["created_at"] or "정보 없음"
+    why = build_why_paragraph(meta, reasons, published)
+    related = build_related_models(meta, published, posts_dir)
+    license_line = "%s — %s" % (meta["license"], commercial_status(meta["license"]))
+    spec_rows = [
+        ("태스크", "`%s`" % meta["task"]),
+        ("파라미터", params),
+        ("라이선스", meta["license"]),
+        ("최초 등록일", created_at),
+        ("좋아요", format(meta["likes"], ",")),
+        ("다운로드", format(meta["downloads"], ",")),
+    ]
+    spec_table = "| 항목 | 값 |\n| --- | --- |\n" + "\n".join("| %s | %s |" % r for r in spec_rows)
     body = "\n".join([
+        "## 왜 주목받는가",
+        "",
+        why,
+        "",
+        "## 핵심 스펙",
+        "",
+        spec_table,
+        "",
         "## 요약",
         "",
         extract_summary(readme_text),
         "",
-        "## 모델 정보",
+        "## 라이선스",
         "",
-        "- 태스크: `%s`" % meta["task"],
-        "- 파라미터: %s" % params,
-        "- 라이선스: %s" % meta["license"],
-        "- 좋아요 %s · 다운로드 %s (%s 수집 시점)" % (
-            format(meta["likes"], ","), format(meta["downloads"], ","), discovered_at),
-        "- 원문: [Hugging Face 모델 페이지](%s)" % meta["hf_url"],
+        license_line,
         "",
-        "## 선정 이유",
+        "## 관련 모델",
         "",
-        reason_sentence(reasons),
+        related,
     ])
     return dump_frontmatter(meta, body)
 
@@ -529,6 +669,99 @@ def save_json(path: Path, data) -> None:
     with path.open("w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=1, sort_keys=True)
         fh.write("\n")
+
+
+def _extract_summary_section(body: str) -> str:
+    """기존 글 본문에서 '## 요약' 섹션의 내용을 추출한다.
+
+    새 구조의 '## 요약' 헤더부터 다음 '## ' 헤더까지의 텍스트를 반환한다.
+    예전 구조(## 요약 → ## 모델 정보 → ## 선정 이유)와 새 구조 모두에서
+    요약 블록만 떼어낸다.
+    """
+    if not body:
+        return "모델 카드에 설명이 없습니다."
+    lines = body.splitlines()
+    start = None
+    for i, line in enumerate(lines):
+        if line.strip() == "## 요약":
+            start = i + 1
+            break
+    if start is None:
+        return "모델 카드에 설명이 없습니다."
+    block: list[str] = []
+    for line in lines[start:]:
+        if line.startswith("## "):
+            break
+        block.append(line)
+    text = "\n".join(block).strip("\n")
+    return text or "모델 카드에 설명이 없습니다."
+
+
+def regenerate_local(posts_dir: Path, published_path: Path) -> list[str]:
+    """네트워크 없이 기존 글을 새 본문 구조로 재작성한다.
+
+    각 content/models/*.md 의 frontmatter 는 그대로 두고 본문만 교체한다.
+    '## 요약' 섹션은 기존 본문에서 추출해 재사용하고, '왜 주목받는가'·
+    '핵심 스펙'·'라이선스'·'관련 모델' 은 frontmatter 메타 + published.json
+    으로 다시 만든다. HF API 호출은 일절 하지 않는다.
+    """
+    published = load_json(published_path, {"models": {}})
+    published.setdefault("models", {})
+    posts_dir = Path(posts_dir)
+    rewritten: list[str] = []
+    for post_path in sorted(posts_dir.glob("*.md")):
+        text = post_path.read_text(encoding="utf-8")
+        try:
+            meta, body = parse_frontmatter(text)
+        except ValueError as exc:
+            print("warning: skip %s: %s" % (post_path.name, exc), file=sys.stderr)
+            continue
+        reasons = [r.strip() for r in (meta.get("reason") or "").split(",") if r.strip()]
+        # frontmatter 에는 slug 가 없으므로 model_id 로부터 복원.
+        meta_for_render = dict(meta)
+        meta_for_render["slug"] = slugify(meta.get("model_id", ""))
+        summary_text = _extract_summary_section(body)
+        why = build_why_paragraph(meta_for_render, reasons, published)
+        related = build_related_models(meta_for_render, published, posts_dir)
+        license_line = "%s — %s" % (meta.get("license", "unknown"),
+                                   commercial_status(meta.get("license", "unknown")))
+        params = meta.get("params") or "정보 없음"
+        created_at = meta.get("created_at") or "정보 없음"
+        spec_rows = [
+            ("태스크", "`%s`" % meta.get("task", "other")),
+            ("파라미터", params),
+            ("라이선스", meta.get("license", "unknown")),
+            ("최초 등록일", created_at),
+            ("좋아요", format(int(meta.get("likes") or 0), ",")),
+            ("다운로드", format(int(meta.get("downloads") or 0), ",")),
+        ]
+        spec_table = "| 항목 | 값 |\n| --- | --- |\n" + "\n".join(
+            "| %s | %s |" % r for r in spec_rows)
+        new_body = "\n".join([
+            "## 왜 주목받는가",
+            "",
+            why,
+            "",
+            "## 핵심 스펙",
+            "",
+            spec_table,
+            "",
+            "## 요약",
+            "",
+            summary_text,
+            "",
+            "## 라이선스",
+            "",
+            license_line,
+            "",
+            "## 관련 모델",
+            "",
+            related,
+        ])
+        new_text = dump_frontmatter(meta, new_body)
+        post_path.write_text(new_text, encoding="utf-8")
+        rewritten.append(post_path.name)
+    return rewritten
 
 
 # --- main -------------------------------------------------------------------
@@ -616,7 +849,8 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
         try:
             detail = fetch_model_detail(model_id, fetcher)
             readme = fetch_readme(model_id, fetcher)
-            text = render_post(detail, reasons, today.isoformat(), readme)
+            text = render_post(detail, reasons, today.isoformat(), readme,
+                               published=published, posts_dir=content_dir)
         except POST_ERRORS as exc:
             print("warning: skipping %s: %s" % (model_id, exc), file=sys.stderr)
             continue
@@ -657,7 +891,11 @@ def main(argv=None) -> int:
     parser.add_argument("--max-new", type=int, default=25)
     parser.add_argument("--dry-run", action="store_true", help="print the selection without writing files")
     parser.add_argument("--today", default=None, help="override today's date (YYYY-MM-DD)")
+    parser.add_argument("--regenerate", action="store_true",
+                        help="rewrite existing content/models/*.md in the new body layout (no network)")
     args = parser.parse_args(argv)
+    if args.regenerate:
+        return 0 if regenerate_local(Path(args.content_dir), Path(args.data_dir) / "published.json") else 1
     today = dt.date.fromisoformat(args.today) if args.today else dt.datetime.now(dt.timezone.utc).date()
     try:
         run(Path(args.content_dir), Path(args.data_dir), args.max_new, args.dry_run, today)
