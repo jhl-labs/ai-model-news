@@ -224,7 +224,7 @@
  "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": {
   "2026-09-05": {
    "downloads": 95226,
-   "likes": 181
+   "likes": 182
   }
  },
  "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU": {
@@ -272,7 +272,7 @@
  "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF": {
   "2026-09-05": {
    "downloads": 1463966,
-   "likes": 947
+   "likes": 949
   }
  },
  "HuggingFaceTB/FineMath-Llama-3B": {
@@ -410,7 +410,7 @@
  "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": {
   "2026-09-05": {
    "downloads": 206575,
-   "likes": 311
+   "likes": 314
   }
  },
  "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled": {
@@ -422,13 +422,13 @@
  "Jackrong/Qwopus3.8-27B-Flash-GGUF": {
   "2026-09-05": {
    "downloads": 0,
-   "likes": 79
+   "likes": 80
   }
  },
  "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF": {
   "2026-09-05": {
    "downloads": 2395758,
-   "likes": 967
+   "likes": 970
   }
  },
  "Kijai/MiniMax-H3-experimental": {
@@ -446,7 +446,7 @@
  "Lightricks/LTX-2.5": {
   "2026-09-05": {
    "downloads": 1399511,
-   "likes": 2791
+   "likes": 2793
   }
  },
  "Lightricks/LTX-Video": {
@@ -476,7 +476,7 @@
  "OpenVDN/vdn-minimax-h3": {
   "2026-09-05": {
    "downloads": 0,
-   "likes": 174
+   "likes": 175
   }
  },
  "Phr00t/Qwen-Image-Edit-Rapid-AIO": {
@@ -566,7 +566,7 @@
  "Qwen/Qwen3-0.6B": {
   "2026-09-05": {
    "downloads": 21936261,
-   "likes": 1576
+   "likes": 1577
   }
  },
  "Qwen/Qwen3-32B": {
@@ -668,7 +668,7 @@
  "Qwen/Qwen3.8-27B": {
   "2026-09-05": {
    "downloads": 5739341,
-   "likes": 13955
+   "likes": 13959
   }
  },
  "Qwen/Qwen3.8-27B-FP8": {
@@ -680,7 +680,7 @@
  "Qwen/Qwen3.8-Flash-Next": {
   "2026-09-05": {
    "downloads": 351374,
-   "likes": 4878
+   "likes": 4879
   }
  },
  "Qwen/Qwen3.8-Flash-Next-FP8": {
@@ -740,7 +740,7 @@
  "Tongyi-MAI/Z-Image-Turbo": {
   "2026-09-05": {
    "downloads": 678760,
-   "likes": 5199
+   "likes": 5200
   }
  },
  "WarriorMama777/OrangeMixs": {
@@ -758,7 +758,7 @@
  "XHToken/Spark-X2.5-4B": {
   "2026-09-05": {
    "downloads": 3524,
-   "likes": 474
+   "likes": 475
   }
  },
  "allenai/ACE2-SHiELD": {
@@ -1076,7 +1076,7 @@
  "black-forest-labs/FLUX.1-dev": {
   "2026-09-05": {
    "downloads": 741083,
-   "likes": 14449
+   "likes": 14450
   }
  },
  "black-forest-labs/FLUX.1-dev-FP8": {
@@ -1130,7 +1130,7 @@
  "black-forest-labs/FLUX.2-klein-9B": {
   "2026-09-05": {
    "downloads": 239377,
-   "likes": 1354
+   "likes": 1355
   }
  },
  "black-forest-labs/FLUX.2-klein-9b-fp8": {
@@ -1184,7 +1184,7 @@
  "black-forest-labs/FLUX.2-klein-base-9b-fp8": {
   "2026-09-05": {
    "downloads": 26295,
-   "likes": 458
+   "likes": 459
   }
  },
  "black-forest-labs/FLUX.2-klein-base-9b-nvfp4": {
@@ -1292,7 +1292,7 @@
  "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {
   "2026-09-05": {
    "downloads": 133024,
-   "likes": 602
+   "likes": 605
   }
  },
  "deepseek-ai/DeepSeek-V4-Pro": {
@@ -1808,7 +1808,7 @@
  "lightx2v/Minimax-h3-Turbo": {
   "2026-09-05": {
    "downloads": 1117509,
-   "likes": 834
+   "likes": 835
   }
  },
  "lllyasviel/ControlNet": {
@@ -2450,7 +2450,7 @@
  "nvidia/DeepSeek-V4-Flash-0731-NVFP4": {
   "2026-09-05": {
    "downloads": 1929,
-   "likes": 29
+   "likes": 30
   }
  },
  "nvidia/DeepSeek-V4-Pro-0813-NVFP4": {
@@ -2528,7 +2528,7 @@
  "nvidia/Qwen3.8-Flash-Next-NVFP4": {
   "2026-09-05": {
    "downloads": 20,
-   "likes": 21
+   "likes": 23
   }
  },
  "nvidia/SDLLM-AR-1.7B-Base": {
@@ -2732,7 +2732,7 @@
  "orcarouter/Qwen3.8-27B-Uncensored-GGUF": {
   "2026-09-05": {
    "downloads": 276706,
-   "likes": 715
+   "likes": 717
   }
  },
  "orcarouter/Qwen3.8-27B-Uncensored-MLX": {
@@ -2750,13 +2750,13 @@
  "ornith-ai/Ornith-1.0-9B-GGUF": {
   "2026-09-05": {
    "downloads": 4419441,
-   "likes": 662
+   "likes": 663
   }
  },
  "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF": {
   "2026-09-05": {
    "downloads": 202692,
-   "likes": 215
+   "likes": 216
   }
  },
  "pipecat-ai/phonellm-alpha-1": {
@@ -2792,7 +2792,7 @@
  "pyannote/speaker-diarization-community-1": {
   "2026-09-05": {
    "downloads": 5072652,
-   "likes": 1370
+   "likes": 1371
   }
  },
  "pyannote/voice-activity-detection": {
@@ -3074,7 +3074,7 @@
  "tencent/Hy4-preview": {
   "2026-09-05": {
    "downloads": 5684,
-   "likes": 436
+   "likes": 437
   }
  },
  "tencent/Hy4-preview-FP8": {
@@ -3146,7 +3146,7 @@
  "unsloth/GLM-5.3-Flash-GGUF": {
   "2026-09-05": {
    "downloads": 85158,
-   "likes": 364
+   "likes": 366
   }
  },
  "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF": {
@@ -3158,7 +3158,7 @@
  "unsloth/Qwen3.8-27B-GGUF": {
   "2026-09-05": {
    "downloads": 9951693,
-   "likes": 3510
+   "likes": 3512
   }
  },
  "unsloth/Qwen3.8-Flash-Next-GGUF": {
@@ -3254,7 +3254,7 @@
  "zai-org/GLM-5.3": {
   "2026-09-05": {
    "downloads": 303534,
-   "likes": 1702
+   "likes": 1704
   }
  },
  "zai-org/GLM-5.3-BF16": {
