@@ -647,3 +647,130 @@ class ZeroResultsTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def _write_post(posts_dir: Path, meta: dict) -> None:
+    """테스트용 최소 글 파일(frontmatter + 빈 요약)을 쓴다."""
+    from scripts.frontmatter import dump_frontmatter
+    full = {
+        "model_id": meta["model_id"], "title": meta["model_id"].split("/")[-1],
+        "org": meta["model_id"].split("/")[0], "task": meta.get("task", "other"),
+        "license": meta.get("license", "unknown"), "params": meta.get("params", ""),
+        "likes": meta.get("likes", 0), "downloads": meta.get("downloads", 0),
+        "discovered_at": meta.get("discovered_at", "2026-09-01"),
+        "created_at": meta.get("created_at", "2026-08-01"),
+        "hf_url": "https://huggingface.co/" + meta["model_id"], "tags": [],
+        "reason": meta.get("reason", "major-org"),
+    }
+    (posts_dir / (slugify(meta["model_id"]) + ".md")).write_text(
+        dump_frontmatter(full, "## 요약\n\n요약."), encoding="utf-8")
+
+
+class ComparisonTests(unittest.TestCase):
+    """같은 기관·같은 태스크 이전 모델 대비 수치 비교와 급상승 증분 문장."""
+
+    def setUp(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        self.posts = Path(tmp.name)
+        self.published = {"models": {}}
+
+    def _publish(self, model_id, published_at, **meta):
+        meta["model_id"] = model_id
+        meta.setdefault("discovered_at", published_at)
+        _write_post(self.posts, meta)
+        self.published["models"][model_id] = {"slug": slugify(model_id), "published_at": published_at}
+
+    def test_parse_params(self):
+        self.assertEqual(collect.parse_params("27.8B"), 27_800_000_000)
+        self.assertEqual(collect.parse_params("350M"), 350_000_000)
+        self.assertEqual(collect.parse_params("1.2T"), 1_200_000_000_000)
+        self.assertIsNone(collect.parse_params(""))
+        self.assertIsNone(collect.parse_params("정보 없음"))
+
+    def test_previous_model_requires_same_org_and_task(self):
+        self._publish("Qwen/Qwen3-8B", "2026-08-20", task="text-generation", params="8B")
+        self._publish("Qwen/Qwen-VL", "2026-08-25", task="image-text-to-text", params="7B")
+        self._publish("google/gemma-9b", "2026-08-30", task="text-generation", params="9B")
+        meta = {"model_id": "Qwen/Qwen3-32B", "org": "Qwen", "task": "text-generation"}
+        prev = collect.find_previous_model(meta, self.published, self.posts)
+        self.assertEqual(prev["model_id"], "Qwen/Qwen3-8B")
+
+    def test_previous_model_picks_most_recent_and_skips_self(self):
+        self._publish("Qwen/Qwen3-8B", "2026-08-20", task="text-generation")
+        self._publish("Qwen/Qwen3-14B", "2026-08-28", task="text-generation")
+        self._publish("Qwen/Qwen3-32B", "2026-09-05", task="text-generation")
+        meta = {"model_id": "Qwen/Qwen3-32B", "org": "Qwen", "task": "text-generation"}
+        prev = collect.find_previous_model(meta, self.published, self.posts)
+        self.assertEqual(prev["model_id"], "Qwen/Qwen3-14B")
+
+    def test_previous_model_none_when_no_match(self):
+        self._publish("Qwen/Qwen-VL", "2026-08-25", task="image-text-to-text")
+        meta = {"model_id": "Qwen/Qwen3-32B", "org": "Qwen", "task": "text-generation"}
+        self.assertIsNone(collect.find_previous_model(meta, self.published, self.posts))
+        self.assertIsNone(collect.find_previous_model(meta, self.published, None))
+
+    def test_compare_sentence_with_numbers(self):
+        prev = {"model_id": "Qwen/Qwen3-8B", "params": "8B", "downloads": 1000, "license": "apache-2.0"}
+        meta = {"model_id": "Qwen/Qwen3-32B", "params": "32B", "downloads": 500, "license": "apache-2.0"}
+        s = collect.compare_sentence(meta, prev)
+        self.assertIn("이전 모델 Qwen/Qwen3-8B(파라미터 8B, 다운로드 1,000)", s)
+        self.assertIn("파라미터 300.0% 증가", s)
+        self.assertIn("다운로드 50.0% 감소", s)
+        self.assertIn("라이선스 동일(apache-2.0)", s)
+
+    def test_compare_sentence_marks_missing_params(self):
+        prev = {"model_id": "a/b", "params": "", "downloads": 0, "license": "mit"}
+        meta = {"model_id": "a/c", "params": "3B", "downloads": 10, "license": "other"}
+        s = collect.compare_sentence(meta, prev)
+        self.assertIn("파라미터 비교 정보 없음", s)
+        self.assertIn("다운로드 0→10(비율 산출 불가)", s)
+        self.assertIn("라이선스 mit→other", s)
+
+    def test_compare_sentence_none_is_first_publication(self):
+        self.assertEqual(collect.compare_sentence({"model_id": "a/c"}, None),
+                         "같은 기관·같은 태스크의 이전 발행 모델 없음 — 비교 대상 없음(최초 발행).")
+
+    def test_surge_sentence_with_snapshot(self):
+        history = {"a/c": {"2026-08-28": {"likes": 100, "downloads": 1000},
+                           "2026-09-04": {"likes": 180, "downloads": 1500}}}
+        meta = {"model_id": "a/c", "likes": 200, "downloads": 3000}
+        s = collect.surge_sentence(meta, history, TODAY)
+        self.assertEqual(s, "급상승 근거(7일 전 2026-08-28 스냅샷 대비): 좋아요 100→200(+100.0%), 다운로드 1,000→3,000(+200.0%).")
+
+    def test_surge_sentence_without_snapshot(self):
+        history = {"a/c": {"2026-09-04": {"likes": 180, "downloads": 1500}}}
+        meta = {"model_id": "a/c", "likes": 200, "downloads": 3000}
+        self.assertEqual(collect.surge_sentence(meta, history, TODAY),
+                         "급상승 근거: 7일 전 스냅샷 정보 없음(수집 이력 부족).")
+        self.assertEqual(collect.surge_sentence(meta, {}, TODAY),
+                         "급상승 근거: 7일 전 스냅샷 정보 없음(수집 이력 부족).")
+
+    def test_why_paragraph_includes_comparison_and_surge(self):
+        self._publish("Qwen/Qwen3-8B", "2026-08-20", task="text-generation", params="8B", downloads=1000)
+        history = {"Qwen/Qwen3-32B": {"2026-08-27": {"likes": 10, "downloads": 100}}}
+        meta = {"model_id": "Qwen/Qwen3-32B", "org": "Qwen", "task": "text-generation",
+                "params": "16B", "likes": 30, "downloads": 400, "license": "apache-2.0",
+                "discovered_at": "2026-09-05"}
+        why = collect.build_why_paragraph(meta, ["trending", "surge"], self.published,
+                                          posts_dir=self.posts, history=history, today=TODAY)
+        self.assertIn("이전 모델 Qwen/Qwen3-8B", why)
+        self.assertIn("파라미터 100.0% 증가", why)
+        self.assertIn("좋아요 10→30(+200.0%)", why)
+        self.assertNotIn("함께 살펴보세요", why)
+
+    def test_why_paragraph_no_surge_sentence_without_surge_reason(self):
+        meta = {"model_id": "Qwen/Qwen3-32B", "org": "Qwen", "task": "text-generation",
+                "params": "16B", "likes": 30, "downloads": 400, "license": "apache-2.0",
+                "discovered_at": "2026-09-05"}
+        why = collect.build_why_paragraph(meta, ["trending"], self.published,
+                                          posts_dir=self.posts, history={}, today=TODAY)
+        self.assertNotIn("급상승 근거", why)
+        self.assertIn("비교 대상 없음(최초 발행)", why)
+
+    def test_compare_sentence_equal_params_says_same(self):
+        prev = {"model_id": "a/b", "params": "321.3B", "downloads": 100, "license": "mit"}
+        meta = {"model_id": "a/c", "params": "321.3B", "downloads": 100, "license": "mit"}
+        s = collect.compare_sentence(meta, prev)
+        self.assertIn("파라미터 동일(321.3B)", s)
+        self.assertIn("다운로드 동일(100)", s)

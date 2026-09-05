@@ -508,13 +508,129 @@ def commercial_status(license_id: str) -> str:
     return "상업 이용 제한 또는 확인 필요"
 
 
-def build_why_paragraph(meta: dict, reasons: list, published: dict | None = None) -> str:
+_PARAM_UNITS = {"T": 10 ** 12, "B": 10 ** 9, "M": 10 ** 6, "K": 10 ** 3}
+
+
+def parse_params(text) -> int | None:
+    """'27.8B' -> 27800000000. 형식이 아니면 None (추정하지 않음)."""
+    if not isinstance(text, str):
+        return None
+    m = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*([TBMK])?\s*", text)
+    if not m:
+        return None
+    value = float(m.group(1)) * _PARAM_UNITS.get(m.group(2) or "", 1)
+    return int(round(value))
+
+
+def _pct_change(old, new) -> str | None:
+    """old 대비 new 변화율 문자열('+12.3%'), old 가 0 이면 None."""
+    try:
+        old = float(old)
+        new = float(new)
+    except (TypeError, ValueError):
+        return None
+    if old == 0:
+        return None
+    return "%+.1f%%" % ((new - old) / old * 100)
+
+
+def find_previous_model(meta: dict, published: dict | None, posts_dir: Path | None) -> dict | None:
+    """같은 org·같은 task 로 이미 발행된 글 중 가장 최근(published_at) 1개의 frontmatter.
+
+    발행 이력은 published.json, 스펙은 posts_dir 의 글 frontmatter 에서만 읽는다.
+    posts_dir 가 없거나 조건에 맞는 글이 없으면 None.
+    """
+    if not published or posts_dir is None:
+        return None
+    models = published.get("models", {}) if isinstance(published, dict) else {}
+    org = meta.get("org") or model_org(meta.get("model_id", ""))
+    task = meta.get("task", "")
+    self_id = meta.get("model_id", "")
+    best_key, best = None, None
+    for mid, info in models.items():
+        if mid == self_id or model_org(mid) != org:
+            continue
+        slug = (info or {}).get("slug") or slugify(mid)
+        path = Path(posts_dir) / ("%s.md" % slug)
+        if not path.exists():
+            continue
+        try:
+            prev_meta, _ = parse_frontmatter(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if prev_meta.get("task") != task:
+            continue
+        key = ((info or {}).get("published_at", ""), prev_meta.get("created_at", ""), mid)
+        if best_key is None or key > best_key:
+            best_key, best = key, prev_meta
+    return best
+
+
+def compare_sentence(meta: dict, prev: dict | None) -> str:
+    """이전 모델 대비 파라미터·다운로드·라이선스 변화를 한 문장으로."""
+    if prev is None:
+        return "같은 기관·같은 태스크의 이전 발행 모델 없음 — 비교 대상 없음(최초 발행)."
+    prev_params = prev.get("params") or ""
+    prev_dl = int(prev.get("downloads") or 0)
+    cur_dl = int(meta.get("downloads") or 0)
+    changes = []
+    p_old, p_new = parse_params(prev_params), parse_params(meta.get("params") or "")
+    if p_old and p_new is not None:
+        if p_new == p_old:
+            changes.append("파라미터 동일(%s)" % prev_params)
+        else:
+            pct = (p_new - p_old) / p_old * 100
+            changes.append("파라미터 %.1f%% %s" % (abs(pct), "증가" if pct > 0 else "감소"))
+    else:
+        changes.append("파라미터 비교 정보 없음")
+    if prev_dl > 0:
+        if cur_dl == prev_dl:
+            changes.append("다운로드 동일(%s)" % format(cur_dl, ","))
+        else:
+            pct = (cur_dl - prev_dl) / prev_dl * 100
+            changes.append("다운로드 %.1f%% %s" % (abs(pct), "증가" if pct > 0 else "감소"))
+    else:
+        changes.append("다운로드 %s→%s(비율 산출 불가)" % (format(prev_dl, ","), format(cur_dl, ",")))
+    prev_lic, cur_lic = prev.get("license") or "unknown", meta.get("license") or "unknown"
+    if prev_lic == cur_lic:
+        changes.append("라이선스 동일(%s)" % cur_lic)
+    else:
+        changes.append("라이선스 %s→%s" % (prev_lic, cur_lic))
+    return "이전 모델 %s(파라미터 %s, 다운로드 %s) 대비 이번 모델은 %s." % (
+        prev.get("model_id", ""), prev_params or "정보 없음", format(prev_dl, ","), ", ".join(changes))
+
+
+def surge_sentence(meta: dict, history: dict | None, today: dt.date) -> str:
+    """급상승 근거: 7일 전 스냅샷 대비 좋아요·다운로드 증분. 스냅샷 없으면 그 사실을 적는다."""
+    cutoff = today - dt.timedelta(days=SURGE_WINDOW_DAYS)
+    entry = (history or {}).get(meta.get("model_id", ""), {})
+    snap_date, snap = None, None
+    for date_str, candidate in entry.items():
+        d = parse_date(date_str)
+        if d is None or d > cutoff:
+            continue
+        if snap_date is None or d > snap_date:
+            snap_date, snap = d, candidate
+    if not snap:
+        return "급상승 근거: 7일 전 스냅샷 정보 없음(수집 이력 부족)."
+    parts = []
+    for label, key in (("좋아요", "likes"), ("다운로드", "downloads")):
+        old, new = int(snap.get(key) or 0), int(meta.get(key) or 0)
+        pct = _pct_change(old, new)
+        parts.append("%s %s→%s(%s)" % (label, format(old, ","), format(new, ","),
+                                       pct if pct else "비율 산출 불가"))
+    return "급상승 근거(7일 전 %s 스냅샷 대비): %s." % (snap_date, ", ".join(parts))
+
+
+def build_why_paragraph(meta: dict, reasons: list, published: dict | None = None,
+                        posts_dir: Path | None = None, history: dict | None = None,
+                        today: dt.date | None = None) -> str:
     """'왜 주목받는가' 문단을 조립한다.
 
-    *meta* 는 build_meta 결과. *published* 는 published.json 의 {"models": {...}}.
-    같은 org 의 발행된 다른 모델이 있으면 그 모델과의 비교 문장을,
-    없으면 '비교 제공 불가' 안내를 덧붙인다. 모든 정보는 HF API 필드 또는
-    published.json 에서만 도출하며, 추정은 붙이지 않는다.
+    선정 이유 → 현재 좋아요/다운로드 → (surge 인 경우) 7일 전 스냅샷 대비 증분 →
+    같은 기관·같은 태스크 이전 발행 모델 대비 파라미터/다운로드/라이선스 변화.
+    모든 수치는 HF API 필드, published.json, stats_history.json, 기존 글
+    frontmatter 에서만 도출하며 없으면 '정보 없음'으로 적는다.
     """
     likes = int(meta.get("likes", 0))
     downloads = int(meta.get("downloads", 0))
@@ -522,22 +638,11 @@ def build_why_paragraph(meta: dict, reasons: list, published: dict | None = None
     parts = [reason_sentence(reasons)]
     parts.append("좋아요 %s개, 다운로드 %s회(수집 시점 %s)."
                  % (format(likes, ","), format(downloads, ","), discovered_at))
-    org = meta.get("org", "")
-    self_id = meta.get("model_id", "")
-    sibling = None
-    if published and org:
-        models = published.get("models", {}) if isinstance(published, dict) else {}
-        for mid, info in models.items():
-            if mid == self_id:
-                continue
-            if model_org(mid) == org:
-                sibling = (mid, info)
-                break
-    if sibling is not None:
-        parts.append("같은 기관(%s)의 다른 발행 모델 %s 와 함께 살펴보세요."
-                     % (org, sibling[0]))
-    else:
-        parts.append("같은 기관의 이전 모델과의 비교는 발행 이력이 부족해 제공하지 않습니다.")
+    if "surge" in reasons:
+        if today is None:
+            today = parse_date(discovered_at) or dt.datetime.now(dt.timezone.utc).date()
+        parts.append(surge_sentence(meta, history, today))
+    parts.append(compare_sentence(meta, find_previous_model(meta, published, posts_dir)))
     return " ".join(parts)
 
 
@@ -615,12 +720,14 @@ def build_related_models(meta: dict, published: dict | None = None, posts_dir: P
 
 
 def render_post(detail: dict, reasons: list, discovered_at: str, readme_text: str = "",
-                published: dict | None = None, posts_dir: Path | None = None) -> str:
+                published: dict | None = None, posts_dir: Path | None = None,
+                history: dict | None = None) -> str:
     meta = build_meta(detail, reasons, discovered_at)
     assert all(k in meta for k in KEYS)
     params = meta["params"] or "정보 없음"
     created_at = meta["created_at"] or "정보 없음"
-    why = build_why_paragraph(meta, reasons, published)
+    why = build_why_paragraph(meta, reasons, published, posts_dir=posts_dir, history=history,
+                              today=parse_date(discovered_at))
     related = build_related_models(meta, published, posts_dir)
     license_line = "%s — %s" % (meta["license"], commercial_status(meta["license"]))
     spec_rows = [
@@ -697,7 +804,7 @@ def _extract_summary_section(body: str) -> str:
     return text or "모델 카드에 설명이 없습니다."
 
 
-def regenerate_local(posts_dir: Path, published_path: Path) -> list[str]:
+def regenerate_local(posts_dir: Path, published_path: Path, history_path: Path | None = None) -> list[str]:
     """네트워크 없이 기존 글을 새 본문 구조로 재작성한다.
 
     각 content/models/*.md 의 frontmatter 는 그대로 두고 본문만 교체한다.
@@ -707,6 +814,7 @@ def regenerate_local(posts_dir: Path, published_path: Path) -> list[str]:
     """
     published = load_json(published_path, {"models": {}})
     published.setdefault("models", {})
+    history = load_json(history_path, {}) if history_path else {}
     posts_dir = Path(posts_dir)
     rewritten: list[str] = []
     for post_path in sorted(posts_dir.glob("*.md")):
@@ -721,7 +829,8 @@ def regenerate_local(posts_dir: Path, published_path: Path) -> list[str]:
         meta_for_render = dict(meta)
         meta_for_render["slug"] = slugify(meta.get("model_id", ""))
         summary_text = _extract_summary_section(body)
-        why = build_why_paragraph(meta_for_render, reasons, published)
+        why = build_why_paragraph(meta_for_render, reasons, published, posts_dir=posts_dir,
+                                  history=history, today=parse_date(meta.get("discovered_at")))
         related = build_related_models(meta_for_render, published, posts_dir)
         license_line = "%s — %s" % (meta.get("license", "unknown"),
                                    commercial_status(meta.get("license", "unknown")))
@@ -850,7 +959,7 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
             detail = fetch_model_detail(model_id, fetcher)
             readme = fetch_readme(model_id, fetcher)
             text = render_post(detail, reasons, today.isoformat(), readme,
-                               published=published, posts_dir=content_dir)
+                               published=published, posts_dir=content_dir, history=history)
         except POST_ERRORS as exc:
             print("warning: skipping %s: %s" % (model_id, exc), file=sys.stderr)
             continue
@@ -895,7 +1004,8 @@ def main(argv=None) -> int:
                         help="rewrite existing content/models/*.md in the new body layout (no network)")
     args = parser.parse_args(argv)
     if args.regenerate:
-        return 0 if regenerate_local(Path(args.content_dir), Path(args.data_dir) / "published.json") else 1
+        return 0 if regenerate_local(Path(args.content_dir), Path(args.data_dir) / "published.json",
+                                     Path(args.data_dir) / "stats_history.json") else 1
     today = dt.date.fromisoformat(args.today) if args.today else dt.datetime.now(dt.timezone.utc).date()
     try:
         run(Path(args.content_dir), Path(args.data_dir), args.max_new, args.dry_run, today)
