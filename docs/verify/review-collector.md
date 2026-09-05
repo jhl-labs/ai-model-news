@@ -128,3 +128,20 @@ OK
 - 중복 방지: dry-run 시 "No new models" 확인
 - 표준 라이브러리만 사용, 민감 정보 노출 없음
 - 지적 3건 모두 심각도 '하'
+
+## 후속 처리 (2026-09-05)
+
+리뷰 지적 3건을 코드베이스와 대조해 검증한 뒤 반영했습니다. 지적의 제안 문구를 그대로 따르지 않은 항목은 이유를 적었습니다.
+
+| # | 조치 | 내용 |
+|---|---|---|
+| 1 | 반영(수정 방식 변경) | 제안된 `list(by_id.values())` 복사본 반환은 동일 내용을 두 번 돌려주는 구조를 유지하므로 채택하지 않음. `gather_candidates` 가 단일 리스트만 반환하도록 바꾸고, `run()` 은 그 리스트를 선정과 `update_history` 양쪽에 사용. 이력 기록이 "본 모델 전체"를 대상으로 한다는 의도가 코드에서 바로 드러남 |
+| 2 | 반영(일부) | `FETCH_ERRORS = (RuntimeError, OSError, ValueError)`, `POST_ERRORS = FETCH_ERRORS + (KeyError, TypeError, AttributeError)` 상수를 두고 README·목록·상세 fetch 지점 4곳을 구체화. `main()` 의 `except Exception` 은 CLI 경계에서 어떤 실패든 종료 코드 1 로 바꿔 워크플로를 멈추게 하는 역할이라 유지하고 주석으로 이유 명시 |
+| 3 | 반영 | `fetch_json` 의 `fetcher=None` 기본값 제거로 모든 fetch 함수가 `fetcher` 를 필수로 받도록 통일. 기본 fetcher 해석은 엔트리 포인트 `run()` 한 곳에서만 수행 |
+
+추가 테스트 3개 (총 51개):
+- `test_fetch_readme_returns_empty_on_fetch_error` — README fetch 실패 시 빈 문자열 반환과 경고 출력
+- `test_gather_candidates_merges_listings_and_ranks_trending` — 목록 병합, trending 순위 부여, 하위 목록 실패 시 경고 후 계속
+- `test_run_skips_model_whose_detail_fails_and_records_history_for_all` — 상세 fetch 실패 모델은 건너뛰되 이력은 전체 후보에 기록
+
+검증: `python3 -m unittest discover -s tests -t . -v` → 51 tests OK, `python3 scripts/collect.py --dry-run` 정상 종료.
