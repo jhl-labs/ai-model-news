@@ -5,7 +5,7 @@
 
 ## 로컬 준비
 
-- Python 3.11 이상만 필요합니다.
+- Python 3.10 이상만 필요합니다.
 - 외부 의존성은 없습니다. 표준 라이브러리만 사용합니다.
 - 저장소를 클론한 뒤 별도 설치 단계 없이 바로 실행할 수 있습니다.
 
@@ -23,7 +23,8 @@ python3 -m unittest discover -s tests -t . -v
 python3 scripts/collect.py --dry-run
 ```
 
-네트워크 호출 없이 고정 fixture 로 수집 로직을 검증합니다.
+Hugging Face 공개 API 를 실제로 조회해 어떤 모델이 선정되는지만 출력하고 파일은 쓰지 않습니다.
+네트워크 없이 검증하려면 위 단위 테스트(fixture 기반)를 사용하세요.
 
 ## 사이트 빌드 및 미리보기
 
@@ -78,9 +79,9 @@ Conventional Commits 형식을 권장합니다.
 This repository is a tech blog that automatically collects and publishes news
 about notable AI models on Hugging Face.
 
-- **Setup:** Python 3.11+ only, no external dependencies.
+- **Setup:** Python 3.10+ only, no external dependencies.
 - **Tests:** `python3 -m unittest discover -s tests -t . -v`
-- **Collect (dry run):** `python3 scripts/collect.py --dry-run`
+- **Collect (dry run):** `python3 scripts/collect.py --dry-run` (queries the live API, writes nothing)
 - **Build & preview:**
   `python3 scripts/build.py --content-dir content/models --out dist` then
   `python3 -m http.server -d dist 8000`

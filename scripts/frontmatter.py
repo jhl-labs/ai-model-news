@@ -91,17 +91,11 @@ def dump_frontmatter(meta: dict, body: str) -> str:
 
 
 def slugify(model_id: str) -> str:
-    """Turn ``org/name`` into a filesystem/URL safe slug.
+    """Turn ``org/name`` into the content file slug shared with build.py.
 
-    Rules: lower-case, ``/`` becomes ``--``, any run of characters other than
-    ``a-z0-9.`` becomes a single ``-``, leading/trailing ``-``/``.`` removed.
+    Contract: ``/`` becomes two underscores; every other character outside
+    ``A-Za-z0-9 . _ -`` becomes a single ``-``. Case is preserved.
+    Example: ``meta-llama/Llama-4-Scout`` -> ``meta-llama__Llama-4-Scout``.
     """
-    s = model_id.strip().lower()
-    parts = [p for p in s.split("/") if p]
-    slug_parts = []
-    for part in parts:
-        part = re.sub(r"[^a-z0-9.]+", "-", part)
-        part = part.strip("-.")
-        if part:
-            slug_parts.append(part)
-    return "--".join(slug_parts)
+    slug = model_id.strip().replace("/", "__")
+    return re.sub(r"[^A-Za-z0-9._-]", "-", slug)

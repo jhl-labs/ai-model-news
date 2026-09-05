@@ -373,17 +373,18 @@ def update_history(history: dict, models: list, today: dt.date, keep_days: int =
 
 # --- rendering --------------------------------------------------------------
 REASON_TEXT = {
-    "trending": "Hugging Face 트렌딩 상위 %d위 안에 들었고" % TRENDING_TOP_N,
-    "surge": "최근 %d일 사이 좋아요·다운로드가 급증했으며" % SURGE_WINDOW_DAYS,
-    "major-org": "주요 기관이 최근 %d일 안에 공개한 신작이라" % MAJOR_ORG_DAYS,
+    "trending": "Hugging Face 트렌딩 상위 %d위 안에 들었습니다" % TRENDING_TOP_N,
+    "surge": "최근 %d일 사이 좋아요·다운로드가 급증했습니다" % SURGE_WINDOW_DAYS,
+    "major-org": "주요 기관이 최근 %d일 안에 공개한 신작입니다" % MAJOR_ORG_DAYS,
 }
 
 
 def reason_sentence(reasons: list) -> str:
+    """One sentence per matched criterion, followed by a closing sentence."""
     parts = [REASON_TEXT.get(r, r) for r in reasons]
     if not parts:
         return "선정 기준에 해당하여 소개합니다."
-    return " ".join(parts) + " 선정했습니다."
+    return " ".join(p if p.endswith(".") else p + "." for p in parts) + " 이 기준에 해당해 선정했습니다."
 
 
 def build_meta(detail: dict, reasons: list, discovered_at: str) -> dict:

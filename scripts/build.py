@@ -24,6 +24,17 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
+if __package__ in (None, ""):
+    # Allow `python3 scripts/build.py` from the repository root.
+    sys.path.insert(0, str(ROOT))
+
+from scripts.frontmatter import slugify as _slugify  # noqa: E402
+
+if __package__ in (None, ""):
+    # Allow `python3 scripts/build.py` from the repository root.
+    sys.path.insert(0, str(ROOT))
+
+from scripts.frontmatter import slugify  # noqa: E402  (single slug contract shared with collect.py)
 TEMPLATES_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 
@@ -58,12 +69,6 @@ DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 # --------------------------------------------------------------------------
 # Front matter parsing
 # --------------------------------------------------------------------------
-def slugify(model_id: str) -> str:
-    """``org/name`` -> ``org_name``; other unsafe chars -> ``-``."""
-    slug = model_id.replace("/", "_")
-    return re.sub(r"[^A-Za-z0-9._-]", "-", slug)
-
-
 def parse_post(path: Path | str) -> dict[str, Any]:
     """Parse a content file into a dict. Raises ValueError on bad input."""
     path = Path(path)

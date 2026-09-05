@@ -33,7 +33,7 @@ class ParsePostTests(TempDirMixin, unittest.TestCase):
         self.assertEqual(post["model_id"], "meta-llama/Llama-4-Scout-17B-16E-Instruct")
         self.assertEqual(post["likes"], 12873)
         self.assertEqual(post["tags"], ["llama", "instruct", "multimodal", "transformers"])
-        self.assertEqual(post["slug"], "meta-llama_Llama-4-Scout-17B-16E-Instruct")
+        self.assertEqual(post["slug"], "meta-llama__Llama-4-Scout-17B-16E-Instruct")
         self.assertTrue(post["body"].startswith("# Llama 4 Scout"))
 
     def test_parse_post_boundary(self):
@@ -94,8 +94,8 @@ class MarkdownTests(unittest.TestCase):
 
 class SlugTests(unittest.TestCase):
     def test_slugify(self):
-        self.assertEqual(build.slugify("org/name"), "org_name")
-        self.assertEqual(build.slugify("a/b c:d.e-f"), "a_b-c-d.e-f")
+        self.assertEqual(build.slugify("org/name"), "org__name")
+        self.assertEqual(build.slugify("a/b c:d.e-f"), "a__b-c-d.e-f")
 
     def test_format_count(self):
         self.assertEqual(build.format_count(999), "999")
@@ -129,7 +129,7 @@ class BuildTests(TempDirMixin, unittest.TestCase):
         self.assertIn('data-task="text-generation"', html)
         self.assertIn('data-task="image-text-to-text"', html)
         self.assertIn('data-org="indie-lab"', html)
-        self.assertIn('href="models/google_gemma-3-27b-it/"', html)
+        self.assertIn('href="models/google__gemma-3-27b-it/"', html)
         self.assertIn('href="assets/style.css"', html)
         self.assertIn("12.9k", html)
         self.assertIn("3.4M", html)
@@ -150,7 +150,7 @@ class BuildTests(TempDirMixin, unittest.TestCase):
             self.assertIn(f'href="{p["hf_url"]}"', html)
             self.assertIn('target="_blank" rel="noopener"', html)
             self.assertIn('href="../../assets/style.css"', html)
-        c = (out / "models" / "indie-lab_tiny-tts-v2" / "index.html").read_text(encoding="utf-8")
+        c = (out / "models" / "indie-lab__tiny-tts-v2" / "index.html").read_text(encoding="utf-8")
         self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", c)
         self.assertNotIn("<script>alert(1)", c)
         self.assertIn("<td>—</td>", c)  # empty params / created_at
@@ -193,8 +193,8 @@ class BuildTests(TempDirMixin, unittest.TestCase):
                                "meta-llama/Llama-4-Scout-17B-16E-Instruct",
                                "indie-lab/tiny-tts:v2"])
         html = (out / "index.html").read_text(encoding="utf-8")
-        self.assertLess(html.index("google_gemma-3-27b-it"), html.index("meta-llama_Llama-4"))
-        self.assertLess(html.index("meta-llama_Llama-4"), html.index("indie-lab_tiny-tts-v2"))
+        self.assertLess(html.index("google__gemma-3-27b-it"), html.index("meta-llama__Llama-4"))
+        self.assertLess(html.index("meta-llama__Llama-4"), html.index("indie-lab__tiny-tts-v2"))
 
     def test_cli(self):
         out = self.tmp / "cli"

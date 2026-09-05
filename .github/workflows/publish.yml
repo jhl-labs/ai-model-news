@@ -1,0 +1,111 @@
+# Hugging Face 주목 모델 자동 수집 → 정적 사이트 빌드 → GitHub Pages 배포
+#
+# - 매일 21:00 UTC(06:00 KST) 스케줄 실행, main push, 수동 실행(workflow_dispatch)
+# - collect: 단위 테스트 → scripts/collect.py 로 새 모델 글 생성 → 봇 계정으로 커밋·push
+#   (GITHUB_TOKEN 으로 push 한 커밋은 다른 워크플로를 다시 트리거하지 않는다)
+# - deploy : 갱신된 main 을 다시 받아 scripts/build.py 로 dist/ 를 만들고 Pages 에 배포
+name: publish
+
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: "이번 실행에서 새로 발행할 최대 모델 수"
+        required: false
+        default: "25"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  collect:
+    name: 테스트 및 모델 수집
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      new_count: ${{ steps.collect.outputs.new_count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 단위 테스트
+        run: python3 -m unittest discover -s tests -t . -v
+
+      - name: Hugging Face 모델 수집
+        id: collect
+        run: |
+          set -o pipefail
+          python3 scripts/collect.py \
+            --max-new "${{ github.event.inputs.max_new || '25' }}" | tee collect.log
+          count=$(grep -c '^content/models/.*\.md$' collect.log || true)
+          echo "new_count=${count}" >> "$GITHUB_OUTPUT"
+          echo "새로 발행한 모델: ${count}개"
+
+      - name: 수집 결과 검증 빌드
+        run: python3 scripts/build.py --content-dir content/models --out /tmp/verify-dist
+
+      - name: 변경 사항 커밋 및 push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/models data
+          if git diff --cached --quiet; then
+            echo "커밋할 변경 사항 없음"
+            exit 0
+          fi
+          count="${{ steps.collect.outputs.new_count }}"
+          git commit -m "content: $(date -u +%Y-%m-%d) 수집 (새 모델 ${count}개)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+  deploy:
+    name: 사이트 빌드 및 Pages 배포
+    needs: collect
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # collect 잡이 push 한 최신 커밋을 포함
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 정적 사이트 빌드
+        run: |
+          python3 scripts/build.py \
+            --content-dir content/models \
+            --out dist \
+            --site-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          test -f dist/index.html && test -f dist/feed.xml && test -f dist/sitemap.xml
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

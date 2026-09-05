@@ -22,14 +22,14 @@ def sample_meta():
 
 
 class SlugifyTests(unittest.TestCase):
-    def test_org_separator_becomes_double_dash(self):
-        self.assertEqual(slugify("meta-llama/Llama-4-Scout"), "meta-llama--llama-4-scout")
+    def test_slash_becomes_double_underscore(self):
+        self.assertEqual(slugify("meta-llama/Llama-4-Scout"), "meta-llama__Llama-4-Scout")
 
-    def test_lowercase_and_special_chars_collapsed(self):
-        self.assertEqual(slugify("Qwen/Qwen3.8_27B  (Instruct)"), "qwen--qwen3.8-27b-instruct")
+    def test_case_dot_underscore_hyphen_preserved(self):
+        self.assertEqual(slugify("Qwen/Qwen3.8_27B-Instruct"), "Qwen__Qwen3.8_27B-Instruct")
 
-    def test_strips_leading_trailing_dashes(self):
-        self.assertEqual(slugify("-org-/-name-"), "org--name")
+    def test_other_chars_become_single_hyphen_each(self):
+        self.assertEqual(slugify("org/name (v2) #x"), "org__name--v2---x")
 
 
 class ParseDumpTests(unittest.TestCase):

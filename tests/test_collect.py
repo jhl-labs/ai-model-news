@@ -162,7 +162,7 @@ class HelperTests(unittest.TestCase):
         self.assertEqual(collect.license_from_detail({}), "unknown")
 
     def test_extract_summary_skips_frontmatter_html_and_badges(self):
-        readme = load_fixture("readme_deepseek-ai--deepseek-v4-flash-vision-exp.md")
+        readme = load_fixture("readme_deepseek-ai__DeepSeek-V4-Flash-Vision-Exp.md")
         summary = collect.extract_summary(readme)
         self.assertTrue(summary.startswith("We are excited to introduce"))
         self.assertNotIn("license: mit", summary)
@@ -187,8 +187,8 @@ class HelperTests(unittest.TestCase):
         self.assertEqual(collect.extract_summary("---\nlicense: mit\n---\n# only heading\n"), "모델 카드에 설명이 없습니다.")
 
     def test_render_post_contains_all_keys_and_sections(self):
-        detail = json.loads(load_fixture("detail_qwen--qwen3.8-27b.json"))
-        readme = load_fixture("readme_qwen--qwen3.8-27b.md")
+        detail = json.loads(load_fixture("detail_Qwen__Qwen3.8-27B.json"))
+        readme = load_fixture("readme_Qwen__Qwen3.8-27B.md")
         text = collect.render_post(detail, ["trending", "major-org"], "2026-09-05", readme)
         meta, body = parse_frontmatter(text)
         self.assertEqual(list(meta), KEYS)
@@ -256,11 +256,11 @@ class RunTests(unittest.TestCase):
             "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {"slug": "x", "published_at": "2026-09-01"}}}))
         new, _ = self.run_collect()
         self.assertNotIn("deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", new)
-        self.assertFalse((self.content / "deepseek-ai--deepseek-v4-flash-vision-exp.md").exists())
+        self.assertFalse((self.content / "deepseek-ai__DeepSeek-V4-Flash-Vision-Exp.md").exists())
 
     def test_dedup_via_existing_file_is_not_overwritten(self):
         self.content.mkdir(parents=True)
-        existing = self.content / "deepseek-ai--deepseek-v4-flash-vision-exp.md"
+        existing = self.content / "deepseek-ai__DeepSeek-V4-Flash-Vision-Exp.md"
         existing.write_text("KEEP", encoding="utf-8")
         new, _ = self.run_collect()
         self.assertNotIn("deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", new)
