@@ -75,8 +75,8 @@
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "published_at": "2026-09-05",
    "slug": "deepseek-ai__DeepSeek-V4-Pro-0813"
-   },
-   "google/timesfm-3.0-pytorch": {
+  },
+  "google/timesfm-3.0-pytorch": {
    "published_at": "2026-09-05",
    "slug": "google__timesfm-3.0-pytorch"
   },
@@ -108,15 +108,15 @@
    "published_at": "2026-09-05",
    "slug": "nvidia__Nemotron-3-Diarization-preview"
   },
-   "nvidia/Qwen3.8-Flash-Next-NVFP4": {
-    "published_at": "2026-09-05",
-    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
-   },
-   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
-    "published_at": "2026-09-05",
-    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
-   },
-   "tencent/EVIE-Preview-4.5B": {
+  "nvidia/Qwen3.8-Flash-Next-NVFP4": {
+   "published_at": "2026-09-05",
+   "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
+  },
+  "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
+   "published_at": "2026-09-05",
+   "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+  },
+  "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
    "slug": "tencent__EVIE-Preview-4.5B"
   },
