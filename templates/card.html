@@ -1,0 +1,18 @@
+<article class="card" data-task="{{task}}" data-org="{{org}}" data-search="{{search}}">
+  <div class="card-top">
+    <span class="badge badge-org">{{org}}</span>
+    <span class="badge badge-task">{{task}}</span>
+  </div>
+  <h2 class="card-title"><a href="models/{{slug}}/">{{title}}</a></h2>
+  <p class="card-id"><code>{{model_id}}</code></p>
+  <dl class="card-meta">
+    <div><dt>파라미터</dt><dd>{{params}}</dd></div>
+    <div><dt>라이선스</dt><dd>{{license}}</dd></div>
+  </dl>
+  <p class="card-stats">
+    <span title="좋아요 {{likes_full}}">♥ {{likes}}</span>
+    <span title="다운로드 {{downloads_full}}">⬇ {{downloads}}</span>
+    <time datetime="{{discovered_at}}">{{discovered_at}}</time>
+  </p>
+  <p class="card-tags">{{reasons}}</p>
+</article>

@@ -1,0 +1,34 @@
+<section class="hero">
+  <h1>최신 모델</h1>
+  <p class="hero-sub">{{site_tagline}}</p>
+  <p class="stats" aria-live="polite">
+    <span class="stat"><strong id="stat-count">{{model_count}}</strong> 모델</span>
+    <span class="stat-sep" aria-hidden="true">·</span>
+    <span class="stat">마지막 갱신 <strong>{{last_update}}</strong></span>
+    <span class="stat-sep" aria-hidden="true">·</span>
+    <span class="stat"><span id="stat-visible">{{model_count}}</span>개 표시</span>
+  </p>
+</section>
+<section class="filters{{filters_hidden}}" id="filters" aria-label="필터">
+  <div class="chips" role="group" aria-label="태스크">
+{{chips}}
+  </div>
+  <div class="filter-row">
+    <label class="filter-field">
+      <span class="filter-label">기관</span>
+      <select id="org-filter">
+{{org_options}}
+      </select>
+    </label>
+    <label class="filter-field filter-search">
+      <span class="filter-label">검색</span>
+      <input type="search" id="search" placeholder="모델 ID, 제목, 태그" autocomplete="off">
+    </label>
+    <button type="button" class="btn btn-ghost" id="reset-filters">초기화</button>
+  </div>
+</section>
+<section class="cards" id="cards" aria-label="모델 목록">
+{{cards}}
+</section>
+<p class="empty{{empty_hidden}}" id="empty-state">아직 수집된 모델이 없습니다. 첫 수집 이후 이곳에 모델 소식이 표시됩니다.</p>
+<p class="empty" id="no-match" hidden>조건에 맞는 모델이 없습니다.</p>

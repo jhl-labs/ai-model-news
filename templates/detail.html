@@ -1,0 +1,36 @@
+<nav class="breadcrumb" aria-label="현재 위치"><a href="../../">← 홈으로</a></nav>
+<article class="detail">
+  <header class="detail-header">
+    <p class="detail-badges"><span class="badge badge-org">{{org}}</span> <span class="badge badge-task">{{task}}</span></p>
+    <h1>{{title}}</h1>
+    <p class="detail-id"><code>{{model_id}}</code></p>
+    <p class="detail-reasons">{{reasons}}</p>
+    <p><a class="btn btn-primary" href="{{hf_url}}" target="_blank" rel="noopener">Hugging Face 에서 보기 ↗</a></p>
+  </header>
+  <table class="meta-table">
+    <caption>메타 정보</caption>
+    <tbody>
+      <tr><th scope="row">모델 ID</th><td><code>{{model_id}}</code></td></tr>
+      <tr><th scope="row">기관</th><td>{{org}}</td></tr>
+      <tr><th scope="row">태스크</th><td>{{task}}</td></tr>
+      <tr><th scope="row">파라미터</th><td>{{params}}</td></tr>
+      <tr><th scope="row">라이선스</th><td>{{license}}</td></tr>
+      <tr><th scope="row">좋아요</th><td>{{likes}}</td></tr>
+      <tr><th scope="row">다운로드</th><td>{{downloads}}</td></tr>
+      <tr><th scope="row">최초 등록일</th><td>{{created_at}}</td></tr>
+      <tr><th scope="row">발견일</th><td>{{discovered_at}}</td></tr>
+    </tbody>
+  </table>
+  <div class="prose">
+{{content}}
+  </div>
+  <section class="detail-tags" aria-label="태그">
+    <h2>태그</h2>
+    <ul class="tag-list">{{tags}}</ul>
+  </section>
+</article>
+<nav class="pager" aria-label="이전/다음 모델">
+  {{prev_link}}
+  {{next_link}}
+</nav>
+<p class="back-home"><a href="../../">← 홈으로</a></p>
