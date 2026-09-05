@@ -204,6 +204,7 @@ def _clean_line(line: str) -> str:
     line = re.sub(r"\[!\w+\]", "", line)                    # [!Note] admonitions
     line = re.sub(r"^\s*>\s?", "", line)                    # blockquote prefix
     line = re.sub(r"\[([^\]]*)\]\((?:https?://img\.shields\.io|[^)]*badge)[^)]*\)", "", line)
+    line = re.sub(r"\[\s*\]\([^)]*\)", "", line)                  # links left empty after image removal
     return line.strip()
 
 

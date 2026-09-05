@@ -176,6 +176,12 @@ class HelperTests(unittest.TestCase):
         self.assertTrue(summary.endswith("…"))
         self.assertLessEqual(len(summary), collect.SUMMARY_MAX_CHARS + 1)
 
+    def test_extract_summary_drops_badge_links_wrapping_images(self):
+        readme = "# T\n\n[![badge](https://img.shields.io/x.svg)](https://example.com/a) [![b](https://x/y.png)](https://example.com/b)\n\n" \
+                 "Granite is a family of open-source large language models developed by IBM.\n"
+        summary = collect.extract_summary(readme)
+        self.assertEqual(summary, "Granite is a family of open-source large language models developed by IBM.")
+
     def test_extract_summary_empty_readme(self):
         self.assertEqual(collect.extract_summary(""), "모델 카드에 설명이 없습니다.")
         self.assertEqual(collect.extract_summary("---\nlicense: mit\n---\n# only heading\n"), "모델 카드에 설명이 없습니다.")
