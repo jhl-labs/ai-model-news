@@ -9,6 +9,18 @@
     <span class="stat"><span id="stat-visible">{{model_count}}</span>개 표시</span>
   </p>
 </section>
+<section class="highlights{{highlights_hidden}}" aria-label="오늘의 하이라이트">
+  <h2>오늘의 하이라이트</h2>
+  <div class="highlight-cards">
+{{highlights}}
+  </div>
+</section>
+<section class="surge{{surges_hidden}}" aria-label="이번 주 급상승">
+  <h2>이번 주 급상승</h2>
+  <div class="surge-cards">
+{{surges}}
+  </div>
+</section>
 <section class="filters{{filters_hidden}}" id="filters" aria-label="필터">
   <div class="chips" role="group" aria-label="태스크">
 {{chips}}

@@ -1,4 +1,5 @@
 <article class="card" data-task="{{task}}" data-org="{{org}}" data-search="{{search}}">
+  <div class="card-badges">{{badges}}</div>
   <div class="card-top">
     <span class="badge badge-org">{{org}}</span>
     <span class="badge badge-task">{{task}}</span>
@@ -12,7 +13,7 @@
   <p class="card-stats">
     <span title="좋아요 {{likes_full}}">♥ {{likes}}</span>
     <span title="다운로드 {{downloads_full}}">⬇ {{downloads}}</span>
-    <time datetime="{{discovered_at}}">{{discovered_at}}</time>
+    <time datetime="{{discovered_at}}" title="{{discovered_at}}">{{relative_date}}</time>
   </p>
   <p class="card-tags">{{reasons}}</p>
 </article>

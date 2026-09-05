@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import re
 import sys
 import time
@@ -63,6 +64,8 @@ FIRST_RUN_DOWNLOADS = 10_000
 MAJOR_ORG_DAYS = 30
 MAJOR_ORG_MIN_LIKES = 20
 HISTORY_KEEP_DAYS = 14
+NEW_MODEL_DAYS = 60      # createdAt이 이 기간 이내면 "신규"
+RECENT_UPDATE_DAYS = 14  # lastModified가 이 기간 이내면 "갱신"
 MAJOR_ORGS = [
     "meta-llama", "google", "mistralai", "Qwen", "deepseek-ai", "openai",
     "microsoft", "nvidia", "stabilityai", "black-forest-labs", "apple",
@@ -82,6 +85,8 @@ DEFAULT_CONFIG = {
     "major_org_days": MAJOR_ORG_DAYS,
     "major_org_min_likes": MAJOR_ORG_MIN_LIKES,
     "major_orgs": MAJOR_ORGS,
+    "new_model_days": NEW_MODEL_DAYS,
+    "recent_update_days": RECENT_UPDATE_DAYS,
 }
 
 SUMMARY_MAX_CHARS = 600
@@ -368,7 +373,22 @@ def select_famous(candidates: list, history: dict, now: dt.date, config: dict | 
         likes = int(model.get("likes") or 0)
         downloads = int(model.get("downloads") or 0)
         created = parse_date(model.get("createdAt"))
+        modified = parse_date(model.get("lastModified"))
         age = (now - created).days if created else None
+        modified_age = (now - modified).days if modified else None
+
+        # --- 신규성 게이트: createdAt 60일 이내 또는 lastModified 14일 이내 ---
+        # 둘 다 없거나 둘 다 기한 밖이면 선정 제외 (trending/surge/major-org 어떤 경로든).
+        # 게이트 통과 시 "new"/"updated" 태그를 reason에 포함한다.
+        is_new = age is not None and age <= cfg["new_model_days"]
+        is_updated = modified_age is not None and modified_age <= cfg["recent_update_days"]
+        if not is_new and not is_updated:
+            continue
+        novelty_reasons = []
+        if is_new:
+            novelty_reasons.append("new")
+        if is_updated:
+            novelty_reasons.append("updated")
 
         rank = model.get("trending_rank")
         if isinstance(rank, int) and 1 <= rank <= cfg["trending_top_n"]:
@@ -397,7 +417,9 @@ def select_famous(candidates: list, history: dict, now: dt.date, config: dict | 
             reasons.append("major-org")
 
         if reasons:
-            selected.append((model, reasons))
+            # 신규성 게이트를 통과한 모델만 여기 도달. new/updated 태그를
+            # 기존 선정 사유 앞에 붙여 reason 리스트를 구성한다.
+            selected.append((model, novelty_reasons + reasons))
     return selected
 
 
@@ -429,6 +451,8 @@ REASON_TEXT = {
     "trending": "Hugging Face 트렌딩 상위 %d위 안에 들었습니다" % TRENDING_TOP_N,
     "surge": "최근 %d일 사이 좋아요·다운로드가 급증했습니다" % SURGE_WINDOW_DAYS,
     "major-org": "주요 기관이 최근 %d일 안에 공개한 신작입니다" % MAJOR_ORG_DAYS,
+    "new": "최근 %d일 내 최초 공개된 신규 모델입니다" % NEW_MODEL_DAYS,
+    "updated": "최근 %d일 내 의미 있는 갱신이 있었습니다" % RECENT_UPDATE_DAYS,
 }
 
 
@@ -535,6 +559,26 @@ def gather_candidates(fetcher, config: dict) -> list:
     return list(by_id.values())
 
 
+def write_summary(stats: dict, path: Path | None = None) -> str:
+    """실행 요약 마크다운을 반환하고 path가 주어지면 파일에 추가 기록."""
+    lines = [
+        "## 수집 실행 요약",
+        "",
+        "| 항목 | 값 |",
+        "| --- | --- |",
+        f"| 수집 일시 | {stats.get('today','')} |",
+        f"| 후보 모델 수 | {stats.get('candidates',0)} |",
+        f"| 신규 발행 | {stats.get('new_posts',0)} |",
+        f"| 제외(신규성 게이트) | {stats.get('excluded',0)} |",
+        f"| 누적 발행 모델 | {stats.get('total_published',0)} |",
+    ]
+    md = "\n".join(lines) + "\n"
+    if path is not None:
+        with path.open("a", encoding="utf-8") as fh:
+            fh.write(md)
+    return md
+
+
 def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: dt.date,
         fetcher=None, config: dict | None = None) -> list:
     fetcher = fetcher or default_fetcher
@@ -582,6 +626,21 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
         save_json(published_path, published)
     if not new_posts:
         print("No new models")
+
+    stats = {
+        "today": today.isoformat(),
+        "candidates": len(candidates),
+        "new_posts": len(new_posts),
+        "excluded": len(candidates) - len(selected),
+        "total_published": len(published["models"]),
+    }
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        try:
+            write_summary(stats, Path(summary_path))
+        except OSError as exc:
+            print("warning: failed to write step summary: %s" % exc, file=sys.stderr)
+
     return new_posts
 
 

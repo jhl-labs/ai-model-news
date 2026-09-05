@@ -55,11 +55,13 @@ def fixture_fetcher(url: str) -> str:
     raise RuntimeError("unexpected url %s" % url)
 
 
-def model(model_id, likes=0, downloads=0, created=None, rank=None, pipeline="text-generation", tags=None):
+def model(model_id, likes=0, downloads=0, created=None, rank=None, pipeline="text-generation", tags=None, last_modified=None):
     m = {"id": model_id, "modelId": model_id, "likes": likes, "downloads": downloads,
          "pipeline_tag": pipeline, "tags": ["transformers"] if tags is None else tags}
     if created:
         m["createdAt"] = created + "T00:00:00.000Z"
+    if last_modified:
+        m["lastModified"] = last_modified + "T00:00:00.000Z"
     if rank is not None:
         m["trending_rank"] = rank
     return m
@@ -71,19 +73,19 @@ OLD_HISTORY = {"someone/old": {"2026-08-20": {"likes": 1, "downloads": 1}}}
 
 class SelectFamousTests(unittest.TestCase):
     def test_trending_top30_selected_and_31st_not(self):
-        cands = [model("a/top", rank=30, created="2025-01-01"), model("a/low", rank=31, created="2025-01-01")]
+        cands = [model("a/top", rank=30, created="2026-08-01"), model("a/low", rank=31, created="2026-08-01")]
         result = collect.select_famous(cands, OLD_HISTORY, TODAY)
-        self.assertEqual([(m["id"], r) for m, r in result], [("a/top", ["trending"])])
+        self.assertEqual([(m["id"], r) for m, r in result], [("a/top", ["new", "trending"])])
 
     def test_major_org_recent_release(self):
         cands = [
             model("meta-llama/New", likes=20, created="2026-08-10"),   # 26 days old, >=20 likes
-            model("meta-llama/Old", likes=500, created="2026-07-01"),  # too old
+            model("meta-llama/Old", likes=500, created="2026-07-01"),  # 66 days old -> 신규성 게이트 제외
             model("meta-llama/Quiet", likes=5, created="2026-09-01"),  # too few likes
             model("random-user/New", likes=900, created="2026-09-01"),  # not a major org
         ]
         result = collect.select_famous(cands, OLD_HISTORY, TODAY)
-        self.assertEqual([(m["id"], r) for m, r in result], [("meta-llama/New", ["major-org"])])
+        self.assertEqual([(m["id"], r) for m, r in result], [("meta-llama/New", ["new", "major-org"])])
 
     def test_first_run_surge_fallback(self):
         cands = [
@@ -94,7 +96,7 @@ class SelectFamousTests(unittest.TestCase):
         ]
         result = collect.select_famous(cands, {}, TODAY)
         self.assertEqual(sorted(m["id"] for m, _ in result), ["x/fresh-downloaded", "x/fresh-liked"])
-        self.assertTrue(all(r == ["surge"] for _, r in result))
+        self.assertTrue(all(r == ["new", "surge"] for _, r in result))
 
     def test_history_based_surge(self):
         history = {
@@ -104,21 +106,22 @@ class SelectFamousTests(unittest.TestCase):
             "x/flat": {"2026-08-28": {"likes": 100, "downloads": 50000}},
             "x/too-recent": {"2026-09-03": {"likes": 0, "downloads": 0}},
         }
+        # createdAt 은 2년 전(신규 아님)이지만 lastModified 가 7일 이내라 갱신 게이트 통과.
         cands = [
-            model("x/likes-up", likes=300, downloads=500, created="2025-01-01"),
-            model("x/dl-up", likes=10, downloads=12000, created="2025-01-01"),
-            model("x/dl-up-small", likes=10, downloads=5000, created="2025-01-01"),  # 5x but < 10k
-            model("x/flat", likes=150, downloads=60000, created="2025-01-01"),
-            model("x/too-recent", likes=900, downloads=90000, created="2025-01-01"),  # no 7-day-old snapshot
+            model("x/likes-up", likes=300, downloads=500, created="2024-09-01", last_modified="2026-08-30"),
+            model("x/dl-up", likes=10, downloads=12000, created="2024-09-01", last_modified="2026-08-30"),
+            model("x/dl-up-small", likes=10, downloads=5000, created="2024-09-01", last_modified="2026-08-30"),  # 5x but < 10k
+            model("x/flat", likes=150, downloads=60000, created="2024-09-01", last_modified="2026-08-30"),
+            model("x/too-recent", likes=900, downloads=90000, created="2024-09-01", last_modified="2026-08-30"),  # no 7-day-old snapshot
         ]
         result = collect.select_famous(cands, history, TODAY)
         self.assertEqual(sorted(m["id"] for m, _ in result), ["x/dl-up", "x/likes-up"])
 
     def test_exclusions_gguf_and_empty_metadata(self):
         cands = [
-            model("someone/Model-GGUF", rank=1, created="2025-01-01"),
-            model("Qwen/Qwen-GGUF", rank=2, created="2025-01-01"),
-            model("a/no-meta", rank=3, created="2025-01-01", pipeline=None, tags=[]),
+            model("someone/Model-GGUF", rank=1, created="2026-08-01"),
+            model("Qwen/Qwen-GGUF", rank=2, created="2026-08-01"),
+            model("a/no-meta", rank=3, created="2026-08-01", pipeline=None, tags=[]),
         ]
         result = collect.select_famous(cands, OLD_HISTORY, TODAY)
         self.assertEqual([m["id"] for m, _ in result], ["Qwen/Qwen-GGUF"])
@@ -126,7 +129,7 @@ class SelectFamousTests(unittest.TestCase):
     def test_multiple_reasons_combined_in_order(self):
         cands = [model("deepseek-ai/X", likes=500, created="2026-09-01", rank=1)]
         result = collect.select_famous(cands, {}, TODAY)
-        self.assertEqual(result[0][1], ["trending", "surge", "major-org"])
+        self.assertEqual(result[0][1], ["new", "trending", "surge", "major-org"])
 
     def test_select_on_real_trending_fixture(self):
         trending = json.loads(load_fixture("trending.json"))
@@ -137,6 +140,56 @@ class SelectFamousTests(unittest.TestCase):
         self.assertIn("deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", ids)
         self.assertNotIn("unsloth/Qwen3.8-27B-GGUF", ids)
         self.assertGreaterEqual(len(ids), 10)
+
+    def test_new_model_gate_60_days(self):
+        # createdAt 60일 정확히 -> 신규성 OK, 61일 -> 제외
+        d60 = (TODAY - dt.timedelta(days=60)).isoformat()
+        d61 = (TODAY - dt.timedelta(days=61)).isoformat()
+        cands = [
+            model("a/exactly60", rank=1, created=d60),
+            model("a/over60", rank=2, created=d61),
+        ]
+        result = collect.select_famous(cands, OLD_HISTORY, TODAY)
+        ids = [m["id"] for m, _ in result]
+        self.assertIn("a/exactly60", ids)
+        self.assertNotIn("a/over60", ids)
+
+    def test_recent_update_gate_14_days(self):
+        # lastModified 14일 -> 갱신 OK, 15일 -> 제외 (createdAt이 2년 전이어도)
+        old_created = "2024-01-01"
+        d14 = (TODAY - dt.timedelta(days=14)).isoformat()
+        d15 = (TODAY - dt.timedelta(days=15)).isoformat()
+        cands = [
+            model("a/updated14", rank=1, created=old_created, last_modified=d14),
+            model("a/updated15", rank=2, created=old_created, last_modified=d15),
+        ]
+        result = collect.select_famous(cands, OLD_HISTORY, TODAY)
+        ids = [m["id"] for m, _ in result]
+        self.assertIn("a/updated14", ids)
+        self.assertNotIn("a/updated15", ids)
+
+    def test_classic_model_excluded(self):
+        # createdAt 2년 전, lastModified 30일 전 -> 신규성 게이트 제외
+        cands = [model("a/classic", rank=1, likes=500, created="2024-09-01", last_modified="2026-08-06")]
+        result = collect.select_famous(cands, OLD_HISTORY, TODAY)
+        self.assertEqual([m["id"] for m, _ in result], [])
+
+    def test_missing_dates_excluded(self):
+        # createdAt/lastModified 모두 없 -> 제외
+        cands = [model("a/nodates", rank=1, likes=500)]
+        result = collect.select_famous(cands, OLD_HISTORY, TODAY)
+        self.assertEqual([m["id"] for m, _ in result], [])
+
+    def test_reason_includes_new_or_updated(self):
+        # 선정된 모델의 reason에 "new" 또는 "updated" 포함
+        cands = [
+            model("a/new-one", rank=1, created="2026-09-01"),
+            model("a/updated-old", rank=2, created="2024-01-01", last_modified="2026-09-01"),
+        ]
+        result = collect.select_famous(cands, OLD_HISTORY, TODAY)
+        for _, reasons in result:
+            self.assertTrue("new" in reasons or "updated" in reasons,
+                            "reason must include new or updated: %s" % reasons)
 
 
 class HistoryTests(unittest.TestCase):
@@ -404,6 +457,83 @@ class RunTests(unittest.TestCase):
         self.assertIn("skipping %s" % target, err.getvalue())
         history = json.loads((self.data / "stats_history.json").read_text())
         self.assertIn(target, history)  # history covers every candidate, not only published ones
+
+
+class WriteSummaryTests(unittest.TestCase):
+    def test_write_summary_format(self):
+        md = collect.write_summary({
+            "today": "2026-09-05", "candidates": 50, "new_posts": 3,
+            "excluded": 12, "total_published": 47,
+        })
+        self.assertIn("## 수집 실행 요약", md)
+        self.assertIn("| 항목 | 값 |", md)
+        self.assertIn("| 수집 일시 | 2026-09-05 |", md)
+        self.assertIn("| 후보 모델 수 | 50 |", md)
+        self.assertIn("| 신규 발행 | 3 |", md)
+        self.assertIn("| 제외(신규성 게이트) | 12 |", md)
+        self.assertIn("| 누적 발행 모델 | 47 |", md)
+        self.assertTrue(md.endswith("\n"))
+
+    def test_write_summary_to_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "summary.md"
+            md = collect.write_summary({
+                "today": "2026-09-05", "candidates": 10, "new_posts": 0,
+                "excluded": 5, "total_published": 20,
+            }, path=p)
+            self.assertTrue(p.exists())
+            self.assertEqual(p.read_text(encoding="utf-8"), md)
+            collect.write_summary({
+                "today": "2026-09-06", "candidates": 11, "new_posts": 1,
+                "excluded": 6, "total_published": 21,
+            }, path=p)
+            text = p.read_text(encoding="utf-8")
+            self.assertEqual(text.count("## 수집 실행 요약"), 2)
+            self.assertIn("2026-09-05", text)
+            self.assertIn("2026-09-06", text)
+
+    def test_write_summary_defaults_for_missing_keys(self):
+        md = collect.write_summary({})
+        self.assertIn("| 수집 일시 |  |", md)
+        self.assertIn("| 후보 모델 수 | 0 |", md)
+
+
+class ZeroResultsTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        root = Path(self.tmp.name)
+        self.content = root / "content" / "models"
+        self.data = root / "data"
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_zero_results_no_failure(self):
+        def empty_fetcher(url: str) -> str:
+            if url.startswith(collect.HF_API + "?"):
+                if "sort=trendingScore" in url:
+                    return "[]"
+                return "[]"
+            if url.startswith(collect.HF_API + "/"):
+                return "{}"
+            return ""
+        err = io.StringIO()
+        out = io.StringIO()
+        with mock.patch("sys.stderr", err), redirect_stdout(out):
+            new = collect.run(self.content, self.data, 25, False, TODAY, fetcher=empty_fetcher)
+        self.assertEqual(new, [])
+        self.assertIn("No new models", out.getvalue())
+
+    def test_zero_results_dry_run_no_failure(self):
+        def empty_fetcher(url: str) -> str:
+            if url.startswith(collect.HF_API + "?"):
+                return "[]"
+            return ""
+        out = io.StringIO()
+        with redirect_stdout(out):
+            new = collect.run(self.content, self.data, 25, True, TODAY, fetcher=empty_fetcher)
+        self.assertEqual(new, [])
+        self.assertIn("No new models", out.getvalue())
 
 
 if __name__ == "__main__":

@@ -304,11 +304,49 @@ def render_page(*, rel: str, title: str, description: str, canonical: str,
     )
 
 
-def render_card(post: dict[str, Any]) -> str:
+def relative_date(date_str: str, build_date: str) -> str:
+    d = dt.date.fromisoformat(date_str)
+    b = dt.date.fromisoformat(build_date)
+    delta = (b - d).days
+    if delta <= 0:
+        return "오늘"
+    if delta == 1:
+        return "1일 전"
+    return f"{delta}일 전"
+
+
+def card_badges(post: dict[str, Any], build_date: str) -> list[tuple[str, str]]:
+    """Return [(css_class, label), ...] for a post card."""
+    badges: list[tuple[str, str]] = []
+    reasons = [r.strip() for r in post.get("reason", "").split(",") if r.strip()]
+    if "new" in reasons:
+        badges.append(("badge-new", "신규"))
+    if "updated" in reasons:
+        badges.append(("badge-updated", "갱신"))
+    if "surge" in reasons:
+        badges.append(("badge-surge", "급상승"))
+    # "new" 가 reason 에 없으면 created_at 으로 유추(60일 이내).
+    if "new" not in reasons and post.get("created_at"):
+        try:
+            created = dt.date.fromisoformat(post["created_at"])
+            bdate = dt.date.fromisoformat(build_date)
+            if 0 <= (bdate - created).days <= 60:
+                badges.append(("badge-new", "신규"))
+        except ValueError:
+            pass
+    return badges
+
+
+def render_card(post: dict[str, Any], build_date: str = "") -> str:
     search = " ".join([post["model_id"], post["title"], *post["tags"]]).lower()
     reasons = [r.strip() for r in post["reason"].split(",") if r.strip()]
     reason_html = "".join(f'<span class="tag tag-reason">{esc(r)}</span>' for r in reasons)
     params = esc(post["params"]) if post["params"] else "—"
+    badges = card_badges(post, build_date) if build_date else []
+    badges_html = "".join(
+        f'<span class="badge {cls}">{esc(label)}</span>' for cls, label in badges
+    )
+    rel = relative_date(post["discovered_at"], build_date) if build_date else post["discovered_at"]
     return render(
         load_template("card.html"),
         slug=esc(post["slug"]),
@@ -324,6 +362,8 @@ def render_card(post: dict[str, Any]) -> str:
         downloads=esc(format_count(post["downloads"])),
         downloads_full=esc(f"{post['downloads']:,}"),
         discovered_at=esc(post["discovered_at"]),
+        relative_date=esc(rel),
+        badges=badges_html,
         reasons=reason_html,
     )
 
@@ -348,12 +388,30 @@ def render_index(posts: list[dict[str, Any]], site_url: str, build_date: str) ->
     for org, n in sorted(orgs.items(), key=lambda kv: (-kv[1], kv[0].lower())):
         org_options.append(f'<option value="{esc(org)}">{esc(org)} ({n})</option>')
 
+    # 하이라이트: discovered_at 이 build_date 기준 3일(72시간) 이내, likes 상위 3개.
+    bdate = dt.date.fromisoformat(build_date)
+    highlight_pool = [
+        p for p in posts
+        if 0 <= (bdate - dt.date.fromisoformat(p["discovered_at"])).days <= 3
+    ]
+    highlight_posts = sorted(highlight_pool, key=lambda p: p["likes"], reverse=True)[:3]
+
+    # 급상승: reason 에 "surge" 포함, likes 상위 5개(하이라이트와 중복 허용).
+    surge_posts = [
+        p for p in posts
+        if "surge" in [r.strip() for r in p.get("reason", "").split(",")]
+    ]
+    surge_posts = sorted(surge_posts, key=lambda p: p["likes"], reverse=True)[:5]
+
     if posts:
-        cards = "\n".join(render_card(p) for p in posts)
+        cards = "\n".join(render_card(p, build_date) for p in posts)
         last_update = max(p["discovered_at"] for p in posts)
     else:
         cards = ""
         last_update = "—"
+
+    highlights_html = "\n".join(render_card(p, build_date) for p in highlight_posts)
+    surges_html = "\n".join(render_card(p, build_date) for p in surge_posts)
 
     body = render(
         load_template("index.html"),
@@ -363,6 +421,10 @@ def render_index(posts: list[dict[str, Any]], site_url: str, build_date: str) ->
         chips="\n".join(chips),
         org_options="\n".join(org_options),
         cards=cards,
+        highlights=highlights_html,
+        surges=surges_html,
+        highlights_hidden="" if highlight_posts else " hidden",
+        surges_hidden="" if surge_posts else " hidden",
         empty_hidden="" if not posts else " hidden",
         filters_hidden=" hidden" if not posts else "",
     )

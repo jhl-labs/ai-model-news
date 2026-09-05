@@ -126,7 +126,9 @@ class BuildTests(TempDirMixin, unittest.TestCase):
     def test_index_cards(self):
         out, posts = self.build_fixtures()
         html = (out / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(html.count('<article class="card"'), 3)
+        # 전체 카드(하이라이트/급상승 중복 포함)가 아닌 #cards 섹션 안의 카드만 카운트.
+        cards_section = html[html.index('id="cards"'):]
+        self.assertEqual(cards_section.count('<article class="card"'), 3)
         self.assertIn('data-task="text-generation"', html)
         self.assertIn('data-task="image-text-to-text"', html)
         self.assertIn('data-org="indie-lab"', html)
@@ -206,6 +208,118 @@ class BuildTests(TempDirMixin, unittest.TestCase):
         self.assertTrue((out / "index.html").exists())
         self.assertEqual(build.main(["--content-dir", str(FIXTURES), "--out", str(out),
                                      "--build-date", "bad"]), 1)
+
+
+def _make_post(model_id="org/test-1", title="Test", org="org", task="text-generation",
+               license="mit", params="7B", likes=100, downloads=1000,
+               discovered_at="2026-09-04", created_at="2026-09-01",
+               hf_url="https://huggingface.co/org/test-1",
+               tags=["t"], reason="trending"):
+    return {
+        "model_id": model_id, "title": title, "org": org, "task": task,
+        "license": license, "params": params, "likes": likes, "downloads": downloads,
+        "discovered_at": discovered_at, "created_at": created_at,
+        "hf_url": hf_url, "tags": tags, "reason": reason,
+        "body": "", "slug": build.slugify(model_id), "source": model_id + ".md",
+    }
+
+
+class HighlightSurgeTests(unittest.TestCase):
+    def test_highlight_section(self):
+        posts = [
+            _make_post(model_id="a/new-high", likes=500, discovered_at="2026-09-04",
+                        created_at="2026-09-01", reason="trending"),
+            _make_post(model_id="b/new-mid", likes=300, discovered_at="2026-09-03",
+                        created_at="2026-09-01", reason="trending"),
+            _make_post(model_id="c/old", likes=9999, discovered_at="2026-08-01",
+                        created_at="2026-06-01", reason="trending"),
+        ]
+        html = build.render_index(posts, SITE_URL, "2026-09-05")
+        self.assertIn('aria-label="오늘의 하이라이트"', html)
+        # 하이라이트 섹션은 highlight-cards 부터 다음 섹션(surge) 전까지.
+        hi_start = html.index('class="highlight-cards"')
+        hi_end = html.index('class="surge', hi_start)
+        hi_section = html[hi_start:hi_end]
+        self.assertIn("a__new-high", hi_section)
+        self.assertIn("b__new-mid", hi_section)
+        self.assertNotIn("c__old", hi_section)
+
+    def test_highlight_empty_hidden(self):
+        posts = [_make_post(model_id="c/old", likes=9999, discovered_at="2026-08-01",
+                            created_at="2026-06-01")]
+        html = build.render_index(posts, SITE_URL, "2026-09-05")
+        self.assertIn("highlights hidden", html)
+
+    def test_surge_section(self):
+        posts = [
+            _make_post(model_id="a/surge", likes=400, discovered_at="2026-09-04",
+                        reason="surge, trending"),
+            _make_post(model_id="b/normal", likes=9999, discovered_at="2026-09-04",
+                        reason="trending"),
+        ]
+        html = build.render_index(posts, SITE_URL, "2026-09-05")
+        self.assertIn('aria-label="이번 주 급상승"', html)
+        # surge 섹션은 surge-cards 부터 다음 섹션(filters) 전까지.
+        sg_start = html.index('class="surge-cards"')
+        sg_end = html.index('class="filters', sg_start)
+        sg_section = html[sg_start:sg_end]
+        self.assertIn("a__surge", sg_section)
+        self.assertNotIn("b__normal", sg_section)
+
+    def test_surge_empty_hidden(self):
+        posts = [_make_post(model_id="b/normal", likes=9999, reason="trending")]
+        html = build.render_index(posts, SITE_URL, "2026-09-05")
+        self.assertIn("surge hidden", html)
+
+    def test_relative_date(self):
+        self.assertEqual(build.relative_date("2026-09-05", "2026-09-05"), "오늘")
+        self.assertEqual(build.relative_date("2026-09-04", "2026-09-05"), "1일 전")
+        self.assertEqual(build.relative_date("2026-09-01", "2026-09-05"), "4일 전")
+        self.assertEqual(build.relative_date("2026-09-06", "2026-09-05"), "오늘")
+
+    def test_badges_new_from_reason(self):
+        post = _make_post(reason="new, trending", created_at="2026-08-01")
+        badges = build.card_badges(post, "2026-09-05")
+        classes = [b[0] for b in badges]
+        self.assertIn("badge-new", classes)
+
+    def test_badges_new_inferred_from_created_at(self):
+        post = _make_post(reason="trending", created_at="2026-09-01")
+        badges = build.card_badges(post, "2026-09-05")
+        classes = [b[0] for b in badges]
+        self.assertIn("badge-new", classes)
+
+    def test_badges_new_not_inferred_old_created(self):
+        post = _make_post(reason="trending", created_at="2026-01-01")
+        badges = build.card_badges(post, "2026-09-05")
+        classes = [b[0] for b in badges]
+        self.assertNotIn("badge-new", classes)
+
+    def test_badges_surge(self):
+        post = _make_post(reason="surge, trending")
+        badges = build.card_badges(post, "2026-09-05")
+        classes = [b[0] for b in badges]
+        self.assertIn("badge-surge", classes)
+
+    def test_badges_updated(self):
+        post = _make_post(reason="updated, trending")
+        badges = build.card_badges(post, "2026-09-05")
+        classes = [b[0] for b in badges]
+        self.assertIn("badge-updated", classes)
+
+    def test_badges_empty(self):
+        post = _make_post(reason="trending", created_at="2026-01-01")
+        badges = build.card_badges(post, "2026-09-05")
+        self.assertEqual(badges, [])
+
+    def test_360px_stack(self):
+        posts = [_make_post(discovered_at="2026-09-04", reason="surge")]
+        html = build.render_index(posts, SITE_URL, "2026-09-05")
+        # grid 클래스가 존재하고 1fr 기본값(미디어쿼리에서 확장)은 CSS 에서 처리.
+        self.assertIn("highlight-cards", html)
+        self.assertIn("surge-cards", html)
+        css = (ROOT / "static" / "style.css").read_text(encoding="utf-8")
+        self.assertIn("grid-template-columns: 1fr", css)
 
 
 if __name__ == "__main__":
