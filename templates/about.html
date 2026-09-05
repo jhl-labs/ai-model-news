@@ -1,0 +1,22 @@
+<article class="prose about">
+  <h1>About</h1>
+  <p><strong>AI Model News</strong> 는 Hugging Face 에 등장하는 주목받는 AI 모델 소식만 골라 자동으로 수집·발행하는 기술 블로그입니다. 사람 손을 거치지 않고 매일 GitHub Actions 스케줄이 Hugging Face 공개 API 를 조회해 새 글을 만들고 정적 사이트를 다시 빌드합니다.</p>
+  <h2>'유명 모델' 선정 기준</h2>
+  <p>다음 세 가지 기준 중 하나 이상을 만족하는 모델만 발행합니다.</p>
+  <ul>
+    <li><strong>트렌딩 상위</strong> — Hugging Face 트렌딩 목록의 상위권에 올라온 모델</li>
+    <li><strong>최근 7일 급상승</strong> — 최근 7일 동안 좋아요 또는 다운로드가 급격히 증가한 모델</li>
+    <li><strong>주요 기관 신작</strong> — meta-llama, google, mistralai, Qwen, deepseek-ai, openai, microsoft, nvidia, stabilityai, black-forest-labs 등 주요 기관이 새로 공개한 모델</li>
+  </ul>
+  <p>각 글의 <code>reason</code> 태그(예: <code>trending</code>, <code>rising</code>, <code>major-org</code>)로 어떤 기준에 해당했는지 확인할 수 있습니다.</p>
+  <h2>데이터 출처</h2>
+  <p>모든 데이터는 인증 없이 사용할 수 있는 Hugging Face 공개 API(<code>https://huggingface.co/api/models</code>)에서 가져옵니다. 모델 카드 요약(태스크, 파라미터, 라이선스, 링크)은 API 응답을 그대로 반영하며, 정확한 정보는 각 글의 "Hugging Face 에서 보기" 링크에서 확인하세요.</p>
+  <h2>동작 방식</h2>
+  <ul>
+    <li>수집기가 API 응답을 위 기준으로 걸러 <code>content/models/</code> 에 모델별 마크다운 글을 생성합니다. 이미 발행한 모델은 다시 만들지 않습니다.</li>
+    <li>생성기가 마크다운을 읽어 목록, 상세 페이지, RSS, 사이트맵을 포함한 정적 사이트를 빌드합니다.</li>
+    <li>GitHub Pages 에 배포됩니다.</li>
+  </ul>
+  <h2>구독과 기여</h2>
+  <p><a href="../feed.xml">RSS 피드</a>로 새 모델 소식을 구독할 수 있습니다. 소스 코드와 기여 방법은 <a href="{{repo_url}}" rel="noopener">GitHub 저장소</a>를 참고하세요.</p>
+</article>
