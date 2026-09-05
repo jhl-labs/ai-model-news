@@ -1,0 +1,9 @@
+# 빌드 산출물
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.DS_Store
+*.log
+tmp/
