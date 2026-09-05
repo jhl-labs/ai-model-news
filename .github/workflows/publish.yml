@@ -3,6 +3,8 @@
 # - 매일 21:00 UTC(06:00 KST) 스케줄 실행, main push, 수동 실행(workflow_dispatch)
 # - collect: 단위 테스트 → scripts/collect.py 로 새 모델 글 생성 → 봇 계정으로 커밋·push
 #   (GITHUB_TOKEN 으로 push 한 커밋은 다른 워크플로를 다시 트리거하지 않는다)
+#   main push 이벤트에서는 수집·커밋 스텝을 건너뛰고 테스트·검증 빌드만 수행한다
+#   (수집은 schedule 과 workflow_dispatch 에서만 실행, push 는 빌드·배포만 다시 수행)
 # - deploy : 갱신된 main 을 다시 받아 scripts/build.py 로 dist/ 를 만들고 Pages 에 배포
 name: publish
 
@@ -36,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     outputs:
-      new_count: ${{ steps.collect.outputs.new_count }}
+      new_count: ${{ steps.collect.outputs.new_count || '0' }}  # push 이벤트(스텝 skipped)에서는 0
     steps:
       - uses: actions/checkout@v4
         with:
@@ -51,6 +53,7 @@ jobs:
 
       - name: Hugging Face 모델 수집
         id: collect
+        if: github.event_name != 'push'
         run: |
           set -o pipefail
           python3 scripts/collect.py \
@@ -63,6 +66,7 @@ jobs:
         run: python3 scripts/build.py --content-dir content/models --out /tmp/verify-dist
 
       - name: 변경 사항 커밋 및 push
+        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
