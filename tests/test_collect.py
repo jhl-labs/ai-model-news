@@ -219,6 +219,35 @@ class HelperTests(unittest.TestCase):
                 collect.default_fetcher("https://example.invalid/y")
         self.assertEqual(opener.call_count, 2)
 
+    def test_fetch_readme_returns_empty_on_fetch_error(self):
+        def missing(url):
+            raise RuntimeError("fetch failed: %s (HTTP 404)" % url)
+        err = io.StringIO()
+        with mock.patch("sys.stderr", err):
+            self.assertEqual(collect.fetch_readme("a/b", missing), "")
+        self.assertIn("README unavailable", err.getvalue())
+
+    def test_gather_candidates_merges_listings_and_ranks_trending(self):
+        def fetcher(url):
+            if "sort=trendingScore" in url:
+                return json.dumps([model("t/one"), model("t/two")])
+            if "sort=likes" in url:
+                return json.dumps([model("t/one", likes=999), model("l/only")])
+            if "sort=downloads" in url:
+                raise RuntimeError("offline")
+            if "author=" in url:
+                return json.dumps([model("o/only")]) if "author=Qwen" in url else "[]"
+            raise RuntimeError("unexpected url %s" % url)
+        err = io.StringIO()
+        with mock.patch("sys.stderr", err):
+            seen = collect.gather_candidates(fetcher, collect.DEFAULT_CONFIG)
+        by_id = {m["id"]: m for m in seen}
+        self.assertEqual(sorted(by_id), ["l/only", "o/only", "t/one", "t/two"])
+        self.assertEqual(by_id["t/one"]["trending_rank"], 1)
+        self.assertEqual(by_id["t/one"]["likes"], 0)  # trending entry wins over later listings
+        self.assertNotIn("trending_rank", by_id["l/only"])
+        self.assertIn("top-downloads listing failed", err.getvalue())
+
 
 class RunTests(unittest.TestCase):
     def setUp(self):
@@ -294,6 +323,22 @@ class RunTests(unittest.TestCase):
                                  "--today", "2026-09-05"])
         self.assertEqual(code, 1)
         self.assertIn("collection failed", err.getvalue())
+
+    def test_run_skips_model_whose_detail_fails_and_records_history_for_all(self):
+        target = "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+
+        def fetcher(url):
+            if url == "%s/%s" % (collect.HF_API, target):
+                raise RuntimeError("fetch failed: %s (HTTP 500)" % url)
+            return fixture_fetcher(url)
+        err = io.StringIO()
+        with mock.patch("sys.stderr", err), redirect_stdout(io.StringIO()):
+            new = collect.run(self.content, self.data, 25, False, TODAY, fetcher=fetcher)
+        self.assertNotIn(target, new)
+        self.assertGreater(len(new), 0)
+        self.assertIn("skipping %s" % target, err.getvalue())
+        history = json.loads((self.data / "stats_history.json").read_text())
+        self.assertIn(target, history)  # history covers every candidate, not only published ones
 
 
 if __name__ == "__main__":

@@ -82,6 +82,13 @@ MAX_TAGS = 30
 
 
 # --- HTTP -------------------------------------------------------------------
+# Exceptions a fetcher/JSON decode step can raise: RuntimeError from
+# default_fetcher, OSError from sockets, ValueError from json.loads.
+FETCH_ERRORS = (RuntimeError, OSError, ValueError)
+# Additionally, a malformed API payload can break rendering.
+POST_ERRORS = FETCH_ERRORS + (KeyError, TypeError, AttributeError)
+
+
 def default_fetcher(url: str) -> str:
     """GET *url* and return the body as text. One retry on failure."""
     last_exc: Exception | None = None
@@ -97,8 +104,8 @@ def default_fetcher(url: str) -> str:
     raise RuntimeError("fetch failed: %s (%s)" % (url, last_exc))
 
 
-def fetch_json(url: str, fetcher=None):
-    fetcher = fetcher or default_fetcher
+def fetch_json(url: str, fetcher):
+    """GET *url* with *fetcher* (always passed explicitly; see run())."""
     return json.loads(fetcher(url))
 
 
@@ -121,7 +128,7 @@ def fetch_model_detail(model_id: str, fetcher) -> dict:
 def fetch_readme(model_id: str, fetcher) -> str:
     try:
         return fetcher("%s/%s/raw/main/README.md" % (HF_WEB, model_id))
-    except Exception as exc:  # noqa: BLE001 - README is optional
+    except FETCH_ERRORS as exc:  # README is optional
         print("warning: README unavailable for %s: %s" % (model_id, exc), file=sys.stderr)
         return ""
 
@@ -449,8 +456,8 @@ def save_json(path: Path, data) -> None:
 
 
 # --- main -------------------------------------------------------------------
-def gather_candidates(fetcher, config: dict) -> tuple[list, list]:
-    """Return (candidates, all_seen). Raises when even trending is unavailable."""
+def gather_candidates(fetcher, config: dict) -> list:
+    """Return every model seen across all listings. Raises when even trending is unavailable."""
     trending = list_trending(fetcher, limit=50)
     by_id: dict = {}
     for rank, model in enumerate(trending, start=1):
@@ -472,15 +479,14 @@ def gather_candidates(fetcher, config: dict) -> tuple[list, list]:
     for sort in ("likes", "downloads"):
         try:
             merge(list_top(fetcher, sort, limit=100))
-        except Exception as exc:  # noqa: BLE001
+        except FETCH_ERRORS as exc:
             print("warning: top-%s listing failed: %s" % (sort, exc), file=sys.stderr)
     for org in config["major_orgs"]:
         try:
             merge(list_recent_by_org(org, fetcher, limit=20))
-        except Exception as exc:  # noqa: BLE001
+        except FETCH_ERRORS as exc:
             print("warning: listing for %s failed: %s" % (org, exc), file=sys.stderr)
-    candidates = list(by_id.values())
-    return candidates, candidates
+    return list(by_id.values())
 
 
 def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: dt.date,
@@ -495,7 +501,7 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
     published = load_json(published_path, {"models": {}})
     published.setdefault("models", {})
 
-    candidates, seen = gather_candidates(fetcher, cfg)
+    candidates = gather_candidates(fetcher, cfg)
     selected = select_famous(candidates, history, today, cfg)
 
     new_posts = []
@@ -515,7 +521,7 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
             detail = fetch_model_detail(model_id, fetcher)
             readme = fetch_readme(model_id, fetcher)
             text = render_post(detail, reasons, today.isoformat(), readme)
-        except Exception as exc:  # noqa: BLE001
+        except POST_ERRORS as exc:
             print("warning: skipping %s: %s" % (model_id, exc), file=sys.stderr)
             continue
         content_dir.mkdir(parents=True, exist_ok=True)
@@ -525,7 +531,7 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
         print(post_path)
 
     if not dry_run:
-        update_history(history, seen, today)
+        update_history(history, candidates, today)
         save_json(history_path, history)
         save_json(published_path, published)
     if not new_posts:
@@ -544,7 +550,7 @@ def main(argv=None) -> int:
     today = dt.date.fromisoformat(args.today) if args.today else dt.datetime.now(dt.timezone.utc).date()
     try:
         run(Path(args.content_dir), Path(args.data_dir), args.max_new, args.dry_run, today)
-    except Exception as exc:  # noqa: BLE001
+    except Exception as exc:  # noqa: BLE001 - CLI boundary: any failure must become exit code 1
         print("error: collection failed: %s" % exc, file=sys.stderr)
         return 1
     return 0
