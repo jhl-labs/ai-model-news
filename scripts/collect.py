@@ -6,6 +6,12 @@ The Hugging Face API is used anonymously; no token is ever sent.
 
 Selection criteria (kept as module constants so README can quote them):
 
+  (0) novelty gate - applied to every candidate first. A model must have
+      createdAt within NEW_MODEL_DAYS (60) OR lastModified within
+      RECENT_UPDATE_DAYS (14). Models failing this gate (e.g. years-old
+      classics such as gpt2/bert-base-uncased) are excluded regardless of
+      any other criterion. Passing models get "new" and/or "updated" in
+      their reason list.
   (A) trending  - within the top TRENDING_TOP_N of
                   /api/models?sort=trendingScore
   (B) surge     - compared with the snapshot taken >= SURGE_WINDOW_DAYS ago in

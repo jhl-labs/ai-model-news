@@ -16,13 +16,19 @@ Hugging Face 에 등장하는 **주목받는 AI 모델 소식만** 골라 자동
 각 글은 모델 카드 요약(태스크, 파라미터 수, 라이선스, 좋아요·다운로드, 원문 링크, 설명 요약)과 선정 이유를 담습니다.
 다음 기준 중 하나 이상을 만족하는 모델만 발행합니다. 값은 모두 `scripts/collect.py` 상단의 상수입니다.
 
+모든 경로의 공통 조건(신규성 게이트): **최근 60일 내 최초 공개(`createdAt`) 또는 14일 내 의미 있는 갱신(`lastModified`)**. 이 조건을 만족하지 못하면 트렌딩·급상승·주요 기관 여부와 상관없이 발행하지 않습니다. 고전 모델(gpt2, bert-base-uncased 등)은 신규성이 없어 제외됩니다.
+
 | 기준 | `reason` 태그 | 조건 |
 | --- | --- | --- |
+| 신규 모델 | `new` | `createdAt` 이 now 기준 60일 이내 |
+| 최근 갱신 | `updated` | `lastModified` 가 14일 이내 |
 | 트렌딩 상위 | `trending` | `/api/models?sort=trendingScore` 상위 30위 이내 |
 | 최근 7일 급상승 | `surge` | 7일 전 스냅샷 대비 좋아요 +200 이상, 또는 다운로드 2배 이상(절대치 10,000 이상). 비교할 이력이 없는 첫 실행에서는 생성 7일 이내이면서 좋아요 100 또는 다운로드 10,000 이상 |
 | 주요 기관 신작 | `major-org` | meta-llama, google, mistralai, Qwen, deepseek-ai, openai, microsoft, nvidia, stabilityai, black-forest-labs 등 주요 기관이 30일 이내 공개했고 좋아요 20 이상 |
 
-제외: 주요 기관이 아닌 곳의 GGUF 재업로드, `pipeline_tag` 와 태그가 모두 없는 모델. 이미 발행한 모델은 다시 발행하지 않습니다.
+선정된 모델의 `reason` 에는 신규성 태그(`new` 또는 `updated`)가 항상 포함되며, 추가로 `trending`·`surge`·`major-org` 중 만족하는 항목이 붙습니다.
+
+제외: 주요 기관이 아닌 곳의 GGUF 재업로드, `pipeline_tag` 와 태그가 모두 없는 모델, `createdAt`/`lastModified` 모두 없는 모델. 이미 발행한 모델은 다시 발행하지 않습니다.
 
 ## 동작 방식
 

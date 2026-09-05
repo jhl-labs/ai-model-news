@@ -75,20 +75,8 @@
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "published_at": "2026-09-05",
    "slug": "deepseek-ai__DeepSeek-V4-Pro-0813"
-  },
-  "distilbert/distilbert-base-uncased": {
-   "published_at": "2026-09-05",
-   "slug": "distilbert__distilbert-base-uncased"
-  },
-  "facebook/mms-300m": {
-   "published_at": "2026-09-05",
-   "slug": "facebook__mms-300m"
-  },
-  "google-bert/bert-base-uncased": {
-   "published_at": "2026-09-05",
-   "slug": "google-bert__bert-base-uncased"
-  },
-  "google/timesfm-3.0-pytorch": {
+   },
+   "google/timesfm-3.0-pytorch": {
    "published_at": "2026-09-05",
    "slug": "google__timesfm-3.0-pytorch"
   },
@@ -120,27 +108,15 @@
    "published_at": "2026-09-05",
    "slug": "nvidia__Nemotron-3-Diarization-preview"
   },
-  "nvidia/Qwen3.8-Flash-Next-NVFP4": {
-   "published_at": "2026-09-05",
-   "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
-  },
-  "openai-community/gpt2": {
-   "published_at": "2026-09-05",
-   "slug": "openai-community__gpt2"
-  },
-  "openai/clip-vit-base-patch32": {
-   "published_at": "2026-09-05",
-   "slug": "openai__clip-vit-base-patch32"
-  },
-  "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
-   "published_at": "2026-09-05",
-   "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
-  },
-  "sentence-transformers/all-MiniLM-L6-v2": {
-   "published_at": "2026-09-05",
-   "slug": "sentence-transformers__all-MiniLM-L6-v2"
-  },
-  "tencent/EVIE-Preview-4.5B": {
+   "nvidia/Qwen3.8-Flash-Next-NVFP4": {
+    "published_at": "2026-09-05",
+    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
+   },
+   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
+    "published_at": "2026-09-05",
+    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+   },
+   "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
    "slug": "tencent__EVIE-Preview-4.5B"
   },
