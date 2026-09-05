@@ -7,8 +7,17 @@ from contextlib import redirect_stdout
 from pathlib import Path
 from unittest import mock
 
+from email.message import Message
+
 from scripts import collect
 from scripts.frontmatter import KEYS, parse_frontmatter, slugify
+
+
+def http_error(url, code, headers=None):
+    msg = Message()
+    for k, v in (headers or {}).items():
+        msg[k] = v
+    return collect.urllib.error.HTTPError(url, code, "status %d" % code, msg, None)
 
 FIXTURES = Path(__file__).parent / "fixtures" / "hf"
 TODAY = dt.date(2026, 9, 5)
@@ -214,10 +223,66 @@ class HelperTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             collect.fetch_json("https://example.invalid/x", flaky)
         self.assertEqual(len(calls), 1)  # retry lives in default_fetcher, injected fetchers are called once
+        sleep = mock.Mock()
         with mock.patch.object(collect.urllib.request, "urlopen", side_effect=OSError("down")) as opener:
             with self.assertRaises(RuntimeError):
-                collect.default_fetcher("https://example.invalid/y")
-        self.assertEqual(opener.call_count, 2)
+                collect.default_fetcher("https://example.invalid/y", sleep=sleep)
+        self.assertEqual(opener.call_count, collect.RETRY_MAX + 1)  # transient OSError is retried
+        self.assertEqual(sleep.call_count, collect.RETRY_MAX)
+
+    def test_default_fetcher_retries_429_with_backoff_then_succeeds(self):
+        url = "https://example.invalid/429"
+        body = mock.MagicMock()
+        body.__enter__.return_value.read.return_value = b'{"ok": true}'
+        responses = [
+            http_error(url, 429), http_error(url, 503), http_error(url, 500), body,
+        ]
+        sleep = mock.Mock()
+        err = io.StringIO()
+        with mock.patch.object(collect.urllib.request, "urlopen", side_effect=responses) as opener, \
+                mock.patch("sys.stderr", err):
+            self.assertEqual(collect.default_fetcher(url, sleep=sleep), '{"ok": true}')
+        self.assertEqual(opener.call_count, 4)
+        self.assertEqual([c.args[0] for c in sleep.call_args_list], [1.0, 2.0, 4.0])
+        self.assertEqual(err.getvalue().count("warning: retry"), 3)
+
+    def test_default_fetcher_honours_retry_after_header_with_cap(self):
+        url = "https://example.invalid/ra"
+        body = mock.MagicMock()
+        body.__enter__.return_value.read.return_value = b"[]"
+        responses = [
+            http_error(url, 429, {"Retry-After": "7"}),
+            http_error(url, 503, {"Retry-After": "120"}),
+            http_error(url, 429, {"Retry-After": "not-a-number"}),
+            body,
+        ]
+        sleep = mock.Mock()
+        with mock.patch.object(collect.urllib.request, "urlopen", side_effect=responses), \
+                mock.patch("sys.stderr", io.StringIO()):
+            self.assertEqual(collect.default_fetcher(url, sleep=sleep), "[]")
+        # header wins over backoff, is capped at RETRY_MAX_SECONDS, unparsable falls back to backoff
+        self.assertEqual([c.args[0] for c in sleep.call_args_list],
+                         [7.0, collect.RETRY_MAX_SECONDS, 4.0])
+
+    def test_default_fetcher_does_not_retry_404(self):
+        url = "https://example.invalid/missing"
+        sleep = mock.Mock()
+        with mock.patch.object(collect.urllib.request, "urlopen", side_effect=http_error(url, 404)) as opener:
+            with self.assertRaises(RuntimeError) as ctx:
+                collect.default_fetcher(url, sleep=sleep)
+        self.assertEqual(opener.call_count, 1)
+        sleep.assert_not_called()
+        self.assertIn("404", str(ctx.exception))
+
+    def test_default_fetcher_gives_up_after_retry_max(self):
+        url = "https://example.invalid/502"
+        sleep = mock.Mock()
+        with mock.patch.object(collect.urllib.request, "urlopen", side_effect=http_error(url, 502)) as opener, \
+                mock.patch("sys.stderr", io.StringIO()):
+            with self.assertRaises(RuntimeError):
+                collect.default_fetcher(url, sleep=sleep)
+        self.assertEqual(opener.call_count, collect.RETRY_MAX + 1)
+        self.assertEqual([c.args[0] for c in sleep.call_args_list], [1.0, 2.0, 4.0, 8.0])
 
     def test_fetch_readme_returns_empty_on_fetch_error(self):
         def missing(url):

@@ -28,6 +28,7 @@ import datetime as dt
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -42,6 +43,13 @@ HF_API = "https://huggingface.co/api/models"
 HF_WEB = "https://huggingface.co"
 USER_AGENT = "ai-model-news-collector/1.0 (+https://github.com/jhl-labs/ai-model-news)"
 TIMEOUT = 30
+# Retry policy for default_fetcher: HTTP 429/5xx and transient network errors
+# are retried with exponential backoff (1s, 2s, 4s, 8s); a Retry-After header
+# takes precedence but is capped at RETRY_MAX_SECONDS.
+RETRY_MAX = 4
+RETRY_BASE_SECONDS = 1.0
+RETRY_MAX_SECONDS = 30.0
+RETRY_STATUSES = (429, 500, 502, 503, 504)
 
 # --- selection constants ---------------------------------------------------
 TRENDING_TOP_N = 30
@@ -89,18 +97,56 @@ FETCH_ERRORS = (RuntimeError, OSError, ValueError)
 POST_ERRORS = FETCH_ERRORS + (KeyError, TypeError, AttributeError)
 
 
-def default_fetcher(url: str) -> str:
-    """GET *url* and return the body as text. One retry on failure."""
+def _retry_after_seconds(exc: urllib.error.HTTPError) -> float | None:
+    """Parse a numeric Retry-After header; None when absent or not a number."""
+    value = exc.headers.get("Retry-After") if exc.headers is not None else None
+    if value is None:
+        return None
+    try:
+        return max(0.0, float(value.strip()))
+    except ValueError:
+        return None  # HTTP-date form is rare on the HF API; fall back to backoff
+
+
+def _retry_delay(attempt: int, exc: Exception) -> float:
+    """Seconds to wait before retry number *attempt* (0-based)."""
+    delay = RETRY_BASE_SECONDS * (2 ** attempt)
+    if isinstance(exc, urllib.error.HTTPError):
+        hinted = _retry_after_seconds(exc)
+        if hinted is not None:
+            delay = hinted
+    return min(delay, RETRY_MAX_SECONDS)
+
+
+def _is_retryable(exc: Exception) -> bool:
+    if isinstance(exc, urllib.error.HTTPError):
+        return exc.code in RETRY_STATUSES
+    # URLError (DNS, refused, timeout) and other socket-level OSErrors are transient.
+    return isinstance(exc, OSError)
+
+
+def default_fetcher(url: str, sleep=None) -> str:
+    """GET *url* and return the body as text.
+
+    HTTP 429/500/502/503/504 and transient network errors are retried up to
+    RETRY_MAX times with exponential backoff (Retry-After honoured, capped).
+    Other 4xx responses fail immediately. *sleep* is injectable for tests.
+    """
+    sleep = sleep or time.sleep
     last_exc: Exception | None = None
-    for _attempt in range(2):
+    for attempt in range(RETRY_MAX + 1):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
                 return resp.read().decode("utf-8", errors="replace")
-        except (urllib.error.URLError, urllib.error.HTTPError, OSError, ValueError) as exc:
+        except (urllib.error.HTTPError, urllib.error.URLError, OSError) as exc:
             last_exc = exc
-            if isinstance(exc, urllib.error.HTTPError) and exc.code in (401, 403, 404):
-                break  # retrying an auth/not-found error is pointless
+            if not _is_retryable(exc) or attempt >= RETRY_MAX:
+                break
+            delay = _retry_delay(attempt, exc)
+            print("warning: retry %d/%d for %s in %.0fs (%s)"
+                  % (attempt + 1, RETRY_MAX, url, delay, exc), file=sys.stderr)
+            sleep(delay)
     raise RuntimeError("fetch failed: %s (%s)" % (url, last_exc))
 
 
