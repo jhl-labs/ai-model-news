@@ -112,6 +112,7 @@ class BuildTests(TempDirMixin, unittest.TestCase):
         self.assertEqual(posts, [])
         html = (out / "index.html").read_text(encoding="utf-8")
         self.assertIn("아직 수집된 모델이 없습니다", html)
+        self.assertIn('<p class="empty" id="empty-state">', html)
         for name in ("feed.xml", "sitemap.xml", "robots.txt", "404.html", ".nojekyll",
                      "assets/style.css", "assets/app.js", "about/index.html"):
             self.assertTrue((out / name).exists(), name)
@@ -139,7 +140,8 @@ class BuildTests(TempDirMixin, unittest.TestCase):
         self.assertIn('<meta name="color-scheme" content="light dark">', html)
         self.assertIn('type="application/rss+xml"', html)
         self.assertIn(f'<link rel="canonical" href="{SITE_URL}">', html)
-        self.assertNotIn("아직 수집된 모델이 없습니다</p>", html.replace(' hidden', 'HIDDEN'))
+        # 모델이 있으면 빈 상태 안내는 hidden 속성으로 숨겨야 한다(CSS 는 [hidden] 만 숨김).
+        self.assertIn('<p class="empty" id="empty-state" hidden>', html)
 
     def test_detail_pages(self):
         out, posts = self.build_fixtures()
