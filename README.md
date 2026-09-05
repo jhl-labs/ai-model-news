@@ -1,6 +1,6 @@
 # AI Model News
 
-[![Collect & Publish](https://github.com/jhl-labs/ai-model-news/actions/workflows/publish.yml/badge.svg)](https://github.com/jhl-labs/ai-model-news/actions/workflows/publish.yml)
+[![publish](https://github.com/jhl-labs/ai-model-news/actions/workflows/publish.yml/badge.svg)](https://github.com/jhl-labs/ai-model-news/actions/workflows/publish.yml)
 [![CI](https://github.com/jhl-labs/ai-model-news/actions/workflows/ci.yml/badge.svg)](https://github.com/jhl-labs/ai-model-news/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -27,12 +27,12 @@ Hugging Face 에 등장하는 **주목받는 AI 모델 소식만** 골라 자동
 ## 동작 방식
 
 ```
-schedule (매일 01:17 UTC)
+schedule (매일 21:00 UTC, 06:00 KST)
   └─ scripts/collect.py ── Hugging Face 공개 API (인증 없음)
        ├─ content/models/<org>__<name>.md   (모델별 글, 프런트매터 + 마크다운)
        ├─ data/published.json               (발행 이력, 중복 방지)
        └─ data/stats_history.json           (14일치 좋아요·다운로드 스냅샷, 급상승 판정용)
-  └─ git commit & push (github-actions[bot], [skip ci])
+  └─ git commit & push (github-actions[bot]; GITHUB_TOKEN 커밋은 다른 워크플로를 재트리거하지 않음)
   └─ scripts/build.py ── dist/ (index, models/*/, about/, feed.xml, sitemap.xml, robots.txt, 404.html)
   └─ actions/deploy-pages
 ```
