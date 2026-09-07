@@ -64,6 +64,14 @@
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen3.8-Flash-Next-FP8"
   },
+  "Viggle/Viggle-Animate": {
+   "published_at": "2026-09-07",
+   "slug": "Viggle__Viggle-Animate"
+  },
+  "WarmBloodAban/Minimax-h3_Singularity": {
+   "published_at": "2026-09-07",
+   "slug": "WarmBloodAban__Minimax-h3_Singularity"
+  },
   "XHToken/Spark-X2.5-4B": {
    "published_at": "2026-09-05",
    "slug": "XHToken__Spark-X2.5-4B"
@@ -115,6 +123,10 @@
   "nvidia/Qwen3.8-Flash-Next-NVFP4": {
    "published_at": "2026-09-05",
    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
+  },
+  "openbmb/MiniCPM5-2B": {
+   "published_at": "2026-09-07",
+   "slug": "openbmb__MiniCPM5-2B"
   },
   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
    "published_at": "2026-09-05",
