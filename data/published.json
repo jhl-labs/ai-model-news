@@ -100,6 +100,10 @@
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-3b"
   },
+  "ibm-granite/granite-4.2-3b-GGUF": {
+   "published_at": "2026-09-08",
+   "slug": "ibm-granite__granite-4.2-3b-GGUF"
+  },
   "ibm-granite/granite-4.2-8b": {
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-8b"
@@ -131,6 +135,10 @@
   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
    "published_at": "2026-09-05",
    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+  },
+  "tencent/ContextPilot-14B": {
+   "published_at": "2026-09-08",
+   "slug": "tencent__ContextPilot-14B"
   },
   "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
