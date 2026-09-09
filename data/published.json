@@ -116,6 +116,14 @@
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-7B"
   },
+  "nex-agi/Nex-N2.5-Pro": {
+   "published_at": "2026-09-09",
+   "slug": "nex-agi__Nex-N2.5-Pro"
+  },
+  "nex-agi/Nex-N2.5-mini": {
+   "published_at": "2026-09-09",
+   "slug": "nex-agi__Nex-N2.5-mini"
+  },
   "nvidia/DeepSeek-V4-Flash-0731-NVFP4": {
    "published_at": "2026-09-05",
    "slug": "nvidia__DeepSeek-V4-Flash-0731-NVFP4"
@@ -123,6 +131,10 @@
   "nvidia/Nemotron-3-Diarization-preview": {
    "published_at": "2026-09-05",
    "slug": "nvidia__Nemotron-3-Diarization-preview"
+  },
+  "nvidia/Qwen3.8-27B-NVFP4": {
+   "published_at": "2026-09-09",
+   "slug": "nvidia__Qwen3.8-27B-NVFP4"
   },
   "nvidia/Qwen3.8-Flash-Next-NVFP4": {
    "published_at": "2026-09-05",
