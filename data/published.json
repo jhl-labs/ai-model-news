@@ -64,6 +64,10 @@
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen3.8-Flash-Next-FP8"
   },
+  "TokenRhythm/NeoHorse-1-4B": {
+   "published_at": "2026-09-10",
+   "slug": "TokenRhythm__NeoHorse-1-4B"
+  },
   "Viggle/Viggle-Animate": {
    "published_at": "2026-09-07",
    "slug": "Viggle__Viggle-Animate"
@@ -87,6 +91,10 @@
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "published_at": "2026-09-05",
    "slug": "deepseek-ai__DeepSeek-V4-Pro-0813"
+  },
+  "deepseek-ai/DeepSeek-V4.1-Flash": {
+   "published_at": "2026-09-10",
+   "slug": "deepseek-ai__DeepSeek-V4.1-Flash"
   },
   "google/timesfm-3.0-pytorch": {
    "published_at": "2026-09-05",
@@ -128,6 +136,10 @@
    "published_at": "2026-09-05",
    "slug": "nvidia__DeepSeek-V4-Flash-0731-NVFP4"
   },
+  "nvidia/GLM-5.3-Flash-NVFP4": {
+   "published_at": "2026-09-10",
+   "slug": "nvidia__GLM-5.3-Flash-NVFP4"
+  },
   "nvidia/Nemotron-3-Diarization-preview": {
    "published_at": "2026-09-05",
    "slug": "nvidia__Nemotron-3-Diarization-preview"
@@ -147,6 +159,14 @@
   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
    "published_at": "2026-09-05",
    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+  },
+  "tencent/AuK": {
+   "published_at": "2026-09-10",
+   "slug": "tencent__AuK"
+  },
+  "tencent/AuK-Flash": {
+   "published_at": "2026-09-10",
+   "slug": "tencent__AuK-Flash"
   },
   "tencent/ContextPilot-14B": {
    "published_at": "2026-09-08",
