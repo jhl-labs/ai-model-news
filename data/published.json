@@ -8,6 +8,10 @@
    "published_at": "2026-09-05",
    "slug": "CohereLabs__North-Micro-Vision-Instruct"
   },
+  "CohereLabs/North-Small-Translate-1.0": {
+   "published_at": "2026-09-11",
+   "slug": "CohereLabs__North-Small-Translate-1.0"
+  },
   "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree": {
    "published_at": "2026-09-05",
    "slug": "FastVideo__FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree"
@@ -116,6 +120,10 @@
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-8b"
   },
+  "m-a-p/YuE2-3B": {
+   "published_at": "2026-09-11",
+   "slug": "m-a-p__YuE2-3B"
+  },
   "microsoft/VibeVoice-ASR-Streaming-1.5B": {
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-1.5B"
@@ -159,6 +167,10 @@
   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
    "published_at": "2026-09-05",
    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+  },
+  "phasefield-audio/Irodori-TTS-v4.1-Anime": {
+   "published_at": "2026-09-11",
+   "slug": "phasefield-audio__Irodori-TTS-v4.1-Anime"
   },
   "tencent/AuK": {
    "published_at": "2026-09-10",
