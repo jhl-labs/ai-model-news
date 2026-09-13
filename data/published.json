@@ -1,5 +1,9 @@
 {
  "models": {
+  "Agnes-AI/Agnes-3.0-Flash": {
+   "published_at": "2026-09-13",
+   "slug": "Agnes-AI__Agnes-3.0-Flash"
+  },
   "BreezeBlue/Breeze-TTS-2": {
    "published_at": "2026-09-05",
    "slug": "BreezeBlue__Breeze-TTS-2"
@@ -187,6 +191,10 @@
   "tencent/ContextPilot-14B": {
    "published_at": "2026-09-08",
    "slug": "tencent__ContextPilot-14B"
+  },
+  "tencent/EVIE-4.5B": {
+   "published_at": "2026-09-13",
+   "slug": "tencent__EVIE-4.5B"
   },
   "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
