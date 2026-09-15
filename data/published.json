@@ -4,6 +4,10 @@
    "published_at": "2026-09-13",
    "slug": "Agnes-AI__Agnes-3.0-Flash"
   },
+  "Alissonerdx/Minimax-H3-ComfyUI": {
+   "published_at": "2026-09-15",
+   "slug": "Alissonerdx__Minimax-H3-ComfyUI"
+  },
   "BreezeBlue/Breeze-TTS-2": {
    "published_at": "2026-09-05",
    "slug": "BreezeBlue__Breeze-TTS-2"
@@ -136,6 +140,10 @@
    "published_at": "2026-09-11",
    "slug": "m-a-p__YuE2-3B"
   },
+  "microsoft/VibeVoice-ASR-BitNet": {
+   "published_at": "2026-09-15",
+   "slug": "microsoft__VibeVoice-ASR-BitNet"
+  },
   "microsoft/VibeVoice-ASR-Streaming-1.5B": {
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-1.5B"
@@ -200,6 +208,10 @@
    "published_at": "2026-09-13",
    "slug": "tencent__EVIE-4.5B"
   },
+  "tencent/EVIE-8B": {
+   "published_at": "2026-09-15",
+   "slug": "tencent__EVIE-8B"
+  },
   "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
    "slug": "tencent__EVIE-Preview-4.5B"
@@ -231,6 +243,10 @@
   "tencent/WeMM-Embedding-9B": {
    "published_at": "2026-09-05",
    "slug": "tencent__WeMM-Embedding-9B"
+  },
+  "ukisai/Swift-Qwen3.8-27b": {
+   "published_at": "2026-09-15",
+   "slug": "ukisai__Swift-Qwen3.8-27b"
   },
   "zai-org/GLM-5.3": {
    "published_at": "2026-09-05",
