@@ -20,6 +20,10 @@
    "published_at": "2026-09-11",
    "slug": "CohereLabs__North-Small-Translate-1.0"
   },
+  "Comfy-Org/YuE2": {
+   "published_at": "2026-09-16",
+   "slug": "Comfy-Org__YuE2"
+  },
   "Edge0/Edge0-35B-A3B-preview": {
    "published_at": "2026-09-12",
    "slug": "Edge0__Edge0-35B-A3B-preview"
@@ -135,6 +139,10 @@
   "ibm-granite/granite-4.2-8b": {
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-8b"
+  },
+  "ibm-granite/granite-timeseries-patchtst-fm-r2": {
+   "published_at": "2026-09-16",
+   "slug": "ibm-granite__granite-timeseries-patchtst-fm-r2"
   },
   "m-a-p/YuE2-3B": {
    "published_at": "2026-09-11",
