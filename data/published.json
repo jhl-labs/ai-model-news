@@ -84,6 +84,10 @@
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen3.8-Flash-Next-FP8"
   },
+  "TaichuAI/ZDTaichu5.0-9B": {
+   "published_at": "2026-09-17",
+   "slug": "TaichuAI__ZDTaichu5.0-9B"
+  },
   "TokenRhythm/NeoHorse-1-4B": {
    "published_at": "2026-09-10",
    "slug": "TokenRhythm__NeoHorse-1-4B"
@@ -123,6 +127,10 @@
   "google/timesfm-3.0-pytorch": {
    "published_at": "2026-09-05",
    "slug": "google__timesfm-3.0-pytorch"
+  },
+  "harshatheg/Qwen-2.5-1B-RLCD": {
+   "published_at": "2026-09-17",
+   "slug": "harshatheg__Qwen-2.5-1B-RLCD"
   },
   "ibm-granite/granite-4.2-30b": {
    "published_at": "2026-09-05",
@@ -171,6 +179,10 @@
   "nvidia/DeepSeek-V4-Flash-0731-NVFP4": {
    "published_at": "2026-09-05",
    "slug": "nvidia__DeepSeek-V4-Flash-0731-NVFP4"
+  },
+  "nvidia/DeepSeek-V4.1-Flash-NVFP4": {
+   "published_at": "2026-09-17",
+   "slug": "nvidia__DeepSeek-V4.1-Flash-NVFP4"
   },
   "nvidia/GLM-5.3-Flash-NVFP4": {
    "published_at": "2026-09-10",
