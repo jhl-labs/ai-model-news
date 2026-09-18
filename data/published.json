@@ -92,6 +92,10 @@
    "published_at": "2026-09-10",
    "slug": "TokenRhythm__NeoHorse-1-4B"
   },
+  "TokenRhythm/NeoHorse-1-9B": {
+   "published_at": "2026-09-18",
+   "slug": "TokenRhythm__NeoHorse-1-9B"
+  },
   "Viggle/Viggle-Animate": {
    "published_at": "2026-09-07",
    "slug": "Viggle__Viggle-Animate"
@@ -103,6 +107,10 @@
   "XHToken/Spark-X2.5-4B": {
    "published_at": "2026-09-05",
    "slug": "XHToken__Spark-X2.5-4B"
+  },
+  "XingChen-AGI/Xing4.0-29B-A4B": {
+   "published_at": "2026-09-18",
+   "slug": "XingChen-AGI__Xing4.0-29B-A4B"
   },
   "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8": {
    "published_at": "2026-09-14",
@@ -151,6 +159,10 @@
   "ibm-granite/granite-timeseries-patchtst-fm-r2": {
    "published_at": "2026-09-16",
    "slug": "ibm-granite__granite-timeseries-patchtst-fm-r2"
+  },
+  "internlm/Atria-Dawn-Preview": {
+   "published_at": "2026-09-18",
+   "slug": "internlm__Atria-Dawn-Preview"
   },
   "m-a-p/YuE2-3B": {
    "published_at": "2026-09-11",
@@ -212,6 +224,10 @@
    "published_at": "2026-09-11",
    "slug": "phasefield-audio__Irodori-TTS-v4.1-Anime"
   },
+  "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit": {
+   "published_at": "2026-09-18",
+   "slug": "prism-ml__Ternary-Bonsai-2-27B-mlx-2bit"
+  },
   "tencent/AuK": {
    "published_at": "2026-09-10",
    "slug": "tencent__AuK"
@@ -263,6 +279,10 @@
   "tencent/WeMM-Embedding-9B": {
    "published_at": "2026-09-05",
    "slug": "tencent__WeMM-Embedding-9B"
+  },
+  "tencent/WeVisDoc-4B": {
+   "published_at": "2026-09-18",
+   "slug": "tencent__WeVisDoc-4B"
   },
   "ukisai/Swift-Qwen3.8-27b": {
    "published_at": "2026-09-15",
