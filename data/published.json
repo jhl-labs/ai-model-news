@@ -24,6 +24,10 @@
    "published_at": "2026-09-11",
    "slug": "CohereLabs__North-Small-Translate-1.0"
   },
+  "Comfy-Org/Qwen-Image-2.1": {
+   "published_at": "2026-09-20",
+   "slug": "Comfy-Org__Qwen-Image-2.1"
+  },
   "Comfy-Org/YuE2": {
    "published_at": "2026-09-16",
    "slug": "Comfy-Org__YuE2"
@@ -71,6 +75,14 @@
   "Qwen/Qwen-Drive-1.0-4B": {
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen-Drive-1.0-4B"
+  },
+  "Qwen/Qwen-Image-2.1": {
+   "published_at": "2026-09-20",
+   "slug": "Qwen__Qwen-Image-2.1"
+  },
+  "Qwen/Qwen-Image-2.1-PE-I2I": {
+   "published_at": "2026-09-20",
+   "slug": "Qwen__Qwen-Image-2.1-PE-I2I"
   },
   "Qwen/Qwen3.8-2.4T-A95B": {
    "published_at": "2026-09-05",
