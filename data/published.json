@@ -12,9 +12,17 @@
    "published_at": "2026-09-15",
    "slug": "Alissonerdx__Minimax-H3-ComfyUI"
   },
+  "Altworld/Hemmingway-1": {
+   "published_at": "2026-09-21",
+   "slug": "Altworld__Hemmingway-1"
+  },
   "BreezeBlue/Breeze-TTS-2": {
    "published_at": "2026-09-05",
    "slug": "BreezeBlue__Breeze-TTS-2"
+  },
+  "Cactus-Compute/needle3": {
+   "published_at": "2026-09-21",
+   "slug": "Cactus-Compute__needle3"
   },
   "CohereLabs/North-Micro-Vision-Instruct": {
    "published_at": "2026-09-05",
@@ -83,6 +91,10 @@
   "Qwen/Qwen-Image-2.1-PE-I2I": {
    "published_at": "2026-09-20",
    "slug": "Qwen__Qwen-Image-2.1-PE-I2I"
+  },
+  "Qwen/Qwen-Image-2.1-PE-T2I": {
+   "published_at": "2026-09-21",
+   "slug": "Qwen__Qwen-Image-2.1-PE-T2I"
   },
   "Qwen/Qwen3.8-2.4T-A95B": {
    "published_at": "2026-09-05",
@@ -208,6 +220,10 @@
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-7B"
   },
+  "netease-youdao/Confucius4-R2T2": {
+   "published_at": "2026-09-21",
+   "slug": "netease-youdao__Confucius4-R2T2"
+  },
   "nex-agi/Nex-N2.5-Pro": {
    "published_at": "2026-09-09",
    "slug": "nex-agi__Nex-N2.5-Pro"
@@ -315,6 +331,10 @@
   "ukisai/Swift-Qwen3.8-27b": {
    "published_at": "2026-09-15",
    "slug": "ukisai__Swift-Qwen3.8-27b"
+  },
+  "yandex/AliceAI-Foundation-80B-A3B-Base": {
+   "published_at": "2026-09-21",
+   "slug": "yandex__AliceAI-Foundation-80B-A3B-Base"
   },
   "zai-org/GLM-5.3": {
    "published_at": "2026-09-05",
