@@ -51,6 +51,9 @@ jobs:
       - name: 단위 테스트
         run: python3 -m unittest discover -s tests -t . -v
 
+      - name: Browser script regression tests
+        run: node --test tests/test_app.cjs
+
       - name: Hugging Face 모델 수집
         id: collect
         if: github.event_name != 'push'

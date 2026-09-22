@@ -13,9 +13,10 @@
 
 ```bash
 python3 -m unittest discover -s tests -t . -v
+node --test tests/test_app.cjs
 ```
 
-모든 단위 테스트가 통과하는지 확인합니다.
+모든 단위 테스트가 통과하는지 확인합니다. 브라우저 스크립트 회귀 테스트는 Node.js 20 이상에서 추가 패키지 없이 실행하며, 사이트 실행·빌드는 계속 Python 표준 라이브러리만 사용합니다.
 
 ## 수집기 실행 (드라이 런)
 

@@ -121,6 +121,13 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn("<strong>bold</strong>", out)
         self.assertIn("<code>code&lt;b&gt;</code>", out)
 
+    def test_emphasis_preserves_link_destination(self):
+        self.assertEqual(build.render_inline('[**docs**](https://example.org/**path**)'),
+                         '<a href="https://example.org/**path**"><strong>docs</strong></a>')
+        self.assertEqual(build.render_inline('**[docs](https://example.org/a?x=1&y=2)**'),
+                         '<strong><a href="https://example.org/a?x=1&amp;y=2">docs</a></strong>')
+        self.assertNotIn('javascript:', build.render_inline('**[x](javascript:bad)**'))
+
     def test_escape_xss(self):
         out = build.markdown_to_html('<script>alert(1)</script> [x](javascript:alert(1))')
         self.assertNotIn("<script>", out)

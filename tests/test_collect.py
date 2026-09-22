@@ -599,6 +599,38 @@ class RunTests(unittest.TestCase):
         self.assertIn(target, history)  # history covers every candidate, not only published ones
 
 
+class AtomicPersistenceTests(unittest.TestCase):
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.path = Path(temporary.name) / "state.json"
+        self.path.write_text('{"old": true}\n', encoding="utf-8")
+
+    def test_serialization_failure_preserves_existing_file(self):
+        with self.assertRaises(TypeError):
+            collect.save_json(self.path, {"bad": object()})
+        self.assertEqual(json.loads(self.path.read_text()), {"old": True})
+
+    def test_replace_failure_preserves_file_and_cleans_temporary(self):
+        with mock.patch.object(collect.os, "replace", side_effect=OSError("disk error")):
+            with self.assertRaises(OSError):
+                collect.save_json(self.path, {"new": True})
+        self.assertEqual(json.loads(self.path.read_text()), {"old": True})
+        self.assertEqual(list(self.path.parent.iterdir()), [self.path])
+
+    def test_write_failure_preserves_file_and_cleans_temporary(self):
+        with mock.patch.object(collect.os, "fsync", side_effect=OSError("disk error")):
+            with self.assertRaises(OSError):
+                collect.atomic_write_text(self.path, "replacement")
+        self.assertEqual(json.loads(self.path.read_text()), {"old": True})
+        self.assertEqual(list(self.path.parent.iterdir()), [self.path])
+
+    def test_successfully_replaces_complete_json(self):
+        collect.save_json(self.path, {"new": "모델"})
+        self.assertEqual(json.loads(self.path.read_text()), {"new": "모델"})
+        self.assertEqual(list(self.path.parent.iterdir()), [self.path])
+
+
 class WriteSummaryTests(unittest.TestCase):
     def test_write_summary_format(self):
         md = collect.write_summary({

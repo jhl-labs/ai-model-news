@@ -35,6 +35,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -774,11 +775,26 @@ def load_json(path: Path, default):
     return default
 
 
-def save_json(path: Path, data) -> None:
+def atomic_write_text(path: Path, text: str) -> None:
+    """Replace a file only after the complete new contents have been written."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as fh:
-        json.dump(data, fh, ensure_ascii=False, indent=1, sort_keys=True)
-        fh.write("\n")
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                         prefix="." + path.name + ".", delete=False) as fh:
+            temporary = Path(fh.name)
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(temporary, path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def save_json(path: Path, data) -> None:
+    text = json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + "\n"
+    atomic_write_text(path, text)
 
 
 def _extract_summary_section(body: str) -> str:
@@ -871,7 +887,7 @@ def regenerate_local(posts_dir: Path, published_path: Path, history_path: Path |
             related,
         ])
         new_text = dump_frontmatter(meta, new_body)
-        post_path.write_text(new_text, encoding="utf-8")
+        atomic_write_text(post_path, new_text)
         rewritten.append(post_path.name)
     return rewritten
 
@@ -971,7 +987,7 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
             print("warning: skipping %s: %s" % (model_id, exc), file=sys.stderr)
             continue
         content_dir.mkdir(parents=True, exist_ok=True)
-        post_path.write_text(text, encoding="utf-8")
+        atomic_write_text(post_path, text)
         published["models"][model_id] = {"slug": slug, "published_at": today.isoformat()}
         new_posts.append(model_id)
         print(post_path)

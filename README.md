@@ -73,6 +73,9 @@ Python 3.10 이상이면 충분합니다.
 # 테스트
 python3 -m unittest discover -s tests -t . -v
 
+# 브라우저 스크립트 회귀 테스트 (Node.js 20+, 추가 패키지 없음)
+node --test tests/test_app.cjs
+
 # 수집 (드라이 런: 선정 결과만 출력, 파일은 쓰지 않음. 네트워크 필요)
 python3 scripts/collect.py --dry-run
 

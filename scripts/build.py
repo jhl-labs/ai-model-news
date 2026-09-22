@@ -150,12 +150,17 @@ def render_inline(text: str) -> str:
 
 
 def _render_inline_rest(s: str) -> str:
-    s = _LINK_RE.sub(
-        lambda m: f'<a href="{html.escape(_safe_href(html.unescape(m.group(2))), quote=True)}">{m.group(1)}</a>',
-        s,
-    )
-    s = _BOLD_RE.sub(r"<strong>\1</strong>", s)
-    return s
+    # Consume links as a whole so emphasis never rewrites their href values.
+    tokens = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)|\*\*(.+?)\*\*")
+
+    def replace(match: re.Match[str]) -> str:
+        if match.group(3) is not None:
+            return "<strong>" + _render_inline_rest(match.group(3)) + "</strong>"
+        href = html.escape(_safe_href(html.unescape(match.group(2))), quote=True)
+        label = _BOLD_RE.sub(r"<strong>\1</strong>", match.group(1))
+        return f'<a href="{href}">{label}</a>'
+
+    return tokens.sub(replace, s)
 
 
 def markdown_to_html(md: str) -> str:

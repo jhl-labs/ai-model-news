@@ -69,6 +69,9 @@
   }
 
   function syncControls() {
+    if (!chips.some(function (chip) { return chip.getAttribute("data-task") === state.task; })) {
+      state.task = "";
+    }
     chips.forEach(function (chip) {
       var active = (chip.getAttribute("data-task") || "") === state.task;
       chip.classList.toggle("is-active", active);
@@ -115,17 +118,20 @@
     var timer = null;
     searchInput.addEventListener("input", function () {
       clearTimeout(timer);
-      timer = setTimeout(function () { state.q = searchInput.value; update(); }, 120);
+      state.q = searchInput.value;
+      timer = setTimeout(update, 120);
     });
   }
   if (resetBtn) {
     resetBtn.addEventListener("click", function () {
+      clearTimeout(timer);
       state = { task: "", org: "", q: "" };
       update();
       if (searchInput) searchInput.focus();
     });
   }
   window.addEventListener("hashchange", function () {
+    clearTimeout(timer);
     state = readHash();
     syncControls();
     apply();
