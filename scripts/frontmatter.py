@@ -82,6 +82,9 @@ def dump_frontmatter(meta: dict, body: str) -> str:
     out = [DELIM]
     for key in KEYS:
         out.append("%s: %s" % (key, json.dumps(meta[key], ensure_ascii=False)))
+    for key in ("source", "source_url"):
+        if key in meta:
+            out.append("%s: %s" % (key, json.dumps(meta[key], ensure_ascii=False)))
     out.append(DELIM)
     head = "\n".join(out) + "\n"
     body = (body or "").strip("\n")

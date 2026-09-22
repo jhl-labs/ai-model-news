@@ -16,6 +16,26 @@
    "published_at": "2026-09-21",
    "slug": "Altworld__Hemmingway-1"
   },
+  "Anthropic/claude-fable-5-1": {
+   "published_at": "2026-09-22",
+   "slug": "Anthropic__claude-fable-5-1",
+   "source": "official"
+  },
+  "Anthropic/claude-mythos-5-1": {
+   "published_at": "2026-09-22",
+   "slug": "Anthropic__claude-mythos-5-1",
+   "source": "official"
+  },
+  "Anthropic/claude-opus-5": {
+   "published_at": "2026-09-22",
+   "slug": "Anthropic__claude-opus-5",
+   "source": "official"
+  },
+  "Anthropic/claude-opus-5-5": {
+   "published_at": "2026-09-22",
+   "slug": "Anthropic__claude-opus-5-5",
+   "source": "official"
+  },
   "BreezeBlue/Breeze-TTS-2": {
    "published_at": "2026-09-05",
    "slug": "BreezeBlue__Breeze-TTS-2"

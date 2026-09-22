@@ -4,17 +4,25 @@
 [![CI](https://github.com/jhl-labs/ai-model-news/actions/workflows/ci.yml/badge.svg)](https://github.com/jhl-labs/ai-model-news/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Hugging Face 에 등장하는 **주목받는 AI 모델 소식만** 골라 자동으로 수집·발행하는 기술 블로그입니다.
-사람 손을 거치지 않고 GitHub Actions 스케줄이 매일 Hugging Face 공개 API 를 조회해 새 글을 만들고,
+**Anthropic 공식 모델 출시와 Hugging Face의 주목받는 모델 소식**을 자동으로 수집·발행하는 기술 블로그입니다.
+GitHub Actions 스케줄이 매일 Anthropic 공식 릴리스 노트와 Hugging Face 공개 API를 조회해 새 글을 만들고,
 정적 사이트를 다시 빌드해 GitHub Pages 에 배포합니다.
 
 - 사이트: <https://jhl-labs.github.io/ai-model-news/>
 - RSS: <https://jhl-labs.github.io/ai-model-news/feed.xml>
 - 변경 이력: [CHANGELOG.md](CHANGELOG.md)
 
+## 공식 출시 감지
+
+`python3 scripts/collect_official.py`는 Anthropic 공식 릴리스 노트의 날짜가 있는 모델 출시 제목을 감지합니다. 최근 60일의 출시만 처리하며, 본문의 비교 대상·출시 예정 언급은 제외합니다. 같은 모델은 발행 이력으로 중복을 방지합니다. `--dry-run`과 `--max-new`를 지원합니다.
+
+공식 발표 글은 `source: "official"`과 `source_url`을 저장하며 원문 링크와 공식 발표 배지를 표시합니다. Hugging Face 좋아요·다운로드 통계는 미제공으로 표시합니다. 하이라이트는 최근 발견한 공식 발표를 발표일 순으로 우선 표시한 뒤 HF 좋아요 순으로 채웁니다. `--regenerate`는 공식 발표 글을 변경하지 않습니다.
+
+자동 발행은 기존 매일 06:00 KST 스케줄에서 실행합니다(실제 시작은 지연될 수 있음). 공식 페이지 구조 변경으로 날짜 항목이 사라지면 실패로 표시합니다. 현재 공식 발표 지원은 **Anthropic**이며, 다른 회사의 API 전용 모델 공식 발표는 아직 수집하지 않습니다. 수동 워크플로의 `max_new`는 공식 발표와 HF 수집에 각각 적용됩니다.
+
 ## 무엇을 발행하나
 
-각 글은 다음 다섯 섹션으로 구성된 본문을 담습니다. 모든 정보는 Hugging Face 공개 API 필드와 published.json 발행 이력에서만 도출하며, API에 없는 정보(성능 벤치마크 등)는 추정하지 않습니다.
+각 글은 다음 다섯 섹션으로 구성된 본문을 담습니다. 아래 다섯 섹션은 HF 모델 글에 적용합니다. 해당 정보는 Hugging Face 공개 API 필드와 published.json 발행 이력에서 도출하며, API에 없는 정보(성능 벤치마크 등)는 추정하지 않습니다.
 
 - **왜 주목받는가** — 선정 이유(reason) 문장과 좋아요·다운로드 수치. `surge` 글에는 7일 전 스냅샷(`data/stats_history.json`) 대비 "좋아요 A→B(+C%), 다운로드 D→E(+F%)" 증분을, 스냅샷이 없으면 "스냅샷 정보 없음"을 적습니다. 같은 기관·같은 태스크로 가장 최근 발행된 이전 모델 1개를 찾아 파라미터·다운로드 변화율과 라이선스 동일/변경을 문장으로 생성하고, 없으면 "비교 대상 없음(최초 발행)"으로 명시합니다. 수치는 HF API·저장 스냅샷·기존 글 frontmatter 에서만 가져오며 없으면 "정보 없음"입니다.
 - **핵심 스펙** — 태스크, 파라미터, 라이선스, 최초 등록일, 좋아요, 다운로드를 6행 표로 정리.
@@ -40,7 +48,7 @@ Hugging Face 에 등장하는 **주목받는 AI 모델 소식만** 골라 자동
 
 ### 첫 화면 구성
 
-- **오늘의 하이라이트** — 최근 3일 이내 발행 모델 중 좋아요 상위 3개를 상단에 카드로 노출.
+- **오늘의 하이라이트** — 최근 3일 이내 발견한 공식 발표를 발표일 순으로 우선 노출하고, 나머지는 HF 좋아요 순으로 채워 최대 3개 표시.
 - **이번 주 급상승** — 최근 7일 이내 좋아요/다운로드 급증 모델을 별도 섹션에 정렬.
 - **전체 목록** — 전체 발행 글을 태스크·기관·검색 필터(URL 해시로 공유 가능)로 탐색 가능한 카드 그리드.
 - **배지** — 카드에 신규(`new`)·갱신(`updated`)·급상승(`surge`) 배지와 "며칠 전" 상대 시각을 표시.

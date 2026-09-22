@@ -61,8 +61,9 @@ jobs:
           MAX_NEW: ${{ github.event.inputs.max_new || '25' }}
         run: |
           set -o pipefail
+          python3 scripts/collect_official.py --max-new "$MAX_NEW" | tee collect.log
           python3 scripts/collect.py \
-            --max-new "$MAX_NEW" | tee collect.log
+            --max-new "$MAX_NEW" | tee -a collect.log
           count=$(grep -c '^content/models/.*\.md$' collect.log || true)
           echo "new_count=${count}" >> "$GITHUB_OUTPUT"
           echo "새로 발행한 모델: ${count}개"

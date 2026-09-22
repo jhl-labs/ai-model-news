@@ -843,6 +843,8 @@ def regenerate_local(posts_dir: Path, published_path: Path, history_path: Path |
         except ValueError as exc:
             print("warning: skip %s: %s" % (post_path.name, exc), file=sys.stderr)
             continue
+        if meta.get("source") == "official":
+            continue  # Official announcements have their own body and no HF statistics.
         reasons = [r.strip() for r in (meta.get("reason") or "").split(",") if r.strip()]
         # frontmatter 에는 slug 가 없으므로 model_id 로부터 복원.
         meta_for_render = dict(meta)

@@ -33,9 +33,9 @@ TEMPLATES_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 
 SITE_NAME = "AI Model News"
-SITE_TAGLINE = "Hugging Face 에서 주목받는 모델 소식"
+SITE_TAGLINE = "공식 출시 발표와 Hugging Face 모델 소식"
 SITE_DESCRIPTION = (
-    "Hugging Face 에서 트렌딩·급상승·주요 기관 신작으로 주목받는 AI 모델 소식을 "
+    "Anthropic 공식 출시 발표와 Hugging Face에서 주목받는 AI 모델 소식을 "
     "매일 자동으로 수집해 전하는 기술 블로그"
 )
 DEFAULT_SITE_URL = "https://jhl-labs.github.io/ai-model-news/"
@@ -112,10 +112,14 @@ def parse_post(path: Path | str) -> dict[str, Any]:
     if slugify(meta["model_id"]) in ("", ".", ".."):
         raise ValueError(f"{path}: unsafe or empty model slug")
 
+    for key in ("source", "source_url"):
+        if key in meta and not isinstance(meta[key], str):
+            raise ValueError(f"{path}: {key!r} must be a string")
     post = dict(meta)
     post["body"] = "\n".join(lines[end + 1:]).strip("\n")
     post["slug"] = slugify(post["model_id"])
-    post["source"] = str(path.name)
+    post["source"] = meta.get("source", "huggingface")
+    post["source_file"] = str(path.name)
     return post
 
 
@@ -354,6 +358,8 @@ def card_badges(post: dict[str, Any], build_date: str) -> list[tuple[str, str]]:
     """Return [(css_class, label), ...] for a post card."""
     badges: list[tuple[str, str]] = []
     reasons = [r.strip() for r in post.get("reason", "").split(",") if r.strip()]
+    if post.get("source") == "official":
+        badges.append(("badge-updated", "공식 발표"))
     if "new" in reasons:
         badges.append(("badge-new", "신규"))
     if "updated" in reasons:
@@ -392,10 +398,10 @@ def render_card(post: dict[str, Any], build_date: str = "") -> str:
         model_id=esc(post["model_id"]),
         params=params,
         license=esc(post["license"]),
-        likes=esc(format_count(post["likes"])),
-        likes_full=esc(f"{post['likes']:,}"),
-        downloads=esc(format_count(post["downloads"])),
-        downloads_full=esc(f"{post['downloads']:,}"),
+        likes="—" if post.get("source") == "official" else esc(format_count(post["likes"])),
+        likes_full="미제공" if post.get("source") == "official" else esc(f"{post['likes']:,}"),
+        downloads="—" if post.get("source") == "official" else esc(format_count(post["downloads"])),
+        downloads_full="미제공" if post.get("source") == "official" else esc(f"{post['downloads']:,}"),
         discovered_at=esc(post["discovered_at"]),
         relative_date=esc(rel),
         badges=badges_html,
@@ -429,7 +435,12 @@ def render_index(posts: list[dict[str, Any]], site_url: str, build_date: str) ->
         p for p in posts
         if 0 <= (bdate - dt.date.fromisoformat(p["discovered_at"])).days <= 3
     ]
-    highlight_posts = sorted(highlight_pool, key=lambda p: p["likes"], reverse=True)[:3]
+    highlight_posts = sorted(
+        highlight_pool,
+        key=lambda p: (p.get("source") == "official",
+                       p["created_at"] if p.get("source") == "official" else "", p["likes"]),
+        reverse=True,
+    )[:3]
 
     # 급상승: 최근 7일 발행 글 중 reason 에 "surge" 포함, likes 상위 5개.
     surge_posts = [
@@ -500,11 +511,12 @@ def render_detail(post: dict[str, Any], prev_post: dict[str, Any] | None,
         task=esc(post["task"]),
         params=esc(post["params"]) if post["params"] else "—",
         license=esc(post["license"]),
-        likes=esc(f"{post['likes']:,}"),
-        downloads=esc(f"{post['downloads']:,}"),
+        likes="미제공" if post.get("source") == "official" else esc(f"{post['likes']:,}"),
+        downloads="미제공" if post.get("source") == "official" else esc(f"{post['downloads']:,}"),
         created_at=esc(post["created_at"]) if post["created_at"] else "—",
         discovered_at=esc(post["discovered_at"]),
-        hf_url=esc(_safe_href(post["hf_url"])),
+        hf_url=esc(_safe_href(post.get("source_url") or post["hf_url"])),
+        source_label="공식 발표 보기" if post.get("source") == "official" else "Hugging Face 에서 보기",
         content=markdown_to_html(post["body"]) or "<p>본문이 없습니다.</p>",
         tags=tags_html,
         reasons=reason_html,
