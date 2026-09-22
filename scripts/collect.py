@@ -167,15 +167,15 @@ def fetch_json(url: str, fetcher):
 
 
 def list_trending(fetcher, limit: int = 50) -> list:
-    return fetch_json("%s?sort=trendingScore&direction=-1&limit=%d" % (HF_API, limit), fetcher)
+    return fetch_json("%s?sort=trendingScore&direction=-1&full=true&limit=%d" % (HF_API, limit), fetcher)
 
 
 def list_top(fetcher, sort: str, limit: int = 100) -> list:
-    return fetch_json("%s?sort=%s&direction=-1&limit=%d" % (HF_API, sort, limit), fetcher)
+    return fetch_json("%s?sort=%s&direction=-1&full=true&limit=%d" % (HF_API, sort, limit), fetcher)
 
 
 def list_recent_by_org(org: str, fetcher, limit: int = 20) -> list:
-    return fetch_json("%s?author=%s&sort=lastModified&direction=-1&limit=%d" % (HF_API, org, limit), fetcher)
+    return fetch_json("%s?author=%s&sort=lastModified&direction=-1&full=true&limit=%d" % (HF_API, org, limit), fetcher)
 
 
 def fetch_model_detail(model_id: str, fetcher) -> dict:
@@ -386,8 +386,8 @@ def select_famous(candidates: list, history: dict, now: dt.date, config: dict | 
         # --- 신규성 게이트: createdAt 60일 이내 또는 lastModified 14일 이내 ---
         # 둘 다 없거나 둘 다 기한 밖이면 선정 제외 (trending/surge/major-org 어떤 경로든).
         # 게이트 통과 시 "new"/"updated" 태그를 reason에 포함한다.
-        is_new = age is not None and age <= cfg["new_model_days"]
-        is_updated = modified_age is not None and modified_age <= cfg["recent_update_days"]
+        is_new = age is not None and 0 <= age <= cfg["new_model_days"]
+        is_updated = modified_age is not None and 0 <= modified_age <= cfg["recent_update_days"]
         if not is_new and not is_updated:
             continue
         novelty_reasons = []
@@ -402,7 +402,7 @@ def select_famous(candidates: list, history: dict, now: dt.date, config: dict | 
 
         surge = False
         if first_run:
-            if age is not None and age <= cfg["first_run_new_days"] and (
+            if age is not None and 0 <= age <= cfg["first_run_new_days"] and (
                 likes >= cfg["first_run_likes"] or downloads >= cfg["first_run_downloads"]
             ):
                 surge = True
@@ -419,7 +419,7 @@ def select_famous(candidates: list, history: dict, now: dt.date, config: dict | 
             reasons.append("surge")
 
         if model_org(model_id) in cfg["major_orgs"] and age is not None \
-                and age <= cfg["major_org_days"] and likes >= cfg["major_org_min_likes"]:
+                and 0 <= age <= cfg["major_org_days"] and likes >= cfg["major_org_min_likes"]:
             reasons.append("major-org")
 
         if reasons:
@@ -560,7 +560,10 @@ def find_previous_model(meta: dict, published: dict | None, posts_dir: Path | No
             continue
         if prev_meta.get("task") != task:
             continue
-        key = ((info or {}).get("published_at", ""), prev_meta.get("created_at", ""), mid)
+        published_at = (info or {}).get("published_at", "")
+        if meta.get("discovered_at") and published_at > meta["discovered_at"]:
+            continue
+        key = (published_at, prev_meta.get("created_at", ""), mid)
         if best_key is None or key > best_key:
             best_key, best = key, prev_meta
     return best
@@ -929,6 +932,8 @@ def write_summary(stats: dict, path: Path | None = None) -> str:
 
 def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: dt.date,
         fetcher=None, config: dict | None = None) -> list:
+    if max_new < 0:
+        raise ValueError("--max-new must be non-negative")
     fetcher = fetcher or default_fetcher
     cfg = dict(DEFAULT_CONFIG)
     if config:
@@ -957,6 +962,8 @@ def run(content_dir: Path, data_dir: Path, max_new: int, dry_run: bool, today: d
             continue
         try:
             detail = fetch_model_detail(model_id, fetcher)
+            if not isinstance(detail, dict) or (detail.get("id") or detail.get("modelId")) != model_id:
+                raise ValueError("model detail ID does not match candidate")
             readme = fetch_readme(model_id, fetcher)
             text = render_post(detail, reasons, today.isoformat(), readme,
                                published=published, posts_dir=content_dir, history=history)

@@ -36,6 +36,32 @@ class ParsePostTests(TempDirMixin, unittest.TestCase):
         self.assertEqual(post["slug"], "meta-llama__Llama-4-Scout-17B-16E-Instruct")
         self.assertTrue(post["body"].startswith("# Llama 4 Scout"))
 
+    def test_reject_invalid_dates_and_unsafe_slugs(self):
+        from scripts.frontmatter import dump_frontmatter
+        good = build.parse_post(FIXTURES / "sample-a.md")
+        for key, value in (("created_at", "2026-02-30"),
+                           ("discovered_at", "2026-13-01"),
+                           ("model_id", ".."), ("model_id", " ")):
+            with self.subTest(key=key, value=value):
+                post = dict(good, **{key: value})
+                path = self.tmp / "invalid.md"
+                path.write_text(dump_frontmatter(post, ""), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    build.parse_post(path)
+
+    def test_duplicate_slugs_fail_before_writing(self):
+        from scripts.frontmatter import dump_frontmatter
+        content = self.tmp / "content"
+        content.mkdir()
+        good = build.parse_post(FIXTURES / "sample-a.md")
+        for index, mid in enumerate(("org/a:b", "org/a-b")):
+            (content / f"{index}.md").write_text(
+                dump_frontmatter(dict(good, model_id=mid), ""), encoding="utf-8")
+        out = self.tmp / "dist"
+        with self.assertRaisesRegex(ValueError, "duplicate model slug"):
+            build.build(content, out)
+        self.assertFalse(out.exists())
+
     def test_parse_post_boundary(self):
         post = build.parse_post(FIXTURES / "sample-c.md")
         self.assertEqual(post["params"], "")
@@ -78,6 +104,16 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn("<p>para one still one</p>", out)
         self.assertIn("<ul>\n<li>a</li>\n<li>b</li>\n</ul>", out)
         self.assertIn("<p>after</p>", out)
+
+    def test_generated_spec_table(self):
+        out = build.markdown_to_html(
+            "Before\n\n| 항목 | 값 |\n| --- | --- |\n"
+            "| 태스크 | `text-generation` |\n| 라이선스 | <script> |\n\nAfter")
+        self.assertIn('<th scope="col">항목</th>', out)
+        self.assertIn('<td><code>text-generation</code></td>', out)
+        self.assertIn('<td>&lt;script&gt;</td>', out)
+        self.assertIn('</tbody></table>\n<p>After</p>', out)
+        self.assertNotIn('| --- |', out)
 
     def test_inline_markup(self):
         out = build.markdown_to_html("see [docs](https://x.y/z) and **bold** and `code<b>`")
@@ -248,7 +284,7 @@ class HighlightSurgeTests(unittest.TestCase):
         posts = [_make_post(model_id="c/old", likes=9999, discovered_at="2026-08-01",
                             created_at="2026-06-01")]
         html = build.render_index(posts, SITE_URL, "2026-09-05")
-        self.assertIn("highlights hidden", html)
+        self.assertIn('class="highlights" hidden', html)
 
     def test_surge_section(self):
         posts = [
@@ -266,10 +302,20 @@ class HighlightSurgeTests(unittest.TestCase):
         self.assertIn("a__surge", sg_section)
         self.assertNotIn("b__normal", sg_section)
 
+    def test_surge_excludes_old_and_future_posts(self):
+        posts = [_make_post(model_id=f"org/{name}", discovered_at=date, reason="surge")
+                 for name, date in (("old", "2026-08-28"), ("boundary", "2026-08-29"),
+                                    ("future", "2026-09-06"))]
+        page = build.render_index(posts, SITE_URL, "2026-09-05")
+        section = page.split('class="surge-cards"')[1].split('<section class="filters"')[0]
+        self.assertIn("org__boundary", section)
+        self.assertNotIn("org__old", section)
+        self.assertNotIn("org__future", section)
+
     def test_surge_empty_hidden(self):
         posts = [_make_post(model_id="b/normal", likes=9999, reason="trending")]
         html = build.render_index(posts, SITE_URL, "2026-09-05")
-        self.assertIn("surge hidden", html)
+        self.assertIn('class="surge" hidden', html)
 
     def test_relative_date(self):
         self.assertEqual(build.relative_date("2026-09-05", "2026-09-05"), "오늘")

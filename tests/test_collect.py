@@ -72,6 +72,11 @@ OLD_HISTORY = {"someone/old": {"2026-08-20": {"likes": 1, "downloads": 1}}}
 
 
 class SelectFamousTests(unittest.TestCase):
+    def test_future_dates_do_not_pass_novelty_gate(self):
+        candidates = [model("org/future", created="2026-09-06", rank=1,
+                            last_modified="2026-09-06", likes=1000)]
+        self.assertEqual(collect.select_famous(candidates, {}, TODAY), [])
+
     def test_trending_top30_selected_and_31st_not(self):
         cands = [model("a/top", rank=30, created="2026-08-01"), model("a/low", rank=31, created="2026-08-01")]
         result = collect.select_famous(cands, OLD_HISTORY, TODAY)
@@ -454,6 +459,14 @@ class HelperTests(unittest.TestCase):
             self.assertEqual(collect.fetch_readme("a/b", missing), "")
         self.assertIn("README unavailable", err.getvalue())
 
+    def test_listings_request_modified_dates(self):
+        fetcher = mock.Mock(return_value="[]")
+        collect.list_trending(fetcher)
+        collect.list_top(fetcher, "downloads")
+        collect.list_recent_by_org("google", fetcher)
+        for call in fetcher.call_args_list:
+            self.assertIn("full=true", call.args[0])
+
     def test_gather_candidates_merges_listings_and_ranks_trending(self):
         def fetcher(url):
             if "sort=trendingScore" in url:
@@ -534,6 +547,24 @@ class RunTests(unittest.TestCase):
         self.assertFalse(self.content.exists())
         self.assertFalse(self.data.exists())
         self.assertIn("deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", out)
+
+    def test_negative_max_new_fails_before_fetching(self):
+        fetcher = mock.Mock()
+        with self.assertRaisesRegex(ValueError, "non-negative"):
+            collect.run(self.content, self.data, -1, False, TODAY, fetcher=fetcher)
+        fetcher.assert_not_called()
+        self.assertFalse(self.data.exists())
+
+    def test_mismatched_detail_id_is_not_published(self):
+        target = "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+        def fetcher(url):
+            if url == collect.HF_API + "/" + target:
+                return '{"id": "org/wrong"}'
+            return fixture_fetcher(url)
+        with mock.patch("sys.stderr", io.StringIO()), redirect_stdout(io.StringIO()):
+            new = collect.run(self.content, self.data, 25, False, TODAY, fetcher=fetcher)
+        self.assertNotIn(target, new)
+        self.assertFalse((self.content / (slugify(target) + ".md")).exists())
 
     def test_max_new_cap(self):
         new, _ = self.run_collect(max_new=3)
@@ -703,6 +734,14 @@ class ComparisonTests(unittest.TestCase):
         meta = {"model_id": "Qwen/Qwen3-32B", "org": "Qwen", "task": "text-generation"}
         prev = collect.find_previous_model(meta, self.published, self.posts)
         self.assertEqual(prev["model_id"], "Qwen/Qwen3-14B")
+
+    def test_previous_model_excludes_later_publications(self):
+        self._publish("Qwen/earlier", "2026-08-20", task="text-generation")
+        self._publish("Qwen/later", "2026-09-05", task="text-generation")
+        meta = {"model_id": "Qwen/current", "org": "Qwen", "task": "text-generation",
+                "discovered_at": "2026-08-25"}
+        self.assertEqual(collect.find_previous_model(meta, self.published, self.posts)["model_id"],
+                         "Qwen/earlier")
 
     def test_previous_model_none_when_no_match(self):
         self._publish("Qwen/Qwen-VL", "2026-08-25", task="image-text-to-text")

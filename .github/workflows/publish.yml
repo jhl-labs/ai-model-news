@@ -54,10 +54,12 @@ jobs:
       - name: Hugging Face 모델 수집
         id: collect
         if: github.event_name != 'push'
+        env:
+          MAX_NEW: ${{ github.event.inputs.max_new || '25' }}
         run: |
           set -o pipefail
           python3 scripts/collect.py \
-            --max-new "${{ github.event.inputs.max_new || '25' }}" | tee collect.log
+            --max-new "$MAX_NEW" | tee collect.log
           count=$(grep -c '^content/models/.*\.md$' collect.log || true)
           echo "new_count=${count}" >> "$GITHUB_OUTPUT"
           echo "새로 발행한 모델: ${count}개"

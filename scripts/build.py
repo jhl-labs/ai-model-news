@@ -28,13 +28,7 @@ if __package__ in (None, ""):
     # Allow `python3 scripts/build.py` from the repository root.
     sys.path.insert(0, str(ROOT))
 
-from scripts.frontmatter import slugify as _slugify  # noqa: E402
-
-if __package__ in (None, ""):
-    # Allow `python3 scripts/build.py` from the repository root.
-    sys.path.insert(0, str(ROOT))
-
-from scripts.frontmatter import slugify  # noqa: E402  (single slug contract shared with collect.py)
+from scripts.frontmatter import slugify  # noqa: E402
 TEMPLATES_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 
@@ -109,8 +103,14 @@ def parse_post(path: Path | str) -> dict[str, Any]:
         raise ValueError(f"{path}: 'discovered_at' must be YYYY-MM-DD")
     if meta["created_at"] and not DATE_RE.match(meta["created_at"]):
         raise ValueError(f"{path}: 'created_at' must be YYYY-MM-DD or empty")
-    if not meta["model_id"]:
-        raise ValueError(f"{path}: 'model_id' must not be empty")
+    for key in ("discovered_at", "created_at"):
+        if meta[key]:
+            try:
+                dt.date.fromisoformat(meta[key])
+            except ValueError as exc:
+                raise ValueError(f"{path}: {key!r} is not a valid calendar date") from exc
+    if slugify(meta["model_id"]) in ("", ".", ".."):
+        raise ValueError(f"{path}: unsafe or empty model slug")
 
     post = dict(meta)
     post["body"] = "\n".join(lines[end + 1:]).strip("\n")
@@ -175,7 +175,32 @@ def markdown_to_html(md: str) -> str:
             out.append("</ul>")
             in_list = False
 
-    for raw in md.splitlines():
+    lines = md.splitlines()
+    skip_until = 0
+    for index, raw in enumerate(lines):
+        if index < skip_until:
+            continue
+        # Tables emitted by collect.py use outer pipes and a delimiter row.
+        if (raw.strip().startswith("|") and index + 1 < len(lines)
+                and re.fullmatch(r"\s*\|(?:\s*:?-{3,}:?\s*\|)+\s*", lines[index + 1])):
+            flush_paragraph()
+            close_list()
+            def cells(row: str) -> list[str]:
+                return row.strip()[1:-1].split("|") if row.strip().endswith("|") else row.strip()[1:].split("|")
+            headers = cells(raw)
+            out.append('<table class="meta-table"><thead><tr>' + "".join(
+                f'<th scope="col">{render_inline(cell.strip())}</th>' for cell in headers
+            ) + "</tr></thead><tbody>")
+            skip_until = index + 2
+            while skip_until < len(lines) and lines[skip_until].strip().startswith("|"):
+                values = cells(lines[skip_until])
+                values = (values + [""] * len(headers))[:len(headers)]
+                out.append("<tr>" + "".join(
+                    f"<td>{render_inline(cell.strip())}</td>" for cell in values
+                ) + "</tr>")
+                skip_until += 1
+            out.append("</tbody></table>")
+            continue
         line = raw.rstrip()
         stripped = line.strip()
         if not stripped:
@@ -278,6 +303,11 @@ def load_posts(content_dir: Path) -> list[dict[str, Any]]:
     if content_dir.is_dir():
         for path in sorted(content_dir.glob("*.md")):
             posts.append(parse_post(path))
+    slugs = set()
+    for post in posts:
+        if post["slug"] in slugs:
+            raise ValueError(f"duplicate model slug: {post['slug']}")
+        slugs.add(post["slug"])
     return sort_posts(posts)
 
 
@@ -396,10 +426,11 @@ def render_index(posts: list[dict[str, Any]], site_url: str, build_date: str) ->
     ]
     highlight_posts = sorted(highlight_pool, key=lambda p: p["likes"], reverse=True)[:3]
 
-    # 급상승: reason 에 "surge" 포함, likes 상위 5개(하이라이트와 중복 허용).
+    # 급상승: 최근 7일 발행 글 중 reason 에 "surge" 포함, likes 상위 5개.
     surge_posts = [
         p for p in posts
         if "surge" in [r.strip() for r in p.get("reason", "").split(",")]
+        and 0 <= (bdate - dt.date.fromisoformat(p["discovered_at"])).days <= 7
     ]
     surge_posts = sorted(surge_posts, key=lambda p: p["likes"], reverse=True)[:5]
 
@@ -588,6 +619,7 @@ def build(content_dir: Path, out: Path, site_url: str = DEFAULT_SITE_URL,
     if not DATE_RE.match(build_date):
         raise ValueError("--build-date must be YYYY-MM-DD")
 
+    dt.date.fromisoformat(build_date)
     posts = load_posts(Path(content_dir))
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
