@@ -60,6 +60,10 @@
    "published_at": "2026-09-16",
    "slug": "Comfy-Org__YuE2"
   },
+  "Edge0/Audio8-ASR-Infinite": {
+   "published_at": "2026-09-24",
+   "slug": "Edge0__Audio8-ASR-Infinite"
+  },
   "Edge0/Edge0-35B-A3B-preview": {
    "published_at": "2026-09-12",
    "slug": "Edge0__Edge0-35B-A3B-preview"
@@ -188,6 +192,14 @@
    "published_at": "2026-09-23",
    "slug": "black-forest-labs__flux-3-action-base"
   },
+  "black-forest-labs/flux-3-action-droid": {
+   "published_at": "2026-09-24",
+   "slug": "black-forest-labs__flux-3-action-droid"
+  },
+  "black-forest-labs/flux-3-action-so101": {
+   "published_at": "2026-09-24",
+   "slug": "black-forest-labs__flux-3-action-so101"
+  },
   "convaiinnovations/laya": {
    "published_at": "2026-09-19",
    "slug": "convaiinnovations__laya"
@@ -243,6 +255,10 @@
   "ibm-granite/granite-timeseries-patchtst-fm-r2": {
    "published_at": "2026-09-16",
    "slug": "ibm-granite__granite-timeseries-patchtst-fm-r2"
+  },
+  "inclusionAI/Ming-Image-0.1-Design": {
+   "published_at": "2026-09-24",
+   "slug": "inclusionAI__Ming-Image-0.1-Design"
   },
   "internlm/Atria-Dawn-Preview": {
    "published_at": "2026-09-18",
@@ -371,6 +387,10 @@
   "tencent/WeMM-Embedding-9B": {
    "published_at": "2026-09-05",
    "slug": "tencent__WeMM-Embedding-9B"
+  },
+  "tencent/WeVisDoc-2B": {
+   "published_at": "2026-09-24",
+   "slug": "tencent__WeVisDoc-2B"
   },
   "tencent/WeVisDoc-4B": {
    "published_at": "2026-09-18",
