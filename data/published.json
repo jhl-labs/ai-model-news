@@ -60,6 +60,10 @@
    "published_at": "2026-09-16",
    "slug": "Comfy-Org__YuE2"
   },
+  "Contrastive-LM/CLM-v0.1-8B": {
+   "published_at": "2026-09-26",
+   "slug": "Contrastive-LM__CLM-v0.1-8B"
+  },
   "Edge0/Audio8-ASR-Infinite": {
    "published_at": "2026-09-24",
    "slug": "Edge0__Audio8-ASR-Infinite"
@@ -240,6 +244,10 @@
    "published_at": "2026-09-10",
    "slug": "deepseek-ai__DeepSeek-V4.1-Flash"
   },
+  "google/gnm-v3": {
+   "published_at": "2026-09-26",
+   "slug": "google__gnm-v3"
+  },
   "google/timesfm-3.0-pytorch": {
    "published_at": "2026-09-05",
    "slug": "google__timesfm-3.0-pytorch"
@@ -315,6 +323,10 @@
   "nvidia/GLM-5.3-Flash-NVFP4": {
    "published_at": "2026-09-10",
    "slug": "nvidia__GLM-5.3-Flash-NVFP4"
+  },
+  "nvidia/GLM-5.3-NVFP4": {
+   "published_at": "2026-09-26",
+   "slug": "nvidia__GLM-5.3-NVFP4"
   },
   "nvidia/Nemotron-3-Diarization": {
    "published_at": "2026-09-23",
