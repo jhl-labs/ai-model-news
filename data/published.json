@@ -36,6 +36,11 @@
    "slug": "Anthropic__claude-opus-5-5",
    "source": "official"
   },
+  "Anthropic/claude-sonnet-5-5": {
+   "published_at": "2026-09-28",
+   "slug": "Anthropic__claude-sonnet-5-5",
+   "source": "official"
+  },
   "BreezeBlue/Breeze-TTS-2": {
    "published_at": "2026-09-05",
    "slug": "BreezeBlue__Breeze-TTS-2"
@@ -152,6 +157,10 @@
    "published_at": "2026-09-25",
    "slug": "StarDoc-AI__TeleOCR"
   },
+  "SupersonicLabs/Julia-1": {
+   "published_at": "2026-09-28",
+   "slug": "SupersonicLabs__Julia-1"
+  },
   "TaichuAI/ZDTaichu5.0-9B": {
    "published_at": "2026-09-17",
    "slug": "TaichuAI__ZDTaichu5.0-9B"
@@ -191,6 +200,10 @@
   "XiaomiMiMo/MiMo-V2.6-Pro-RL": {
    "published_at": "2026-09-22",
    "slug": "XiaomiMiMo__MiMo-V2.6-Pro-RL"
+  },
+  "XingChen-AGI/TeleOCR": {
+   "published_at": "2026-09-28",
+   "slug": "XingChen-AGI__TeleOCR"
   },
   "XingChen-AGI/Xing4.0-29B-A4B": {
    "published_at": "2026-09-18",
@@ -331,6 +344,10 @@
   "nvidia/GLM-5.3-NVFP4": {
    "published_at": "2026-09-26",
    "slug": "nvidia__GLM-5.3-NVFP4"
+  },
+  "nvidia/NV-Reason-CT": {
+   "published_at": "2026-09-28",
+   "slug": "nvidia__NV-Reason-CT"
   },
   "nvidia/Nemotron-3-Diarization": {
    "published_at": "2026-09-23",
