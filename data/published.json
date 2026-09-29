@@ -345,6 +345,10 @@
    "published_at": "2026-09-26",
    "slug": "nvidia__GLM-5.3-NVFP4"
   },
+  "nvidia/Kumo-Tabular": {
+   "published_at": "2026-09-29",
+   "slug": "nvidia__Kumo-Tabular"
+  },
   "nvidia/NV-Reason-CT": {
    "published_at": "2026-09-28",
    "slug": "nvidia__NV-Reason-CT"
@@ -372,6 +376,10 @@
   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
    "published_at": "2026-09-05",
    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+  },
+  "orcarouter/OrcaSAQ-2-27B": {
+   "published_at": "2026-09-29",
+   "slug": "orcarouter__OrcaSAQ-2-27B"
   },
   "phasefield-audio/Irodori-TTS-v4.1-Anime": {
    "published_at": "2026-09-11",
