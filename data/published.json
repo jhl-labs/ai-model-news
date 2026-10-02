@@ -57,6 +57,10 @@
    "published_at": "2026-10-01",
    "slug": "Cloudflare__clef"
   },
+  "Cloudflare/clef-flash": {
+   "published_at": "2026-10-02",
+   "slug": "Cloudflare__clef-flash"
+  },
   "CohereLabs/North-Micro-Vision-Instruct": {
    "published_at": "2026-09-05",
    "slug": "CohereLabs__North-Micro-Vision-Instruct"
@@ -88,6 +92,10 @@
   "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree": {
    "published_at": "2026-09-05",
    "slug": "FastVideo__FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree"
+  },
+  "FermionResearch/Phonon-2": {
+   "published_at": "2026-10-02",
+   "slug": "FermionResearch__Phonon-2"
   },
   "IFM/K2-Horizon-7B": {
    "published_at": "2026-09-19",
@@ -377,6 +385,10 @@
    "published_at": "2026-09-05",
    "slug": "nvidia__Nemotron-3-Diarization-preview"
   },
+  "nvidia/PixelUMM": {
+   "published_at": "2026-10-02",
+   "slug": "nvidia__PixelUMM"
+  },
   "nvidia/Qwen3.8-27B-NVFP4": {
    "published_at": "2026-09-09",
    "slug": "nvidia__Qwen3.8-27B-NVFP4"
@@ -396,6 +408,10 @@
   "orcarouter/OrcaSAQ-2-27B": {
    "published_at": "2026-09-29",
    "slug": "orcarouter__OrcaSAQ-2-27B"
+  },
+  "pablodawson/MiniMax-H3-360-Orbit-LoRA": {
+   "published_at": "2026-10-02",
+   "slug": "pablodawson__MiniMax-H3-360-Orbit-LoRA"
   },
   "phasefield-audio/Irodori-TTS-v4.1-Anime": {
    "published_at": "2026-09-11",
