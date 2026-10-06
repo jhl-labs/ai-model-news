@@ -253,6 +253,14 @@
    "published_at": "2026-09-23",
    "slug": "apple__LensVLM-9B"
   },
+  "autotrust/GEV-26B-Decide": {
+   "published_at": "2026-10-06",
+   "slug": "autotrust__GEV-26B-Decide"
+  },
+  "autotrust/JEV-27B-VL": {
+   "published_at": "2026-10-06",
+   "slug": "autotrust__JEV-27B-VL"
+  },
   "black-forest-labs/flux-3-action-base": {
    "published_at": "2026-09-23",
    "slug": "black-forest-labs__flux-3-action-base"
@@ -297,6 +305,10 @@
    "published_at": "2026-09-27",
    "slug": "fastino__GLiNER2.5-Decide"
   },
+  "google/embeddinggemma-2": {
+   "published_at": "2026-10-06",
+   "slug": "google__embeddinggemma-2"
+  },
   "google/gnm-v3": {
    "published_at": "2026-09-26",
    "slug": "google__gnm-v3"
@@ -336,6 +348,10 @@
   "internlm/Atria-Dawn-Preview": {
    "published_at": "2026-09-18",
    "slug": "internlm__Atria-Dawn-Preview"
+  },
+  "jialinyyzz/humanizer": {
+   "published_at": "2026-10-06",
+   "slug": "jialinyyzz__humanizer"
   },
   "m-a-p/YuE2-3B": {
    "published_at": "2026-09-11",
@@ -388,6 +404,10 @@
   "nvidia/Kumo-Tabular": {
    "published_at": "2026-09-29",
    "slug": "nvidia__Kumo-Tabular"
+  },
+  "nvidia/NV-Generate-CT": {
+   "published_at": "2026-10-06",
+   "slug": "nvidia__NV-Generate-CT"
   },
   "nvidia/NV-Reason-CT": {
    "published_at": "2026-09-28",
