@@ -29,6 +29,11 @@
    "slug": "Anthropic__claude-fable-5-1",
    "source": "official"
   },
+  "Anthropic/claude-haiku-5-5": {
+   "published_at": "2026-10-07",
+   "slug": "Anthropic__claude-haiku-5-5",
+   "source": "official"
+  },
   "Anthropic/claude-mythos-5-1": {
    "published_at": "2026-09-22",
    "slug": "Anthropic__claude-mythos-5-1",
@@ -272,6 +277,10 @@
   "black-forest-labs/flux-3-action-so101": {
    "published_at": "2026-09-24",
    "slug": "black-forest-labs__flux-3-action-so101"
+  },
+  "canberkkkkkk/ema-lightning": {
+   "published_at": "2026-10-07",
+   "slug": "canberkkkkkk__ema-lightning"
   },
   "convaiinnovations/laya": {
    "published_at": "2026-09-19",

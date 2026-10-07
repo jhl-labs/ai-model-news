@@ -1,9 +1,5 @@
 {
  "AikidoSec/altar-1": {
-  "2026-09-22": {
-   "downloads": 739,
-   "likes": 146
-  },
   "2026-09-23": {
    "downloads": 951,
    "likes": 160
@@ -41,13 +37,13 @@
   "2026-10-06": {
    "downloads": 4138,
    "likes": 704
+  },
+  "2026-10-07": {
+   "downloads": 5775,
+   "likes": 772
   }
  },
  "AlexWortega/openjev": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 480
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 513
@@ -113,13 +109,13 @@
   "2026-10-06": {
    "downloads": 219575,
    "likes": 1242
+  },
+  "2026-10-07": {
+   "downloads": 238952,
+   "likes": 1287
   }
  },
  "Altworld/Hemmingway-1": {
-  "2026-09-22": {
-   "downloads": 2745,
-   "likes": 489
-  },
   "2026-09-23": {
    "downloads": 3787,
    "likes": 568
@@ -172,10 +168,6 @@
   }
  },
  "BAAI/bge-base-en-v1.5": {
-  "2026-09-22": {
-   "downloads": 10202779,
-   "likes": 500
-  },
   "2026-09-23": {
    "downloads": 10131044,
    "likes": 500
@@ -227,13 +219,13 @@
   "2026-10-06": {
    "downloads": 9792561,
    "likes": 506
+  },
+  "2026-10-07": {
+   "downloads": 9742667,
+   "likes": 508
   }
  },
  "BAAI/bge-large-en-v1.5": {
-  "2026-09-22": {
-   "downloads": 10843351,
-   "likes": 742
-  },
   "2026-09-23": {
    "downloads": 10699603,
    "likes": 742
@@ -285,13 +277,13 @@
   "2026-10-06": {
    "downloads": 9927835,
    "likes": 747
+  },
+  "2026-10-07": {
+   "downloads": 10018961,
+   "likes": 748
   }
  },
  "BAAI/bge-m3": {
-  "2026-09-22": {
-   "downloads": 37280275,
-   "likes": 3591
-  },
   "2026-09-23": {
    "downloads": 37229647,
    "likes": 3610
@@ -343,13 +335,13 @@
   "2026-10-06": {
    "downloads": 34019592,
    "likes": 3825
+  },
+  "2026-10-07": {
+   "downloads": 33835381,
+   "likes": 3831
   }
  },
  "BAAI/bge-reranker-base": {
-  "2026-09-22": {
-   "downloads": 4172439,
-   "likes": 247
-  },
   "2026-09-23": {
    "downloads": 4191182,
    "likes": 247
@@ -401,13 +393,13 @@
   "2026-10-06": {
    "downloads": 4088719,
    "likes": 248
+  },
+  "2026-10-07": {
+   "downloads": 4094407,
+   "likes": 248
   }
  },
  "BAAI/bge-reranker-v2-m3": {
-  "2026-09-22": {
-   "downloads": 17313621,
-   "likes": 1210
-  },
   "2026-09-23": {
    "downloads": 17267935,
    "likes": 1211
@@ -459,13 +451,13 @@
   "2026-10-06": {
    "downloads": 17042849,
    "likes": 1224
+  },
+  "2026-10-07": {
+   "downloads": 16991607,
+   "likes": 1226
   }
  },
  "BAAI/bge-small-en-v1.5": {
-  "2026-09-22": {
-   "downloads": 64490920,
-   "likes": 590
-  },
   "2026-09-23": {
    "downloads": 64379163,
    "likes": 590
@@ -517,13 +509,13 @@
   "2026-10-06": {
    "downloads": 62649609,
    "likes": 597
+  },
+  "2026-10-07": {
+   "downloads": 62278766,
+   "likes": 601
   }
  },
  "BAAI/bge-small-zh-v1.5": {
-  "2026-09-22": {
-   "downloads": 5090867,
-   "likes": 143
-  },
   "2026-09-23": {
    "downloads": 5131415,
    "likes": 143
@@ -575,13 +567,13 @@
   "2026-10-06": {
    "downloads": 4492824,
    "likes": 145
+  },
+  "2026-10-07": {
+   "downloads": 4449738,
+   "likes": 145
   }
  },
  "Bingsu/adetailer": {
-  "2026-09-22": {
-   "downloads": 9882470,
-   "likes": 793
-  },
   "2026-09-23": {
    "downloads": 9929344,
    "likes": 793
@@ -633,13 +625,13 @@
   "2026-10-06": {
    "downloads": 9704236,
    "likes": 798
+  },
+  "2026-10-07": {
+   "downloads": 9661942,
+   "likes": 799
   }
  },
  "ByteDance/SDXL-Lightning": {
-  "2026-09-22": {
-   "downloads": 87845,
-   "likes": 2191
-  },
   "2026-09-23": {
    "downloads": 86710,
    "likes": 2191
@@ -662,10 +654,6 @@
   }
  },
  "Cactus-Compute/needle3": {
-  "2026-09-22": {
-   "downloads": 54528,
-   "likes": 183
-  },
   "2026-09-23": {
    "downloads": 62025,
    "likes": 200
@@ -691,6 +679,10 @@
   "2026-10-06": {
    "downloads": 1887,
    "likes": 124
+  },
+  "2026-10-07": {
+   "downloads": 2249,
+   "likes": 137
   }
  },
  "Cloudflare/clef": {
@@ -713,6 +705,10 @@
   "2026-10-06": {
    "downloads": 7255,
    "likes": 1663
+  },
+  "2026-10-07": {
+   "downloads": 9513,
+   "likes": 1802
   }
  },
  "Cloudflare/clef-flash": {
@@ -731,13 +727,13 @@
   "2026-10-06": {
    "downloads": 10638,
    "likes": 586
+  },
+  "2026-10-07": {
+   "downloads": 15722,
+   "likes": 645
   }
  },
  "CohereLabs/North-Micro-Vision-Instruct": {
-  "2026-09-22": {
-   "downloads": 169383,
-   "likes": 146
-  },
   "2026-09-23": {
    "downloads": 168235,
    "likes": 146
@@ -789,13 +785,13 @@
   "2026-10-06": {
    "downloads": 166500,
    "likes": 150
+  },
+  "2026-10-07": {
+   "downloads": 158575,
+   "likes": 151
   }
  },
  "CohereLabs/North-Mini-Code-1.0": {
-  "2026-09-22": {
-   "downloads": 11161,
-   "likes": 567
-  },
   "2026-09-23": {
    "downloads": 10819,
    "likes": 568
@@ -847,13 +843,13 @@
   "2026-10-06": {
    "downloads": 9324,
    "likes": 575
+  },
+  "2026-10-07": {
+   "downloads": 9318,
+   "likes": 577
   }
  },
  "CohereLabs/North-Mini-Code-1.0-eagle": {
-  "2026-09-22": {
-   "downloads": 222,
-   "likes": 8
-  },
   "2026-09-23": {
    "downloads": 225,
    "likes": 8
@@ -905,13 +901,13 @@
   "2026-10-06": {
    "downloads": 326,
    "likes": 8
+  },
+  "2026-10-07": {
+   "downloads": 328,
+   "likes": 8
   }
  },
  "CohereLabs/North-Mini-Code-1.0-fp8": {
-  "2026-09-22": {
-   "downloads": 887,
-   "likes": 32
-  },
   "2026-09-23": {
    "downloads": 894,
    "likes": 32
@@ -963,13 +959,13 @@
   "2026-10-06": {
    "downloads": 1030,
    "likes": 32
+  },
+  "2026-10-07": {
+   "downloads": 1043,
+   "likes": 32
   }
  },
  "CohereLabs/North-Mini-Code-1.0-w4a16": {
-  "2026-09-22": {
-   "downloads": 760,
-   "likes": 59
-  },
   "2026-09-23": {
    "downloads": 751,
    "likes": 59
@@ -1021,13 +1017,13 @@
   "2026-10-06": {
    "downloads": 916,
    "likes": 59
+  },
+  "2026-10-07": {
+   "downloads": 941,
+   "likes": 61
   }
  },
  "CohereLabs/North-Small-Translate-1.0": {
-  "2026-09-22": {
-   "downloads": 122,
-   "likes": 51
-  },
   "2026-09-23": {
    "downloads": 122,
    "likes": 53
@@ -1079,13 +1075,13 @@
   "2026-10-06": {
    "downloads": 168,
    "likes": 58
+  },
+  "2026-10-07": {
+   "downloads": 170,
+   "likes": 58
   }
  },
  "CohereLabs/North-Small-Translate-1.0-fp8": {
-  "2026-09-22": {
-   "downloads": 20,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 20,
    "likes": 5
@@ -1137,13 +1133,13 @@
   "2026-10-06": {
    "downloads": 26,
    "likes": 6
+  },
+  "2026-10-07": {
+   "downloads": 54,
+   "likes": 6
   }
  },
  "CohereLabs/North-Small-Translate-1.0-w4a16": {
-  "2026-09-22": {
-   "downloads": 30,
-   "likes": 6
-  },
   "2026-09-23": {
    "downloads": 30,
    "likes": 7
@@ -1195,13 +1191,13 @@
   "2026-10-06": {
    "downloads": 38,
    "likes": 9
+  },
+  "2026-10-07": {
+   "downloads": 38,
+   "likes": 9
   }
  },
  "CohereLabs/cohere-transcribe-03-2026": {
-  "2026-09-22": {
-   "downloads": 210589,
-   "likes": 1142
-  },
   "2026-09-23": {
    "downloads": 211332,
    "likes": 1142
@@ -1253,13 +1249,13 @@
   "2026-10-06": {
    "downloads": 156081,
    "likes": 1168
+  },
+  "2026-10-07": {
+   "downloads": 149717,
+   "likes": 1170
   }
  },
  "CohereLabs/cohere-transcribe-arabic-07-2026": {
-  "2026-09-22": {
-   "downloads": 52176,
-   "likes": 194
-  },
   "2026-09-23": {
    "downloads": 52962,
    "likes": 195
@@ -1311,13 +1307,13 @@
   "2026-10-06": {
    "downloads": 46513,
    "likes": 213
+  },
+  "2026-10-07": {
+   "downloads": 45873,
+   "likes": 213
   }
  },
  "CohereLabs/command-a-plus-05-2026-bf16": {
-  "2026-09-22": {
-   "downloads": 43803,
-   "likes": 145
-  },
   "2026-09-23": {
    "downloads": 43483,
    "likes": 145
@@ -1369,13 +1365,13 @@
   "2026-10-06": {
    "downloads": 35573,
    "likes": 145
+  },
+  "2026-10-07": {
+   "downloads": 34827,
+   "likes": 145
   }
  },
  "CohereLabs/command-a-plus-05-2026-fp8": {
-  "2026-09-22": {
-   "downloads": 1711,
-   "likes": 40
-  },
   "2026-09-23": {
    "downloads": 1681,
    "likes": 40
@@ -1406,10 +1402,6 @@
   }
  },
  "CohereLabs/command-a-plus-05-2026-w4a4": {
-  "2026-09-22": {
-   "downloads": 4923,
-   "likes": 246
-  },
   "2026-09-23": {
    "downloads": 5148,
    "likes": 246
@@ -1461,13 +1453,13 @@
   "2026-10-06": {
    "downloads": 3262,
    "likes": 248
+  },
+  "2026-10-07": {
+   "downloads": 3314,
+   "likes": 248
   }
  },
  "CohereLabs/tiny-aya-base": {
-  "2026-09-22": {
-   "downloads": 16615,
-   "likes": 67
-  },
   "2026-09-23": {
    "downloads": 14174,
    "likes": 67
@@ -1519,13 +1511,13 @@
   "2026-10-06": {
    "downloads": 8263,
    "likes": 67
+  },
+  "2026-10-07": {
+   "downloads": 8231,
+   "likes": 67
   }
  },
  "CohereLabs/tiny-aya-base-32K": {
-  "2026-09-22": {
-   "downloads": 4,
-   "likes": 4
-  },
   "2026-09-23": {
    "downloads": 6,
    "likes": 4
@@ -1577,6 +1569,10 @@
   "2026-10-06": {
    "downloads": 9,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 9,
+   "likes": 4
   }
  },
  "CohereLabs/tiny-aya-earth": {
@@ -1603,13 +1599,13 @@
   "2026-10-06": {
    "downloads": 2714,
    "likes": 29
+  },
+  "2026-10-07": {
+   "downloads": 2769,
+   "likes": 29
   }
  },
  "CohereLabs/tiny-aya-en-thinker": {
-  "2026-09-22": {
-   "downloads": 28,
-   "likes": 9
-  },
   "2026-09-23": {
    "downloads": 28,
    "likes": 9
@@ -1661,13 +1657,13 @@
   "2026-10-06": {
    "downloads": 40,
    "likes": 12
+  },
+  "2026-10-07": {
+   "downloads": 40,
+   "likes": 12
   }
  },
  "CohereLabs/tiny-aya-fire": {
-  "2026-09-22": {
-   "downloads": 863,
-   "likes": 28
-  },
   "2026-09-23": {
    "downloads": 877,
    "likes": 28
@@ -1719,13 +1715,13 @@
   "2026-10-06": {
    "downloads": 451,
    "likes": 28
+  },
+  "2026-10-07": {
+   "downloads": 507,
+   "likes": 28
   }
  },
  "CohereLabs/tiny-aya-global": {
-  "2026-09-22": {
-   "downloads": 8641,
-   "likes": 172
-  },
   "2026-09-23": {
    "downloads": 8436,
    "likes": 172
@@ -1777,13 +1773,13 @@
   "2026-10-06": {
    "downloads": 8692,
    "likes": 173
+  },
+  "2026-10-07": {
+   "downloads": 8454,
+   "likes": 174
   }
  },
  "CohereLabs/tiny-aya-l2-thinker": {
-  "2026-09-22": {
-   "downloads": 792,
-   "likes": 12
-  },
   "2026-09-23": {
    "downloads": 1031,
    "likes": 12
@@ -1835,13 +1831,13 @@
   "2026-10-06": {
    "downloads": 1353,
    "likes": 15
+  },
+  "2026-10-07": {
+   "downloads": 1362,
+   "likes": 15
   }
  },
  "CohereLabs/tiny-aya-water": {
-  "2026-09-22": {
-   "downloads": 281,
-   "likes": 46
-  },
   "2026-09-23": {
    "downloads": 270,
    "likes": 46
@@ -1893,13 +1889,13 @@
   "2026-10-06": {
    "downloads": 597,
    "likes": 46
+  },
+  "2026-10-07": {
+   "downloads": 562,
+   "likes": 46
   }
  },
  "Comfy-Org/Krea-2": {
-  "2026-09-22": {
-   "downloads": 9864243,
-   "likes": 586
-  },
   "2026-09-23": {
    "downloads": 9897254,
    "likes": 591
@@ -1951,13 +1947,13 @@
   "2026-10-06": {
    "downloads": 8342527,
    "likes": 647
+  },
+  "2026-10-07": {
+   "downloads": 7926734,
+   "likes": 650
   }
  },
  "Comfy-Org/MiniMax-H3": {
-  "2026-09-22": {
-   "downloads": 21305822,
-   "likes": 1967
-  },
   "2026-09-23": {
    "downloads": 21517501,
    "likes": 1975
@@ -2009,13 +2005,13 @@
   "2026-10-06": {
    "downloads": 23415776,
    "likes": 2150
+  },
+  "2026-10-07": {
+   "downloads": 23394103,
+   "likes": 2163
   }
  },
  "Comfy-Org/Qwen-Image-2.1": {
-  "2026-09-22": {
-   "downloads": 1429925,
-   "likes": 564
-  },
   "2026-09-23": {
    "downloads": 2220609,
    "likes": 620
@@ -2067,13 +2063,13 @@
   "2026-10-06": {
    "downloads": 6899866,
    "likes": 969
+  },
+  "2026-10-07": {
+   "downloads": 7197052,
+   "likes": 975
   }
  },
  "Comfy-Org/Wan_2.2_ComfyUI_Repackaged": {
-  "2026-09-22": {
-   "downloads": 5725358,
-   "likes": 879
-  },
   "2026-09-23": {
    "downloads": 5732217,
    "likes": 883
@@ -2125,13 +2121,13 @@
   "2026-10-06": {
    "downloads": 6590756,
    "likes": 915
+  },
+  "2026-10-07": {
+   "downloads": 6568303,
+   "likes": 915
   }
  },
  "Comfy-Org/stable-diffusion-v1-5-archive": {
-  "2026-09-22": {
-   "downloads": 13667615,
-   "likes": 163
-  },
   "2026-09-23": {
    "downloads": 13167248,
    "likes": 163
@@ -2182,10 +2178,6 @@
   }
  },
  "Comfy-Org/z_image_turbo": {
-  "2026-09-22": {
-   "downloads": 8117005,
-   "likes": 904
-  },
   "2026-09-23": {
    "downloads": 8259813,
    "likes": 906
@@ -2237,13 +2229,13 @@
   "2026-10-06": {
    "downloads": 8658553,
    "likes": 933
+  },
+  "2026-10-07": {
+   "downloads": 8725188,
+   "likes": 937
   }
  },
  "CompVis/stable-diffusion-v-1-4-original": {
-  "2026-09-22": {
-   "downloads": 6,
-   "likes": 2884
-  },
   "2026-09-23": {
    "downloads": 6,
    "likes": 2884
@@ -2295,13 +2287,13 @@
   "2026-10-06": {
    "downloads": 2,
    "likes": 2883
+  },
+  "2026-10-07": {
+   "downloads": 2,
+   "likes": 2883
   }
  },
  "CompVis/stable-diffusion-v1-4": {
-  "2026-09-22": {
-   "downloads": 653150,
-   "likes": 7094
-  },
   "2026-09-23": {
    "downloads": 659179,
    "likes": 7096
@@ -2353,6 +2345,10 @@
   "2026-10-06": {
    "downloads": 614818,
    "likes": 7107
+  },
+  "2026-10-07": {
+   "downloads": 602434,
+   "likes": 7107
   }
  },
  "Contrastive-LM/CLM-v0.1-8B": {
@@ -2403,13 +2399,13 @@
   "2026-10-06": {
    "downloads": 3904,
    "likes": 743
+  },
+  "2026-10-07": {
+   "downloads": 4041,
+   "likes": 746
   }
  },
  "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF": {
-  "2026-09-22": {
-   "downloads": 755603,
-   "likes": 2379
-  },
   "2026-09-23": {
    "downloads": 739881,
    "likes": 2382
@@ -2461,13 +2457,13 @@
   "2026-10-06": {
    "downloads": 517561,
    "likes": 2416
+  },
+  "2026-10-07": {
+   "downloads": 509319,
+   "likes": 2422
   }
  },
  "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": {
-  "2026-09-22": {
-   "downloads": 1397909,
-   "likes": 1082
-  },
   "2026-09-23": {
    "downloads": 1452915,
    "likes": 1122
@@ -2519,13 +2515,13 @@
   "2026-10-06": {
    "downloads": 2125779,
    "likes": 1493
+  },
+  "2026-10-07": {
+   "downloads": 2088541,
+   "likes": 1539
   }
  },
  "DeepMostInnovations/sales-conversion-model-reinf-learning": {
-  "2026-09-22": {
-   "downloads": 432,
-   "likes": 178
-  },
   "2026-09-23": {
    "downloads": 510,
    "likes": 190
@@ -2579,13 +2575,13 @@
   "2026-10-06": {
    "downloads": 40393,
    "likes": 2429
+  },
+  "2026-10-07": {
+   "downloads": 40496,
+   "likes": 2430
   }
  },
  "Edge0/Edge0-35B-A3B-preview": {
-  "2026-09-22": {
-   "downloads": 78399,
-   "likes": 3554
-  },
   "2026-09-23": {
    "downloads": 78641,
    "likes": 3557
@@ -2637,13 +2633,13 @@
   "2026-10-06": {
    "downloads": 81263,
    "likes": 3566
+  },
+  "2026-10-07": {
+   "downloads": 81457,
+   "likes": 3565
   }
  },
  "FacebookAI/roberta-base": {
-  "2026-09-22": {
-   "downloads": 7966341,
-   "likes": 665
-  },
   "2026-09-23": {
    "downloads": 7917901,
    "likes": 665
@@ -2695,13 +2691,13 @@
   "2026-10-06": {
    "downloads": 8024037,
    "likes": 668
+  },
+  "2026-10-07": {
+   "downloads": 8050637,
+   "likes": 668
   }
  },
  "FacebookAI/roberta-large": {
-  "2026-09-22": {
-   "downloads": 6237178,
-   "likes": 322
-  },
   "2026-09-23": {
    "downloads": 6185714,
    "likes": 322
@@ -2753,13 +2749,13 @@
   "2026-10-06": {
    "downloads": 6244504,
    "likes": 322
+  },
+  "2026-10-07": {
+   "downloads": 6505742,
+   "likes": 323
   }
  },
  "FacebookAI/xlm-roberta-base": {
-  "2026-09-22": {
-   "downloads": 20811576,
-   "likes": 924
-  },
   "2026-09-23": {
    "downloads": 20651725,
    "likes": 924
@@ -2811,6 +2807,10 @@
   "2026-10-06": {
    "downloads": 15486845,
    "likes": 928
+  },
+  "2026-10-07": {
+   "downloads": 14889351,
+   "likes": 929
   }
  },
  "FermionResearch/Phonon-2": {
@@ -2833,19 +2833,23 @@
   "2026-10-06": {
    "downloads": 3339,
    "likes": 248
+  },
+  "2026-10-07": {
+   "downloads": 3750,
+   "likes": 270
   }
  },
  "FrancisRing/Prism": {
   "2026-10-06": {
    "downloads": 0,
    "likes": 95
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 112
   }
  },
  "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive": {
-  "2026-09-22": {
-   "downloads": 818411,
-   "likes": 3743
-  },
   "2026-09-23": {
    "downloads": 815923,
    "likes": 3747
@@ -2897,13 +2901,13 @@
   "2026-10-06": {
    "downloads": 887408,
    "likes": 3845
+  },
+  "2026-10-07": {
+   "downloads": 867348,
+   "likes": 3852
   }
  },
  "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF": {
-  "2026-09-22": {
-   "downloads": 2049571,
-   "likes": 1369
-  },
   "2026-09-23": {
    "downloads": 2052516,
    "likes": 1386
@@ -2954,10 +2958,6 @@
   }
  },
  "HuggingFaceTB/FineMath-Llama-3B": {
-  "2026-09-22": {
-   "downloads": 62,
-   "likes": 23
-  },
   "2026-09-23": {
    "downloads": 60,
    "likes": 23
@@ -3009,13 +3009,13 @@
   "2026-10-06": {
    "downloads": 113,
    "likes": 23
+  },
+  "2026-10-07": {
+   "downloads": 116,
+   "likes": 23
   }
  },
  "HuggingFaceTB/SmolLM2-1.7B-Instruct": {
-  "2026-09-22": {
-   "downloads": 250838,
-   "likes": 756
-  },
   "2026-09-23": {
    "downloads": 251857,
    "likes": 756
@@ -3067,13 +3067,13 @@
   "2026-10-06": {
    "downloads": 191715,
    "likes": 760
+  },
+  "2026-10-07": {
+   "downloads": 201197,
+   "likes": 762
   }
  },
  "HuggingFaceTB/SmolLM2-135M-Instruct": {
-  "2026-09-22": {
-   "downloads": 1623607,
-   "likes": 422
-  },
   "2026-09-23": {
    "downloads": 1647324,
    "likes": 423
@@ -3125,13 +3125,13 @@
   "2026-10-06": {
    "downloads": 1799920,
    "likes": 432
+  },
+  "2026-10-07": {
+   "downloads": 1756510,
+   "likes": 432
   }
  },
  "HuggingFaceTB/SmolLM2-360M-Instruct": {
-  "2026-09-22": {
-   "downloads": 309085,
-   "likes": 222
-  },
   "2026-09-23": {
    "downloads": 306926,
    "likes": 222
@@ -3183,13 +3183,13 @@
   "2026-10-06": {
    "downloads": 262793,
    "likes": 226
+  },
+  "2026-10-07": {
+   "downloads": 255551,
+   "likes": 226
   }
  },
  "HuggingFaceTB/SmolLM3-3B": {
-  "2026-09-22": {
-   "downloads": 615802,
-   "likes": 1036
-  },
   "2026-09-23": {
    "downloads": 617517,
    "likes": 1037
@@ -3241,13 +3241,13 @@
   "2026-10-06": {
    "downloads": 632876,
    "likes": 1046
+  },
+  "2026-10-07": {
+   "downloads": 635611,
+   "likes": 1047
   }
  },
  "HuggingFaceTB/SmolLM3-3B-Base": {
-  "2026-09-22": {
-   "downloads": 616009,
-   "likes": 174
-  },
   "2026-09-23": {
    "downloads": 625491,
    "likes": 174
@@ -3299,13 +3299,13 @@
   "2026-10-06": {
    "downloads": 109266,
    "likes": 174
+  },
+  "2026-10-07": {
+   "downloads": 105738,
+   "likes": 174
   }
  },
  "HuggingFaceTB/SmolLM3-3B-GSM8K-SFT": {
-  "2026-09-22": {
-   "downloads": 367,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 370,
    "likes": 2
@@ -3357,13 +3357,13 @@
   "2026-10-06": {
    "downloads": 360,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 361,
+   "likes": 2
   }
  },
  "HuggingFaceTB/SmolLM3-3B-ONNX": {
-  "2026-09-22": {
-   "downloads": 360,
-   "likes": 26
-  },
   "2026-09-23": {
    "downloads": 362,
    "likes": 26
@@ -3415,13 +3415,13 @@
   "2026-10-06": {
    "downloads": 430,
    "likes": 27
+  },
+  "2026-10-07": {
+   "downloads": 442,
+   "likes": 27
   }
  },
  "HuggingFaceTB/SmolLM3-3B-checkpoints": {
-  "2026-09-22": {
-   "downloads": 3038,
-   "likes": 25
-  },
   "2026-09-23": {
    "downloads": 2779,
    "likes": 25
@@ -3473,13 +3473,13 @@
   "2026-10-06": {
    "downloads": 5481,
    "likes": 25
+  },
+  "2026-10-07": {
+   "downloads": 6141,
+   "likes": 25
   }
  },
  "HuggingFaceTB/SmolVLM-256M-Instruct": {
-  "2026-09-22": {
-   "downloads": 437241,
-   "likes": 409
-  },
   "2026-09-23": {
    "downloads": 441460,
    "likes": 410
@@ -3531,13 +3531,13 @@
   "2026-10-06": {
    "downloads": 412143,
    "likes": 418
+  },
+  "2026-10-07": {
+   "downloads": 397613,
+   "likes": 418
   }
  },
  "HuggingFaceTB/SmolVLM-500M-Instruct": {
-  "2026-09-22": {
-   "downloads": 154026,
-   "likes": 198
-  },
   "2026-09-23": {
    "downloads": 148958,
    "likes": 198
@@ -3589,13 +3589,13 @@
   "2026-10-06": {
    "downloads": 139653,
    "likes": 199
+  },
+  "2026-10-07": {
+   "downloads": 135736,
+   "likes": 199
   }
  },
  "HuggingFaceTB/SmolVLM-Instruct": {
-  "2026-09-22": {
-   "downloads": 37680,
-   "likes": 599
-  },
   "2026-09-23": {
    "downloads": 37626,
    "likes": 599
@@ -3647,13 +3647,13 @@
   "2026-10-06": {
    "downloads": 27839,
    "likes": 600
+  },
+  "2026-10-07": {
+   "downloads": 26500,
+   "likes": 600
   }
  },
  "HuggingFaceTB/SmolVLM2-2.2B-Base": {
-  "2026-09-22": {
-   "downloads": 1698,
-   "likes": 11
-  },
   "2026-09-23": {
    "downloads": 1705,
    "likes": 11
@@ -3705,13 +3705,13 @@
   "2026-10-06": {
    "downloads": 823,
    "likes": 11
+  },
+  "2026-10-07": {
+   "downloads": 677,
+   "likes": 11
   }
  },
  "HuggingFaceTB/SmolVLM2-2.2B-Instruct": {
-  "2026-09-22": {
-   "downloads": 137366,
-   "likes": 335
-  },
   "2026-09-23": {
    "downloads": 139330,
    "likes": 335
@@ -3763,13 +3763,13 @@
   "2026-10-06": {
    "downloads": 145638,
    "likes": 335
+  },
+  "2026-10-07": {
+   "downloads": 142726,
+   "likes": 335
   }
  },
  "HuggingFaceTB/SmolVLM2-256M-Video-Instruct": {
-  "2026-09-22": {
-   "downloads": 41359,
-   "likes": 115
-  },
   "2026-09-23": {
    "downloads": 41282,
    "likes": 115
@@ -3821,13 +3821,13 @@
   "2026-10-06": {
    "downloads": 39186,
    "likes": 115
+  },
+  "2026-10-07": {
+   "downloads": 38269,
+   "likes": 115
   }
  },
  "HuggingFaceTB/SmolVLM2-500M-Video-Instruct": {
-  "2026-09-22": {
-   "downloads": 1264991,
-   "likes": 180
-  },
   "2026-09-23": {
    "downloads": 1253624,
    "likes": 180
@@ -3879,13 +3879,13 @@
   "2026-10-06": {
    "downloads": 1285574,
    "likes": 182
+  },
+  "2026-10-07": {
+   "downloads": 1288826,
+   "likes": 182
   }
  },
  "HuggingFaceTB/nanowhale-100m": {
-  "2026-09-22": {
-   "downloads": 630,
-   "likes": 67
-  },
   "2026-09-23": {
    "downloads": 617,
    "likes": 67
@@ -3937,13 +3937,13 @@
   "2026-10-06": {
    "downloads": 649,
    "likes": 69
+  },
+  "2026-10-07": {
+   "downloads": 621,
+   "likes": 69
   }
  },
  "HuggingFaceTB/nanowhale-100m-base": {
-  "2026-09-22": {
-   "downloads": 873,
-   "likes": 24
-  },
   "2026-09-23": {
    "downloads": 882,
    "likes": 24
@@ -3995,13 +3995,13 @@
   "2026-10-06": {
    "downloads": 961,
    "likes": 24
+  },
+  "2026-10-07": {
+   "downloads": 942,
+   "likes": 24
   }
  },
  "HuggingFaceTB/qwen3-1.7b-gsm8k-sft": {
-  "2026-09-22": {
-   "downloads": 4443,
-   "likes": 4
-  },
   "2026-09-23": {
    "downloads": 4469,
    "likes": 4
@@ -4053,13 +4053,13 @@
   "2026-10-06": {
    "downloads": 2963,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 1486,
+   "likes": 4
   }
  },
  "HuggingFaceTB/smollm2-135M-SFT-Only": {
-  "2026-09-22": {
-   "downloads": 191,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 189,
    "likes": 1
@@ -4111,13 +4111,13 @@
   "2026-10-06": {
    "downloads": 196,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 188,
+   "likes": 1
   }
  },
  "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF": {
-  "2026-09-22": {
-   "downloads": 1363176,
-   "likes": 1576
-  },
   "2026-09-23": {
    "downloads": 1414991,
    "likes": 1610
@@ -4169,6 +4169,10 @@
   "2026-10-06": {
    "downloads": 1589314,
    "likes": 1993
+  },
+  "2026-10-07": {
+   "downloads": 1546030,
+   "likes": 2024
   }
  },
  "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF": {
@@ -4199,13 +4203,13 @@
   "2026-10-06": {
    "downloads": 478633,
    "likes": 312
+  },
+  "2026-10-07": {
+   "downloads": 553685,
+   "likes": 331
   }
  },
  "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF": {
-  "2026-09-22": {
-   "downloads": 67988,
-   "likes": 241
-  },
   "2026-09-23": {
    "downloads": 80659,
    "likes": 254
@@ -4257,6 +4261,10 @@
   "2026-10-06": {
    "downloads": 2709781,
    "likes": 641
+  },
+  "2026-10-07": {
+   "downloads": 3080123,
+   "likes": 682
   }
  },
  "Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw": {
@@ -4275,13 +4283,13 @@
   "2026-10-06": {
    "downloads": 1660,
    "likes": 262
+  },
+  "2026-10-07": {
+   "downloads": 1903,
+   "likes": 281
   }
  },
  "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled": {
-  "2026-09-22": {
-   "downloads": 3570,
-   "likes": 2944
-  },
   "2026-09-23": {
    "downloads": 5571,
    "likes": 2944
@@ -4333,6 +4341,10 @@
   "2026-10-06": {
    "downloads": 21866,
    "likes": 2945
+  },
+  "2026-10-07": {
+   "downloads": 21894,
+   "likes": 2945
   }
  },
  "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF": {
@@ -4356,10 +4368,6 @@
   }
  },
  "Kijai/WanVideo_comfy": {
-  "2026-09-22": {
-   "downloads": 1402647,
-   "likes": 2512
-  },
   "2026-09-23": {
    "downloads": 1409432,
    "likes": 2513
@@ -4411,13 +4419,13 @@
   "2026-10-06": {
    "downloads": 1500395,
    "likes": 2521
+  },
+  "2026-10-07": {
+   "downloads": 1513900,
+   "likes": 2523
   }
  },
  "Lightricks/LTX-2.5": {
-  "2026-09-22": {
-   "downloads": 1630125,
-   "likes": 4771
-  },
   "2026-09-23": {
    "downloads": 1638605,
    "likes": 4891
@@ -4469,13 +4477,19 @@
   "2026-10-06": {
    "downloads": 1679035,
    "likes": 6648
+  },
+  "2026-10-07": {
+   "downloads": 1674291,
+   "likes": 6784
+  }
+ },
+ "Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen": {
+  "2026-10-07": {
+   "downloads": 5255,
+   "likes": 118
   }
  },
  "Lightricks/LTX-Video": {
-  "2026-09-22": {
-   "downloads": 739162,
-   "likes": 2315
-  },
   "2026-09-23": {
    "downloads": 744586,
    "likes": 2315
@@ -4527,13 +4541,13 @@
   "2026-10-06": {
    "downloads": 761068,
    "likes": 2328
+  },
+  "2026-10-07": {
+   "downloads": 747481,
+   "likes": 2329
   }
  },
  "MiniMaxAI/MiniMax-H3": {
-  "2026-09-22": {
-   "downloads": 3766997,
-   "likes": 5596
-  },
   "2026-09-23": {
    "downloads": 3664216,
    "likes": 5625
@@ -4585,6 +4599,10 @@
   "2026-10-06": {
    "downloads": 3484779,
    "likes": 5938
+  },
+  "2026-10-07": {
+   "downloads": 3613449,
+   "likes": 5965
   }
  },
  "NaiveAI/Naive-N0.5-Flash": {
@@ -4641,13 +4659,13 @@
   "2026-10-06": {
    "downloads": 1749,
    "likes": 430
+  },
+  "2026-10-07": {
+   "downloads": 1798,
+   "likes": 445
   }
  },
  "Phr00t/Qwen-Image-Edit-Rapid-AIO": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2520
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2520
@@ -4699,13 +4717,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 2547
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 2548
   }
  },
  "ProsusAI/finbert": {
-  "2026-09-22": {
-   "downloads": 5180196,
-   "likes": 1249
-  },
   "2026-09-23": {
    "downloads": 5153206,
    "likes": 1251
@@ -4757,6 +4775,10 @@
   "2026-10-06": {
    "downloads": 4547851,
    "likes": 1262
+  },
+  "2026-10-07": {
+   "downloads": 4581946,
+   "likes": 1262
   }
  },
  "PrunaAI/Pruna-Qwen-Image-2.1": {
@@ -4782,10 +4804,6 @@
   }
  },
  "Qwen/QwQ-32B": {
-  "2026-09-22": {
-   "downloads": 73558,
-   "likes": 2965
-  },
   "2026-09-23": {
    "downloads": 73183,
    "likes": 2965
@@ -4837,13 +4855,13 @@
   "2026-10-06": {
    "downloads": 45312,
    "likes": 2966
+  },
+  "2026-10-07": {
+   "downloads": 43491,
+   "likes": 2965
   }
  },
  "Qwen/Qwen-AgentWorld-35B-A3B": {
-  "2026-09-22": {
-   "downloads": 19075,
-   "likes": 721
-  },
   "2026-09-23": {
    "downloads": 18739,
    "likes": 722
@@ -4895,13 +4913,13 @@
   "2026-10-06": {
    "downloads": 7136,
    "likes": 731
+  },
+  "2026-10-07": {
+   "downloads": 7285,
+   "likes": 732
   }
  },
  "Qwen/Qwen-Drive-1.0-4B": {
-  "2026-09-22": {
-   "downloads": 6012,
-   "likes": 227
-  },
   "2026-09-23": {
    "downloads": 6194,
    "likes": 229
@@ -4953,13 +4971,13 @@
   "2026-10-06": {
    "downloads": 7039,
    "likes": 238
+  },
+  "2026-10-07": {
+   "downloads": 6614,
+   "likes": 241
   }
  },
  "Qwen/Qwen-Image": {
-  "2026-09-22": {
-   "downloads": 299941,
-   "likes": 2654
-  },
   "2026-09-23": {
    "downloads": 296521,
    "likes": 2655
@@ -5011,13 +5029,13 @@
   "2026-10-06": {
    "downloads": 256632,
    "likes": 2667
+  },
+  "2026-10-07": {
+   "downloads": 258393,
+   "likes": 2667
   }
  },
  "Qwen/Qwen-Image-2.1": {
-  "2026-09-22": {
-   "downloads": 16242,
-   "likes": 1774
-  },
   "2026-09-23": {
    "downloads": 28407,
    "likes": 2003
@@ -5069,13 +5087,13 @@
   "2026-10-06": {
    "downloads": 102510,
    "likes": 3034
+  },
+  "2026-10-07": {
+   "downloads": 109298,
+   "likes": 3084
   }
  },
  "Qwen/Qwen-Image-2.1-PE-I2I": {
-  "2026-09-22": {
-   "downloads": 5501,
-   "likes": 42
-  },
   "2026-09-23": {
    "downloads": 6189,
    "likes": 46
@@ -5127,13 +5145,13 @@
   "2026-10-06": {
    "downloads": 12291,
    "likes": 58
+  },
+  "2026-10-07": {
+   "downloads": 12579,
+   "likes": 58
   }
  },
  "Qwen/Qwen-Image-2.1-PE-T2I": {
-  "2026-09-22": {
-   "downloads": 1885,
-   "likes": 43
-  },
   "2026-09-23": {
    "downloads": 2630,
    "likes": 45
@@ -5185,13 +5203,13 @@
   "2026-10-06": {
    "downloads": 8247,
    "likes": 57
+  },
+  "2026-10-07": {
+   "downloads": 8423,
+   "likes": 57
   }
  },
  "Qwen/Qwen-Image-Bench": {
-  "2026-09-22": {
-   "downloads": 33032,
-   "likes": 99
-  },
   "2026-09-23": {
    "downloads": 34181,
    "likes": 100
@@ -5243,13 +5261,13 @@
   "2026-10-06": {
    "downloads": 35412,
    "likes": 103
+  },
+  "2026-10-07": {
+   "downloads": 34234,
+   "likes": 103
   }
  },
  "Qwen/Qwen-Image-Edit": {
-  "2026-09-22": {
-   "downloads": 123382,
-   "likes": 2524
-  },
   "2026-09-23": {
    "downloads": 120798,
    "likes": 2524
@@ -5301,13 +5319,13 @@
   "2026-10-06": {
    "downloads": 109423,
    "likes": 2537
+  },
+  "2026-10-07": {
+   "downloads": 110204,
+   "likes": 2539
   }
  },
  "Qwen/Qwen2.5-0.5B-Instruct": {
-  "2026-09-22": {
-   "downloads": 8568538,
-   "likes": 632
-  },
   "2026-09-23": {
    "downloads": 8667077,
    "likes": 635
@@ -5359,13 +5377,13 @@
   "2026-10-06": {
    "downloads": 8430220,
    "likes": 657
+  },
+  "2026-10-07": {
+   "downloads": 8194834,
+   "likes": 657
   }
  },
  "Qwen/Qwen2.5-1.5B-Instruct": {
-  "2026-09-22": {
-   "downloads": 7917611,
-   "likes": 849
-  },
   "2026-09-23": {
    "downloads": 7919735,
    "likes": 851
@@ -5417,13 +5435,13 @@
   "2026-10-06": {
    "downloads": 7005939,
    "likes": 866
+  },
+  "2026-10-07": {
+   "downloads": 6858498,
+   "likes": 868
   }
  },
  "Qwen/Qwen2.5-3B-Instruct": {
-  "2026-09-22": {
-   "downloads": 4432113,
-   "likes": 575
-  },
   "2026-09-23": {
    "downloads": 4402323,
    "likes": 575
@@ -5463,13 +5481,13 @@
   "2026-10-06": {
    "downloads": 4273777,
    "likes": 590
+  },
+  "2026-10-07": {
+   "downloads": 4318365,
+   "likes": 590
   }
  },
  "Qwen/Qwen2.5-7B-Instruct": {
-  "2026-09-22": {
-   "downloads": 9610820,
-   "likes": 2223
-  },
   "2026-09-23": {
    "downloads": 9680640,
    "likes": 2240
@@ -5521,23 +5539,19 @@
   "2026-10-06": {
    "downloads": 8233098,
    "likes": 2413
+  },
+  "2026-10-07": {
+   "downloads": 8158141,
+   "likes": 2413
   }
  },
  "Qwen/Qwen2.5-Coder-32B-Instruct": {
-  "2026-09-22": {
-   "downloads": 1218676,
-   "likes": 2150
-  },
   "2026-09-23": {
    "downloads": 1215982,
    "likes": 2152
   }
  },
  "Qwen/Qwen2.5-VL-7B-Instruct": {
-  "2026-09-22": {
-   "downloads": 6851912,
-   "likes": 1720
-  },
   "2026-09-23": {
    "downloads": 6792366,
    "likes": 1720
@@ -5589,13 +5603,13 @@
   "2026-10-06": {
    "downloads": 5614601,
    "likes": 1731
+  },
+  "2026-10-07": {
+   "downloads": 5492693,
+   "likes": 1733
   }
  },
  "Qwen/Qwen3-0.6B": {
-  "2026-09-22": {
-   "downloads": 25377576,
-   "likes": 1666
-  },
   "2026-09-23": {
    "downloads": 26662555,
    "likes": 1672
@@ -5647,13 +5661,19 @@
   "2026-10-06": {
    "downloads": 30795305,
    "likes": 1741
+  },
+  "2026-10-07": {
+   "downloads": 31121660,
+   "likes": 1748
+  }
+ },
+ "Qwen/Qwen3-14B": {
+  "2026-10-07": {
+   "downloads": 4356418,
+   "likes": 490
   }
  },
  "Qwen/Qwen3-32B": {
-  "2026-09-22": {
-   "downloads": 4953569,
-   "likes": 748
-  },
   "2026-09-23": {
    "downloads": 5004209,
    "likes": 749
@@ -5680,10 +5700,6 @@
   }
  },
  "Qwen/Qwen3-4B": {
-  "2026-09-22": {
-   "downloads": 7000013,
-   "likes": 708
-  },
   "2026-09-23": {
    "downloads": 7043606,
    "likes": 712
@@ -5735,13 +5751,13 @@
   "2026-10-06": {
    "downloads": 7691247,
    "likes": 721
+  },
+  "2026-10-07": {
+   "downloads": 8896913,
+   "likes": 726
   }
  },
  "Qwen/Qwen3-8B": {
-  "2026-09-22": {
-   "downloads": 12687299,
-   "likes": 2033
-  },
   "2026-09-23": {
    "downloads": 12674178,
    "likes": 2036
@@ -5793,13 +5809,13 @@
   "2026-10-06": {
    "downloads": 10158000,
    "likes": 2077
+  },
+  "2026-10-07": {
+   "downloads": 10146765,
+   "likes": 2080
   }
  },
  "Qwen/Qwen3-ASR-0.6B-hf": {
-  "2026-09-22": {
-   "downloads": 144687,
-   "likes": 78
-  },
   "2026-09-23": {
    "downloads": 146027,
    "likes": 78
@@ -5851,13 +5867,13 @@
   "2026-10-06": {
    "downloads": 163558,
    "likes": 83
+  },
+  "2026-10-07": {
+   "downloads": 154237,
+   "likes": 84
   }
  },
  "Qwen/Qwen3-ASR-1.7B-hf": {
-  "2026-09-22": {
-   "downloads": 285245,
-   "likes": 103
-  },
   "2026-09-23": {
    "downloads": 281921,
    "likes": 104
@@ -5909,13 +5925,13 @@
   "2026-10-06": {
    "downloads": 345365,
    "likes": 121
+  },
+  "2026-10-07": {
+   "downloads": 339247,
+   "likes": 122
   }
  },
  "Qwen/Qwen3-Embedding-0.6B": {
-  "2026-09-22": {
-   "downloads": 8854502,
-   "likes": 1240
-  },
   "2026-09-23": {
    "downloads": 8950697,
    "likes": 1243
@@ -5967,13 +5983,13 @@
   "2026-10-06": {
    "downloads": 9253988,
    "likes": 1262
+  },
+  "2026-10-07": {
+   "downloads": 9110331,
+   "likes": 1262
   }
  },
  "Qwen/Qwen3-ForcedAligner-0.6B-hf": {
-  "2026-09-22": {
-   "downloads": 94607,
-   "likes": 36
-  },
   "2026-09-23": {
    "downloads": 88523,
    "likes": 36
@@ -6025,13 +6041,13 @@
   "2026-10-06": {
    "downloads": 73700,
    "likes": 39
+  },
+  "2026-10-07": {
+   "downloads": 75421,
+   "likes": 40
   }
  },
  "Qwen/Qwen3-VL-8B-Instruct": {
-  "2026-09-22": {
-   "downloads": 20173542,
-   "likes": 1141
-  },
   "2026-09-23": {
    "downloads": 20117097,
    "likes": 1142
@@ -6083,13 +6099,13 @@
   "2026-10-06": {
    "downloads": 11111496,
    "likes": 1167
+  },
+  "2026-10-07": {
+   "downloads": 10420686,
+   "likes": 1169
   }
  },
  "Qwen/Qwen3.5-2B": {
-  "2026-09-22": {
-   "downloads": 4787189,
-   "likes": 412
-  },
   "2026-09-23": {
    "downloads": 4778478,
    "likes": 415
@@ -6141,13 +6157,13 @@
   "2026-10-06": {
    "downloads": 4745790,
    "likes": 426
+  },
+  "2026-10-07": {
+   "downloads": 4286670,
+   "likes": 427
   }
  },
  "Qwen/Qwen3.5-4B": {
-  "2026-09-22": {
-   "downloads": 6915107,
-   "likes": 950
-  },
   "2026-09-23": {
    "downloads": 6968951,
    "likes": 954
@@ -6199,13 +6215,13 @@
   "2026-10-06": {
    "downloads": 7967983,
    "likes": 1018
+  },
+  "2026-10-07": {
+   "downloads": 7999244,
+   "likes": 1021
   }
  },
  "Qwen/Qwen3.5-9B": {
-  "2026-09-22": {
-   "downloads": 9498290,
-   "likes": 2015
-  },
   "2026-09-23": {
    "downloads": 9639694,
    "likes": 2024
@@ -6257,13 +6273,13 @@
   "2026-10-06": {
    "downloads": 8802743,
    "likes": 2108
+  },
+  "2026-10-07": {
+   "downloads": 8700580,
+   "likes": 2113
   }
  },
  "Qwen/Qwen3.6-27B": {
-  "2026-09-22": {
-   "downloads": 3209543,
-   "likes": 2309
-  },
   "2026-09-23": {
    "downloads": 3121231,
    "likes": 2310
@@ -6310,10 +6326,6 @@
   }
  },
  "Qwen/Qwen3.6-27B-FP8": {
-  "2026-09-22": {
-   "downloads": 5240675,
-   "likes": 357
-  },
   "2026-09-23": {
    "downloads": 5073197,
    "likes": 357
@@ -6348,10 +6360,6 @@
   }
  },
  "Qwen/Qwen3.6-35B-A3B": {
-  "2026-09-22": {
-   "downloads": 3247184,
-   "likes": 2861
-  },
   "2026-09-23": {
    "downloads": 3175372,
    "likes": 2864
@@ -6403,13 +6411,13 @@
   "2026-10-06": {
    "downloads": 3478783,
    "likes": 2931
+  },
+  "2026-10-07": {
+   "downloads": 3524086,
+   "likes": 2941
   }
  },
  "Qwen/Qwen3.6-35B-A3B-FP8": {
-  "2026-09-22": {
-   "downloads": 8944018,
-   "likes": 413
-  },
   "2026-09-23": {
    "downloads": 8638360,
    "likes": 413
@@ -6461,13 +6469,13 @@
   "2026-10-06": {
    "downloads": 4963071,
    "likes": 419
+  },
+  "2026-10-07": {
+   "downloads": 4716077,
+   "likes": 419
   }
  },
  "Qwen/Qwen3.8-2.4T-A95B": {
-  "2026-09-22": {
-   "downloads": 55302,
-   "likes": 1243
-  },
   "2026-09-23": {
    "downloads": 54427,
    "likes": 1252
@@ -6519,13 +6527,13 @@
   "2026-10-06": {
    "downloads": 33135,
    "likes": 1288
+  },
+  "2026-10-07": {
+   "downloads": 32977,
+   "likes": 1291
   }
  },
  "Qwen/Qwen3.8-2.4T-A95B-FP8": {
-  "2026-09-22": {
-   "downloads": 8365,
-   "likes": 242
-  },
   "2026-09-23": {
    "downloads": 8319,
    "likes": 243
@@ -6577,13 +6585,13 @@
   "2026-10-06": {
    "downloads": 8232,
    "likes": 247
+  },
+  "2026-10-07": {
+   "downloads": 7965,
+   "likes": 247
   }
  },
  "Qwen/Qwen3.8-27B": {
-  "2026-09-22": {
-   "downloads": 7079646,
-   "likes": 16068
-  },
   "2026-09-23": {
    "downloads": 6912469,
    "likes": 16132
@@ -6635,13 +6643,13 @@
   "2026-10-06": {
    "downloads": 6768060,
    "likes": 17107
+  },
+  "2026-10-07": {
+   "downloads": 6758993,
+   "likes": 17197
   }
  },
  "Qwen/Qwen3.8-27B-FP8": {
-  "2026-09-22": {
-   "downloads": 6473584,
-   "likes": 849
-  },
   "2026-09-23": {
    "downloads": 6270145,
    "likes": 853
@@ -6693,13 +6701,13 @@
   "2026-10-06": {
    "downloads": 4793955,
    "likes": 889
+  },
+  "2026-10-07": {
+   "downloads": 4771537,
+   "likes": 892
   }
  },
  "Qwen/Qwen3.8-Flash-Next": {
-  "2026-09-22": {
-   "downloads": 787525,
-   "likes": 5599
-  },
   "2026-09-23": {
    "downloads": 807550,
    "likes": 5639
@@ -6751,13 +6759,13 @@
   "2026-10-06": {
    "downloads": 1589145,
    "likes": 5972
+  },
+  "2026-10-07": {
+   "downloads": 1609433,
+   "likes": 6007
   }
  },
  "Qwen/Qwen3.8-Flash-Next-FP8": {
-  "2026-09-22": {
-   "downloads": 529525,
-   "likes": 224
-  },
   "2026-09-23": {
    "downloads": 541318,
    "likes": 224
@@ -6809,6 +6817,10 @@
   "2026-10-06": {
    "downloads": 380128,
    "likes": 252
+  },
+  "2026-10-07": {
+   "downloads": 366135,
+   "likes": 252
   }
  },
  "Qwen/Qwen3Guard-Stream-0.6B": {
@@ -6847,6 +6859,10 @@
   "2026-10-06": {
    "downloads": 4199,
    "likes": 40
+  },
+  "2026-10-07": {
+   "downloads": 4121,
+   "likes": 42
   }
  },
  "Qwen/Qwen3Guard-Stream-4B": {
@@ -6884,6 +6900,10 @@
   },
   "2026-10-06": {
    "downloads": 571,
+   "likes": 28
+  },
+  "2026-10-07": {
+   "downloads": 586,
    "likes": 28
   }
  },
@@ -6923,13 +6943,13 @@
   "2026-10-06": {
    "downloads": 725,
    "likes": 43
+  },
+  "2026-10-07": {
+   "downloads": 731,
+   "likes": 44
   }
  },
  "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_100": {
-  "2026-09-22": {
-   "downloads": 828,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 833,
    "likes": 7
@@ -6981,13 +7001,13 @@
   "2026-10-06": {
    "downloads": 773,
    "likes": 7
+  },
+  "2026-10-07": {
+   "downloads": 754,
+   "likes": 7
   }
  },
  "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_50": {
-  "2026-09-22": {
-   "downloads": 438,
-   "likes": 6
-  },
   "2026-09-23": {
    "downloads": 413,
    "likes": 6
@@ -7039,13 +7059,13 @@
   "2026-10-06": {
    "downloads": 437,
    "likes": 6
+  },
+  "2026-10-07": {
+   "downloads": 425,
+   "likes": 6
   }
  },
  "Qwen/SAE-Res-Qwen3.5-35B-A3B-Base-W32K-L0_50": {
-  "2026-09-22": {
-   "downloads": 263,
-   "likes": 10
-  },
   "2026-09-23": {
    "downloads": 257,
    "likes": 10
@@ -7064,10 +7084,6 @@
   }
  },
  "Qwen/SAE-Res-Qwen3.5-9B-Base-W64K-L0_100": {
-  "2026-09-22": {
-   "downloads": 282,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 273,
    "likes": 7
@@ -7086,10 +7102,6 @@
   }
  },
  "Qwen/SAE-Res-Qwen3.5-9B-Base-W64K-L0_50": {
-  "2026-09-22": {
-   "downloads": 398,
-   "likes": 10
-  },
   "2026-09-23": {
    "downloads": 386,
    "likes": 10
@@ -7159,12 +7171,20 @@
   "2026-10-06": {
    "downloads": 6548585,
    "likes": 58
+  },
+  "2026-10-07": {
+   "downloads": 6430103,
+   "likes": 58
   }
  },
  "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF": {
   "2026-10-06": {
    "downloads": 369229,
    "likes": 116
+  },
+  "2026-10-07": {
+   "downloads": 500723,
+   "likes": 134
   }
  },
  "StarDoc-AI/TeleOCR": {
@@ -7225,6 +7245,10 @@
   "2026-10-06": {
    "downloads": 4160,
    "likes": 452
+  },
+  "2026-10-07": {
+   "downloads": 4388,
+   "likes": 465
   }
  },
  "SupraLabs/Supra2-IMG": {
@@ -7246,10 +7270,6 @@
   }
  },
  "TaichuAI/ZDTaichu5.0-9B": {
-  "2026-09-22": {
-   "downloads": 5911,
-   "likes": 326
-  },
   "2026-09-23": {
    "downloads": 6934,
    "likes": 720
@@ -7301,13 +7321,13 @@
   "2026-10-06": {
    "downloads": 12889,
    "likes": 2884
+  },
+  "2026-10-07": {
+   "downloads": 12970,
+   "likes": 2898
   }
  },
  "TokenRhythm/NeoHorse-1-4B": {
-  "2026-09-22": {
-   "downloads": 25790,
-   "likes": 2535
-  },
   "2026-09-23": {
    "downloads": 26032,
    "likes": 2535
@@ -7359,13 +7379,13 @@
   "2026-10-06": {
    "downloads": 29902,
    "likes": 2544
+  },
+  "2026-10-07": {
+   "downloads": 28972,
+   "likes": 2544
   }
  },
  "TokenRhythm/NeoHorse-1-9B": {
-  "2026-09-22": {
-   "downloads": 12574,
-   "likes": 1008
-  },
   "2026-09-23": {
    "downloads": 13009,
    "likes": 1013
@@ -7380,10 +7400,6 @@
   }
  },
  "Tongyi-MAI/Z-Image-Turbo": {
-  "2026-09-22": {
-   "downloads": 638446,
-   "likes": 5342
-  },
   "2026-09-23": {
    "downloads": 629415,
    "likes": 5350
@@ -7435,6 +7451,10 @@
   "2026-10-06": {
    "downloads": 592512,
    "likes": 5412
+  },
+  "2026-10-07": {
+   "downloads": 603718,
+   "likes": 5418
   }
  },
  "Venastine-Research/Xing4.0-29B-A4B-GGUF": {
@@ -7449,6 +7469,10 @@
   "2026-10-06": {
    "downloads": 30585,
    "likes": 473
+  },
+  "2026-10-07": {
+   "downloads": 33633,
+   "likes": 619
   }
  },
  "Viggle/Qwen-Image-2.1-viggle-turbo": {
@@ -7503,13 +7527,13 @@
   "2026-10-06": {
    "downloads": 302425,
    "likes": 629
+  },
+  "2026-10-07": {
+   "downloads": 326801,
+   "likes": 650
   }
  },
  "WarmBloodAban/Minimax-h3_Singularity": {
-  "2026-09-22": {
-   "downloads": 283359,
-   "likes": 618
-  },
   "2026-09-23": {
    "downloads": 304123,
    "likes": 640
@@ -7532,10 +7556,6 @@
   }
  },
  "WarriorMama777/OrangeMixs": {
-  "2026-09-22": {
-   "downloads": 1069,
-   "likes": 3955
-  },
   "2026-09-23": {
    "downloads": 1124,
    "likes": 3957
@@ -7587,13 +7607,13 @@
   "2026-10-06": {
    "downloads": 1692,
    "likes": 3958
+  },
+  "2026-10-07": {
+   "downloads": 1752,
+   "likes": 3958
   }
  },
  "XGENlabs/XGEN-JING": {
-  "2026-09-22": {
-   "downloads": 2,
-   "likes": 167
-  },
   "2026-09-23": {
    "downloads": 2,
    "likes": 171
@@ -7603,17 +7623,7 @@
    "likes": 172
   }
  },
- "XHToken/Spark-X2.5-4B": {
-  "2026-09-22": {
-   "downloads": 32538,
-   "likes": 1311
-  }
- },
  "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B": {
-  "2026-09-22": {
-   "downloads": 804,
-   "likes": 330
-  },
   "2026-09-23": {
    "downloads": 3253,
    "likes": 401
@@ -7664,10 +7674,6 @@
   }
  },
  "XiaomiMiMo/MiMo-V2.6-Flash-RL": {
-  "2026-09-22": {
-   "downloads": 2641,
-   "likes": 376
-  },
   "2026-09-23": {
    "downloads": 13243,
    "likes": 423
@@ -7702,10 +7708,6 @@
   }
  },
  "XiaomiMiMo/MiMo-V2.6-Pro-RL": {
-  "2026-09-22": {
-   "downloads": 985,
-   "likes": 379
-  },
   "2026-09-23": {
    "downloads": 4070,
    "likes": 443
@@ -7774,10 +7776,6 @@
   }
  },
  "XingChen-AGI/Xing4.0-29B-A4B": {
-  "2026-09-22": {
-   "downloads": 30627,
-   "likes": 1352
-  },
   "2026-09-23": {
    "downloads": 39009,
    "likes": 1539
@@ -7824,10 +7822,6 @@
   }
  },
  "abenzerps/Qwen-Image-2.1-Uncensored-GGUF": {
-  "2026-09-22": {
-   "downloads": 182313,
-   "likes": 1056
-  },
   "2026-09-23": {
    "downloads": 350678,
    "likes": 1419
@@ -7879,6 +7873,10 @@
   "2026-10-06": {
    "downloads": 1721760,
    "likes": 3414
+  },
+  "2026-10-07": {
+   "downloads": 1820627,
+   "likes": 3554
   }
  },
  "akatz-ai/MiniMax-H3-Character-Swap-LoRA": {
@@ -7913,6 +7911,10 @@
   "2026-10-06": {
    "downloads": 20353,
    "likes": 325
+  },
+  "2026-10-07": {
+   "downloads": 23458,
+   "likes": 351
   }
  },
  "akhilaaa3/Jev-Omni": {
@@ -7966,10 +7968,6 @@
   }
  },
  "allenai/ACE2-SHiELD": {
-  "2026-09-22": {
-   "downloads": 5,
-   "likes": 0
-  },
   "2026-09-23": {
    "downloads": 4,
    "likes": 0
@@ -8008,10 +8006,6 @@
   }
  },
  "allenai/ACE2S-SHiELD-plus": {
-  "2026-09-22": {
-   "downloads": 21,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 22,
    "likes": 5
@@ -8063,13 +8057,13 @@
   "2026-10-06": {
    "downloads": 30,
    "likes": 5
+  },
+  "2026-10-07": {
+   "downloads": 30,
+   "likes": 5
   }
  },
  "allenai/ACE2S-SHiELD-plus-supplemental-checkpoints": {
-  "2026-09-22": {
-   "downloads": 43,
-   "likes": 0
-  },
   "2026-09-23": {
    "downloads": 43,
    "likes": 0
@@ -8121,6 +8115,10 @@
   "2026-10-06": {
    "downloads": 25,
    "likes": 0
+  },
+  "2026-10-07": {
+   "downloads": 25,
+   "likes": 0
   }
  },
  "allenai/AstaBrief_8B": {
@@ -8139,6 +8137,10 @@
   "2026-10-06": {
    "downloads": 1394,
    "likes": 54
+  },
+  "2026-10-07": {
+   "downloads": 1524,
+   "likes": 59
   }
  },
  "allenai/AstaBrief_8B_SFT": {
@@ -8157,13 +8159,49 @@
   "2026-10-06": {
    "downloads": 886,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 937,
+   "likes": 2
+  }
+ },
+ "allenai/Bolmo-1B": {
+  "2026-10-07": {
+   "downloads": 1268,
+   "likes": 50
+  }
+ },
+ "allenai/Bolmo-1B-Stage1": {
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 0
+  }
+ },
+ "allenai/Bolmo-7B": {
+  "2026-10-07": {
+   "downloads": 378,
+   "likes": 59
+  }
+ },
+ "allenai/Bolmo-7B-Stage1": {
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 1
+  }
+ },
+ "allenai/Bwen-8B": {
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 1
+  }
+ },
+ "allenai/Bwen-8B-Stage1": {
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 1
   }
  },
  "allenai/Dense_1b_130B": {
-  "2026-09-22": {
-   "downloads": 307,
-   "likes": 6
-  },
   "2026-09-23": {
    "downloads": 288,
    "likes": 6
@@ -8218,10 +8256,6 @@
   }
  },
  "allenai/Emo_1b14b_130B": {
-  "2026-09-22": {
-   "downloads": 377,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 374,
    "likes": 7
@@ -8276,10 +8310,6 @@
   }
  },
  "allenai/Emo_1b14b_1T": {
-  "2026-09-22": {
-   "downloads": 575,
-   "likes": 29
-  },
   "2026-09-23": {
    "downloads": 564,
    "likes": 29
@@ -8333,11 +8363,19 @@
    "likes": 29
   }
  },
+ "allenai/Llama-3-Blama-8B": {
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 0
+  }
+ },
+ "allenai/Llama-3-Blama-8B-Stage1": {
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 0
+  }
+ },
  "allenai/OlmoEarth-v1-Base": {
-  "2026-09-22": {
-   "downloads": 53046,
-   "likes": 41
-  },
   "2026-09-23": {
    "downloads": 52964,
    "likes": 41
@@ -8389,13 +8427,13 @@
   "2026-10-06": {
    "downloads": 20038,
    "likes": 41
+  },
+  "2026-10-07": {
+   "downloads": 20083,
+   "likes": 41
   }
  },
  "allenai/OlmoEarth-v1-Large": {
-  "2026-09-22": {
-   "downloads": 688,
-   "likes": 22
-  },
   "2026-09-23": {
    "downloads": 616,
    "likes": 22
@@ -8447,13 +8485,13 @@
   "2026-10-06": {
    "downloads": 566,
    "likes": 22
+  },
+  "2026-10-07": {
+   "downloads": 566,
+   "likes": 22
   }
  },
  "allenai/OlmoEarth-v1-Nano": {
-  "2026-09-22": {
-   "downloads": 10662,
-   "likes": 16
-  },
   "2026-09-23": {
    "downloads": 10968,
    "likes": 16
@@ -8505,13 +8543,13 @@
   "2026-10-06": {
    "downloads": 7401,
    "likes": 16
+  },
+  "2026-10-07": {
+   "downloads": 7475,
+   "likes": 16
   }
  },
  "allenai/OlmoEarth-v1-Tiny": {
-  "2026-09-22": {
-   "downloads": 1165,
-   "likes": 11
-  },
   "2026-09-23": {
    "downloads": 1217,
    "likes": 11
@@ -8563,13 +8601,13 @@
   "2026-10-06": {
    "downloads": 4005,
    "likes": 11
+  },
+  "2026-10-07": {
+   "downloads": 4216,
+   "likes": 11
   }
  },
  "allenai/OlmoEarth-v1_2-Base": {
-  "2026-09-22": {
-   "downloads": 12180,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 12795,
    "likes": 7
@@ -8621,13 +8659,13 @@
   "2026-10-06": {
    "downloads": 18856,
    "likes": 7
+  },
+  "2026-10-07": {
+   "downloads": 19442,
+   "likes": 7
   }
  },
  "allenai/OlmoEarth-v1_2-Nano": {
-  "2026-09-22": {
-   "downloads": 1962,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 2079,
    "likes": 7
@@ -8682,10 +8720,6 @@
   }
  },
  "allenai/OlmoEarth-v1_2-Small": {
-  "2026-09-22": {
-   "downloads": 3626,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 3773,
    "likes": 5
@@ -8737,13 +8771,13 @@
   "2026-10-06": {
    "downloads": 4767,
    "likes": 5
+  },
+  "2026-10-07": {
+   "downloads": 4705,
+   "likes": 5
   }
  },
  "allenai/OlmoEarth-v1_2-Tiny": {
-  "2026-09-22": {
-   "downloads": 4985,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 4975,
    "likes": 1
@@ -8782,10 +8816,6 @@
   }
  },
  "allenai/SamudrACE-E3SMv3": {
-  "2026-09-22": {
-   "downloads": 40,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 37,
    "likes": 3
@@ -8837,13 +8867,13 @@
   "2026-10-06": {
    "downloads": 44,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 45,
+   "likes": 4
   }
  },
  "allenai/StdMoE_1b14b_130B": {
-  "2026-09-22": {
-   "downloads": 404,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 385,
    "likes": 5
@@ -8898,10 +8928,6 @@
   }
  },
  "allenai/StdMoE_1b14b_1T": {
-  "2026-09-22": {
-   "downloads": 361,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 355,
    "likes": 5
@@ -8953,13 +8979,13 @@
   "2026-10-06": {
    "downloads": 425,
    "likes": 5
+  },
+  "2026-10-07": {
+   "downloads": 431,
+   "likes": 5
   }
  },
  "allenai/StdMoE_1b14b_1T_EmoAnnealed": {
-  "2026-09-22": {
-   "downloads": 305,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 286,
    "likes": 5
@@ -9014,10 +9040,6 @@
   }
  },
  "allenai/StdMoE_1b14b_1T_Preanneal": {
-  "2026-09-22": {
-   "downloads": 318,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 296,
    "likes": 5
@@ -9072,10 +9094,6 @@
   }
  },
  "allenai/StdMoE_1b4b_130B": {
-  "2026-09-22": {
-   "downloads": 365,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 360,
    "likes": 5
@@ -9130,10 +9148,6 @@
   }
  },
  "amazon/chronos-2": {
-  "2026-09-22": {
-   "downloads": 22744840,
-   "likes": 485
-  },
   "2026-09-23": {
    "downloads": 22795863,
    "likes": 489
@@ -9185,13 +9199,13 @@
   "2026-10-06": {
    "downloads": 21893562,
    "likes": 506
+  },
+  "2026-10-07": {
+   "downloads": 21782856,
+   "likes": 508
   }
  },
  "amazon/chronos-bolt-small": {
-  "2026-09-22": {
-   "downloads": 7586184,
-   "likes": 49
-  },
   "2026-09-23": {
    "downloads": 7676931,
    "likes": 49
@@ -9243,13 +9257,13 @@
   "2026-10-06": {
    "downloads": 6774665,
    "likes": 49
+  },
+  "2026-10-07": {
+   "downloads": 6644430,
+   "likes": 49
   }
  },
  "answerdotai/ModernBERT-base": {
-  "2026-09-22": {
-   "downloads": 4372504,
-   "likes": 1104
-  },
   "2026-09-23": {
    "downloads": 4349823,
    "likes": 1105
@@ -9301,13 +9315,13 @@
   "2026-10-06": {
    "downloads": 4188388,
    "likes": 1117
+  },
+  "2026-10-07": {
+   "downloads": 4166892,
+   "likes": 1117
   }
  },
  "apple/CADD-Base-7B": {
-  "2026-09-22": {
-   "downloads": 274,
-   "likes": 14
-  },
   "2026-09-23": {
    "downloads": 256,
    "likes": 14
@@ -9359,13 +9373,13 @@
   "2026-10-06": {
    "downloads": 286,
    "likes": 15
+  },
+  "2026-10-07": {
+   "downloads": 285,
+   "likes": 15
   }
  },
  "apple/CLaRa-7B-Base": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 18
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 18
@@ -9417,13 +9431,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 19
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 20
   }
  },
  "apple/CLaRa-7B-Base-16": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3
@@ -9473,15 +9487,15 @@
    "likes": 3
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 3
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 3
   }
  },
  "apple/CLaRa-7B-E2E": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 28
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 28
@@ -9533,13 +9547,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 28
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 29
   }
  },
  "apple/CLaRa-7B-Instruct": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 185
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 185
@@ -9591,13 +9605,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 185
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 186
   }
  },
  "apple/DiffuCoder-7B-Base": {
-  "2026-09-22": {
-   "downloads": 307,
-   "likes": 30
-  },
   "2026-09-23": {
    "downloads": 321,
    "likes": 30
@@ -9649,13 +9663,13 @@
   "2026-10-06": {
    "downloads": 341,
    "likes": 30
+  },
+  "2026-10-07": {
+   "downloads": 359,
+   "likes": 30
   }
  },
  "apple/DiffuCoder-7B-Instruct": {
-  "2026-09-22": {
-   "downloads": 1385,
-   "likes": 62
-  },
   "2026-09-23": {
    "downloads": 1449,
    "likes": 62
@@ -9707,13 +9721,13 @@
   "2026-10-06": {
    "downloads": 1225,
    "likes": 62
+  },
+  "2026-10-07": {
+   "downloads": 1072,
+   "likes": 63
   }
  },
  "apple/DiffuCoder-7B-cpGRPO": {
-  "2026-09-22": {
-   "downloads": 888,
-   "likes": 321
-  },
   "2026-09-23": {
    "downloads": 897,
    "likes": 321
@@ -9764,6 +9778,10 @@
   },
   "2026-10-06": {
    "downloads": 716,
+   "likes": 321
+  },
+  "2026-10-07": {
+   "downloads": 728,
    "likes": 321
   }
  },
@@ -9819,13 +9837,13 @@
   "2026-10-06": {
    "downloads": 2515,
    "likes": 286
+  },
+  "2026-10-07": {
+   "downloads": 2556,
+   "likes": 287
   }
  },
  "apple/MobileCLIP-S3": {
-  "2026-09-22": {
-   "downloads": 31,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 31,
    "likes": 5
@@ -9877,13 +9895,13 @@
   "2026-10-06": {
    "downloads": 31,
    "likes": 5
+  },
+  "2026-10-07": {
+   "downloads": 34,
+   "likes": 5
   }
  },
  "apple/MobileCLIP-S4": {
-  "2026-09-22": {
-   "downloads": 71,
-   "likes": 12
-  },
   "2026-09-23": {
    "downloads": 72,
    "likes": 12
@@ -9935,13 +9953,13 @@
   "2026-10-06": {
    "downloads": 98,
    "likes": 12
+  },
+  "2026-10-07": {
+   "downloads": 102,
+   "likes": 12
   }
  },
  "apple/Sharp": {
-  "2026-09-22": {
-   "downloads": 2348,
-   "likes": 408
-  },
   "2026-09-23": {
    "downloads": 2352,
    "likes": 408
@@ -9993,13 +10011,13 @@
   "2026-10-06": {
    "downloads": 2263,
    "likes": 409
+  },
+  "2026-10-07": {
+   "downloads": 2278,
+   "likes": 410
   }
  },
  "apple/SimpleSD-30B-instruct": {
-  "2026-09-22": {
-   "downloads": 266,
-   "likes": 8
-  },
   "2026-09-23": {
    "downloads": 267,
    "likes": 8
@@ -10051,13 +10069,13 @@
   "2026-10-06": {
    "downloads": 493,
    "likes": 10
+  },
+  "2026-10-07": {
+   "downloads": 1691,
+   "likes": 11
   }
  },
  "apple/SimpleSD-4B-instruct": {
-  "2026-09-22": {
-   "downloads": 396,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 378,
    "likes": 7
@@ -10109,13 +10127,13 @@
   "2026-10-06": {
    "downloads": 319,
    "likes": 8
+  },
+  "2026-10-07": {
+   "downloads": 320,
+   "likes": 9
   }
  },
  "apple/SimpleSD-4B-thinking": {
-  "2026-09-22": {
-   "downloads": 141,
-   "likes": 6
-  },
   "2026-09-23": {
    "downloads": 138,
    "likes": 6
@@ -10167,13 +10185,13 @@
   "2026-10-06": {
    "downloads": 225,
    "likes": 9
+  },
+  "2026-10-07": {
+   "downloads": 237,
+   "likes": 10
   }
  },
  "apple/mobileclip2_coca_dfn2b_s13b_context77": {
-  "2026-09-22": {
-   "downloads": 20,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 20,
    "likes": 1
@@ -10224,14 +10242,14 @@
   },
   "2026-10-06": {
    "downloads": 23,
+   "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 26,
    "likes": 1
   }
  },
  "apple/mobileclip2_coca_dfn2b_s13b_dci-complete_s12m_context256": {
-  "2026-09-22": {
-   "downloads": 14,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 15,
    "likes": 1
@@ -10282,14 +10300,14 @@
   },
   "2026-10-06": {
    "downloads": 24,
+   "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 27,
    "likes": 1
   }
  },
  "apple/mobileclip2_coca_dfn2b_s13b_dci-extended_s12m_context256": {
-  "2026-09-22": {
-   "downloads": 17,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 17,
    "likes": 1
@@ -10341,13 +10359,13 @@
   "2026-10-06": {
    "downloads": 24,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 27,
+   "likes": 1
   }
  },
  "apple/mobileclip2_coca_dfn2b_s13b_docci_s12m_context256": {
-  "2026-09-22": {
-   "downloads": 13,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 13,
    "likes": 1
@@ -10399,19 +10417,13 @@
   "2026-10-06": {
    "downloads": 17,
    "likes": 1
-  }
- },
- "apple/mobileclip2_coca_dfn2b_s13b_recap-coco-30k_s12m_context77": {
-  "2026-09-22": {
-   "downloads": 17,
+  },
+  "2026-10-07": {
+   "downloads": 20,
    "likes": 1
   }
  },
  "apple/starflow": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 286
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 286
@@ -10461,15 +10473,15 @@
    "likes": 286
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 286
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 286
   }
  },
  "argmaxinc/whisperkit-coreml": {
-  "2026-09-22": {
-   "downloads": 10996186,
-   "likes": 229
-  },
   "2026-09-23": {
    "downloads": 11082900,
    "likes": 229
@@ -10521,13 +10533,13 @@
   "2026-10-06": {
    "downloads": 10659118,
    "likes": 235
+  },
+  "2026-10-07": {
+   "downloads": 10826531,
+   "likes": 237
   }
  },
  "audio-cpp/audio.cpp-gguf": {
-  "2026-09-22": {
-   "downloads": 4736217,
-   "likes": 164
-  },
   "2026-09-23": {
    "downloads": 4848516,
    "likes": 167
@@ -10579,13 +10591,13 @@
   "2026-10-06": {
    "downloads": 6064650,
    "likes": 204
+  },
+  "2026-10-07": {
+   "downloads": 6106891,
+   "likes": 206
   }
  },
  "audnai/penclaw-GLM-5.3-abliterated": {
-  "2026-09-22": {
-   "downloads": 745,
-   "likes": 177
-  },
   "2026-10-04": {
    "downloads": 1442,
    "likes": 304
@@ -10593,13 +10605,13 @@
   "2026-10-06": {
    "downloads": 1658,
    "likes": 327
+  },
+  "2026-10-07": {
+   "downloads": 1738,
+   "likes": 338
   }
  },
  "autogluon/chronos-2": {
-  "2026-09-22": {
-   "downloads": 8750591,
-   "likes": 72
-  },
   "2026-09-23": {
    "downloads": 8566533,
    "likes": 72
@@ -10651,13 +10663,13 @@
   "2026-10-06": {
    "downloads": 5649932,
    "likes": 73
+  },
+  "2026-10-07": {
+   "downloads": 5664423,
+   "likes": 73
   }
  },
  "autogluon/chronos-2-small": {
-  "2026-09-22": {
-   "downloads": 6440527,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 6129023,
    "likes": 7
@@ -10712,10 +10724,6 @@
   }
  },
  "autogluon/chronos-bolt-small": {
-  "2026-09-22": {
-   "downloads": 5966380,
-   "likes": 63
-  },
   "2026-09-23": {
    "downloads": 5937635,
    "likes": 63
@@ -10767,31 +10775,49 @@
   "2026-10-06": {
    "downloads": 5940206,
    "likes": 63
+  },
+  "2026-10-07": {
+   "downloads": 5981070,
+   "likes": 63
   }
  },
  "autotrust/GEV-26B-Decide": {
   "2026-10-06": {
    "downloads": 854574,
    "likes": 674
+  },
+  "2026-10-07": {
+   "downloads": 895867,
+   "likes": 1207
+  }
+ },
+ "autotrust/GEV-26B-Decide-NVFP4": {
+  "2026-10-07": {
+   "downloads": 14957,
+   "likes": 151
   }
  },
  "autotrust/JEV-27B-VL": {
   "2026-10-06": {
    "downloads": 1525286,
    "likes": 968
+  },
+  "2026-10-07": {
+   "downloads": 1529210,
+   "likes": 1841
   }
  },
  "autotrust/JEV-9B": {
   "2026-10-06": {
    "downloads": 313357,
    "likes": 129
+  },
+  "2026-10-07": {
+   "downloads": 320128,
+   "likes": 136
   }
  },
  "baidu/Unlimited-OCR": {
-  "2026-09-22": {
-   "downloads": 2110154,
-   "likes": 4274
-  },
   "2026-09-23": {
    "downloads": 2082572,
    "likes": 4282
@@ -10843,13 +10869,13 @@
   "2026-10-06": {
    "downloads": 1360538,
    "likes": 4336
+  },
+  "2026-10-07": {
+   "downloads": 1328970,
+   "likes": 4341
   }
  },
  "bespokelabs/Bespoke-Nimble-9B": {
-  "2026-09-22": {
-   "downloads": 1924,
-   "likes": 161
-  },
   "2026-09-23": {
    "downloads": 2311,
    "likes": 176
@@ -10868,10 +10894,6 @@
   }
  },
  "bigcode/starcoder": {
-  "2026-09-22": {
-   "downloads": 15941,
-   "likes": 2986
-  },
   "2026-09-23": {
    "downloads": 16093,
    "likes": 2986
@@ -10923,13 +10945,13 @@
   "2026-10-06": {
    "downloads": 16737,
    "likes": 2986
+  },
+  "2026-10-07": {
+   "downloads": 16714,
+   "likes": 2986
   }
  },
  "bigscience/bloom": {
-  "2026-09-22": {
-   "downloads": 15259,
-   "likes": 5070
-  },
   "2026-09-23": {
    "downloads": 15187,
    "likes": 5070
@@ -10981,13 +11003,13 @@
   "2026-10-06": {
    "downloads": 14404,
    "likes": 5071
+  },
+  "2026-10-07": {
+   "downloads": 14285,
+   "likes": 5072
   }
  },
  "black-forest-labs/FLUX.1-Kontext-dev": {
-  "2026-09-22": {
-   "downloads": 340267,
-   "likes": 2833
-  },
   "2026-09-23": {
    "downloads": 342401,
    "likes": 2836
@@ -11039,19 +11061,13 @@
   "2026-10-06": {
    "downloads": 376593,
    "likes": 2866
-  }
- },
- "black-forest-labs/FLUX.1-Kontext-dev-NVFP4": {
-  "2026-09-22": {
-   "downloads": 160,
-   "likes": 12
+  },
+  "2026-10-07": {
+   "downloads": 385947,
+   "likes": 2869
   }
  },
  "black-forest-labs/FLUX.1-dev": {
-  "2026-09-22": {
-   "downloads": 733468,
-   "likes": 14904
-  },
   "2026-09-23": {
    "downloads": 721220,
    "likes": 14947
@@ -11103,25 +11119,13 @@
   "2026-10-06": {
    "downloads": 698301,
    "likes": 15400
-  }
- },
- "black-forest-labs/FLUX.1-dev-FP8": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 134
-  }
- },
- "black-forest-labs/FLUX.1-dev-NVFP4": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 17
+  },
+  "2026-10-07": {
+   "downloads": 697714,
+   "likes": 15427
   }
  },
  "black-forest-labs/FLUX.1-schnell": {
-  "2026-09-22": {
-   "downloads": 533684,
-   "likes": 5975
-  },
   "2026-09-23": {
    "downloads": 525415,
    "likes": 5985
@@ -11173,13 +11177,13 @@
   "2026-10-06": {
    "downloads": 643336,
    "likes": 6150
+  },
+  "2026-10-07": {
+   "downloads": 649336,
+   "likes": 6164
   }
  },
  "black-forest-labs/FLUX.2-dev": {
-  "2026-09-22": {
-   "downloads": 347953,
-   "likes": 2281
-  },
   "2026-09-23": {
    "downloads": 342231,
    "likes": 2289
@@ -11231,13 +11235,13 @@
   "2026-10-06": {
    "downloads": 407139,
    "likes": 2378
+  },
+  "2026-10-07": {
+   "downloads": 405342,
+   "likes": 2382
   }
  },
  "black-forest-labs/FLUX.2-dev-NVFP4": {
-  "2026-09-22": {
-   "downloads": 22153,
-   "likes": 106
-  },
   "2026-09-23": {
    "downloads": 22268,
    "likes": 106
@@ -11289,13 +11293,13 @@
   "2026-10-06": {
    "downloads": 30855,
    "likes": 108
+  },
+  "2026-10-07": {
+   "downloads": 29644,
+   "likes": 108
   }
  },
  "black-forest-labs/FLUX.2-klein-4B": {
-  "2026-09-22": {
-   "downloads": 404245,
-   "likes": 968
-  },
   "2026-09-23": {
    "downloads": 408818,
    "likes": 973
@@ -11347,13 +11351,13 @@
   "2026-10-06": {
    "downloads": 399529,
    "likes": 1009
+  },
+  "2026-10-07": {
+   "downloads": 402452,
+   "likes": 1010
   }
  },
  "black-forest-labs/FLUX.2-klein-4b-fp8": {
-  "2026-09-22": {
-   "downloads": 224681,
-   "likes": 85
-  },
   "2026-09-23": {
    "downloads": 229298,
    "likes": 86
@@ -11405,13 +11409,13 @@
   "2026-10-06": {
    "downloads": 304432,
    "likes": 88
+  },
+  "2026-10-07": {
+   "downloads": 308075,
+   "likes": 89
   }
  },
  "black-forest-labs/FLUX.2-klein-4b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 4861,
-   "likes": 46
-  },
   "2026-09-23": {
    "downloads": 4896,
    "likes": 46
@@ -11463,13 +11467,13 @@
   "2026-10-06": {
    "downloads": 7007,
    "likes": 47
+  },
+  "2026-10-07": {
+   "downloads": 7028,
+   "likes": 47
   }
  },
  "black-forest-labs/FLUX.2-klein-9B": {
-  "2026-09-22": {
-   "downloads": 180422,
-   "likes": 1532
-  },
   "2026-09-23": {
    "downloads": 180755,
    "likes": 1538
@@ -11521,13 +11525,13 @@
   "2026-10-06": {
    "downloads": 199126,
    "likes": 1616
+  },
+  "2026-10-07": {
+   "downloads": 200135,
+   "likes": 1622
   }
  },
  "black-forest-labs/FLUX.2-klein-9b-fp8": {
-  "2026-09-22": {
-   "downloads": 59494,
-   "likes": 601
-  },
   "2026-09-23": {
    "downloads": 57583,
    "likes": 611
@@ -11579,13 +11583,13 @@
   "2026-10-06": {
    "downloads": 58822,
    "likes": 722
+  },
+  "2026-10-07": {
+   "downloads": 57930,
+   "likes": 727
   }
  },
  "black-forest-labs/FLUX.2-klein-9b-kv": {
-  "2026-09-22": {
-   "downloads": 104693,
-   "likes": 227
-  },
   "2026-09-23": {
    "downloads": 104707,
    "likes": 227
@@ -11637,13 +11641,13 @@
   "2026-10-06": {
    "downloads": 86763,
    "likes": 232
+  },
+  "2026-10-07": {
+   "downloads": 70600,
+   "likes": 232
   }
  },
  "black-forest-labs/FLUX.2-klein-9b-kv-fp8": {
-  "2026-09-22": {
-   "downloads": 51227,
-   "likes": 96
-  },
   "2026-09-23": {
    "downloads": 50989,
    "likes": 97
@@ -11695,13 +11699,13 @@
   "2026-10-06": {
    "downloads": 52065,
    "likes": 99
+  },
+  "2026-10-07": {
+   "downloads": 51719,
+   "likes": 99
   }
  },
  "black-forest-labs/FLUX.2-klein-9b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 2667,
-   "likes": 81
-  },
   "2026-09-23": {
    "downloads": 2719,
    "likes": 82
@@ -11753,13 +11757,13 @@
   "2026-10-06": {
    "downloads": 2271,
    "likes": 85
+  },
+  "2026-10-07": {
+   "downloads": 2282,
+   "likes": 86
   }
  },
  "black-forest-labs/FLUX.2-klein-base-4B": {
-  "2026-09-22": {
-   "downloads": 281806,
-   "likes": 172
-  },
   "2026-09-23": {
    "downloads": 282019,
    "likes": 172
@@ -11811,13 +11815,13 @@
   "2026-10-06": {
    "downloads": 301426,
    "likes": 177
+  },
+  "2026-10-07": {
+   "downloads": 303225,
+   "likes": 178
   }
  },
  "black-forest-labs/FLUX.2-klein-base-4b-fp8": {
-  "2026-09-22": {
-   "downloads": 97759,
-   "likes": 52
-  },
   "2026-09-23": {
    "downloads": 100230,
    "likes": 52
@@ -11869,13 +11873,13 @@
   "2026-10-06": {
    "downloads": 94706,
    "likes": 54
+  },
+  "2026-10-07": {
+   "downloads": 93821,
+   "likes": 54
   }
  },
  "black-forest-labs/FLUX.2-klein-base-4b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 859,
-   "likes": 22
-  },
   "2026-09-23": {
    "downloads": 902,
    "likes": 22
@@ -11927,13 +11931,13 @@
   "2026-10-06": {
    "downloads": 3261,
    "likes": 22
+  },
+  "2026-10-07": {
+   "downloads": 3276,
+   "likes": 22
   }
  },
  "black-forest-labs/FLUX.2-klein-base-9B": {
-  "2026-09-22": {
-   "downloads": 62693,
-   "likes": 341
-  },
   "2026-09-23": {
    "downloads": 61634,
    "likes": 346
@@ -11985,13 +11989,13 @@
   "2026-10-06": {
    "downloads": 86592,
    "likes": 368
+  },
+  "2026-10-07": {
+   "downloads": 91142,
+   "likes": 369
   }
  },
  "black-forest-labs/FLUX.2-klein-base-9b-fp8": {
-  "2026-09-22": {
-   "downloads": 34538,
-   "likes": 832
-  },
   "2026-09-23": {
    "downloads": 34594,
    "likes": 855
@@ -12043,13 +12047,13 @@
   "2026-10-06": {
    "downloads": 37768,
    "likes": 1121
+  },
+  "2026-10-07": {
+   "downloads": 38571,
+   "likes": 1140
   }
  },
  "black-forest-labs/FLUX.2-klein-base-9b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 513,
-   "likes": 29
-  },
   "2026-09-23": {
    "downloads": 505,
    "likes": 29
@@ -12101,13 +12105,13 @@
   "2026-10-06": {
    "downloads": 439,
    "likes": 29
+  },
+  "2026-10-07": {
+   "downloads": 428,
+   "likes": 29
   }
  },
  "black-forest-labs/FLUX.2-small-decoder": {
-  "2026-09-22": {
-   "downloads": 214133,
-   "likes": 176
-  },
   "2026-09-23": {
    "downloads": 213253,
    "likes": 177
@@ -12158,6 +12162,10 @@
   },
   "2026-10-06": {
    "downloads": 199910,
+   "likes": 181
+  },
+  "2026-10-07": {
+   "downloads": 199093,
    "likes": 181
   }
  },
@@ -12213,6 +12221,10 @@
   "2026-10-06": {
    "downloads": 395,
    "likes": 131
+  },
+  "2026-10-07": {
+   "downloads": 551,
+   "likes": 131
   }
  },
  "black-forest-labs/flux-3-action-droid": {
@@ -12267,6 +12279,10 @@
   "2026-10-06": {
    "downloads": 1035,
    "likes": 35
+  },
+  "2026-10-07": {
+   "downloads": 1096,
+   "likes": 36
   }
  },
  "black-forest-labs/flux-3-action-so101": {
@@ -12321,6 +12337,10 @@
   "2026-10-06": {
    "downloads": 1217,
    "likes": 52
+  },
+  "2026-10-07": {
+   "downloads": 1338,
+   "likes": 55
   }
  },
  "bottlecapai/ThinkingCap-Qwen3.8-27B": {
@@ -12337,11 +12357,13 @@
    "likes": 119
   }
  },
+ "canberkkkkkk/ema-lightning": {
+  "2026-10-07": {
+   "downloads": 2724,
+   "likes": 257
+  }
+ },
  "cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF": {
-  "2026-09-22": {
-   "downloads": 5033826,
-   "likes": 12
-  },
   "2026-09-23": {
    "downloads": 4996947,
    "likes": 15
@@ -12388,10 +12410,6 @@
   }
  },
  "circlestone-labs/Anima": {
-  "2026-09-22": {
-   "downloads": 1138917,
-   "likes": 2271
-  },
   "2026-09-23": {
    "downloads": 1155836,
    "likes": 2279
@@ -12443,13 +12461,13 @@
   "2026-10-06": {
    "downloads": 1233120,
    "likes": 2366
+  },
+  "2026-10-07": {
+   "downloads": 1239735,
+   "likes": 2369
   }
  },
  "convaiinnovations/laya": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2478
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3058
@@ -12501,13 +12519,13 @@
   "2026-10-06": {
    "downloads": 20386,
    "likes": 5278
+  },
+  "2026-10-07": {
+   "downloads": 28497,
+   "likes": 5327
   }
  },
  "convaiinnovations/laya-multilingual": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 174
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 218
@@ -12546,10 +12564,6 @@
   }
  },
  "coqui/XTTS-v2": {
-  "2026-09-22": {
-   "downloads": 7029926,
-   "likes": 3814
-  },
   "2026-09-23": {
    "downloads": 7003306,
    "likes": 3816
@@ -12601,13 +12615,13 @@
   "2026-10-06": {
    "downloads": 6675119,
    "likes": 3855
+  },
+  "2026-10-07": {
+   "downloads": 6699062,
+   "likes": 3858
   }
  },
  "cross-encoder/ms-marco-MiniLM-L4-v2": {
-  "2026-09-22": {
-   "downloads": 4760700,
-   "likes": 31
-  },
   "2026-09-23": {
    "downloads": 4761096,
    "likes": 31
@@ -12659,13 +12673,13 @@
   "2026-10-06": {
    "downloads": 6237002,
    "likes": 31
+  },
+  "2026-10-07": {
+   "downloads": 6123879,
+   "likes": 31
   }
  },
  "cross-encoder/ms-marco-MiniLM-L6-v2": {
-  "2026-09-22": {
-   "downloads": 88818266,
-   "likes": 348
-  },
   "2026-09-23": {
    "downloads": 88690825,
    "likes": 348
@@ -12717,12 +12731,10 @@
   "2026-10-06": {
    "downloads": 83843529,
    "likes": 357
-  }
- },
- "cyjin-yl/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF": {
-  "2026-09-22": {
-   "downloads": 38149,
-   "likes": 179
+  },
+  "2026-10-07": {
+   "downloads": 83236540,
+   "likes": 359
   }
  },
  "datasocietyco/bge-base-en-v1.5-course-recommender-v5": {
@@ -12757,13 +12769,13 @@
   "2026-10-06": {
    "downloads": 4030321,
    "likes": 5
+  },
+  "2026-10-07": {
+   "downloads": 4154070,
+   "likes": 5
   }
  },
  "dealignai/Bonsai-2-27B-Ternary-CRACK-GGUF": {
-  "2026-09-22": {
-   "downloads": 38424,
-   "likes": 124
-  },
   "2026-09-23": {
    "downloads": 44106,
    "likes": 133
@@ -12773,17 +12785,7 @@
    "likes": 140
   }
  },
- "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8": {
-  "2026-09-22": {
-   "downloads": 36604,
-   "likes": 341
-  }
- },
  "deepseek-ai/DeepSeek-OCR": {
-  "2026-09-22": {
-   "downloads": 2261137,
-   "likes": 3385
-  },
   "2026-09-23": {
    "downloads": 2247449,
    "likes": 3386
@@ -12835,13 +12837,13 @@
   "2026-10-06": {
    "downloads": 2070621,
    "likes": 3391
+  },
+  "2026-10-07": {
+   "downloads": 2076309,
+   "likes": 3391
   }
  },
  "deepseek-ai/DeepSeek-R1": {
-  "2026-09-22": {
-   "downloads": 794197,
-   "likes": 14281
-  },
   "2026-09-23": {
    "downloads": 815126,
    "likes": 14284
@@ -12893,13 +12895,13 @@
   "2026-10-06": {
    "downloads": 1110629,
    "likes": 14326
+  },
+  "2026-10-07": {
+   "downloads": 1118924,
+   "likes": 14328
   }
  },
  "deepseek-ai/DeepSeek-R1-0528": {
-  "2026-09-22": {
-   "downloads": 157224,
-   "likes": 2462
-  },
   "2026-09-23": {
    "downloads": 157060,
    "likes": 2462
@@ -12951,13 +12953,13 @@
   "2026-10-06": {
    "downloads": 205294,
    "likes": 2465
+  },
+  "2026-10-07": {
+   "downloads": 202431,
+   "likes": 2467
   }
  },
  "deepseek-ai/DeepSeek-V3": {
-  "2026-09-22": {
-   "downloads": 1148200,
-   "likes": 4215
-  },
   "2026-09-23": {
    "downloads": 1134368,
    "likes": 4231
@@ -13009,13 +13011,13 @@
   "2026-10-06": {
    "downloads": 1402841,
    "likes": 4402
+  },
+  "2026-10-07": {
+   "downloads": 1406433,
+   "likes": 4403
   }
  },
  "deepseek-ai/DeepSeek-V3-0324": {
-  "2026-09-22": {
-   "downloads": 1170714,
-   "likes": 3174
-  },
   "2026-09-23": {
    "downloads": 1217156,
    "likes": 3174
@@ -13067,19 +13069,23 @@
   "2026-10-06": {
    "downloads": 1394445,
    "likes": 3183
+  },
+  "2026-10-07": {
+   "downloads": 1419434,
+   "likes": 3183
   }
  },
  "deepseek-ai/DeepSeek-V3.2": {
   "2026-10-06": {
    "downloads": 4122014,
    "likes": 1507
+  },
+  "2026-10-07": {
+   "downloads": 4240676,
+   "likes": 1507
   }
  },
  "deepseek-ai/DeepSeek-V4-Flash": {
-  "2026-09-22": {
-   "downloads": 1492958,
-   "likes": 2253
-  },
   "2026-09-23": {
    "downloads": 1451540,
    "likes": 2252
@@ -13131,13 +13137,13 @@
   "2026-10-06": {
    "downloads": 1004191,
    "likes": 2277
+  },
+  "2026-10-07": {
+   "downloads": 995874,
+   "likes": 2280
   }
  },
  "deepseek-ai/DeepSeek-V4-Flash-0731": {
-  "2026-09-22": {
-   "downloads": 4144923,
-   "likes": 3993
-  },
   "2026-09-23": {
    "downloads": 3954272,
    "likes": 3999
@@ -13189,13 +13195,13 @@
   "2026-10-06": {
    "downloads": 4542356,
    "likes": 4019
+  },
+  "2026-10-07": {
+   "downloads": 4528516,
+   "likes": 4022
   }
  },
  "deepseek-ai/DeepSeek-V4-Flash-DSpark": {
-  "2026-09-22": {
-   "downloads": 1046039,
-   "likes": 281
-  },
   "2026-09-23": {
    "downloads": 1030398,
    "likes": 281
@@ -13247,13 +13253,13 @@
   "2026-10-06": {
    "downloads": 616308,
    "likes": 284
+  },
+  "2026-10-07": {
+   "downloads": 583542,
+   "likes": 284
   }
  },
  "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {
-  "2026-09-22": {
-   "downloads": 836987,
-   "likes": 924
-  },
   "2026-09-23": {
    "downloads": 866024,
    "likes": 925
@@ -13305,13 +13311,13 @@
   "2026-10-06": {
    "downloads": 835578,
    "likes": 932
+  },
+  "2026-10-07": {
+   "downloads": 783133,
+   "likes": 932
   }
  },
  "deepseek-ai/DeepSeek-V4-Pro": {
-  "2026-09-22": {
-   "downloads": 555328,
-   "likes": 5588
-  },
   "2026-09-23": {
    "downloads": 537444,
    "likes": 5588
@@ -13363,13 +13369,13 @@
   "2026-10-06": {
    "downloads": 435434,
    "likes": 5629
+  },
+  "2026-10-07": {
+   "downloads": 436474,
+   "likes": 5635
   }
  },
  "deepseek-ai/DeepSeek-V4-Pro-0813": {
-  "2026-09-22": {
-   "downloads": 158279,
-   "likes": 845
-  },
   "2026-09-23": {
    "downloads": 153044,
    "likes": 846
@@ -13421,13 +13427,13 @@
   "2026-10-06": {
    "downloads": 88451,
    "likes": 859
+  },
+  "2026-10-07": {
+   "downloads": 85812,
+   "likes": 860
   }
  },
  "deepseek-ai/DeepSeek-V4-Pro-DSpark": {
-  "2026-09-22": {
-   "downloads": 4512,
-   "likes": 541
-  },
   "2026-09-23": {
    "downloads": 4539,
    "likes": 541
@@ -13479,13 +13485,13 @@
   "2026-10-06": {
    "downloads": 4147,
    "likes": 543
+  },
+  "2026-10-07": {
+   "downloads": 4127,
+   "likes": 543
   }
  },
  "deepseek-ai/DeepSeek-V4.1-Flash": {
-  "2026-09-22": {
-   "downloads": 542014,
-   "likes": 3607
-  },
   "2026-09-23": {
    "downloads": 570909,
    "likes": 3663
@@ -13537,13 +13543,13 @@
   "2026-10-06": {
    "downloads": 1160332,
    "likes": 4173
+  },
+  "2026-10-07": {
+   "downloads": 1255513,
+   "likes": 4219
   }
  },
  "deepseek-ai/Janus-Pro-7B": {
-  "2026-09-22": {
-   "downloads": 11051,
-   "likes": 3693
-  },
   "2026-09-23": {
    "downloads": 11016,
    "likes": 3693
@@ -13595,13 +13601,13 @@
   "2026-10-06": {
    "downloads": 10808,
    "likes": 3696
+  },
+  "2026-10-07": {
+   "downloads": 10899,
+   "likes": 3697
   }
  },
  "deepseek-ai/dflash_gemma4_12b_block7": {
-  "2026-09-22": {
-   "downloads": 333,
-   "likes": 8
-  },
   "2026-09-23": {
    "downloads": 342,
    "likes": 8
@@ -13653,13 +13659,13 @@
   "2026-10-06": {
    "downloads": 446,
    "likes": 8
+  },
+  "2026-10-07": {
+   "downloads": 457,
+   "likes": 8
   }
  },
  "deepseek-ai/dflash_qwen3_14b_block7": {
-  "2026-09-22": {
-   "downloads": 390,
-   "likes": 6
-  },
   "2026-09-23": {
    "downloads": 385,
    "likes": 6
@@ -13711,13 +13717,13 @@
   "2026-10-06": {
    "downloads": 611,
    "likes": 6
+  },
+  "2026-10-07": {
+   "downloads": 606,
+   "likes": 6
   }
  },
  "deepseek-ai/dflash_qwen3_4b_block7": {
-  "2026-09-22": {
-   "downloads": 1692,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 1639,
    "likes": 2
@@ -13769,13 +13775,13 @@
   "2026-10-06": {
    "downloads": 1419,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 1406,
+   "likes": 2
   }
  },
  "deepseek-ai/dflash_qwen3_8b_block7": {
-  "2026-09-22": {
-   "downloads": 818,
-   "likes": 4
-  },
   "2026-09-23": {
    "downloads": 797,
    "likes": 4
@@ -13827,13 +13833,13 @@
   "2026-10-06": {
    "downloads": 659,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 672,
+   "likes": 4
   }
  },
  "deepseek-ai/dspark_gemma4_12b_block7": {
-  "2026-09-22": {
-   "downloads": 74917,
-   "likes": 46
-  },
   "2026-09-23": {
    "downloads": 74972,
    "likes": 46
@@ -13885,13 +13891,13 @@
   "2026-10-06": {
    "downloads": 48167,
    "likes": 46
+  },
+  "2026-10-07": {
+   "downloads": 37553,
+   "likes": 46
   }
  },
  "deepseek-ai/dspark_qwen3_14b_block7": {
-  "2026-09-22": {
-   "downloads": 8083,
-   "likes": 14
-  },
   "2026-09-23": {
    "downloads": 8090,
    "likes": 14
@@ -13943,13 +13949,13 @@
   "2026-10-06": {
    "downloads": 9631,
    "likes": 14
+  },
+  "2026-10-07": {
+   "downloads": 9758,
+   "likes": 14
   }
  },
  "deepseek-ai/dspark_qwen3_4b_block7": {
-  "2026-09-22": {
-   "downloads": 10161,
-   "likes": 53
-  },
   "2026-09-23": {
    "downloads": 10226,
    "likes": 54
@@ -14001,13 +14007,13 @@
   "2026-10-06": {
    "downloads": 8148,
    "likes": 56
+  },
+  "2026-10-07": {
+   "downloads": 7868,
+   "likes": 57
   }
  },
  "deepseek-ai/dspark_qwen3_8b_block7": {
-  "2026-09-22": {
-   "downloads": 7807,
-   "likes": 14
-  },
   "2026-09-23": {
    "downloads": 7239,
    "likes": 14
@@ -14059,13 +14065,13 @@
   "2026-10-06": {
    "downloads": 8505,
    "likes": 15
+  },
+  "2026-10-07": {
+   "downloads": 8670,
+   "likes": 15
   }
  },
  "deepseek-ai/eagle3_gemma4_12b_ttt7": {
-  "2026-09-22": {
-   "downloads": 514,
-   "likes": 13
-  },
   "2026-09-23": {
    "downloads": 512,
    "likes": 13
@@ -14117,13 +14123,13 @@
   "2026-10-06": {
    "downloads": 611,
    "likes": 13
+  },
+  "2026-10-07": {
+   "downloads": 621,
+   "likes": 13
   }
  },
  "deepseek-ai/eagle3_qwen3_14b_ttt7": {
-  "2026-09-22": {
-   "downloads": 369,
-   "likes": 4
-  },
   "2026-09-23": {
    "downloads": 362,
    "likes": 4
@@ -14175,13 +14181,13 @@
   "2026-10-06": {
    "downloads": 397,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 400,
+   "likes": 4
   }
  },
  "deepseek-ai/eagle3_qwen3_4b_ttt7": {
-  "2026-09-22": {
-   "downloads": 476,
-   "likes": 4
-  },
   "2026-09-23": {
    "downloads": 436,
    "likes": 4
@@ -14233,13 +14239,13 @@
   "2026-10-06": {
    "downloads": 535,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 540,
+   "likes": 4
   }
  },
  "deepseek-ai/eagle3_qwen3_8b_ttt7": {
-  "2026-09-22": {
-   "downloads": 568,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 522,
    "likes": 3
@@ -14291,13 +14297,13 @@
   "2026-10-06": {
    "downloads": 569,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 583,
+   "likes": 3
   }
  },
  "distilbert/distilbert-base-uncased": {
-  "2026-09-22": {
-   "downloads": 7866839,
-   "likes": 1472
-  },
   "2026-09-23": {
    "downloads": 7946165,
    "likes": 1472
@@ -14349,13 +14355,13 @@
   "2026-10-06": {
    "downloads": 8345058,
    "likes": 1474
+  },
+  "2026-10-07": {
+   "downloads": 8326687,
+   "likes": 1474
   }
  },
  "dphn/dolphin-2.9.1-yi-1.5-34b": {
-  "2026-09-22": {
-   "downloads": 4808068,
-   "likes": 69
-  },
   "2026-09-23": {
    "downloads": 4810160,
    "likes": 69
@@ -14407,23 +14413,19 @@
   "2026-10-06": {
    "downloads": 4726939,
    "likes": 69
+  },
+  "2026-10-07": {
+   "downloads": 4727596,
+   "likes": 69
   }
  },
  "empero-ai/Qwen3.8-35B-A3B-Distill-GGUF": {
-  "2026-09-22": {
-   "downloads": 83240,
-   "likes": 128
-  },
   "2026-09-23": {
    "downloads": 95061,
    "likes": 134
   }
  },
  "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF": {
-  "2026-09-22": {
-   "downloads": 561694,
-   "likes": 2759
-  },
   "2026-09-23": {
    "downloads": 558953,
    "likes": 2763
@@ -14475,13 +14477,13 @@
   "2026-10-06": {
    "downloads": 528539,
    "likes": 2798
+  },
+  "2026-10-07": {
+   "downloads": 522279,
+   "likes": 2801
   }
  },
  "facebook/contriever": {
-  "2026-09-22": {
-   "downloads": 8088467,
-   "likes": 122
-  },
   "2026-09-23": {
    "downloads": 8103920,
    "likes": 122
@@ -14533,13 +14535,13 @@
   "2026-10-06": {
    "downloads": 8139230,
    "likes": 123
+  },
+  "2026-10-07": {
+   "downloads": 8161912,
+   "likes": 123
   }
  },
  "facebook/opt-125m": {
-  "2026-09-22": {
-   "downloads": 6815870,
-   "likes": 324
-  },
   "2026-09-23": {
    "downloads": 6819255,
    "likes": 324
@@ -14591,13 +14593,13 @@
   "2026-10-06": {
    "downloads": 6524575,
    "likes": 324
+  },
+  "2026-10-07": {
+   "downloads": 6450076,
+   "likes": 324
   }
  },
  "facebook/sam3": {
-  "2026-09-22": {
-   "downloads": 2143455,
-   "likes": 3395
-  },
   "2026-09-23": {
    "downloads": 2156817,
    "likes": 3428
@@ -14649,13 +14651,13 @@
   "2026-10-06": {
    "downloads": 2179582,
    "likes": 3827
+  },
+  "2026-10-07": {
+   "downloads": 2174262,
+   "likes": 3856
   }
  },
  "farbodtavakkoli/OTel-2.0-LLM-31B-IT": {
-  "2026-09-22": {
-   "downloads": 5937897,
-   "likes": 22
-  },
   "2026-09-23": {
    "downloads": 5635532,
    "likes": 22
@@ -14725,23 +14727,19 @@
   "2026-10-06": {
    "downloads": 68429,
    "likes": 379
+  },
+  "2026-10-07": {
+   "downloads": 72491,
+   "likes": 388
   }
  },
  "fastino/gliner2.5-multi-v1": {
-  "2026-09-22": {
-   "downloads": 243120,
-   "likes": 238
-  },
   "2026-09-23": {
    "downloads": 247310,
    "likes": 243
   }
  },
  "google-bert/bert-base-uncased": {
-  "2026-09-22": {
-   "downloads": 45895818,
-   "likes": 3367
-  },
   "2026-09-23": {
    "downloads": 45461966,
    "likes": 3368
@@ -14793,13 +14791,13 @@
   "2026-10-06": {
    "downloads": 38865990,
    "likes": 3389
+  },
+  "2026-10-07": {
+   "downloads": 38484646,
+   "likes": 3392
   }
  },
  "google-t5/t5-small": {
-  "2026-09-22": {
-   "downloads": 24669760,
-   "likes": 635
-  },
   "2026-09-23": {
    "downloads": 24644038,
    "likes": 636
@@ -14851,6 +14849,10 @@
   "2026-10-06": {
    "downloads": 24637719,
    "likes": 651
+  },
+  "2026-10-07": {
+   "downloads": 24542652,
+   "likes": 654
   }
  },
  "google/DiarizationLM-Gemma-4-E4B-v1": {
@@ -14860,10 +14862,6 @@
   }
  },
  "google/electra-base-discriminator": {
-  "2026-09-22": {
-   "downloads": 47334721,
-   "likes": 184
-  },
   "2026-09-23": {
    "downloads": 47371933,
    "likes": 184
@@ -14915,19 +14913,23 @@
   "2026-10-06": {
    "downloads": 45938278,
    "likes": 191
+  },
+  "2026-10-07": {
+   "downloads": 46039671,
+   "likes": 192
   }
  },
  "google/embeddinggemma-2": {
   "2026-10-06": {
    "downloads": 364,
    "likes": 314
+  },
+  "2026-10-07": {
+   "downloads": 7562,
+   "likes": 913
   }
  },
  "google/gemma-4-12B-it-assistant": {
-  "2026-09-22": {
-   "downloads": 15146,
-   "likes": 128
-  },
   "2026-09-23": {
    "downloads": 15232,
    "likes": 128
@@ -14979,13 +14981,13 @@
   "2026-10-06": {
    "downloads": 29418,
    "likes": 130
+  },
+  "2026-10-07": {
+   "downloads": 30387,
+   "likes": 130
   }
  },
  "google/gemma-4-26B-A4B-it": {
-  "2026-09-22": {
-   "downloads": 10293404,
-   "likes": 1537
-  },
   "2026-09-23": {
    "downloads": 10486181,
    "likes": 1543
@@ -15037,13 +15039,13 @@
   "2026-10-06": {
    "downloads": 12633022,
    "likes": 1603
+  },
+  "2026-10-07": {
+   "downloads": 12473185,
+   "likes": 1609
   }
  },
  "google/gemma-4-31B-it": {
-  "2026-09-22": {
-   "downloads": 9158522,
-   "likes": 3895
-  },
   "2026-09-23": {
    "downloads": 9199819,
    "likes": 3906
@@ -15095,13 +15097,13 @@
   "2026-10-06": {
    "downloads": 9619285,
    "likes": 4037
+  },
+  "2026-10-07": {
+   "downloads": 9585344,
+   "likes": 4050
   }
  },
  "google/gemma-4-E2B-it-qat-mobile-ct": {
-  "2026-09-22": {
-   "downloads": 4289,
-   "likes": 31
-  },
   "2026-09-23": {
    "downloads": 2888,
    "likes": 31
@@ -15148,10 +15150,6 @@
   }
  },
  "google/gemma-4-E4B-it": {
-  "2026-09-22": {
-   "downloads": 4454809,
-   "likes": 1588
-  },
   "2026-09-23": {
    "downloads": 4445680,
    "likes": 1591
@@ -15203,13 +15201,13 @@
   "2026-10-06": {
    "downloads": 4443821,
    "likes": 1651
+  },
+  "2026-10-07": {
+   "downloads": 4419673,
+   "likes": 1658
   }
  },
  "google/gemma-4-E4B-it-qat-mobile-ct": {
-  "2026-09-22": {
-   "downloads": 7975,
-   "likes": 28
-  },
   "2026-09-23": {
    "downloads": 7747,
    "likes": 28
@@ -15261,13 +15259,13 @@
   "2026-10-06": {
    "downloads": 4411,
    "likes": 29
+  },
+  "2026-10-07": {
+   "downloads": 4163,
+   "likes": 29
   }
  },
  "google/gemma-4-E4B-it-qat-mobile-transformers": {
-  "2026-09-22": {
-   "downloads": 1150,
-   "likes": 28
-  },
   "2026-09-23": {
    "downloads": 1206,
    "likes": 28
@@ -15298,10 +15296,6 @@
   }
  },
  "google/gemma-7b": {
-  "2026-09-22": {
-   "downloads": 25420,
-   "likes": 3442
-  },
   "2026-09-23": {
    "downloads": 25111,
    "likes": 3442
@@ -15353,13 +15347,13 @@
   "2026-10-06": {
    "downloads": 15449,
    "likes": 3451
+  },
+  "2026-10-07": {
+   "downloads": 15450,
+   "likes": 3451
   }
  },
  "google/gnm-v3": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 19
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 19
@@ -15411,6 +15405,10 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 22
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 23
   }
  },
  "google/tabfm-1.1.0-pytorch": {
@@ -15437,13 +15435,13 @@
   "2026-10-06": {
    "downloads": 130,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 146,
+   "likes": 4
   }
  },
  "google/timesfm-3.0-pytorch": {
-  "2026-09-22": {
-   "downloads": 1151294,
-   "likes": 873
-  },
   "2026-09-23": {
    "downloads": 1187632,
    "likes": 876
@@ -15495,13 +15493,13 @@
   "2026-10-06": {
    "downloads": 1368000,
    "likes": 926
+  },
+  "2026-10-07": {
+   "downloads": 1195309,
+   "likes": 929
   }
  },
  "google/tipsv1-b14": {
-  "2026-09-22": {
-   "downloads": 242,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 229,
    "likes": 2
@@ -15553,13 +15551,13 @@
   "2026-10-06": {
    "downloads": 189,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 188,
+   "likes": 2
   }
  },
  "google/tipsv1-g14": {
-  "2026-09-22": {
-   "downloads": 321,
-   "likes": 9
-  },
   "2026-09-23": {
    "downloads": 308,
    "likes": 9
@@ -15611,13 +15609,13 @@
   "2026-10-06": {
    "downloads": 326,
    "likes": 10
+  },
+  "2026-10-07": {
+   "downloads": 326,
+   "likes": 10
   }
  },
  "google/tipsv1-g14-lowres": {
-  "2026-09-22": {
-   "downloads": 313,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 307,
    "likes": 5
@@ -15669,13 +15667,13 @@
   "2026-10-06": {
    "downloads": 299,
    "likes": 7
+  },
+  "2026-10-07": {
+   "downloads": 303,
+   "likes": 7
   }
  },
  "google/tipsv1-l14": {
-  "2026-09-22": {
-   "downloads": 402,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 396,
    "likes": 3
@@ -15727,13 +15725,13 @@
   "2026-10-06": {
    "downloads": 437,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 435,
+   "likes": 3
   }
  },
  "google/tipsv1-s14": {
-  "2026-09-22": {
-   "downloads": 378,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 367,
    "likes": 2
@@ -15785,13 +15783,13 @@
   "2026-10-06": {
    "downloads": 223,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 223,
+   "likes": 2
   }
  },
  "google/tipsv1-so400m14": {
-  "2026-09-22": {
-   "downloads": 273,
-   "likes": 0
-  },
   "2026-09-23": {
    "downloads": 260,
    "likes": 0
@@ -15843,13 +15841,13 @@
   "2026-10-06": {
    "downloads": 338,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 343,
+   "likes": 1
   }
  },
  "google/tipsv2-b14": {
-  "2026-09-22": {
-   "downloads": 242598,
-   "likes": 125
-  },
   "2026-09-23": {
    "downloads": 234617,
    "likes": 126
@@ -15901,13 +15899,13 @@
   "2026-10-06": {
    "downloads": 133353,
    "likes": 127
+  },
+  "2026-10-07": {
+   "downloads": 124713,
+   "likes": 127
   }
  },
  "google/tipsv2-b14-dpt": {
-  "2026-09-22": {
-   "downloads": 18457,
-   "likes": 14
-  },
   "2026-09-23": {
    "downloads": 18460,
    "likes": 14
@@ -15959,13 +15957,13 @@
   "2026-10-06": {
    "downloads": 16595,
    "likes": 14
+  },
+  "2026-10-07": {
+   "downloads": 16451,
+   "likes": 14
   }
  },
  "google/tipsv2-g14": {
-  "2026-09-22": {
-   "downloads": 1839,
-   "likes": 30
-  },
   "2026-09-23": {
    "downloads": 1828,
    "likes": 30
@@ -16017,13 +16015,13 @@
   "2026-10-06": {
    "downloads": 1339,
    "likes": 30
+  },
+  "2026-10-07": {
+   "downloads": 1362,
+   "likes": 30
   }
  },
  "google/tipsv2-g14-dpt": {
-  "2026-09-22": {
-   "downloads": 401,
-   "likes": 16
-  },
   "2026-09-23": {
    "downloads": 400,
    "likes": 16
@@ -16075,13 +16073,13 @@
   "2026-10-06": {
    "downloads": 353,
    "likes": 16
+  },
+  "2026-10-07": {
+   "downloads": 352,
+   "likes": 16
   }
  },
  "google/tipsv2-l14": {
-  "2026-09-22": {
-   "downloads": 4216,
-   "likes": 23
-  },
   "2026-09-23": {
    "downloads": 4437,
    "likes": 23
@@ -16133,13 +16131,13 @@
   "2026-10-06": {
    "downloads": 3406,
    "likes": 23
+  },
+  "2026-10-07": {
+   "downloads": 3421,
+   "likes": 23
   }
  },
  "google/tipsv2-l14-dpt": {
-  "2026-09-22": {
-   "downloads": 722,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 713,
    "likes": 7
@@ -16191,13 +16189,13 @@
   "2026-10-06": {
    "downloads": 478,
    "likes": 7
+  },
+  "2026-10-07": {
+   "downloads": 479,
+   "likes": 7
   }
  },
  "google/tipsv2-so400m14": {
-  "2026-09-22": {
-   "downloads": 274851,
-   "likes": 19
-  },
   "2026-09-23": {
    "downloads": 274970,
    "likes": 19
@@ -16249,13 +16247,13 @@
   "2026-10-06": {
    "downloads": 273054,
    "likes": 19
+  },
+  "2026-10-07": {
+   "downloads": 273020,
+   "likes": 19
   }
  },
  "google/tipsv2-so400m14-dpt": {
-  "2026-09-22": {
-   "downloads": 270,
-   "likes": 12
-  },
   "2026-09-23": {
    "downloads": 238,
    "likes": 12
@@ -16307,13 +16305,13 @@
   "2026-10-06": {
    "downloads": 195,
    "likes": 12
+  },
+  "2026-10-07": {
+   "downloads": 215,
+   "likes": 12
   }
  },
  "google/vit-base-patch16-224": {
-  "2026-09-22": {
-   "downloads": 7505835,
-   "likes": 1001
-  },
   "2026-09-23": {
    "downloads": 7673585,
    "likes": 1001
@@ -16365,13 +16363,13 @@
   "2026-10-06": {
    "downloads": 10486761,
    "likes": 1011
+  },
+  "2026-10-07": {
+   "downloads": 11046788,
+   "likes": 1012
   }
  },
  "hakurei/waifu-diffusion": {
-  "2026-09-22": {
-   "downloads": 1010,
-   "likes": 2495
-  },
   "2026-09-23": {
    "downloads": 1004,
    "likes": 2494
@@ -16423,13 +16421,13 @@
   "2026-10-06": {
    "downloads": 808,
    "likes": 2494
+  },
+  "2026-10-07": {
+   "downloads": 860,
+   "likes": 2494
   }
  },
  "harshatheg/Qwen-2.5-1B-RLCD": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 543
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 558
@@ -16448,10 +16446,6 @@
   }
  },
  "hexgrad/Kokoro-82M": {
-  "2026-09-22": {
-   "downloads": 11722492,
-   "likes": 6984
-  },
   "2026-09-23": {
    "downloads": 11804278,
    "likes": 6991
@@ -16503,6 +16497,10 @@
   "2026-10-06": {
    "downloads": 11215690,
    "likes": 7142
+  },
+  "2026-10-07": {
+   "downloads": 11146865,
+   "likes": 7155
   }
  },
  "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF": {
@@ -16547,13 +16545,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 2
   }
  },
  "ibm-granite/granite-4.2-30b": {
-  "2026-09-22": {
-   "downloads": 25205,
-   "likes": 125
-  },
   "2026-09-23": {
    "downloads": 26113,
    "likes": 125
@@ -16605,13 +16603,13 @@
   "2026-10-06": {
    "downloads": 35805,
    "likes": 127
+  },
+  "2026-10-07": {
+   "downloads": 38753,
+   "likes": 127
   }
  },
  "ibm-granite/granite-4.2-30b-GGUF": {
-  "2026-09-22": {
-   "downloads": 370759,
-   "likes": 15
-  },
   "2026-09-23": {
    "downloads": 382065,
    "likes": 15
@@ -16663,13 +16661,13 @@
   "2026-10-06": {
    "downloads": 288080,
    "likes": 17
+  },
+  "2026-10-07": {
+   "downloads": 279701,
+   "likes": 17
   }
  },
  "ibm-granite/granite-4.2-30b-fp8": {
-  "2026-09-22": {
-   "downloads": 2112,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 2181,
    "likes": 2
@@ -16721,13 +16719,13 @@
   "2026-10-06": {
    "downloads": 1973,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 1933,
+   "likes": 3
   }
  },
  "ibm-granite/granite-4.2-30b-mxfp4": {
-  "2026-09-22": {
-   "downloads": 1181,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 1222,
    "likes": 3
@@ -16779,13 +16777,13 @@
   "2026-10-06": {
    "downloads": 914,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 908,
+   "likes": 3
   }
  },
  "ibm-granite/granite-4.2-30b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 2838,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 2878,
    "likes": 2
@@ -16837,13 +16835,13 @@
   "2026-10-06": {
    "downloads": 1613,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 1681,
+   "likes": 2
   }
  },
  "ibm-granite/granite-4.2-3b": {
-  "2026-09-22": {
-   "downloads": 47604,
-   "likes": 96
-  },
   "2026-09-23": {
    "downloads": 49070,
    "likes": 97
@@ -16894,10 +16892,6 @@
   }
  },
  "ibm-granite/granite-4.2-3b-GGUF": {
-  "2026-09-22": {
-   "downloads": 335209,
-   "likes": 29
-  },
   "2026-09-23": {
    "downloads": 345865,
    "likes": 29
@@ -16949,13 +16943,13 @@
   "2026-10-06": {
    "downloads": 294184,
    "likes": 35
+  },
+  "2026-10-07": {
+   "downloads": 286294,
+   "likes": 36
   }
  },
  "ibm-granite/granite-4.2-3b-fp8": {
-  "2026-09-22": {
-   "downloads": 1289,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 1341,
    "likes": 3
@@ -17007,13 +17001,13 @@
   "2026-10-06": {
    "downloads": 1156,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 1149,
+   "likes": 3
   }
  },
  "ibm-granite/granite-4.2-3b-mxfp4": {
-  "2026-09-22": {
-   "downloads": 1179,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 1205,
    "likes": 2
@@ -17065,13 +17059,13 @@
   "2026-10-06": {
    "downloads": 878,
    "likes": 3
+  },
+  "2026-10-07": {
+   "downloads": 879,
+   "likes": 3
   }
  },
  "ibm-granite/granite-4.2-3b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 1520,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 1555,
    "likes": 1
@@ -17123,13 +17117,13 @@
   "2026-10-06": {
    "downloads": 1351,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 1374,
+   "likes": 1
   }
  },
  "ibm-granite/granite-4.2-3b-q8-mlx": {
-  "2026-09-22": {
-   "downloads": 329,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 344,
    "likes": 1
@@ -17164,10 +17158,6 @@
   }
  },
  "ibm-granite/granite-4.2-8b": {
-  "2026-09-22": {
-   "downloads": 98927,
-   "likes": 81
-  },
   "2026-09-23": {
    "downloads": 105509,
    "likes": 82
@@ -17219,13 +17209,13 @@
   "2026-10-06": {
    "downloads": 131624,
    "likes": 97
+  },
+  "2026-10-07": {
+   "downloads": 132068,
+   "likes": 97
   }
  },
  "ibm-granite/granite-4.2-8b-GGUF": {
-  "2026-09-22": {
-   "downloads": 351771,
-   "likes": 23
-  },
   "2026-09-23": {
    "downloads": 362838,
    "likes": 24
@@ -17277,13 +17267,13 @@
   "2026-10-06": {
    "downloads": 298526,
    "likes": 29
+  },
+  "2026-10-07": {
+   "downloads": 290402,
+   "likes": 31
   }
  },
  "ibm-granite/granite-4.2-8b-bf16-mlx": {
-  "2026-09-22": {
-   "downloads": 282,
-   "likes": 0
-  },
   "2026-09-23": {
    "downloads": 297,
    "likes": 0
@@ -17322,10 +17312,6 @@
   }
  },
  "ibm-granite/granite-4.2-8b-fp8": {
-  "2026-09-22": {
-   "downloads": 2628,
-   "likes": 0
-  },
   "2026-09-23": {
    "downloads": 2681,
    "likes": 0
@@ -17377,13 +17363,13 @@
   "2026-10-06": {
    "downloads": 2329,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 2354,
+   "likes": 1
   }
  },
  "ibm-granite/granite-4.2-8b-mxfp4": {
-  "2026-09-22": {
-   "downloads": 1225,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 1253,
    "likes": 1
@@ -17435,13 +17421,13 @@
   "2026-10-06": {
    "downloads": 1066,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 1050,
+   "likes": 1
   }
  },
  "ibm-granite/granite-4.2-8b-nvfp4": {
-  "2026-09-22": {
-   "downloads": 1757,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 1807,
    "likes": 4
@@ -17493,13 +17479,13 @@
   "2026-10-06": {
    "downloads": 1719,
    "likes": 6
+  },
+  "2026-10-07": {
+   "downloads": 1713,
+   "likes": 6
   }
  },
  "ibm-granite/granite-4.2-8b-q8-mlx": {
-  "2026-09-22": {
-   "downloads": 323,
-   "likes": 0
-  },
   "2026-09-23": {
    "downloads": 339,
    "likes": 0
@@ -17550,10 +17536,6 @@
   }
  },
  "ibm-granite/granite-embedding-small-english-r2": {
-  "2026-09-22": {
-   "downloads": 6258424,
-   "likes": 83
-  },
   "2026-09-23": {
    "downloads": 6197338,
    "likes": 83
@@ -17605,13 +17587,13 @@
   "2026-10-06": {
    "downloads": 5184018,
    "likes": 84
+  },
+  "2026-10-07": {
+   "downloads": 5149085,
+   "likes": 85
   }
  },
  "ibm-granite/granite-speech-5.0-470m-turboctc": {
-  "2026-09-22": {
-   "downloads": 47762,
-   "likes": 68
-  },
   "2026-09-23": {
    "downloads": 49633,
    "likes": 69
@@ -17663,6 +17645,10 @@
   "2026-10-06": {
    "downloads": 57797,
    "likes": 75
+  },
+  "2026-10-07": {
+   "downloads": 57988,
+   "likes": 75
   }
  },
  "ibm-granite/granite-speech-5.0-470m-turboctc-nc": {
@@ -17681,19 +17667,23 @@
   "2026-10-06": {
    "downloads": 1256,
    "likes": 34
+  },
+  "2026-10-07": {
+   "downloads": 1207,
+   "likes": 34
   }
  },
  "ibm-granite/granite-timeseries-ensemble-r1": {
   "2026-10-06": {
    "downloads": 36,
    "likes": 0
+  },
+  "2026-10-07": {
+   "downloads": 44,
+   "likes": 2
   }
  },
  "ibm-granite/granite-timeseries-patchtst-fm-r2": {
-  "2026-09-22": {
-   "downloads": 154134,
-   "likes": 14
-  },
   "2026-09-23": {
    "downloads": 163307,
    "likes": 16
@@ -17745,11 +17735,19 @@
   "2026-10-06": {
    "downloads": 294866,
    "likes": 16
+  },
+  "2026-10-07": {
+   "downloads": 304769,
+   "likes": 16
   }
  },
  "ibm-granite/granitelib-core-r1.0": {
   "2026-10-06": {
    "downloads": 3416,
+   "likes": 32
+  },
+  "2026-10-07": {
+   "downloads": 3466,
    "likes": 32
   }
  },
@@ -17813,17 +17811,7 @@
    "likes": 106
   }
  },
- "internlm/Atria-Dawn-Preview": {
-  "2026-09-22": {
-   "downloads": 1047,
-   "likes": 228
-  }
- },
  "intfloat/multilingual-e5-base": {
-  "2026-09-22": {
-   "downloads": 7581686,
-   "likes": 388
-  },
   "2026-09-23": {
    "downloads": 7628639,
    "likes": 388
@@ -17875,13 +17863,13 @@
   "2026-10-06": {
    "downloads": 7247140,
    "likes": 391
+  },
+  "2026-10-07": {
+   "downloads": 7254952,
+   "likes": 392
   }
  },
  "intfloat/multilingual-e5-large": {
-  "2026-09-22": {
-   "downloads": 7237571,
-   "likes": 1256
-  },
   "2026-09-23": {
    "downloads": 7277899,
    "likes": 1256
@@ -17933,13 +17921,13 @@
   "2026-10-06": {
    "downloads": 7218010,
    "likes": 1261
+  },
+  "2026-10-07": {
+   "downloads": 7160371,
+   "likes": 1261
   }
  },
  "intfloat/multilingual-e5-small": {
-  "2026-09-22": {
-   "downloads": 12221196,
-   "likes": 427
-  },
   "2026-09-23": {
    "downloads": 12188618,
    "likes": 429
@@ -17991,19 +17979,23 @@
   "2026-10-06": {
    "downloads": 11241915,
    "likes": 440
+  },
+  "2026-10-07": {
+   "downloads": 11067841,
+   "likes": 442
   }
  },
  "jialinyyzz/humanizer": {
   "2026-10-06": {
    "downloads": 15134,
    "likes": 385
+  },
+  "2026-10-07": {
+   "downloads": 19483,
+   "likes": 450
   }
  },
  "jinaai/jina-ocr-v1": {
-  "2026-09-22": {
-   "downloads": 3113,
-   "likes": 150
-  },
   "2026-09-23": {
    "downloads": 3811,
    "likes": 158
@@ -18014,10 +18006,6 @@
   }
  },
  "jonatasgrosman/wav2vec2-large-xlsr-53-japanese": {
-  "2026-09-22": {
-   "downloads": 17477279,
-   "likes": 87
-  },
   "2026-09-23": {
    "downloads": 17428935,
    "likes": 88
@@ -18069,13 +18057,13 @@
   "2026-10-06": {
    "downloads": 16296650,
    "likes": 88
+  },
+  "2026-10-07": {
+   "downloads": 16236363,
+   "likes": 89
   }
  },
  "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese": {
-  "2026-09-22": {
-   "downloads": 5928434,
-   "likes": 58
-  },
   "2026-09-23": {
    "downloads": 5929067,
    "likes": 58
@@ -18127,13 +18115,13 @@
   "2026-10-06": {
    "downloads": 5573652,
    "likes": 58
+  },
+  "2026-10-07": {
+   "downloads": 5575996,
+   "likes": 58
   }
  },
  "jonatasgrosman/wav2vec2-large-xlsr-53-russian": {
-  "2026-09-22": {
-   "downloads": 4198740,
-   "likes": 77
-  },
   "2026-09-23": {
    "downloads": 4259936,
    "likes": 77
@@ -18185,13 +18173,13 @@
   "2026-10-06": {
    "downloads": 4220487,
    "likes": 77
+  },
+  "2026-10-07": {
+   "downloads": 4183540,
+   "likes": 77
   }
  },
  "laion/clap-htsat-fused": {
-  "2026-09-22": {
-   "downloads": 7392288,
-   "likes": 149
-  },
   "2026-09-23": {
    "downloads": 7396468,
    "likes": 149
@@ -18243,6 +18231,10 @@
   "2026-10-06": {
    "downloads": 8303300,
    "likes": 151
+  },
+  "2026-10-07": {
+   "downloads": 8191421,
+   "likes": 151
   }
  },
  "lilylilith/QI_2.1_AnyAngle": {
@@ -18264,10 +18256,6 @@
   }
  },
  "lllyasviel/ControlNet": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 3865
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3865
@@ -18319,13 +18307,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 3867
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 3867
   }
  },
  "lllyasviel/ControlNet-v1-1": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 4135
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 4135
@@ -18377,13 +18365,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 4140
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 4141
   }
  },
  "lmstudio-community/Qwen3.8-27B-MLX-4bit": {
-  "2026-09-22": {
-   "downloads": 4660287,
-   "likes": 74
-  },
   "2026-09-23": {
    "downloads": 4647437,
    "likes": 74
@@ -18435,13 +18423,13 @@
   "2026-10-06": {
    "downloads": 4199305,
    "likes": 83
+  },
+  "2026-10-07": {
+   "downloads": 4187159,
+   "likes": 84
   }
  },
  "lmstudio-community/Qwen3.8-27B-MLX-5bit": {
-  "2026-09-22": {
-   "downloads": 4403424,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 4391187,
    "likes": 3
@@ -18464,10 +18452,6 @@
   }
  },
  "lmstudio-community/Qwen3.8-27B-MLX-6bit": {
-  "2026-09-22": {
-   "downloads": 4426228,
-   "likes": 21
-  },
   "2026-09-23": {
    "downloads": 4413435,
    "likes": 21
@@ -18507,13 +18491,13 @@
   "2026-10-06": {
    "downloads": 4004519,
    "likes": 26
+  },
+  "2026-10-07": {
+   "downloads": 3993569,
+   "likes": 26
   }
  },
  "lmstudio-community/Qwen3.8-27B-MLX-8bit": {
-  "2026-09-22": {
-   "downloads": 4462982,
-   "likes": 28
-  },
   "2026-09-23": {
    "downloads": 4448279,
    "likes": 29
@@ -18565,13 +18549,13 @@
   "2026-10-06": {
    "downloads": 4022982,
    "likes": 32
+  },
+  "2026-10-07": {
+   "downloads": 4011741,
+   "likes": 32
   }
  },
  "m-a-p/YuE2-3B": {
-  "2026-09-22": {
-   "downloads": 20904,
-   "likes": 969
-  },
   "2026-09-23": {
    "downloads": 22415,
    "likes": 984
@@ -18594,10 +18578,6 @@
   }
  },
  "meta-llama/Llama-2-70b-chat-hf": {
-  "2026-09-22": {
-   "downloads": 5305,
-   "likes": 2211
-  },
   "2026-09-23": {
    "downloads": 5448,
    "likes": 2211
@@ -18620,10 +18600,6 @@
   }
  },
  "meta-llama/Llama-2-7b": {
-  "2026-09-22": {
-   "downloads": 116,
-   "likes": 4558
-  },
   "2026-09-23": {
    "downloads": 115,
    "likes": 4558
@@ -18675,13 +18651,13 @@
   "2026-10-06": {
    "downloads": 130,
    "likes": 4564
+  },
+  "2026-10-07": {
+   "downloads": 128,
+   "likes": 4564
   }
  },
  "meta-llama/Llama-2-7b-chat-hf": {
-  "2026-09-22": {
-   "downloads": 491437,
-   "likes": 4873
-  },
   "2026-09-23": {
    "downloads": 499693,
    "likes": 4874
@@ -18733,13 +18709,13 @@
   "2026-10-06": {
    "downloads": 423120,
    "likes": 4884
+  },
+  "2026-10-07": {
+   "downloads": 417453,
+   "likes": 4885
   }
  },
  "meta-llama/Llama-2-7b-hf": {
-  "2026-09-22": {
-   "downloads": 836151,
-   "likes": 2416
-  },
   "2026-09-23": {
    "downloads": 854075,
    "likes": 2418
@@ -18791,13 +18767,13 @@
   "2026-10-06": {
    "downloads": 778646,
    "likes": 2443
+  },
+  "2026-10-07": {
+   "downloads": 781037,
+   "likes": 2445
   }
  },
  "meta-llama/Llama-3.1-405B-FP8": {
-  "2026-09-22": {
-   "downloads": 464525,
-   "likes": 124
-  },
   "2026-09-23": {
    "downloads": 464688,
    "likes": 124
@@ -18849,13 +18825,13 @@
   "2026-10-06": {
    "downloads": 456584,
    "likes": 124
+  },
+  "2026-10-07": {
+   "downloads": 461570,
+   "likes": 124
   }
  },
  "meta-llama/Llama-3.1-70B-Instruct": {
-  "2026-09-22": {
-   "downloads": 139711,
-   "likes": 986
-  },
   "2026-09-23": {
    "downloads": 135974,
    "likes": 987
@@ -18907,13 +18883,13 @@
   "2026-10-06": {
    "downloads": 91659,
    "likes": 1005
+  },
+  "2026-10-07": {
+   "downloads": 88923,
+   "likes": 1005
   }
  },
  "meta-llama/Llama-3.1-8B": {
-  "2026-09-22": {
-   "downloads": 546604,
-   "likes": 2526
-  },
   "2026-09-23": {
    "downloads": 555281,
    "likes": 2533
@@ -18965,13 +18941,13 @@
   "2026-10-06": {
    "downloads": 637733,
    "likes": 2610
+  },
+  "2026-10-07": {
+   "downloads": 636761,
+   "likes": 2613
   }
  },
  "meta-llama/Llama-3.1-8B-Instruct": {
-  "2026-09-22": {
-   "downloads": 6107231,
-   "likes": 7819
-  },
   "2026-09-23": {
    "downloads": 6225344,
    "likes": 7853
@@ -19023,13 +18999,13 @@
   "2026-10-06": {
    "downloads": 6162003,
    "likes": 8253
+  },
+  "2026-10-07": {
+   "downloads": 6252533,
+   "likes": 8271
   }
  },
  "meta-llama/Llama-3.2-1B": {
-  "2026-09-22": {
-   "downloads": 853020,
-   "likes": 2618
-  },
   "2026-09-23": {
    "downloads": 840015,
    "likes": 2625
@@ -19081,13 +19057,13 @@
   "2026-10-06": {
    "downloads": 718471,
    "likes": 2668
+  },
+  "2026-10-07": {
+   "downloads": 719070,
+   "likes": 2673
   }
  },
  "meta-llama/Llama-3.2-1B-Instruct": {
-  "2026-09-22": {
-   "downloads": 7207795,
-   "likes": 1703
-  },
   "2026-09-23": {
    "downloads": 7388679,
    "likes": 1712
@@ -19139,13 +19115,13 @@
   "2026-10-06": {
    "downloads": 7495066,
    "likes": 1792
+  },
+  "2026-10-07": {
+   "downloads": 7534738,
+   "likes": 1795
   }
  },
  "meta-llama/Llama-3.2-3B-Instruct": {
-  "2026-09-22": {
-   "downloads": 1896011,
-   "likes": 2644
-  },
   "2026-09-23": {
    "downloads": 1915585,
    "likes": 2651
@@ -19197,13 +19173,13 @@
   "2026-10-06": {
    "downloads": 1615061,
    "likes": 2742
+  },
+  "2026-10-07": {
+   "downloads": 1583867,
+   "likes": 2752
   }
  },
  "meta-llama/Llama-3.2-90B-Vision-Instruct": {
-  "2026-09-22": {
-   "downloads": 150415,
-   "likes": 362
-  },
   "2026-09-23": {
    "downloads": 150404,
    "likes": 362
@@ -19255,13 +19231,13 @@
   "2026-10-06": {
    "downloads": 1468,
    "likes": 364
+  },
+  "2026-10-07": {
+   "downloads": 1468,
+   "likes": 364
   }
  },
  "meta-llama/Llama-3.3-70B-Instruct": {
-  "2026-09-22": {
-   "downloads": 913502,
-   "likes": 3053
-  },
   "2026-09-23": {
    "downloads": 917910,
    "likes": 3058
@@ -19313,13 +19289,13 @@
   "2026-10-06": {
    "downloads": 376687,
    "likes": 3107
+  },
+  "2026-10-07": {
+   "downloads": 366023,
+   "likes": 3109
   }
  },
  "meta-llama/Llama-4-Maverick-17B-128E": {
-  "2026-09-22": {
-   "downloads": 180,
-   "likes": 98
-  },
   "2026-09-23": {
    "downloads": 177,
    "likes": 99
@@ -19371,13 +19347,13 @@
   "2026-10-06": {
    "downloads": 189,
    "likes": 99
+  },
+  "2026-10-07": {
+   "downloads": 179,
+   "likes": 99
   }
  },
  "meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
-  "2026-09-22": {
-   "downloads": 10365,
-   "likes": 512
-  },
   "2026-09-23": {
    "downloads": 10689,
    "likes": 513
@@ -19429,13 +19405,13 @@
   "2026-10-06": {
    "downloads": 9661,
    "likes": 514
+  },
+  "2026-10-07": {
+   "downloads": 9760,
+   "likes": 514
   }
  },
  "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-  "2026-09-22": {
-   "downloads": 52109,
-   "likes": 180
-  },
   "2026-09-23": {
    "downloads": 52188,
    "likes": 180
@@ -19487,13 +19463,13 @@
   "2026-10-06": {
    "downloads": 47164,
    "likes": 185
+  },
+  "2026-10-07": {
+   "downloads": 46920,
+   "likes": 185
   }
  },
  "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8-Original": {
-  "2026-09-22": {
-   "downloads": 2,
-   "likes": 37
-  },
   "2026-09-23": {
    "downloads": 2,
    "likes": 37
@@ -19545,13 +19521,13 @@
   "2026-10-06": {
    "downloads": 4,
    "likes": 37
+  },
+  "2026-10-07": {
+   "downloads": 4,
+   "likes": 37
   }
  },
  "meta-llama/Llama-4-Maverick-17B-128E-Instruct-Original": {
-  "2026-09-22": {
-   "downloads": 7,
-   "likes": 40
-  },
   "2026-09-23": {
    "downloads": 6,
    "likes": 40
@@ -19603,13 +19579,13 @@
   "2026-10-06": {
    "downloads": 10,
    "likes": 40
+  },
+  "2026-10-07": {
+   "downloads": 10,
+   "likes": 40
   }
  },
  "meta-llama/Llama-4-Maverick-17B-128E-Original": {
-  "2026-09-22": {
-   "downloads": 4,
-   "likes": 85
-  },
   "2026-09-23": {
    "downloads": 4,
    "likes": 85
@@ -19661,13 +19637,13 @@
   "2026-10-06": {
    "downloads": 9,
    "likes": 85
+  },
+  "2026-10-07": {
+   "downloads": 9,
+   "likes": 86
   }
  },
  "meta-llama/Llama-4-Scout-17B-16E": {
-  "2026-09-22": {
-   "downloads": 6044,
-   "likes": 269
-  },
   "2026-09-23": {
    "downloads": 5928,
    "likes": 269
@@ -19719,13 +19695,13 @@
   "2026-10-06": {
    "downloads": 3641,
    "likes": 271
+  },
+  "2026-10-07": {
+   "downloads": 3741,
+   "likes": 272
   }
  },
  "meta-llama/Llama-4-Scout-17B-16E-Instruct": {
-  "2026-09-22": {
-   "downloads": 163805,
-   "likes": 1356
-  },
   "2026-09-23": {
    "downloads": 162876,
    "likes": 1356
@@ -19777,13 +19753,13 @@
   "2026-10-06": {
    "downloads": 172538,
    "likes": 1366
+  },
+  "2026-10-07": {
+   "downloads": 171408,
+   "likes": 1367
   }
  },
  "meta-llama/Llama-4-Scout-17B-16E-Instruct-Original": {
-  "2026-09-22": {
-   "downloads": 7,
-   "likes": 55
-  },
   "2026-09-23": {
    "downloads": 7,
    "likes": 55
@@ -19833,15 +19809,15 @@
    "likes": 55
   },
   "2026-10-06": {
+   "downloads": 10,
+   "likes": 55
+  },
+  "2026-10-07": {
    "downloads": 10,
    "likes": 55
   }
  },
  "meta-llama/Llama-4-Scout-17B-16E-Original": {
-  "2026-09-22": {
-   "downloads": 5,
-   "likes": 62
-  },
   "2026-09-23": {
    "downloads": 5,
    "likes": 62
@@ -19893,13 +19869,13 @@
   "2026-10-06": {
    "downloads": 10,
    "likes": 62
+  },
+  "2026-10-07": {
+   "downloads": 10,
+   "likes": 62
   }
  },
  "meta-llama/Llama-Guard-4-12B": {
-  "2026-09-22": {
-   "downloads": 45307,
-   "likes": 128
-  },
   "2026-09-23": {
    "downloads": 45595,
    "likes": 128
@@ -19951,13 +19927,13 @@
   "2026-10-06": {
    "downloads": 46831,
    "likes": 131
+  },
+  "2026-10-07": {
+   "downloads": 49160,
+   "likes": 131
   }
  },
  "meta-llama/Llama-Prompt-Guard-2-22M": {
-  "2026-09-22": {
-   "downloads": 12584,
-   "likes": 68
-  },
   "2026-09-23": {
    "downloads": 14375,
    "likes": 68
@@ -20009,13 +19985,13 @@
   "2026-10-06": {
    "downloads": 15739,
    "likes": 72
+  },
+  "2026-10-07": {
+   "downloads": 15417,
+   "likes": 72
   }
  },
  "meta-llama/Llama-Prompt-Guard-2-86M": {
-  "2026-09-22": {
-   "downloads": 113206,
-   "likes": 216
-  },
   "2026-09-23": {
    "downloads": 114646,
    "likes": 217
@@ -20067,13 +20043,13 @@
   "2026-10-06": {
    "downloads": 123229,
    "likes": 264
+  },
+  "2026-10-07": {
+   "downloads": 123375,
+   "likes": 265
   }
  },
  "meta-llama/Meta-Llama-3-70B-Instruct": {
-  "2026-09-22": {
-   "downloads": 119043,
-   "likes": 1530
-  },
   "2026-09-23": {
    "downloads": 119187,
    "likes": 1530
@@ -20125,13 +20101,13 @@
   "2026-10-06": {
    "downloads": 119254,
    "likes": 1533
+  },
+  "2026-10-07": {
+   "downloads": 119463,
+   "likes": 1534
   }
  },
  "meta-llama/Meta-Llama-3-8B": {
-  "2026-09-22": {
-   "downloads": 267453,
-   "likes": 6698
-  },
   "2026-09-23": {
    "downloads": 261762,
    "likes": 6702
@@ -20183,13 +20159,13 @@
   "2026-10-06": {
    "downloads": 213605,
    "likes": 6728
+  },
+  "2026-10-07": {
+   "downloads": 207741,
+   "likes": 6731
   }
  },
  "meta-llama/Meta-Llama-3-8B-Instruct": {
-  "2026-09-22": {
-   "downloads": 1208122,
-   "likes": 5087
-  },
   "2026-09-23": {
    "downloads": 1196477,
    "likes": 5097
@@ -20241,13 +20217,13 @@
   "2026-10-06": {
    "downloads": 903480,
    "likes": 5231
+  },
+  "2026-10-07": {
+   "downloads": 883327,
+   "likes": 5247
   }
  },
  "meta-llama/Prompt-Guard-86M": {
-  "2026-09-22": {
-   "downloads": 4214023,
-   "likes": 409
-  },
   "2026-09-23": {
    "downloads": 4145507,
    "likes": 411
@@ -20299,13 +20275,13 @@
   "2026-10-06": {
    "downloads": 3188387,
    "likes": 421
+  },
+  "2026-10-07": {
+   "downloads": 3117720,
+   "likes": 421
   }
  },
  "microsoft/Fara-7B": {
-  "2026-09-22": {
-   "downloads": 8767,
-   "likes": 620
-  },
   "2026-09-23": {
    "downloads": 8715,
    "likes": 620
@@ -20357,13 +20333,13 @@
   "2026-10-06": {
    "downloads": 9863,
    "likes": 621
+  },
+  "2026-10-07": {
+   "downloads": 8728,
+   "likes": 621
   }
  },
  "microsoft/Fara1.5-27B": {
-  "2026-09-22": {
-   "downloads": 1911,
-   "likes": 290
-  },
   "2026-09-23": {
    "downloads": 1883,
    "likes": 290
@@ -20415,13 +20391,13 @@
   "2026-10-06": {
    "downloads": 2040,
    "likes": 292
+  },
+  "2026-10-07": {
+   "downloads": 2088,
+   "likes": 292
   }
  },
  "microsoft/Fara1.5-4B": {
-  "2026-09-22": {
-   "downloads": 1424,
-   "likes": 46
-  },
   "2026-09-23": {
    "downloads": 1415,
    "likes": 46
@@ -20460,10 +20436,6 @@
   }
  },
  "microsoft/Fara1.5-9B": {
-  "2026-09-22": {
-   "downloads": 2817,
-   "likes": 45
-  },
   "2026-09-23": {
    "downloads": 2766,
    "likes": 45
@@ -20515,6 +20487,10 @@
   "2026-10-06": {
    "downloads": 4489,
    "likes": 48
+  },
+  "2026-10-07": {
+   "downloads": 4509,
+   "likes": 48
   }
  },
  "microsoft/FrogNano-4B-2609": {
@@ -20533,13 +20509,13 @@
   "2026-10-06": {
    "downloads": 733,
    "likes": 114
+  },
+  "2026-10-07": {
+   "downloads": 874,
+   "likes": 123
   }
  },
  "microsoft/Mage-VL": {
-  "2026-09-22": {
-   "downloads": 23248,
-   "likes": 408
-  },
   "2026-09-23": {
    "downloads": 21578,
    "likes": 409
@@ -20591,19 +20567,13 @@
   "2026-10-06": {
    "downloads": 10555,
    "likes": 420
-  }
- },
- "microsoft/Mage-ViT": {
-  "2026-09-22": {
-   "downloads": 896,
-   "likes": 35
+  },
+  "2026-10-07": {
+   "downloads": 10575,
+   "likes": 420
   }
  },
  "microsoft/MuseVLA": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3
@@ -20653,6 +20623,10 @@
    "likes": 3
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 3
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 3
   }
@@ -20709,13 +20683,13 @@
   "2026-10-06": {
    "downloads": 4505,
    "likes": 1364
+  },
+  "2026-10-07": {
+   "downloads": 3201,
+   "likes": 1364
   }
  },
  "microsoft/Phi-4-reasoning-vision-15B": {
-  "2026-09-22": {
-   "downloads": 4161,
-   "likes": 179
-  },
   "2026-09-23": {
    "downloads": 3804,
    "likes": 179
@@ -20767,13 +20741,13 @@
   "2026-10-06": {
    "downloads": 2587,
    "likes": 179
+  },
+  "2026-10-07": {
+   "downloads": 2616,
+   "likes": 179
   }
  },
  "microsoft/SQuadGen": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 4
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 4
@@ -20825,13 +20799,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 4
   }
  },
  "microsoft/STELLAR": {
-  "2026-09-22": {
-   "downloads": 267,
-   "likes": 12
-  },
   "2026-09-23": {
    "downloads": 266,
    "likes": 12
@@ -20883,13 +20857,13 @@
   "2026-10-06": {
    "downloads": 323,
    "likes": 13
+  },
+  "2026-10-07": {
+   "downloads": 328,
+   "likes": 13
   }
  },
  "microsoft/VibeVoice-1.5B": {
-  "2026-09-22": {
-   "downloads": 543967,
-   "likes": 2487
-  },
   "2026-09-23": {
    "downloads": 576278,
    "likes": 2487
@@ -20941,13 +20915,13 @@
   "2026-10-06": {
    "downloads": 718909,
    "likes": 2492
+  },
+  "2026-10-07": {
+   "downloads": 711747,
+   "likes": 2494
   }
  },
  "microsoft/VibeVoice-ASR-Streaming-1.5B": {
-  "2026-09-22": {
-   "downloads": 11314,
-   "likes": 55
-  },
   "2026-09-23": {
    "downloads": 11392,
    "likes": 55
@@ -20999,13 +20973,13 @@
   "2026-10-06": {
    "downloads": 11444,
    "likes": 59
+  },
+  "2026-10-07": {
+   "downloads": 10592,
+   "likes": 59
   }
  },
  "microsoft/VibeVoice-ASR-Streaming-7B": {
-  "2026-09-22": {
-   "downloads": 6383,
-   "likes": 245
-  },
   "2026-09-23": {
    "downloads": 6459,
    "likes": 246
@@ -21057,13 +21031,13 @@
   "2026-10-06": {
    "downloads": 6191,
    "likes": 251
+  },
+  "2026-10-07": {
+   "downloads": 6052,
+   "likes": 251
   }
  },
  "microsoft/colipri": {
-  "2026-09-22": {
-   "downloads": 2927,
-   "likes": 63
-  },
   "2026-09-23": {
    "downloads": 2937,
    "likes": 63
@@ -21115,13 +21089,13 @@
   "2026-10-06": {
    "downloads": 2634,
    "likes": 66
+  },
+  "2026-10-07": {
+   "downloads": 2695,
+   "likes": 67
   }
  },
  "microsoft/mattergen": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 56
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 56
@@ -21173,13 +21147,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 56
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 56
   }
  },
  "microsoft/mdeberta-v3-base": {
-  "2026-09-22": {
-   "downloads": 5223319,
-   "likes": 243
-  },
   "2026-09-23": {
    "downloads": 5355914,
    "likes": 243
@@ -21231,13 +21205,13 @@
   "2026-10-06": {
    "downloads": 5713917,
    "likes": 244
+  },
+  "2026-10-07": {
+   "downloads": 5792986,
+   "likes": 244
   }
  },
  "microsoft/phi-2": {
-  "2026-09-22": {
-   "downloads": 573229,
-   "likes": 3524
-  },
   "2026-09-23": {
    "downloads": 586842,
    "likes": 3524
@@ -21289,13 +21263,13 @@
   "2026-10-06": {
    "downloads": 619369,
    "likes": 3523
+  },
+  "2026-10-07": {
+   "downloads": 620473,
+   "likes": 3523
   }
  },
  "microsoft/phi-4": {
-  "2026-09-22": {
-   "downloads": 626580,
-   "likes": 2308
-  },
   "2026-09-23": {
    "downloads": 624150,
    "likes": 2309
@@ -21346,10 +21320,6 @@
   }
  },
  "microsoft/rho-base": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3
@@ -21399,15 +21369,15 @@
    "likes": 5
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 5
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 5
   }
  },
  "microsoft/rho-fr3-duo": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -21457,15 +21427,15 @@
    "likes": 2
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 2
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 2
   }
  },
  "microsoft/rho-libero": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -21515,15 +21485,15 @@
    "likes": 2
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 2
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 2
   }
  },
  "microsoft/rho-roboeval": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -21573,15 +21543,15 @@
    "likes": 3
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 3
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 3
   }
  },
  "microsoft/rho-ur-ai-trainer": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -21633,13 +21603,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 2
   }
  },
  "microsoft/rho-yam-box": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -21691,13 +21661,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 4
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 5
   }
  },
  "mistralai/Devstral-Small-2-24B-Instruct-2512": {
-  "2026-09-22": {
-   "downloads": 289153,
-   "likes": 667
-  },
   "2026-09-23": {
    "downloads": 301084,
    "likes": 669
@@ -21749,13 +21719,13 @@
   "2026-10-06": {
    "downloads": 310932,
    "likes": 673
+  },
+  "2026-10-07": {
+   "downloads": 304977,
+   "likes": 673
   }
  },
  "mistralai/Leanstral-1.5-119B-A6B": {
-  "2026-09-22": {
-   "downloads": 294,
-   "likes": 219
-  },
   "2026-09-23": {
    "downloads": 297,
    "likes": 219
@@ -21807,13 +21777,13 @@
   "2026-10-06": {
    "downloads": 336,
    "likes": 220
+  },
+  "2026-10-07": {
+   "downloads": 345,
+   "likes": 220
   }
  },
  "mistralai/Leanstral-2603": {
-  "2026-09-22": {
-   "downloads": 103,
-   "likes": 168
-  },
   "2026-09-23": {
    "downloads": 102,
    "likes": 168
@@ -21865,13 +21835,13 @@
   "2026-10-06": {
    "downloads": 127,
    "likes": 169
+  },
+  "2026-10-07": {
+   "downloads": 129,
+   "likes": 169
   }
  },
  "mistralai/Ministral-3-14B-Instruct-2512": {
-  "2026-09-22": {
-   "downloads": 416818,
-   "likes": 326
-  },
   "2026-09-23": {
    "downloads": 419020,
    "likes": 327
@@ -21923,13 +21893,13 @@
   "2026-10-06": {
    "downloads": 193158,
    "likes": 332
+  },
+  "2026-10-07": {
+   "downloads": 173138,
+   "likes": 333
   }
  },
  "mistralai/Ministral-3-14B-Instruct-2512-BF16": {
-  "2026-09-22": {
-   "downloads": 64596,
-   "likes": 32
-  },
   "2026-09-23": {
    "downloads": 64318,
    "likes": 32
@@ -21981,13 +21951,13 @@
   "2026-10-06": {
    "downloads": 94703,
    "likes": 32
+  },
+  "2026-10-07": {
+   "downloads": 99497,
+   "likes": 32
   }
  },
  "mistralai/Ministral-3-14B-Reasoning-2512": {
-  "2026-09-22": {
-   "downloads": 100070,
-   "likes": 152
-  },
   "2026-09-23": {
    "downloads": 109541,
    "likes": 152
@@ -22039,13 +22009,13 @@
   "2026-10-06": {
    "downloads": 74045,
    "likes": 156
+  },
+  "2026-10-07": {
+   "downloads": 71061,
+   "likes": 156
   }
  },
  "mistralai/Ministral-3-3B-Instruct-2512": {
-  "2026-09-22": {
-   "downloads": 111276,
-   "likes": 284
-  },
   "2026-09-23": {
    "downloads": 112424,
    "likes": 284
@@ -22097,13 +22067,13 @@
   "2026-10-06": {
    "downloads": 113464,
    "likes": 297
+  },
+  "2026-10-07": {
+   "downloads": 113324,
+   "likes": 297
   }
  },
  "mistralai/Ministral-3-3B-Instruct-2512-BF16": {
-  "2026-09-22": {
-   "downloads": 63353,
-   "likes": 37
-  },
   "2026-09-23": {
    "downloads": 62170,
    "likes": 37
@@ -22155,13 +22125,13 @@
   "2026-10-06": {
    "downloads": 62769,
    "likes": 38
+  },
+  "2026-10-07": {
+   "downloads": 61250,
+   "likes": 38
   }
  },
  "mistralai/Ministral-3-3B-Reasoning-2512": {
-  "2026-09-22": {
-   "downloads": 81432,
-   "likes": 120
-  },
   "2026-09-23": {
    "downloads": 73414,
    "likes": 120
@@ -22213,13 +22183,13 @@
   "2026-10-06": {
    "downloads": 22478,
    "likes": 121
+  },
+  "2026-10-07": {
+   "downloads": 20074,
+   "likes": 121
   }
  },
  "mistralai/Ministral-3-8B-Instruct-2512": {
-  "2026-09-22": {
-   "downloads": 75250,
-   "likes": 204
-  },
   "2026-09-23": {
    "downloads": 88767,
    "likes": 205
@@ -22271,13 +22241,13 @@
   "2026-10-06": {
    "downloads": 119335,
    "likes": 209
+  },
+  "2026-10-07": {
+   "downloads": 118653,
+   "likes": 209
   }
  },
  "mistralai/Ministral-3-8B-Instruct-2512-BF16": {
-  "2026-09-22": {
-   "downloads": 42328,
-   "likes": 24
-  },
   "2026-09-23": {
    "downloads": 41981,
    "likes": 24
@@ -22329,13 +22299,13 @@
   "2026-10-06": {
    "downloads": 42306,
    "likes": 25
+  },
+  "2026-10-07": {
+   "downloads": 43439,
+   "likes": 25
   }
  },
  "mistralai/Ministral-3-8B-Reasoning-2512": {
-  "2026-09-22": {
-   "downloads": 14271,
-   "likes": 101
-  },
   "2026-09-23": {
    "downloads": 14280,
    "likes": 101
@@ -22387,13 +22357,13 @@
   "2026-10-06": {
    "downloads": 12594,
    "likes": 106
+  },
+  "2026-10-07": {
+   "downloads": 13297,
+   "likes": 106
   }
  },
  "mistralai/Mistral-7B-Instruct-v0.2": {
-  "2026-09-22": {
-   "downloads": 1769441,
-   "likes": 3234
-  },
   "2026-09-23": {
    "downloads": 1781761,
    "likes": 3235
@@ -22445,13 +22415,13 @@
   "2026-10-06": {
    "downloads": 1601542,
    "likes": 3240
+  },
+  "2026-10-07": {
+   "downloads": 1571085,
+   "likes": 3241
   }
  },
  "mistralai/Mistral-7B-Instruct-v0.3": {
-  "2026-09-22": {
-   "downloads": 2353645,
-   "likes": 3500
-  },
   "2026-09-23": {
    "downloads": 2332647,
    "likes": 3524
@@ -22503,13 +22473,13 @@
   "2026-10-06": {
    "downloads": 2135469,
    "likes": 3726
+  },
+  "2026-10-07": {
+   "downloads": 2125663,
+   "likes": 3727
   }
  },
  "mistralai/Mistral-7B-v0.1": {
-  "2026-09-22": {
-   "downloads": 434637,
-   "likes": 4183
-  },
   "2026-09-23": {
    "downloads": 435976,
    "likes": 4184
@@ -22561,13 +22531,13 @@
   "2026-10-06": {
    "downloads": 399292,
    "likes": 4186
+  },
+  "2026-10-07": {
+   "downloads": 396852,
+   "likes": 4186
   }
  },
  "mistralai/Mistral-Large-3-675B-Instruct-2512": {
-  "2026-09-22": {
-   "downloads": 2125,
-   "likes": 251
-  },
   "2026-09-23": {
    "downloads": 2147,
    "likes": 251
@@ -22619,13 +22589,13 @@
   "2026-10-06": {
    "downloads": 1877,
    "likes": 252
+  },
+  "2026-10-07": {
+   "downloads": 1911,
+   "likes": 253
   }
  },
  "mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle": {
-  "2026-09-22": {
-   "downloads": 129,
-   "likes": 30
-  },
   "2026-09-23": {
    "downloads": 146,
    "likes": 30
@@ -22677,13 +22647,13 @@
   "2026-10-06": {
    "downloads": 164,
    "likes": 30
+  },
+  "2026-10-07": {
+   "downloads": 168,
+   "likes": 30
   }
  },
  "mistralai/Mistral-Large-3-675B-Instruct-2512-NVFP4": {
-  "2026-09-22": {
-   "downloads": 11159,
-   "likes": 75
-  },
   "2026-09-23": {
    "downloads": 11309,
    "likes": 75
@@ -22735,13 +22705,13 @@
   "2026-10-06": {
    "downloads": 11747,
    "likes": 81
+  },
+  "2026-10-07": {
+   "downloads": 11814,
+   "likes": 81
   }
  },
  "mistralai/Mistral-Medium-3.5-128B": {
-  "2026-09-22": {
-   "downloads": 89194,
-   "likes": 458
-  },
   "2026-09-23": {
    "downloads": 91922,
    "likes": 459
@@ -22793,13 +22763,13 @@
   "2026-10-06": {
    "downloads": 95431,
    "likes": 463
+  },
+  "2026-10-07": {
+   "downloads": 91338,
+   "likes": 465
   }
  },
  "mistralai/Mistral-Small-4-119B-2603": {
-  "2026-09-22": {
-   "downloads": 53263,
-   "likes": 427
-  },
   "2026-09-23": {
    "downloads": 52645,
    "likes": 428
@@ -22851,13 +22821,13 @@
   "2026-10-06": {
    "downloads": 78463,
    "likes": 433
+  },
+  "2026-10-07": {
+   "downloads": 80996,
+   "likes": 439
   }
  },
  "mistralai/Mistral-Small-4-119B-2603-NVFP4": {
-  "2026-09-22": {
-   "downloads": 1491,
-   "likes": 131
-  },
   "2026-09-23": {
    "downloads": 1468,
    "likes": 132
@@ -22909,13 +22879,13 @@
   "2026-10-06": {
    "downloads": 1510,
    "likes": 135
+  },
+  "2026-10-07": {
+   "downloads": 1543,
+   "likes": 138
   }
  },
  "mistralai/Mistral-Small-4-119B-2603-eagle": {
-  "2026-09-22": {
-   "downloads": 208,
-   "likes": 61
-  },
   "2026-09-23": {
    "downloads": 208,
    "likes": 61
@@ -22967,13 +22937,13 @@
   "2026-10-06": {
    "downloads": 342,
    "likes": 63
+  },
+  "2026-10-07": {
+   "downloads": 345,
+   "likes": 63
   }
  },
  "mistralai/Mixtral-8x7B-Instruct-v0.1": {
-  "2026-09-22": {
-   "downloads": 217591,
-   "likes": 4755
-  },
   "2026-09-23": {
    "downloads": 217408,
    "likes": 4755
@@ -23025,13 +22995,13 @@
   "2026-10-06": {
    "downloads": 216553,
    "likes": 4762
+  },
+  "2026-10-07": {
+   "downloads": 222180,
+   "likes": 4762
   }
  },
  "mistralai/Shieldstral-1.0-3B": {
-  "2026-09-22": {
-   "downloads": 12050,
-   "likes": 279
-  },
   "2026-09-23": {
    "downloads": 13541,
    "likes": 279
@@ -23083,13 +23053,13 @@
   "2026-10-06": {
    "downloads": 37808,
    "likes": 288
+  },
+  "2026-10-07": {
+   "downloads": 38037,
+   "likes": 290
   }
  },
  "moondream/parakeet-redux": {
-  "2026-09-22": {
-   "downloads": 317,
-   "likes": 120
-  },
   "2026-09-23": {
    "downloads": 683,
    "likes": 136
@@ -23116,10 +23086,6 @@
   }
  },
  "moonshotai/Kimi-Audio-7B": {
-  "2026-09-22": {
-   "downloads": 227,
-   "likes": 96
-  },
   "2026-09-23": {
    "downloads": 229,
    "likes": 96
@@ -23171,13 +23137,13 @@
   "2026-10-06": {
    "downloads": 211,
    "likes": 96
+  },
+  "2026-10-07": {
+   "downloads": 213,
+   "likes": 96
   }
  },
  "moonshotai/Kimi-Audio-7B-Instruct": {
-  "2026-09-22": {
-   "downloads": 14992,
-   "likes": 419
-  },
   "2026-09-23": {
    "downloads": 15000,
    "likes": 419
@@ -23229,13 +23195,13 @@
   "2026-10-06": {
    "downloads": 14647,
    "likes": 419
+  },
+  "2026-10-07": {
+   "downloads": 14679,
+   "likes": 420
   }
  },
  "moonshotai/Kimi-Dev-72B": {
-  "2026-09-22": {
-   "downloads": 6894,
-   "likes": 393
-  },
   "2026-09-23": {
    "downloads": 7060,
    "likes": 393
@@ -23287,13 +23253,13 @@
   "2026-10-06": {
    "downloads": 5814,
    "likes": 393
+  },
+  "2026-10-07": {
+   "downloads": 5804,
+   "likes": 393
   }
  },
  "moonshotai/Kimi-K2-Base": {
-  "2026-09-22": {
-   "downloads": 12857,
-   "likes": 306
-  },
   "2026-09-23": {
    "downloads": 12868,
    "likes": 306
@@ -23345,13 +23311,13 @@
   "2026-10-06": {
    "downloads": 10610,
    "likes": 306
+  },
+  "2026-10-07": {
+   "downloads": 10450,
+   "likes": 306
   }
  },
  "moonshotai/Kimi-K2-Instruct": {
-  "2026-09-22": {
-   "downloads": 227630,
-   "likes": 2990
-  },
   "2026-09-23": {
    "downloads": 239492,
    "likes": 2990
@@ -23403,13 +23369,13 @@
   "2026-10-06": {
    "downloads": 325502,
    "likes": 2990
+  },
+  "2026-10-07": {
+   "downloads": 327391,
+   "likes": 2990
   }
  },
  "moonshotai/Kimi-K2-Instruct-0905": {
-  "2026-09-22": {
-   "downloads": 53221,
-   "likes": 787
-  },
   "2026-09-23": {
    "downloads": 55417,
    "likes": 788
@@ -23461,13 +23427,13 @@
   "2026-10-06": {
    "downloads": 65651,
    "likes": 790
+  },
+  "2026-10-07": {
+   "downloads": 65808,
+   "likes": 790
   }
  },
  "moonshotai/Kimi-K2-Thinking": {
-  "2026-09-22": {
-   "downloads": 63351,
-   "likes": 1714
-  },
   "2026-09-23": {
    "downloads": 64343,
    "likes": 1715
@@ -23519,13 +23485,13 @@
   "2026-10-06": {
    "downloads": 63460,
    "likes": 1716
+  },
+  "2026-10-07": {
+   "downloads": 64013,
+   "likes": 1716
   }
  },
  "moonshotai/Kimi-K2.5": {
-  "2026-09-22": {
-   "downloads": 316683,
-   "likes": 2874
-  },
   "2026-09-23": {
    "downloads": 312782,
    "likes": 2876
@@ -23577,13 +23543,13 @@
   "2026-10-06": {
    "downloads": 337078,
    "likes": 2878
+  },
+  "2026-10-07": {
+   "downloads": 339205,
+   "likes": 2879
   }
  },
  "moonshotai/Kimi-K2.6": {
-  "2026-09-22": {
-   "downloads": 449159,
-   "likes": 1611
-  },
   "2026-09-23": {
    "downloads": 440966,
    "likes": 1611
@@ -23635,13 +23601,13 @@
   "2026-10-06": {
    "downloads": 458849,
    "likes": 1613
+  },
+  "2026-10-07": {
+   "downloads": 457429,
+   "likes": 1613
   }
  },
  "moonshotai/Kimi-K2.7-Code": {
-  "2026-09-22": {
-   "downloads": 93171,
-   "likes": 1402
-  },
   "2026-09-23": {
    "downloads": 104772,
    "likes": 1401
@@ -23693,13 +23659,13 @@
   "2026-10-06": {
    "downloads": 113530,
    "likes": 1408
+  },
+  "2026-10-07": {
+   "downloads": 113780,
+   "likes": 1410
   }
  },
  "moonshotai/Kimi-K3": {
-  "2026-09-22": {
-   "downloads": 1900376,
-   "likes": 11478
-  },
   "2026-09-23": {
    "downloads": 1860092,
    "likes": 11493
@@ -23751,13 +23717,13 @@
   "2026-10-06": {
    "downloads": 1265400,
    "likes": 11610
+  },
+  "2026-10-07": {
+   "downloads": 1253272,
+   "likes": 11624
   }
  },
  "moonshotai/Kimi-Linear-48B-A3B-Base": {
-  "2026-09-22": {
-   "downloads": 124723,
-   "likes": 83
-  },
   "2026-09-23": {
    "downloads": 124559,
    "likes": 84
@@ -23809,13 +23775,13 @@
   "2026-10-06": {
    "downloads": 124688,
    "likes": 84
+  },
+  "2026-10-07": {
+   "downloads": 124737,
+   "likes": 84
   }
  },
  "moonshotai/Kimi-Linear-48B-A3B-Instruct": {
-  "2026-09-22": {
-   "downloads": 178934,
-   "likes": 599
-  },
   "2026-09-23": {
    "downloads": 183165,
    "likes": 600
@@ -23867,13 +23833,13 @@
   "2026-10-06": {
    "downloads": 214665,
    "likes": 606
+  },
+  "2026-10-07": {
+   "downloads": 220953,
+   "likes": 608
   }
  },
  "moonshotai/Kimi-VL-A3B-Instruct": {
-  "2026-09-22": {
-   "downloads": 200727,
-   "likes": 284
-  },
   "2026-09-23": {
    "downloads": 199967,
    "likes": 284
@@ -23925,13 +23891,13 @@
   "2026-10-06": {
    "downloads": 229289,
    "likes": 284
+  },
+  "2026-10-07": {
+   "downloads": 232154,
+   "likes": 284
   }
  },
  "moonshotai/Kimi-VL-A3B-Thinking": {
-  "2026-09-22": {
-   "downloads": 16278,
-   "likes": 454
-  },
   "2026-09-23": {
    "downloads": 16461,
    "likes": 454
@@ -23983,13 +23949,13 @@
   "2026-10-06": {
    "downloads": 14048,
    "likes": 454
+  },
+  "2026-10-07": {
+   "downloads": 14194,
+   "likes": 454
   }
  },
  "moonshotai/Kimi-VL-A3B-Thinking-2506": {
-  "2026-09-22": {
-   "downloads": 7895,
-   "likes": 384
-  },
   "2026-09-23": {
    "downloads": 7736,
    "likes": 384
@@ -24041,13 +24007,13 @@
   "2026-10-06": {
    "downloads": 7055,
    "likes": 386
+  },
+  "2026-10-07": {
+   "downloads": 7070,
+   "likes": 386
   }
  },
  "moonshotai/MoonViT-SO-400M": {
-  "2026-09-22": {
-   "downloads": 5111,
-   "likes": 96
-  },
   "2026-09-23": {
    "downloads": 5176,
    "likes": 96
@@ -24099,13 +24065,13 @@
   "2026-10-06": {
    "downloads": 8648,
    "likes": 96
+  },
+  "2026-10-07": {
+   "downloads": 8196,
+   "likes": 96
   }
  },
  "moonshotai/Moonlight-16B-A3B": {
-  "2026-09-22": {
-   "downloads": 16933,
-   "likes": 116
-  },
   "2026-09-23": {
    "downloads": 16797,
    "likes": 116
@@ -24157,13 +24123,13 @@
   "2026-10-06": {
    "downloads": 12206,
    "likes": 118
+  },
+  "2026-10-07": {
+   "downloads": 13105,
+   "likes": 118
   }
  },
  "moonshotai/Moonlight-16B-A3B-Instruct": {
-  "2026-09-22": {
-   "downloads": 31903,
-   "likes": 204
-  },
   "2026-09-23": {
    "downloads": 32713,
    "likes": 204
@@ -24215,6 +24181,10 @@
   "2026-10-06": {
    "downloads": 33676,
    "likes": 208
+  },
+  "2026-10-07": {
+   "downloads": 33800,
+   "likes": 208
   }
  },
  "mudler/locate-anything.cpp-gguf": {
@@ -24265,13 +24235,13 @@
   "2026-10-06": {
    "downloads": 10946803,
    "likes": 22
+  },
+  "2026-10-07": {
+   "downloads": 11524087,
+   "likes": 24
   }
  },
  "nari-labs/Dia-1.6B": {
-  "2026-09-22": {
-   "downloads": 29040,
-   "likes": 2912
-  },
   "2026-09-23": {
    "downloads": 28990,
    "likes": 2912
@@ -24323,13 +24293,13 @@
   "2026-10-06": {
    "downloads": 27567,
    "likes": 2915
+  },
+  "2026-10-07": {
+   "downloads": 27478,
+   "likes": 2916
   }
  },
  "nari-labs/Dia-1.6B-0626": {
-  "2026-09-22": {
-   "downloads": 12804,
-   "likes": 134
-  },
   "2026-09-23": {
    "downloads": 12170,
    "likes": 134
@@ -24381,13 +24351,13 @@
   "2026-10-06": {
    "downloads": 11400,
    "likes": 134
+  },
+  "2026-10-07": {
+   "downloads": 11542,
+   "likes": 134
   }
  },
  "nari-labs/Dia2-1B": {
-  "2026-09-22": {
-   "downloads": 976,
-   "likes": 27
-  },
   "2026-09-23": {
    "downloads": 996,
    "likes": 27
@@ -24439,13 +24409,13 @@
   "2026-10-06": {
    "downloads": 921,
    "likes": 27
+  },
+  "2026-10-07": {
+   "downloads": 934,
+   "likes": 27
   }
  },
  "nari-labs/Dia2-2B": {
-  "2026-09-22": {
-   "downloads": 2673,
-   "likes": 187
-  },
   "2026-09-23": {
    "downloads": 2720,
    "likes": 187
@@ -24497,13 +24467,13 @@
   "2026-10-06": {
    "downloads": 3850,
    "likes": 187
+  },
+  "2026-10-07": {
+   "downloads": 4276,
+   "likes": 187
   }
  },
  "netease-youdao/Confucius4-R2T2": {
-  "2026-09-22": {
-   "downloads": 2729,
-   "likes": 260
-  },
   "2026-09-23": {
    "downloads": 3708,
    "likes": 353
@@ -24538,10 +24508,6 @@
   }
  },
  "nomic-ai/nomic-embed-text-v1.5": {
-  "2026-09-22": {
-   "downloads": 14337469,
-   "likes": 938
-  },
   "2026-09-23": {
    "downloads": 14308511,
    "likes": 938
@@ -24593,13 +24559,13 @@
   "2026-10-06": {
    "downloads": 13071367,
    "likes": 946
+  },
+  "2026-10-07": {
+   "downloads": 13052036,
+   "likes": 948
   }
  },
  "nvidia/Cosmos-H-Surgical": {
-  "2026-09-22": {
-   "downloads": 7483,
-   "likes": 25
-  },
   "2026-09-23": {
    "downloads": 7457,
    "likes": 25
@@ -24653,19 +24619,13 @@
   "2026-10-06": {
    "downloads": 285,
    "likes": 22
-  }
- },
- "nvidia/Cosmos3-Edge": {
-  "2026-09-22": {
-   "downloads": 1519709,
-   "likes": 210
+  },
+  "2026-10-07": {
+   "downloads": 340,
+   "likes": 23
   }
  },
  "nvidia/Cosmos3-Edge-Policy-DROID": {
-  "2026-09-22": {
-   "downloads": 1567,
-   "likes": 13
-  },
   "2026-09-23": {
    "downloads": 1374,
    "likes": 13
@@ -24687,17 +24647,7 @@
    "likes": 13
   }
  },
- "nvidia/Cosmos3-Nano": {
-  "2026-09-22": {
-   "downloads": 140918,
-   "likes": 362
-  }
- },
  "nvidia/Cosmos3-Nano-Policy-DROID": {
-  "2026-09-22": {
-   "downloads": 2595,
-   "likes": 35
-  },
   "2026-09-23": {
    "downloads": 2658,
    "likes": 35
@@ -24719,17 +24669,7 @@
    "likes": 36
   }
  },
- "nvidia/Cosmos3-Super": {
-  "2026-09-22": {
-   "downloads": 104347,
-   "likes": 258
-  }
- },
  "nvidia/Cosmos3-Super-Image2Video": {
-  "2026-09-22": {
-   "downloads": 36711,
-   "likes": 156
-  },
   "2026-09-23": {
    "downloads": 34771,
    "likes": 157
@@ -24739,17 +24679,7 @@
    "likes": 157
   }
  },
- "nvidia/Cosmos3-Super-Image2Video-4Step": {
-  "2026-09-22": {
-   "downloads": 1110,
-   "likes": 32
-  }
- },
  "nvidia/Cosmos3-Super-Text2Image": {
-  "2026-09-22": {
-   "downloads": 1997,
-   "likes": 189
-  },
   "2026-09-23": {
    "downloads": 1684,
    "likes": 190
@@ -24771,17 +24701,7 @@
    "likes": 190
   }
  },
- "nvidia/Cosmos3-Super-Text2Image-4Step": {
-  "2026-09-22": {
-   "downloads": 800,
-   "likes": 15
-  }
- },
  "nvidia/DeepSeek-V4.1-Flash-NVFP4": {
-  "2026-09-22": {
-   "downloads": 7320,
-   "likes": 85
-  },
   "2026-09-23": {
    "downloads": 11651,
    "likes": 89
@@ -24812,10 +24732,6 @@
   }
  },
  "nvidia/EgoHand-v1": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3
@@ -24865,13 +24781,13 @@
   "2026-10-06": {
    "downloads": 80941,
    "likes": 144
+  },
+  "2026-10-07": {
+   "downloads": 84201,
+   "likes": 147
   }
  },
  "nvidia/GLM-5.3-NVFP4": {
-  "2026-09-22": {
-   "downloads": 6795,
-   "likes": 15
-  },
   "2026-09-23": {
    "downloads": 7721,
    "likes": 16
@@ -24910,10 +24826,6 @@
   }
  },
  "nvidia/Kumo-Anomaly": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 5
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 8
@@ -24968,10 +24880,6 @@
   }
  },
  "nvidia/Kumo-Forecast": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 13
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 13
@@ -25023,6 +24931,10 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 13
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 13
   }
  },
  "nvidia/Kumo-Relational": {
@@ -25057,6 +24969,10 @@
   "2026-10-06": {
    "downloads": 68,
    "likes": 17
+  },
+  "2026-10-07": {
+   "downloads": 127,
+   "likes": 18
   }
  },
  "nvidia/Kumo-Tabular": {
@@ -25091,13 +25007,13 @@
   "2026-10-06": {
    "downloads": 125,
    "likes": 115
+  },
+  "2026-10-07": {
+   "downloads": 417,
+   "likes": 120
   }
  },
  "nvidia/LocateAnything-3B": {
-  "2026-09-22": {
-   "downloads": 87466,
-   "likes": 3038
-  },
   "2026-09-23": {
    "downloads": 87441,
    "likes": 3041
@@ -25149,6 +25065,10 @@
   "2026-10-06": {
    "downloads": 163519,
    "likes": 3095
+  },
+  "2026-10-07": {
+   "downloads": 188099,
+   "likes": 3100
   }
  },
  "nvidia/NV-Generate-CT": {
@@ -25182,6 +25102,10 @@
   },
   "2026-10-06": {
    "downloads": 11643,
+   "likes": 32
+  },
+  "2026-10-07": {
+   "downloads": 13803,
    "likes": 32
   }
  },
@@ -25229,6 +25153,10 @@
   "2026-10-06": {
    "downloads": 3102,
    "likes": 39
+  },
+  "2026-10-07": {
+   "downloads": 3373,
+   "likes": 40
   }
  },
  "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16": {
@@ -25307,6 +25235,10 @@
   "2026-10-06": {
    "downloads": 867,
    "likes": 16
+  },
+  "2026-10-07": {
+   "downloads": 929,
+   "likes": 17
   }
  },
  "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B": {
@@ -25411,13 +25343,13 @@
   "2026-10-06": {
    "downloads": 58703,
    "likes": 716
+  },
+  "2026-10-07": {
+   "downloads": 62252,
+   "likes": 742
   }
  },
  "nvidia/Nemotron-3-Diarization-preview": {
-  "2026-09-22": {
-   "downloads": 1847,
-   "likes": 70
-  },
   "2026-09-23": {
    "downloads": 2346,
    "likes": 90
@@ -25455,6 +25387,10 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 10
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 10
   }
  },
  "nvidia/PixelUMM": {
@@ -25473,13 +25409,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 64
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 69
   }
  },
  "nvidia/Qwen3.6-35B-A3B-NVFP4": {
-  "2026-09-22": {
-   "downloads": 7736009,
-   "likes": 630
-  },
   "2026-09-23": {
    "downloads": 7659481,
    "likes": 630
@@ -25531,13 +25467,13 @@
   "2026-10-06": {
    "downloads": 5733305,
    "likes": 643
+  },
+  "2026-10-07": {
+   "downloads": 5464883,
+   "likes": 643
   }
  },
  "nvidia/Qwen3.8-27B-NVFP4": {
-  "2026-09-22": {
-   "downloads": 164443,
-   "likes": 129
-  },
   "2026-09-23": {
    "downloads": 182761,
    "likes": 130
@@ -25576,10 +25512,6 @@
   }
  },
  "nvidia/RT-DETR-Hand-Detector-v1": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -25606,10 +25538,6 @@
   }
  },
  "nvidia/SOMA-X": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 24
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 24
@@ -25661,6 +25589,10 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 30
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 31
   }
  },
  "nvidia/c-fast-foundationstereo": {
@@ -25679,13 +25611,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 16
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 17
   }
  },
  "nvidia/cari4d_commercial": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -25751,6 +25683,16 @@
   "2026-10-06": {
    "downloads": 340,
    "likes": 12
+  },
+  "2026-10-07": {
+   "downloads": 352,
+   "likes": 12
+  }
+ },
+ "nvidia/corrdiff-cosmo-era5": {
+  "2026-10-07": {
+   "downloads": 244,
+   "likes": 0
   }
  },
  "nvidia/diar_sortformer_4spk-v1": {
@@ -25804,6 +25746,10 @@
   },
   "2026-10-06": {
    "downloads": 88571,
+   "likes": 155
+  },
+  "2026-10-07": {
+   "downloads": 80151,
    "likes": 155
   }
  },
@@ -25859,6 +25805,10 @@
   "2026-10-06": {
    "downloads": 33721,
    "likes": 145
+  },
+  "2026-10-07": {
+   "downloads": 34210,
+   "likes": 145
   }
  },
  "nvidia/diar_streaming_sortformer_4spk-v2.1": {
@@ -25913,6 +25863,10 @@
   "2026-10-06": {
    "downloads": 99438,
    "likes": 116
+  },
+  "2026-10-07": {
+   "downloads": 97711,
+   "likes": 116
   }
  },
  "nvidia/llama-nemotron-rerank-vl-1b-v2": {
@@ -25935,19 +25889,23 @@
   "2026-10-06": {
    "downloads": 17987,
    "likes": 64
+  },
+  "2026-10-07": {
+   "downloads": 17365,
+   "likes": 65
   }
  },
  "nvidia/music-flamingo-hf": {
   "2026-10-06": {
    "downloads": 4235,
    "likes": 106
+  },
+  "2026-10-07": {
+   "downloads": 4726,
+   "likes": 108
   }
  },
  "nvidia/personaplex-7b-v1": {
-  "2026-09-22": {
-   "downloads": 153933,
-   "likes": 2745
-  },
   "2026-09-23": {
    "downloads": 163660,
    "likes": 2748
@@ -25999,13 +25957,13 @@
   "2026-10-06": {
    "downloads": 173632,
    "likes": 2792
+  },
+  "2026-10-07": {
+   "downloads": 183416,
+   "likes": 2794
   }
  },
  "openai-community/gpt2": {
-  "2026-09-22": {
-   "downloads": 15279647,
-   "likes": 4165
-  },
   "2026-09-23": {
    "downloads": 15369050,
    "likes": 4167
@@ -26057,13 +26015,13 @@
   "2026-10-06": {
    "downloads": 15192354,
    "likes": 4203
+  },
+  "2026-10-07": {
+   "downloads": 15383064,
+   "likes": 4211
   }
  },
  "openai/circuit-sparsity": {
-  "2026-09-22": {
-   "downloads": 619,
-   "likes": 209
-  },
   "2026-09-23": {
    "downloads": 603,
    "likes": 209
@@ -26115,13 +26073,13 @@
   "2026-10-06": {
    "downloads": 708,
    "likes": 209
+  },
+  "2026-10-07": {
+   "downloads": 706,
+   "likes": 209
   }
  },
  "openai/clip-vit-base-patch32": {
-  "2026-09-22": {
-   "downloads": 22067425,
-   "likes": 1566
-  },
   "2026-09-23": {
    "downloads": 22273378,
    "likes": 1566
@@ -26173,13 +26131,13 @@
   "2026-10-06": {
    "downloads": 20538113,
    "likes": 1578
+  },
+  "2026-10-07": {
+   "downloads": 20416791,
+   "likes": 1579
   }
  },
  "openai/clip-vit-large-patch14": {
-  "2026-09-22": {
-   "downloads": 8138374,
-   "likes": 2100
-  },
   "2026-09-23": {
    "downloads": 8432454,
    "likes": 2100
@@ -26231,13 +26189,13 @@
   "2026-10-06": {
    "downloads": 8565989,
    "likes": 2104
+  },
+  "2026-10-07": {
+   "downloads": 8491334,
+   "likes": 2104
   }
  },
  "openai/gpt-oss-120b": {
-  "2026-09-22": {
-   "downloads": 4927006,
-   "likes": 5287
-  },
   "2026-09-23": {
    "downloads": 4865014,
    "likes": 5291
@@ -26289,13 +26247,13 @@
   "2026-10-06": {
    "downloads": 4358664,
    "likes": 5364
+  },
+  "2026-10-07": {
+   "downloads": 4188657,
+   "likes": 5368
   }
  },
  "openai/gpt-oss-20b": {
-  "2026-09-22": {
-   "downloads": 6714095,
-   "likes": 5082
-  },
   "2026-09-23": {
    "downloads": 6687853,
    "likes": 5085
@@ -26347,13 +26305,13 @@
   "2026-10-06": {
    "downloads": 6277811,
    "likes": 5132
+  },
+  "2026-10-07": {
+   "downloads": 6192993,
+   "likes": 5137
   }
  },
  "openai/gpt-oss-safeguard-120b": {
-  "2026-09-22": {
-   "downloads": 3913,
-   "likes": 104
-  },
   "2026-09-23": {
    "downloads": 3908,
    "likes": 104
@@ -26405,13 +26363,13 @@
   "2026-10-06": {
    "downloads": 4086,
    "likes": 106
+  },
+  "2026-10-07": {
+   "downloads": 4285,
+   "likes": 107
   }
  },
  "openai/gpt-oss-safeguard-20b": {
-  "2026-09-22": {
-   "downloads": 42563,
-   "likes": 263
-  },
   "2026-09-23": {
    "downloads": 42023,
    "likes": 263
@@ -26463,13 +26421,13 @@
   "2026-10-06": {
    "downloads": 36232,
    "likes": 268
+  },
+  "2026-10-07": {
+   "downloads": 36617,
+   "likes": 268
   }
  },
  "openai/privacy-filter": {
-  "2026-09-22": {
-   "downloads": 252696,
-   "likes": 1767
-  },
   "2026-09-23": {
    "downloads": 267713,
    "likes": 1768
@@ -26521,13 +26479,13 @@
   "2026-10-06": {
    "downloads": 350711,
    "likes": 1782
+  },
+  "2026-10-07": {
+   "downloads": 345678,
+   "likes": 1783
   }
  },
  "openai/shap-e": {
-  "2026-09-22": {
-   "downloads": 5101,
-   "likes": 282
-  },
   "2026-09-23": {
    "downloads": 5075,
    "likes": 283
@@ -26579,13 +26537,13 @@
   "2026-10-06": {
    "downloads": 8397,
    "likes": 285
+  },
+  "2026-10-07": {
+   "downloads": 8459,
+   "likes": 285
   }
  },
  "openai/whisper-base": {
-  "2026-09-22": {
-   "downloads": 1601896,
-   "likes": 289
-  },
   "2026-09-23": {
    "downloads": 1611723,
    "likes": 289
@@ -26637,13 +26595,13 @@
   "2026-10-06": {
    "downloads": 1716668,
    "likes": 295
+  },
+  "2026-10-07": {
+   "downloads": 1722962,
+   "likes": 295
   }
  },
  "openai/whisper-base.en": {
-  "2026-09-22": {
-   "downloads": 266620,
-   "likes": 45
-  },
   "2026-09-23": {
    "downloads": 271437,
    "likes": 45
@@ -26695,13 +26653,13 @@
   "2026-10-06": {
    "downloads": 185436,
    "likes": 46
+  },
+  "2026-10-07": {
+   "downloads": 182269,
+   "likes": 46
   }
  },
  "openai/whisper-large": {
-  "2026-09-22": {
-   "downloads": 27755,
-   "likes": 556
-  },
   "2026-09-23": {
    "downloads": 25795,
    "likes": 556
@@ -26753,13 +26711,13 @@
   "2026-10-06": {
    "downloads": 20920,
    "likes": 556
+  },
+  "2026-10-07": {
+   "downloads": 22535,
+   "likes": 556
   }
  },
  "openai/whisper-large-v2": {
-  "2026-09-22": {
-   "downloads": 81425,
-   "likes": 1809
-  },
   "2026-09-23": {
    "downloads": 81555,
    "likes": 1809
@@ -26811,13 +26769,13 @@
   "2026-10-06": {
    "downloads": 83406,
    "likes": 1810
+  },
+  "2026-10-07": {
+   "downloads": 84260,
+   "likes": 1810
   }
  },
  "openai/whisper-large-v3": {
-  "2026-09-22": {
-   "downloads": 4677524,
-   "likes": 6336
-  },
   "2026-09-23": {
    "downloads": 4712143,
    "likes": 6357
@@ -26869,13 +26827,13 @@
   "2026-10-06": {
    "downloads": 4046310,
    "likes": 6569
+  },
+  "2026-10-07": {
+   "downloads": 3994754,
+   "likes": 6573
   }
  },
  "openai/whisper-large-v3-turbo": {
-  "2026-09-22": {
-   "downloads": 6637070,
-   "likes": 3384
-  },
   "2026-09-23": {
    "downloads": 6586103,
    "likes": 3387
@@ -26927,13 +26885,13 @@
   "2026-10-06": {
    "downloads": 6318983,
    "likes": 3419
+  },
+  "2026-10-07": {
+   "downloads": 6348038,
+   "likes": 3421
   }
  },
  "openai/whisper-medium": {
-  "2026-09-22": {
-   "downloads": 298099,
-   "likes": 302
-  },
   "2026-09-23": {
    "downloads": 301433,
    "likes": 302
@@ -26985,13 +26943,13 @@
   "2026-10-06": {
    "downloads": 305308,
    "likes": 305
+  },
+  "2026-10-07": {
+   "downloads": 311915,
+   "likes": 305
   }
  },
  "openai/whisper-medium.en": {
-  "2026-09-22": {
-   "downloads": 40975,
-   "likes": 60
-  },
   "2026-09-23": {
    "downloads": 42875,
    "likes": 60
@@ -27043,13 +27001,13 @@
   "2026-10-06": {
    "downloads": 34743,
    "likes": 60
+  },
+  "2026-10-07": {
+   "downloads": 37329,
+   "likes": 60
   }
  },
  "openai/whisper-small": {
-  "2026-09-22": {
-   "downloads": 2925072,
-   "likes": 603
-  },
   "2026-09-23": {
    "downloads": 2935564,
    "likes": 603
@@ -27101,13 +27059,13 @@
   "2026-10-06": {
    "downloads": 3236383,
    "likes": 611
+  },
+  "2026-10-07": {
+   "downloads": 3247080,
+   "likes": 611
   }
  },
  "openai/whisper-small.en": {
-  "2026-09-22": {
-   "downloads": 90073,
-   "likes": 64
-  },
   "2026-09-23": {
    "downloads": 91526,
    "likes": 64
@@ -27159,13 +27117,13 @@
   "2026-10-06": {
    "downloads": 106203,
    "likes": 64
+  },
+  "2026-10-07": {
+   "downloads": 108417,
+   "likes": 64
   }
  },
  "openai/whisper-tiny": {
-  "2026-09-22": {
-   "downloads": 1676087,
-   "likes": 446
-  },
   "2026-09-23": {
    "downloads": 1672264,
    "likes": 447
@@ -27217,13 +27175,13 @@
   "2026-10-06": {
    "downloads": 1041571,
    "likes": 452
+  },
+  "2026-10-07": {
+   "downloads": 1006572,
+   "likes": 452
   }
  },
  "openai/whisper-tiny.en": {
-  "2026-09-22": {
-   "downloads": 171988,
-   "likes": 121
-  },
   "2026-09-23": {
    "downloads": 159564,
    "likes": 121
@@ -27275,13 +27233,13 @@
   "2026-10-06": {
    "downloads": 120057,
    "likes": 123
+  },
+  "2026-10-07": {
+   "downloads": 123259,
+   "likes": 123
   }
  },
  "openbmb/MiniCPM5-2B": {
-  "2026-09-22": {
-   "downloads": 508950,
-   "likes": 1661
-  },
   "2026-09-23": {
    "downloads": 564365,
    "likes": 1671
@@ -27365,6 +27323,10 @@
   "2026-10-06": {
    "downloads": 18114,
    "likes": 418
+  },
+  "2026-10-07": {
+   "downloads": 19030,
+   "likes": 446
   }
  },
  "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF": {
@@ -27375,13 +27337,13 @@
   "2026-10-06": {
    "downloads": 302875,
    "likes": 613
+  },
+  "2026-10-07": {
+   "downloads": 431147,
+   "likes": 646
   }
  },
  "ornith-ai/Ornith-1.5-9B-GGUF": {
-  "2026-09-22": {
-   "downloads": 5319566,
-   "likes": 435
-  },
   "2026-09-23": {
    "downloads": 5308464,
    "likes": 439
@@ -27433,6 +27395,10 @@
   "2026-10-06": {
    "downloads": 5012749,
    "likes": 497
+  },
+  "2026-10-07": {
+   "downloads": 5024561,
+   "likes": 502
   }
  },
  "pablodawson/MiniMax-H3-360-Orbit-LoRA": {
@@ -27455,6 +27421,16 @@
   "2026-10-06": {
    "downloads": 8745,
    "likes": 228
+  },
+  "2026-10-07": {
+   "downloads": 10119,
+   "likes": 242
+  }
+ },
+ "perplexity-ai/pplx-decider-v1-27b": {
+  "2026-10-07": {
+   "downloads": 1657,
+   "likes": 103
   }
  },
  "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF": {
@@ -27492,10 +27468,6 @@
   }
  },
  "prism-ml/Ternary-Bonsai-2-27B-gguf": {
-  "2026-09-22": {
-   "downloads": 2569604,
-   "likes": 1868
-  },
   "2026-09-23": {
    "downloads": 2815979,
    "likes": 1944
@@ -27547,13 +27519,13 @@
   "2026-10-06": {
    "downloads": 4193836,
    "likes": 2482
+  },
+  "2026-10-07": {
+   "downloads": 4271466,
+   "likes": 2514
   }
  },
  "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit": {
-  "2026-09-22": {
-   "downloads": 43477,
-   "likes": 334
-  },
   "2026-09-23": {
    "downloads": 48214,
    "likes": 356
@@ -27572,10 +27544,6 @@
   }
  },
  "prompthero/openjourney": {
-  "2026-09-22": {
-   "downloads": 4241,
-   "likes": 3261
-  },
   "2026-09-23": {
    "downloads": 4201,
    "likes": 3261
@@ -27627,13 +27595,13 @@
   "2026-10-06": {
    "downloads": 3629,
    "likes": 3261
+  },
+  "2026-10-07": {
+   "downloads": 3761,
+   "likes": 3261
   }
  },
  "pyannote/segmentation-3.0": {
-  "2026-09-22": {
-   "downloads": 5690655,
-   "likes": 1941
-  },
   "2026-09-23": {
    "downloads": 5697397,
    "likes": 1959
@@ -27685,13 +27653,13 @@
   "2026-10-06": {
    "downloads": 5353404,
    "likes": 2109
+  },
+  "2026-10-07": {
+   "downloads": 5424247,
+   "likes": 2119
   }
  },
  "pyannote/speaker-diarization-3.1": {
-  "2026-09-22": {
-   "downloads": 7704093,
-   "likes": 3839
-  },
   "2026-09-23": {
    "downloads": 7637937,
    "likes": 3866
@@ -27743,13 +27711,13 @@
   "2026-10-06": {
    "downloads": 7087025,
    "likes": 4168
+  },
+  "2026-10-07": {
+   "downloads": 7152207,
+   "likes": 4190
   }
  },
  "pyannote/speaker-diarization-community-1": {
-  "2026-09-22": {
-   "downloads": 5437063,
-   "likes": 2003
-  },
   "2026-09-23": {
    "downloads": 5471695,
    "likes": 2051
@@ -27801,13 +27769,13 @@
   "2026-10-06": {
    "downloads": 5524258,
    "likes": 2564
+  },
+  "2026-10-07": {
+   "downloads": 5554891,
+   "likes": 2609
   }
  },
  "pyannote/wespeaker-voxceleb-resnet34-LM": {
-  "2026-09-22": {
-   "downloads": 6454564,
-   "likes": 177
-  },
   "2026-09-23": {
    "downloads": 6472044,
    "likes": 179
@@ -27859,13 +27827,13 @@
   "2026-10-06": {
    "downloads": 6197971,
    "likes": 186
+  },
+  "2026-10-07": {
+   "downloads": 6266088,
+   "likes": 186
   }
  },
  "sentence-transformers/all-MiniLM-L6-v2": {
-  "2026-09-22": {
-   "downloads": 251974790,
-   "likes": 6102
-  },
   "2026-09-23": {
    "downloads": 251354399,
    "likes": 6111
@@ -27917,13 +27885,13 @@
   "2026-10-06": {
    "downloads": 235470023,
    "likes": 6196
+  },
+  "2026-10-07": {
+   "downloads": 234015516,
+   "likes": 6210
   }
  },
  "sentence-transformers/all-mpnet-base-v2": {
-  "2026-09-22": {
-   "downloads": 21991721,
-   "likes": 1378
-  },
   "2026-09-23": {
    "downloads": 21841634,
    "likes": 1378
@@ -27975,13 +27943,13 @@
   "2026-10-06": {
    "downloads": 19146572,
    "likes": 1381
+  },
+  "2026-10-07": {
+   "downloads": 19146408,
+   "likes": 1381
   }
  },
  "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": {
-  "2026-09-22": {
-   "downloads": 45922112,
-   "likes": 1409
-  },
   "2026-09-23": {
    "downloads": 46018622,
    "likes": 1410
@@ -28033,13 +28001,13 @@
   "2026-10-06": {
    "downloads": 50729248,
    "likes": 1419
+  },
+  "2026-10-07": {
+   "downloads": 50332290,
+   "likes": 1423
   }
  },
  "sentence-transformers/paraphrase-multilingual-mpnet-base-v2": {
-  "2026-09-22": {
-   "downloads": 10061885,
-   "likes": 522
-  },
   "2026-09-23": {
    "downloads": 10053327,
    "likes": 523
@@ -28091,13 +28059,13 @@
   "2026-10-06": {
    "downloads": 9916659,
    "likes": 526
+  },
+  "2026-10-07": {
+   "downloads": 9942788,
+   "likes": 529
   }
  },
  "sesame/csm-1b": {
-  "2026-09-22": {
-   "downloads": 142223,
-   "likes": 2450
-  },
   "2026-09-23": {
    "downloads": 141461,
    "likes": 2450
@@ -28149,13 +28117,13 @@
   "2026-10-06": {
    "downloads": 133936,
    "likes": 2466
+  },
+  "2026-10-07": {
+   "downloads": 133254,
+   "likes": 2466
   }
  },
  "stabilityai/SAME-L": {
-  "2026-09-22": {
-   "downloads": 16550,
-   "likes": 25
-  },
   "2026-09-23": {
    "downloads": 16212,
    "likes": 25
@@ -28207,13 +28175,13 @@
   "2026-10-06": {
    "downloads": 18658,
    "likes": 26
+  },
+  "2026-10-07": {
+   "downloads": 19090,
+   "likes": 27
   }
  },
  "stabilityai/SAME-S": {
-  "2026-09-22": {
-   "downloads": 2971,
-   "likes": 14
-  },
   "2026-09-23": {
    "downloads": 2898,
    "likes": 14
@@ -28265,13 +28233,13 @@
   "2026-10-06": {
    "downloads": 2410,
    "likes": 15
+  },
+  "2026-10-07": {
+   "downloads": 2458,
+   "likes": 16
   }
  },
  "stabilityai/sd-turbo-amdnpu": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 3
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 3
@@ -28321,15 +28289,15 @@
    "likes": 3
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 3
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 3
   }
  },
  "stabilityai/sdxl-base-amdnpu": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -28381,13 +28349,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 2
   }
  },
  "stabilityai/sdxl-turbo": {
-  "2026-09-22": {
-   "downloads": 953121,
-   "likes": 2632
-  },
   "2026-09-23": {
    "downloads": 968677,
    "likes": 2632
@@ -28439,13 +28407,13 @@
   "2026-10-06": {
    "downloads": 935775,
    "likes": 2637
+  },
+  "2026-10-07": {
+   "downloads": 928764,
+   "likes": 2637
   }
  },
  "stabilityai/sdxl-turbo-amdnpu": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -28497,13 +28465,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 2
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 2
   }
  },
  "stabilityai/sdxl-turbo-tensorrt": {
-  "2026-09-22": {
-   "downloads": 263,
-   "likes": 41
-  },
   "2026-09-23": {
    "downloads": 272,
    "likes": 41
@@ -28555,13 +28523,13 @@
   "2026-10-06": {
    "downloads": 440,
    "likes": 41
+  },
+  "2026-10-07": {
+   "downloads": 441,
+   "likes": 41
   }
  },
  "stabilityai/sp4d": {
-  "2026-09-22": {
-   "downloads": 691,
-   "likes": 15
-  },
   "2026-09-23": {
    "downloads": 693,
    "likes": 15
@@ -28613,13 +28581,13 @@
   "2026-10-06": {
    "downloads": 110,
    "likes": 15
+  },
+  "2026-10-07": {
+   "downloads": 110,
+   "likes": 15
   }
  },
  "stabilityai/stable-audio-3-medium": {
-  "2026-09-22": {
-   "downloads": 91785,
-   "likes": 338
-  },
   "2026-09-23": {
    "downloads": 91420,
    "likes": 340
@@ -28671,13 +28639,13 @@
   "2026-10-06": {
    "downloads": 61284,
    "likes": 376
+  },
+  "2026-10-07": {
+   "downloads": 61064,
+   "likes": 380
   }
  },
  "stabilityai/stable-audio-3-medium-base": {
-  "2026-09-22": {
-   "downloads": 6583,
-   "likes": 25
-  },
   "2026-09-23": {
    "downloads": 6701,
    "likes": 25
@@ -28729,13 +28697,13 @@
   "2026-10-06": {
    "downloads": 8550,
    "likes": 26
+  },
+  "2026-10-07": {
+   "downloads": 8675,
+   "likes": 26
   }
  },
  "stabilityai/stable-audio-3-optimized": {
-  "2026-09-22": {
-   "downloads": 13758,
-   "likes": 47
-  },
   "2026-09-23": {
    "downloads": 13683,
    "likes": 48
@@ -28787,13 +28755,13 @@
   "2026-10-06": {
    "downloads": 26049,
    "likes": 52
+  },
+  "2026-10-07": {
+   "downloads": 29651,
+   "likes": 52
   }
  },
  "stabilityai/stable-audio-3-small-music": {
-  "2026-09-22": {
-   "downloads": 17034,
-   "likes": 154
-  },
   "2026-09-23": {
    "downloads": 17079,
    "likes": 156
@@ -28845,13 +28813,13 @@
   "2026-10-06": {
    "downloads": 18027,
    "likes": 169
+  },
+  "2026-10-07": {
+   "downloads": 18249,
+   "likes": 170
   }
  },
  "stabilityai/stable-audio-3-small-music-base": {
-  "2026-09-22": {
-   "downloads": 3060,
-   "likes": 23
-  },
   "2026-09-23": {
    "downloads": 3059,
    "likes": 23
@@ -28903,13 +28871,13 @@
   "2026-10-06": {
    "downloads": 2734,
    "likes": 24
+  },
+  "2026-10-07": {
+   "downloads": 2767,
+   "likes": 24
   }
  },
  "stabilityai/stable-audio-3-small-sfx": {
-  "2026-09-22": {
-   "downloads": 27379,
-   "likes": 128
-  },
   "2026-09-23": {
    "downloads": 27709,
    "likes": 130
@@ -28961,13 +28929,13 @@
   "2026-10-06": {
    "downloads": 34671,
    "likes": 194
+  },
+  "2026-10-07": {
+   "downloads": 35269,
+   "likes": 197
   }
  },
  "stabilityai/stable-audio-3-small-sfx-base": {
-  "2026-09-22": {
-   "downloads": 1307,
-   "likes": 11
-  },
   "2026-09-23": {
    "downloads": 1334,
    "likes": 11
@@ -29019,13 +28987,13 @@
   "2026-10-06": {
    "downloads": 1514,
    "likes": 11
+  },
+  "2026-10-07": {
+   "downloads": 1563,
+   "likes": 11
   }
  },
  "stabilityai/stable-diffusion-3-medium": {
-  "2026-09-22": {
-   "downloads": 4348,
-   "likes": 5051
-  },
   "2026-09-23": {
    "downloads": 4356,
    "likes": 5051
@@ -29077,13 +29045,13 @@
   "2026-10-06": {
    "downloads": 2688,
    "likes": 5059
+  },
+  "2026-10-07": {
+   "downloads": 2645,
+   "likes": 5059
   }
  },
  "stabilityai/stable-diffusion-3-medium-amdnpu": {
-  "2026-09-22": {
-   "downloads": 30,
-   "likes": 1
-  },
   "2026-09-23": {
    "downloads": 31,
    "likes": 1
@@ -29135,13 +29103,13 @@
   "2026-10-06": {
    "downloads": 41,
    "likes": 1
+  },
+  "2026-10-07": {
+   "downloads": 41,
+   "likes": 1
   }
  },
  "stabilityai/stable-diffusion-3-medium-tensorrt": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 155
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 155
@@ -29193,13 +29161,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 155
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 155
   }
  },
  "stabilityai/stable-diffusion-3.5-large": {
-  "2026-09-22": {
-   "downloads": 100337,
-   "likes": 3860
-  },
   "2026-09-23": {
    "downloads": 100628,
    "likes": 3890
@@ -29251,13 +29219,13 @@
   "2026-10-06": {
    "downloads": 100104,
    "likes": 4101
+  },
+  "2026-10-07": {
+   "downloads": 99740,
+   "likes": 4106
   }
  },
  "stabilityai/stable-diffusion-3.5-medium-amdnpu": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 2
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 2
@@ -29307,15 +29275,15 @@
    "likes": 2
   },
   "2026-10-06": {
+   "downloads": 0,
+   "likes": 2
+  },
+  "2026-10-07": {
    "downloads": 0,
    "likes": 2
   }
  },
  "stabilityai/stable-diffusion-3.5-medium-tensorrt": {
-  "2026-09-22": {
-   "downloads": 1,
-   "likes": 13
-  },
   "2026-09-23": {
    "downloads": 1,
    "likes": 13
@@ -29367,13 +29335,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 13
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 13
   }
  },
  "stabilityai/stable-diffusion-xl-1.0-tensorrt": {
-  "2026-09-22": {
-   "downloads": 230,
-   "likes": 155
-  },
   "2026-09-23": {
    "downloads": 237,
    "likes": 155
@@ -29425,13 +29393,13 @@
   "2026-10-06": {
    "downloads": 305,
    "likes": 155
+  },
+  "2026-10-07": {
+   "downloads": 308,
+   "likes": 155
   }
  },
  "stabilityai/stable-diffusion-xl-base-1.0": {
-  "2026-09-22": {
-   "downloads": 3302132,
-   "likes": 8215
-  },
   "2026-09-23": {
    "downloads": 3401027,
    "likes": 8222
@@ -29483,13 +29451,13 @@
   "2026-10-06": {
    "downloads": 4365555,
    "likes": 8277
+  },
+  "2026-10-07": {
+   "downloads": 4372699,
+   "likes": 8281
   }
  },
  "stabilityai/stable-video-diffusion-img2vid-xt": {
-  "2026-09-22": {
-   "downloads": 279477,
-   "likes": 3422
-  },
   "2026-09-23": {
    "downloads": 273042,
    "likes": 3424
@@ -29541,13 +29509,13 @@
   "2026-10-06": {
    "downloads": 145846,
    "likes": 3441
+  },
+  "2026-10-07": {
+   "downloads": 135587,
+   "likes": 3442
   }
  },
  "stabilityai/stable-video-diffusion-img2vid-xt-1-1-tensorrt": {
-  "2026-09-22": {
-   "downloads": 31,
-   "likes": 33
-  },
   "2026-09-23": {
    "downloads": 32,
    "likes": 33
@@ -29599,13 +29567,13 @@
   "2026-10-06": {
    "downloads": 37,
    "likes": 33
+  },
+  "2026-10-07": {
+   "downloads": 39,
+   "likes": 33
   }
  },
  "tencent/AuK": {
-  "2026-09-22": {
-   "downloads": 3713,
-   "likes": 350
-  },
   "2026-09-23": {
    "downloads": 3895,
    "likes": 353
@@ -29657,13 +29625,13 @@
   "2026-10-06": {
    "downloads": 5075,
    "likes": 379
+  },
+  "2026-10-07": {
+   "downloads": 5139,
+   "likes": 380
   }
  },
  "tencent/AuK-Flash": {
-  "2026-09-22": {
-   "downloads": 2624,
-   "likes": 98
-  },
   "2026-09-23": {
    "downloads": 2714,
    "likes": 98
@@ -29715,13 +29683,13 @@
   "2026-10-06": {
    "downloads": 3391,
    "likes": 104
+  },
+  "2026-10-07": {
+   "downloads": 3424,
+   "likes": 104
   }
  },
  "tencent/ContextPilot-14B": {
-  "2026-09-22": {
-   "downloads": 1230,
-   "likes": 23
-  },
   "2026-09-23": {
    "downloads": 1249,
    "likes": 23
@@ -29773,13 +29741,13 @@
   "2026-10-06": {
    "downloads": 959,
    "likes": 23
+  },
+  "2026-10-07": {
+   "downloads": 901,
+   "likes": 23
   }
  },
  "tencent/ContextPilot-8B": {
-  "2026-09-22": {
-   "downloads": 998,
-   "likes": 11
-  },
   "2026-09-23": {
    "downloads": 1019,
    "likes": 11
@@ -29831,13 +29799,13 @@
   "2026-10-06": {
    "downloads": 769,
    "likes": 11
+  },
+  "2026-10-07": {
+   "downloads": 734,
+   "likes": 11
   }
  },
  "tencent/ContextPilot-E4B": {
-  "2026-09-22": {
-   "downloads": 1178,
-   "likes": 7
-  },
   "2026-09-23": {
    "downloads": 1189,
    "likes": 7
@@ -29889,13 +29857,13 @@
   "2026-10-06": {
    "downloads": 895,
    "likes": 9
+  },
+  "2026-10-07": {
+   "downloads": 874,
+   "likes": 9
   }
  },
  "tencent/EVIE-4.5B": {
-  "2026-09-22": {
-   "downloads": 1856,
-   "likes": 29
-  },
   "2026-09-23": {
    "downloads": 1917,
    "likes": 29
@@ -29947,13 +29915,13 @@
   "2026-10-06": {
    "downloads": 2435,
    "likes": 33
+  },
+  "2026-10-07": {
+   "downloads": 1973,
+   "likes": 34
   }
  },
  "tencent/EVIE-8B": {
-  "2026-09-22": {
-   "downloads": 830,
-   "likes": 29
-  },
   "2026-09-23": {
    "downloads": 863,
    "likes": 29
@@ -30005,13 +29973,13 @@
   "2026-10-06": {
    "downloads": 1141,
    "likes": 31
+  },
+  "2026-10-07": {
+   "downloads": 735,
+   "likes": 31
   }
  },
  "tencent/EVIE-Preview-4.5B": {
-  "2026-09-22": {
-   "downloads": 2608,
-   "likes": 99
-  },
   "2026-09-23": {
    "downloads": 2535,
    "likes": 99
@@ -30063,13 +30031,13 @@
   "2026-10-06": {
    "downloads": 1070,
    "likes": 99
+  },
+  "2026-10-07": {
+   "downloads": 986,
+   "likes": 99
   }
  },
  "tencent/Ex-Omni": {
-  "2026-09-22": {
-   "downloads": 36,
-   "likes": 24
-  },
   "2026-09-23": {
    "downloads": 38,
    "likes": 24
@@ -30121,13 +30089,13 @@
   "2026-10-06": {
    "downloads": 29,
    "likes": 24
+  },
+  "2026-10-07": {
+   "downloads": 27,
+   "likes": 24
   }
  },
  "tencent/HunyuanOCR": {
-  "2026-09-22": {
-   "downloads": 700039,
-   "likes": 821
-  },
   "2026-09-23": {
    "downloads": 713348,
    "likes": 823
@@ -30179,13 +30147,13 @@
   "2026-10-06": {
    "downloads": 922460,
    "likes": 827
+  },
+  "2026-10-07": {
+   "downloads": 929080,
+   "likes": 827
   }
  },
  "tencent/HunyuanVideo": {
-  "2026-09-22": {
-   "downloads": 1089,
-   "likes": 2299
-  },
   "2026-09-23": {
    "downloads": 1106,
    "likes": 2301
@@ -30217,13 +30185,13 @@
   "2026-09-30": {
    "downloads": 1585,
    "likes": 2309
+  },
+  "2026-10-07": {
+   "downloads": 1837,
+   "likes": 2318
   }
  },
  "tencent/Hy-MT2-1.8B-GGUF": {
-  "2026-09-22": {
-   "downloads": 381786,
-   "likes": 220
-  },
   "2026-09-23": {
    "downloads": 378261,
    "likes": 224
@@ -30275,13 +30243,13 @@
   "2026-10-06": {
    "downloads": 319321,
    "likes": 233
+  },
+  "2026-10-07": {
+   "downloads": 314835,
+   "likes": 234
   }
  },
  "tencent/Hy4-preview": {
-  "2026-09-22": {
-   "downloads": 18267,
-   "likes": 492
-  },
   "2026-09-23": {
    "downloads": 19632,
    "likes": 492
@@ -30333,13 +30301,13 @@
   "2026-10-06": {
    "downloads": 25993,
    "likes": 502
+  },
+  "2026-10-07": {
+   "downloads": 25914,
+   "likes": 502
   }
  },
  "tencent/Hy4-preview-FP8": {
-  "2026-09-22": {
-   "downloads": 5632,
-   "likes": 23
-  },
   "2026-09-23": {
    "downloads": 5768,
    "likes": 23
@@ -30391,13 +30359,13 @@
   "2026-10-06": {
    "downloads": 4856,
    "likes": 25
+  },
+  "2026-10-07": {
+   "downloads": 5383,
+   "likes": 25
   }
  },
  "tencent/Simple-Attention-Sparsification": {
-  "2026-09-22": {
-   "downloads": 0,
-   "likes": 8
-  },
   "2026-09-23": {
    "downloads": 0,
    "likes": 8
@@ -30449,13 +30417,13 @@
   "2026-10-06": {
    "downloads": 0,
    "likes": 11
+  },
+  "2026-10-07": {
+   "downloads": 0,
+   "likes": 11
   }
  },
  "tencent/UI-Mate-democua-27B": {
-  "2026-09-22": {
-   "downloads": 430,
-   "likes": 17
-  },
   "2026-09-23": {
    "downloads": 415,
    "likes": 17
@@ -30507,13 +30475,13 @@
   "2026-10-06": {
    "downloads": 474,
    "likes": 17
+  },
+  "2026-10-07": {
+   "downloads": 480,
+   "likes": 17
   }
  },
  "tencent/WeMM-Embedding-2B": {
-  "2026-09-22": {
-   "downloads": 23912,
-   "likes": 107
-  },
   "2026-09-23": {
    "downloads": 24287,
    "likes": 109
@@ -30565,13 +30533,13 @@
   "2026-10-06": {
    "downloads": 18335,
    "likes": 116
+  },
+  "2026-10-07": {
+   "downloads": 17955,
+   "likes": 116
   }
  },
  "tencent/WeMM-Embedding-4B": {
-  "2026-09-22": {
-   "downloads": 7101,
-   "likes": 37
-  },
   "2026-09-23": {
    "downloads": 7136,
    "likes": 37
@@ -30623,13 +30591,13 @@
   "2026-10-06": {
    "downloads": 6136,
    "likes": 37
+  },
+  "2026-10-07": {
+   "downloads": 5303,
+   "likes": 37
   }
  },
  "tencent/WeMM-Embedding-9B": {
-  "2026-09-22": {
-   "downloads": 7513,
-   "likes": 134
-  },
   "2026-09-23": {
    "downloads": 7649,
    "likes": 135
@@ -30681,13 +30649,13 @@
   "2026-10-06": {
    "downloads": 5795,
    "likes": 138
+  },
+  "2026-10-07": {
+   "downloads": 5759,
+   "likes": 138
   }
  },
  "tencent/WeVisDoc-2B": {
-  "2026-09-22": {
-   "downloads": 918,
-   "likes": 17
-  },
   "2026-09-23": {
    "downloads": 1035,
    "likes": 19
@@ -30739,13 +30707,13 @@
   "2026-10-06": {
    "downloads": 15354,
    "likes": 27
+  },
+  "2026-10-07": {
+   "downloads": 17296,
+   "likes": 27
   }
  },
  "tencent/WeVisDoc-4B": {
-  "2026-09-22": {
-   "downloads": 814,
-   "likes": 40
-  },
   "2026-09-23": {
    "downloads": 932,
    "likes": 41
@@ -30797,13 +30765,13 @@
   "2026-10-06": {
    "downloads": 1983,
    "likes": 50
+  },
+  "2026-10-07": {
+   "downloads": 2020,
+   "likes": 50
   }
  },
  "tiiuae/falcon-40b": {
-  "2026-09-22": {
-   "downloads": 6512,
-   "likes": 2439
-  },
   "2026-09-23": {
    "downloads": 6466,
    "likes": 2439
@@ -30855,19 +30823,13 @@
   "2026-10-06": {
    "downloads": 6392,
    "likes": 2439
-  }
- },
- "timm/efficientnet_b3.ra2_in1k": {
-  "2026-09-22": {
-   "downloads": 12696812,
-   "likes": 30
+  },
+  "2026-10-07": {
+   "downloads": 6497,
+   "likes": 2439
   }
  },
  "timm/mobilenetv3_small_100.lamb_in1k": {
-  "2026-09-22": {
-   "downloads": 18936442,
-   "likes": 123
-  },
   "2026-09-23": {
    "downloads": 19429010,
    "likes": 123
@@ -30919,13 +30881,13 @@
   "2026-10-06": {
    "downloads": 22330951,
    "likes": 124
+  },
+  "2026-10-07": {
+   "downloads": 22315895,
+   "likes": 125
   }
  },
  "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5": {
-  "2026-09-22": {
-   "downloads": 13262289,
-   "likes": 50
-  },
   "2026-09-23": {
    "downloads": 12407489,
    "likes": 50
@@ -30976,6 +30938,10 @@
   },
   "2026-10-06": {
    "downloads": 8281187,
+   "likes": 56
+  },
+  "2026-10-07": {
+   "downloads": 7863702,
    "likes": 56
   }
  },
@@ -31033,6 +30999,10 @@
   "2026-10-06": {
    "downloads": 502809,
    "likes": 281
+  },
+  "2026-10-07": {
+   "downloads": 559452,
+   "likes": 292
   }
  },
  "ukisai/Swift-1.5-Qwen3.8-27b": {
@@ -31042,10 +31012,6 @@
   }
  },
  "ukisai/Swift-Qwen3.8-27B-GGUF": {
-  "2026-09-22": {
-   "downloads": 153942,
-   "likes": 363
-  },
   "2026-09-23": {
    "downloads": 168762,
    "likes": 379
@@ -31060,10 +31026,6 @@
   }
  },
  "ukisai/Swift-Qwen3.8-27b": {
-  "2026-09-22": {
-   "downloads": 17256,
-   "likes": 549
-  },
   "2026-09-23": {
    "downloads": 17837,
    "likes": 558
@@ -31124,10 +31086,6 @@
   }
  },
  "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF": {
-  "2026-09-22": {
-   "downloads": 12639703,
-   "likes": 1050
-  },
   "2026-09-23": {
    "downloads": 12450427,
    "likes": 1061
@@ -31179,13 +31137,13 @@
   "2026-10-06": {
    "downloads": 6928970,
    "likes": 1113
+  },
+  "2026-10-07": {
+   "downloads": 6499878,
+   "likes": 1116
   }
  },
  "unsloth/Qwen3.8-27B-GGUF": {
-  "2026-09-22": {
-   "downloads": 7019401,
-   "likes": 4520
-  },
   "2026-09-23": {
    "downloads": 7134167,
    "likes": 4559
@@ -31237,13 +31195,19 @@
   "2026-10-06": {
    "downloads": 6566855,
    "likes": 4895
+  },
+  "2026-10-07": {
+   "downloads": 6553039,
+   "likes": 4923
+  }
+ },
+ "unsloth/embeddinggemma-2-GGUF": {
+  "2026-10-07": {
+   "downloads": 11470,
+   "likes": 160
   }
  },
  "xai-org/grok-1": {
-  "2026-09-22": {
-   "downloads": 749,
-   "likes": 2450
-  },
   "2026-09-23": {
    "downloads": 667,
    "likes": 2450
@@ -31295,13 +31259,13 @@
   "2026-10-06": {
    "downloads": 602,
    "likes": 2454
+  },
+  "2026-10-07": {
+   "downloads": 614,
+   "likes": 2455
   }
  },
  "xai-org/grok-2": {
-  "2026-09-22": {
-   "downloads": 9911,
-   "likes": 1165
-  },
   "2026-09-23": {
    "downloads": 9710,
    "likes": 1165
@@ -31353,13 +31317,13 @@
   "2026-10-06": {
    "downloads": 9306,
    "likes": 1172
+  },
+  "2026-10-07": {
+   "downloads": 9736,
+   "likes": 1175
   }
  },
  "yandex/AliceAI-Foundation-80B-A3B-Base": {
-  "2026-09-22": {
-   "downloads": 1516,
-   "likes": 273
-  },
   "2026-09-23": {
    "downloads": 2254,
    "likes": 296
@@ -31386,10 +31350,6 @@
   }
  },
  "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF": {
-  "2026-09-22": {
-   "downloads": 480334,
-   "likes": 2902
-  },
   "2026-09-23": {
    "downloads": 479903,
    "likes": 2902
@@ -31441,13 +31401,13 @@
   "2026-10-06": {
    "downloads": 353982,
    "likes": 2923
+  },
+  "2026-10-07": {
+   "downloads": 340287,
+   "likes": 2925
   }
  },
  "zai-org/AutoGLM-Phone-9B": {
-  "2026-09-22": {
-   "downloads": 2602,
-   "likes": 444
-  },
   "2026-09-23": {
    "downloads": 2578,
    "likes": 444
@@ -31499,13 +31459,13 @@
   "2026-10-06": {
    "downloads": 829,
    "likes": 444
+  },
+  "2026-10-07": {
+   "downloads": 822,
+   "likes": 444
   }
  },
  "zai-org/AutoGLM-Phone-9B-Multilingual": {
-  "2026-09-22": {
-   "downloads": 889,
-   "likes": 242
-  },
   "2026-09-23": {
    "downloads": 896,
    "likes": 242
@@ -31557,13 +31517,13 @@
   "2026-10-06": {
    "downloads": 1099,
    "likes": 242
+  },
+  "2026-10-07": {
+   "downloads": 1130,
+   "likes": 242
   }
  },
  "zai-org/GLM-4.1V-9B-Thinking": {
-  "2026-09-22": {
-   "downloads": 174228,
-   "likes": 788
-  },
   "2026-09-23": {
    "downloads": 177243,
    "likes": 789
@@ -31615,13 +31575,13 @@
   "2026-10-06": {
    "downloads": 168158,
    "likes": 791
+  },
+  "2026-10-07": {
+   "downloads": 167009,
+   "likes": 791
   }
  },
  "zai-org/GLM-4.7": {
-  "2026-09-22": {
-   "downloads": 104506,
-   "likes": 2056
-  },
   "2026-09-23": {
    "downloads": 105745,
    "likes": 2056
@@ -31673,13 +31633,13 @@
   "2026-10-06": {
    "downloads": 104888,
    "likes": 2058
+  },
+  "2026-10-07": {
+   "downloads": 99897,
+   "likes": 2058
   }
  },
  "zai-org/GLM-4.7-Flash": {
-  "2026-09-22": {
-   "downloads": 1843941,
-   "likes": 1847
-  },
   "2026-09-23": {
    "downloads": 1841865,
    "likes": 1848
@@ -31731,13 +31691,13 @@
   "2026-10-06": {
    "downloads": 1645926,
    "likes": 1862
+  },
+  "2026-10-07": {
+   "downloads": 1601526,
+   "likes": 1863
   }
  },
  "zai-org/GLM-5": {
-  "2026-09-22": {
-   "downloads": 54161,
-   "likes": 2122
-  },
   "2026-09-23": {
    "downloads": 53737,
    "likes": 2122
@@ -31789,13 +31749,13 @@
   "2026-10-06": {
    "downloads": 488639,
    "likes": 2122
+  },
+  "2026-10-07": {
+   "downloads": 494468,
+   "likes": 2122
   }
  },
  "zai-org/GLM-5-FP8": {
-  "2026-09-22": {
-   "downloads": 59174,
-   "likes": 182
-  },
   "2026-09-23": {
    "downloads": 50193,
    "likes": 182
@@ -31847,13 +31807,13 @@
   "2026-10-06": {
    "downloads": 22257,
    "likes": 182
+  },
+  "2026-10-07": {
+   "downloads": 22464,
+   "likes": 182
   }
  },
  "zai-org/GLM-5.1": {
-  "2026-09-22": {
-   "downloads": 80257,
-   "likes": 1840
-  },
   "2026-09-23": {
    "downloads": 79496,
    "likes": 1840
@@ -31905,13 +31865,13 @@
   "2026-10-06": {
    "downloads": 338537,
    "likes": 1840
+  },
+  "2026-10-07": {
+   "downloads": 341399,
+   "likes": 1841
   }
  },
  "zai-org/GLM-5.1-FP8": {
-  "2026-09-22": {
-   "downloads": 140560,
-   "likes": 121
-  },
   "2026-09-23": {
    "downloads": 129294,
    "likes": 121
@@ -31963,13 +31923,13 @@
   "2026-10-06": {
    "downloads": 28727,
    "likes": 121
+  },
+  "2026-10-07": {
+   "downloads": 28611,
+   "likes": 121
   }
  },
  "zai-org/GLM-5.2": {
-  "2026-09-22": {
-   "downloads": 962716,
-   "likes": 5130
-  },
   "2026-09-23": {
    "downloads": 957838,
    "likes": 5130
@@ -32021,13 +31981,13 @@
   "2026-10-06": {
    "downloads": 686485,
    "likes": 5149
+  },
+  "2026-10-07": {
+   "downloads": 682424,
+   "likes": 5150
   }
  },
  "zai-org/GLM-5.2-FP8": {
-  "2026-09-22": {
-   "downloads": 745660,
-   "likes": 266
-  },
   "2026-09-23": {
    "downloads": 717111,
    "likes": 266
@@ -32079,13 +32039,13 @@
   "2026-10-06": {
    "downloads": 393988,
    "likes": 267
+  },
+  "2026-10-07": {
+   "downloads": 366596,
+   "likes": 267
   }
  },
  "zai-org/GLM-5.3": {
-  "2026-09-22": {
-   "downloads": 1039477,
-   "likes": 1907
-  },
   "2026-09-23": {
    "downloads": 1078446,
    "likes": 1914
@@ -32137,13 +32097,13 @@
   "2026-10-06": {
    "downloads": 1489168,
    "likes": 2114
+  },
+  "2026-10-07": {
+   "downloads": 1507787,
+   "likes": 2128
   }
  },
  "zai-org/GLM-5.3-BF16": {
-  "2026-09-22": {
-   "downloads": 25886,
-   "likes": 41
-  },
   "2026-09-23": {
    "downloads": 34257,
    "likes": 42
@@ -32195,13 +32155,13 @@
   "2026-10-06": {
    "downloads": 40944,
    "likes": 47
+  },
+  "2026-10-07": {
+   "downloads": 39610,
+   "likes": 47
   }
  },
  "zai-org/GLM-5.3-Flash": {
-  "2026-09-22": {
-   "downloads": 3547021,
-   "likes": 2527
-  },
   "2026-09-23": {
    "downloads": 3772365,
    "likes": 2544
@@ -32253,13 +32213,13 @@
   "2026-10-06": {
    "downloads": 5952376,
    "likes": 2726
+  },
+  "2026-10-07": {
+   "downloads": 6160780,
+   "likes": 2741
   }
  },
  "zai-org/GLM-5.3-Flash-BF16": {
-  "2026-09-22": {
-   "downloads": 24094,
-   "likes": 64
-  },
   "2026-09-23": {
    "downloads": 25277,
    "likes": 65
@@ -32311,13 +32271,13 @@
   "2026-10-06": {
    "downloads": 65437,
    "likes": 70
+  },
+  "2026-10-07": {
+   "downloads": 66391,
+   "likes": 70
   }
  },
  "zai-org/GLM-ASR-Nano-2512": {
-  "2026-09-22": {
-   "downloads": 62302,
-   "likes": 388
-  },
   "2026-09-23": {
    "downloads": 62592,
    "likes": 388
@@ -32369,13 +32329,13 @@
   "2026-10-06": {
    "downloads": 60838,
    "likes": 388
+  },
+  "2026-10-07": {
+   "downloads": 61458,
+   "likes": 388
   }
  },
  "zai-org/GLM-Image": {
-  "2026-09-22": {
-   "downloads": 8971,
-   "likes": 1112
-  },
   "2026-09-23": {
    "downloads": 8807,
    "likes": 1112
@@ -32427,13 +32387,13 @@
   "2026-10-06": {
    "downloads": 4869,
    "likes": 1114
+  },
+  "2026-10-07": {
+   "downloads": 4524,
+   "likes": 1114
   }
  },
  "zai-org/GLM-OCR": {
-  "2026-09-22": {
-   "downloads": 1677162,
-   "likes": 2069
-  },
   "2026-09-23": {
    "downloads": 1693628,
    "likes": 2077
@@ -32485,13 +32445,13 @@
   "2026-10-06": {
    "downloads": 1849657,
    "likes": 2126
+  },
+  "2026-10-07": {
+   "downloads": 1844832,
+   "likes": 2129
   }
  },
  "zai-org/GLM-TTS": {
-  "2026-09-22": {
-   "downloads": 173,
-   "likes": 351
-  },
   "2026-09-23": {
    "downloads": 173,
    "likes": 351
@@ -32543,13 +32503,13 @@
   "2026-10-06": {
    "downloads": 325,
    "likes": 351
+  },
+  "2026-10-07": {
+   "downloads": 337,
+   "likes": 351
   }
  },
  "zai-org/SCAIL-2": {
-  "2026-09-22": {
-   "downloads": 3970,
-   "likes": 336
-  },
   "2026-09-23": {
    "downloads": 3494,
    "likes": 338
@@ -32601,13 +32561,13 @@
   "2026-10-06": {
    "downloads": 4916,
    "likes": 345
+  },
+  "2026-10-07": {
+   "downloads": 5304,
+   "likes": 345
   }
  },
  "zai-org/chatglm-6b": {
-  "2026-09-22": {
-   "downloads": 2645,
-   "likes": 2915
-  },
   "2026-09-23": {
    "downloads": 2563,
    "likes": 2915
@@ -32658,6 +32618,10 @@
   },
   "2026-10-06": {
    "downloads": 2584,
+   "likes": 2915
+  },
+  "2026-10-07": {
+   "downloads": 2549,
    "likes": 2915
   }
  }
