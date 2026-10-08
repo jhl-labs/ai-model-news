@@ -62,6 +62,10 @@
    "published_at": "2026-09-21",
    "slug": "Cactus-Compute__needle3"
   },
+  "Cactus-Compute/whistle": {
+   "published_at": "2026-10-08",
+   "slug": "Cactus-Compute__whistle"
+  },
   "Cloudflare/clef": {
    "published_at": "2026-10-01",
    "slug": "Cloudflare__clef"
@@ -121,6 +125,10 @@
   "Lightricks/LTX-2.5": {
    "published_at": "2026-09-05",
    "slug": "Lightricks__LTX-2.5"
+  },
+  "LiquidAI/d1-3B": {
+   "published_at": "2026-10-08",
+   "slug": "LiquidAI__d1-3B"
   },
   "MATLOWAI/minimax-h3-fused-turbo-int8-convrot": {
    "published_at": "2026-09-05",
@@ -261,6 +269,14 @@
   "autotrust/GEV-26B-Decide": {
    "published_at": "2026-10-06",
    "slug": "autotrust__GEV-26B-Decide"
+  },
+  "autotrust/GEV-26B-Decide-NVFP4": {
+   "published_at": "2026-10-08",
+   "slug": "autotrust__GEV-26B-Decide-NVFP4"
+  },
+  "autotrust/GLM5.3-Flash-E224-DGX-Spark": {
+   "published_at": "2026-10-08",
+   "slug": "autotrust__GLM5.3-Flash-E224-DGX-Spark"
   },
   "autotrust/JEV-27B-VL": {
    "published_at": "2026-10-06",
