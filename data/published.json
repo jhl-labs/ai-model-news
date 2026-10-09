@@ -94,6 +94,10 @@
    "published_at": "2026-09-26",
    "slug": "Contrastive-LM__CLM-v0.1-8B"
   },
+  "ConwayResearch/Underdog-Saluki-27B-1.0": {
+   "published_at": "2026-10-09",
+   "slug": "ConwayResearch__Underdog-Saluki-27B-1.0"
+  },
   "Edge0/Audio8-ASR-Infinite": {
    "published_at": "2026-09-24",
    "slug": "Edge0__Audio8-ASR-Infinite"
@@ -158,6 +162,10 @@
    "published_at": "2026-09-30",
    "slug": "PSRben__VisionHOPE"
   },
+  "Phocinae/Phocinae-Largha-150M-v1": {
+   "published_at": "2026-10-09",
+   "slug": "Phocinae__Phocinae-Largha-150M-v1"
+  },
   "Qwen/Qwen-Drive-1.0-4B": {
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen-Drive-1.0-4B"
@@ -173,6 +181,10 @@
   "Qwen/Qwen-Image-2.1-PE-T2I": {
    "published_at": "2026-09-21",
    "slug": "Qwen__Qwen-Image-2.1-PE-T2I"
+  },
+  "Qwen/Qwen-Image-2.1-Turbo": {
+   "published_at": "2026-10-09",
+   "slug": "Qwen__Qwen-Image-2.1-Turbo"
   },
   "Qwen/Qwen3.8-2.4T-A95B": {
    "published_at": "2026-09-05",
@@ -398,6 +410,10 @@
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-7B"
   },
+  "moondream/parakeet-redux": {
+   "published_at": "2026-10-09",
+   "slug": "moondream__parakeet-redux"
+  },
   "netease-youdao/Confucius4-R2T2": {
    "published_at": "2026-09-21",
    "slug": "netease-youdao__Confucius4-R2T2"
@@ -541,6 +557,10 @@
   "tencent/WeVisDoc-4B": {
    "published_at": "2026-09-18",
    "slug": "tencent__WeVisDoc-4B"
+  },
+  "tencent/Youtu-Parsing-Omni": {
+   "published_at": "2026-10-09",
+   "slug": "tencent__Youtu-Parsing-Omni"
   },
   "ukisai/Swift-Qwen3.8-27b": {
    "published_at": "2026-09-15",
