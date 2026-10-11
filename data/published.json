@@ -398,6 +398,14 @@
    "published_at": "2026-09-11",
    "slug": "m-a-p__YuE2-3B"
   },
+  "microsoft/AesCode-32B": {
+   "published_at": "2026-10-11",
+   "slug": "microsoft__AesCode-32B"
+  },
+  "microsoft/AesCode-8B": {
+   "published_at": "2026-10-11",
+   "slug": "microsoft__AesCode-8B"
+  },
   "microsoft/FrogNano-4B-2609": {
    "published_at": "2026-10-03",
    "slug": "microsoft__FrogNano-4B-2609"
@@ -505,6 +513,10 @@
   "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit": {
    "published_at": "2026-09-18",
    "slug": "prism-ml__Ternary-Bonsai-2-27B-mlx-2bit"
+  },
+  "speridlabs/iris-3b": {
+   "published_at": "2026-10-11",
+   "slug": "speridlabs__iris-3b"
   },
   "tencent/AuK": {
    "published_at": "2026-09-10",
