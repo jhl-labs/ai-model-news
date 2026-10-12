@@ -270,6 +270,10 @@
    "published_at": "2026-09-18",
    "slug": "XingChen-AGI__Xing4.0-29B-A4B"
   },
+  "abenzerps/Qwen-Image-2.1-Uncensored-Quantized": {
+   "published_at": "2026-10-12",
+   "slug": "abenzerps__Qwen-Image-2.1-Uncensored-Quantized"
+  },
   "akatz-ai/MiniMax-H3-Character-Swap-LoRA": {
    "published_at": "2026-09-30",
    "slug": "akatz-ai__MiniMax-H3-Character-Swap-LoRA"
@@ -422,6 +426,10 @@
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-7B"
   },
+  "mistralai/Voxtral-Mini-4B-Realtime-Arabic": {
+   "published_at": "2026-10-12",
+   "slug": "mistralai__Voxtral-Mini-4B-Realtime-Arabic"
+  },
   "moondream/parakeet-redux": {
    "published_at": "2026-10-09",
    "slug": "moondream__parakeet-redux"
@@ -517,6 +525,10 @@
   "speridlabs/iris-3b": {
    "published_at": "2026-10-11",
    "slug": "speridlabs__iris-3b"
+  },
+  "stabilityai/stable-audio-3-small-music": {
+   "published_at": "2026-10-12",
+   "slug": "stabilityai__stable-audio-3-small-music"
   },
   "tencent/AuK": {
    "published_at": "2026-09-10",
