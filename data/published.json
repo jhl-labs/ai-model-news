@@ -302,6 +302,14 @@
    "published_at": "2026-10-06",
    "slug": "autotrust__JEV-27B-VL"
   },
+  "autotrust/JEV-35B": {
+   "published_at": "2026-10-13",
+   "slug": "autotrust__JEV-35B"
+  },
+  "autotrust/JEV-35B-NVFP4": {
+   "published_at": "2026-10-13",
+   "slug": "autotrust__JEV-35B-NVFP4"
+  },
   "black-forest-labs/flux-3-action-base": {
    "published_at": "2026-09-23",
    "slug": "black-forest-labs__flux-3-action-base"
@@ -497,6 +505,14 @@
   "nvidia/Qwen3.8-Flash-Next-NVFP4": {
    "published_at": "2026-09-05",
    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
+  },
+  "openbmb/MiniCPM-V-4.7-1B": {
+   "published_at": "2026-10-13",
+   "slug": "openbmb__MiniCPM-V-4.7-1B"
+  },
+  "openbmb/MiniCPM-V-4.7-35B-A3B": {
+   "published_at": "2026-10-13",
+   "slug": "openbmb__MiniCPM-V-4.7-35B-A3B"
   },
   "openbmb/MiniCPM5-2B": {
    "published_at": "2026-09-07",
