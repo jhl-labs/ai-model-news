@@ -134,6 +134,10 @@
    "published_at": "2026-09-05",
    "slug": "Lightricks__LTX-2.5"
   },
+  "LiquidAI/LFM2.5-24B-A2B": {
+   "published_at": "2026-10-14",
+   "slug": "LiquidAI__LFM2.5-24B-A2B"
+  },
   "LiquidAI/d1-3B": {
    "published_at": "2026-10-08",
    "slug": "LiquidAI__d1-3B"
@@ -310,6 +314,10 @@
    "published_at": "2026-10-13",
    "slug": "autotrust__JEV-35B-NVFP4"
   },
+  "baidu/Unlimited-OCR": {
+   "published_at": "2026-10-14",
+   "slug": "baidu__Unlimited-OCR"
+  },
   "black-forest-labs/flux-3-action-base": {
    "published_at": "2026-09-23",
    "slug": "black-forest-labs__flux-3-action-base"
@@ -357,6 +365,10 @@
   "fastino/GLiNER2.5-Decide": {
    "published_at": "2026-09-27",
    "slug": "fastino__GLiNER2.5-Decide"
+  },
+  "fishaudio/drama-3": {
+   "published_at": "2026-10-14",
+   "slug": "fishaudio__drama-3"
   },
   "google/embeddinggemma-2": {
    "published_at": "2026-10-06",
@@ -433,6 +445,10 @@
   "microsoft/VibeVoice-ASR-Streaming-7B": {
    "published_at": "2026-09-05",
    "slug": "microsoft__VibeVoice-ASR-Streaming-7B"
+  },
+  "mistralai/LIDstral-Arabic": {
+   "published_at": "2026-10-14",
+   "slug": "mistralai__LIDstral-Arabic"
   },
   "mistralai/Voxtral-Mini-4B-Realtime-Arabic": {
    "published_at": "2026-10-12",
@@ -613,6 +629,10 @@
   "ukisai/Swift-Qwen3.8-27b": {
    "published_at": "2026-09-15",
    "slug": "ukisai__Swift-Qwen3.8-27b"
+  },
+  "vllm-sr/d3": {
+   "published_at": "2026-10-14",
+   "slug": "vllm-sr__d3"
   },
   "yandex/AliceAI-Foundation-80B-A3B-Base": {
    "published_at": "2026-09-21",
