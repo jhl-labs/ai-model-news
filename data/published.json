@@ -330,6 +330,18 @@
    "published_at": "2026-09-24",
    "slug": "black-forest-labs__flux-3-action-so101"
   },
+  "black-forest-labs/flux-3-image-klein": {
+   "published_at": "2026-10-15",
+   "slug": "black-forest-labs__flux-3-image-klein"
+  },
+  "black-forest-labs/flux-3-image-klein-base": {
+   "published_at": "2026-10-15",
+   "slug": "black-forest-labs__flux-3-image-klein-base"
+  },
+  "black-forest-labs/flux-3-image-klein-comfy": {
+   "published_at": "2026-10-15",
+   "slug": "black-forest-labs__flux-3-image-klein-comfy"
+  },
   "canberkkkkkk/ema-lightning": {
    "published_at": "2026-10-07",
    "slug": "canberkkkkkk__ema-lightning"
@@ -422,6 +434,10 @@
    "published_at": "2026-09-11",
    "slug": "m-a-p__YuE2-3B"
   },
+  "meta-models/Muse-Spark-Open-816B-A42B": {
+   "published_at": "2026-10-15",
+   "slug": "meta-models__Muse-Spark-Open-816B-A42B"
+  },
   "microsoft/AesCode-32B": {
    "published_at": "2026-10-11",
    "slug": "microsoft__AesCode-32B"
@@ -449,6 +465,10 @@
   "mistralai/LIDstral-Arabic": {
    "published_at": "2026-10-14",
    "slug": "mistralai__LIDstral-Arabic"
+  },
+  "mistralai/Timestral-209M": {
+   "published_at": "2026-10-15",
+   "slug": "mistralai__Timestral-209M"
   },
   "mistralai/Voxtral-Mini-4B-Realtime-Arabic": {
    "published_at": "2026-10-12",
@@ -501,6 +521,30 @@
   "nvidia/NV-Reason-CT": {
    "published_at": "2026-09-28",
    "slug": "nvidia__NV-Reason-CT"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB": {
+   "published_at": "2026-10-15",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF": {
+   "published_at": "2026-10-15",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16": {
+   "published_at": "2026-10-15",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
+   "published_at": "2026-10-15",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16": {
+   "published_at": "2026-10-15",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4": {
+   "published_at": "2026-10-15",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4"
   },
   "nvidia/Nemotron-3-Diarization": {
    "published_at": "2026-09-23",
