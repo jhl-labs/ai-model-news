@@ -342,6 +342,10 @@
    "published_at": "2026-10-15",
    "slug": "black-forest-labs__flux-3-image-klein-comfy"
   },
+  "black-forest-labs/flux-3-image-klein-pup": {
+   "published_at": "2026-10-16",
+   "slug": "black-forest-labs__flux-3-image-klein-pup"
+  },
   "canberkkkkkk/ema-lightning": {
    "published_at": "2026-10-07",
    "slug": "canberkkkkkk__ema-lightning"
@@ -466,9 +470,17 @@
    "published_at": "2026-10-14",
    "slug": "mistralai__LIDstral-Arabic"
   },
+  "mistralai/Timestral-123M": {
+   "published_at": "2026-10-16",
+   "slug": "mistralai__Timestral-123M"
+  },
   "mistralai/Timestral-209M": {
    "published_at": "2026-10-15",
    "slug": "mistralai__Timestral-209M"
+  },
+  "mistralai/Timestral-5M": {
+   "published_at": "2026-10-16",
+   "slug": "mistralai__Timestral-5M"
   },
   "mistralai/Voxtral-Mini-4B-Realtime-Arabic": {
    "published_at": "2026-10-12",
@@ -562,6 +574,10 @@
    "published_at": "2026-09-09",
    "slug": "nvidia__Qwen3.8-27B-NVFP4"
   },
+  "nvidia/Qwen3.8-Flash-Next-FP4-Local": {
+   "published_at": "2026-10-16",
+   "slug": "nvidia__Qwen3.8-Flash-Next-FP4-Local"
+  },
   "nvidia/Qwen3.8-Flash-Next-NVFP4": {
    "published_at": "2026-09-05",
    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
@@ -629,6 +645,10 @@
   "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
    "slug": "tencent__EVIE-Preview-4.5B"
+  },
+  "tencent/Hy-Memory-30B-A3B": {
+   "published_at": "2026-10-16",
+   "slug": "tencent__Hy-Memory-30B-A3B"
   },
   "tencent/Hy4-preview": {
    "published_at": "2026-09-05",
