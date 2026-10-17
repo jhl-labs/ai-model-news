@@ -162,6 +162,14 @@
    "published_at": "2026-09-05",
    "slug": "OBLITERATUS__Qwen3.8-27B-OBLITERATED"
   },
+  "OpenMOSS-Team/MOSS-Image-Base": {
+   "published_at": "2026-10-17",
+   "slug": "OpenMOSS-Team__MOSS-Image-Base"
+  },
+  "OpenMOSS-Team/MOSS-Image-SFT": {
+   "published_at": "2026-10-17",
+   "slug": "OpenMOSS-Team__MOSS-Image-SFT"
+  },
   "OpenVDN/vdn-minimax-h3": {
    "published_at": "2026-09-05",
    "slug": "OpenVDN__vdn-minimax-h3"
@@ -358,6 +366,10 @@
    "published_at": "2026-09-23",
    "slug": "convaiinnovations__laya-multilingual"
   },
+  "datalab-to/indra-ocr": {
+   "published_at": "2026-10-17",
+   "slug": "datalab-to__indra-ocr"
+  },
   "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8": {
    "published_at": "2026-09-14",
    "slug": "dealignai__DeepSeek-V4.1-Flash-UNCENSORED-FP8"
@@ -377,6 +389,10 @@
   "deepseek-ai/DeepSeek-V4.1-Flash": {
    "published_at": "2026-09-10",
    "slug": "deepseek-ai__DeepSeek-V4.1-Flash"
+  },
+  "deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "published_at": "2026-10-17",
+   "slug": "deepseek-ai__DeepSeek-V4.1-Flash-1017"
   },
   "fastino/GLiNER2.5-Decide": {
    "published_at": "2026-09-27",
@@ -417,6 +433,14 @@
   "ibm-granite/granite-4.2-8b": {
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-8b"
+  },
+  "ibm-granite/granite-switch-4.1-30b": {
+   "published_at": "2026-10-17",
+   "slug": "ibm-granite__granite-switch-4.1-30b"
+  },
+  "ibm-granite/granite-switch-4.1-8b": {
+   "published_at": "2026-10-17",
+   "slug": "ibm-granite__granite-switch-4.1-8b"
   },
   "ibm-granite/granite-timeseries-patchtst-fm-r2": {
    "published_at": "2026-09-16",
@@ -514,6 +538,10 @@
    "published_at": "2026-09-17",
    "slug": "nvidia__DeepSeek-V4.1-Flash-NVFP4"
   },
+  "nvidia/GLM-5.3-Flash-FP4-Local": {
+   "published_at": "2026-10-17",
+   "slug": "nvidia__GLM-5.3-Flash-FP4-Local"
+  },
   "nvidia/GLM-5.3-Flash-NVFP4": {
    "published_at": "2026-09-10",
    "slug": "nvidia__GLM-5.3-Flash-NVFP4"
@@ -557,6 +585,14 @@
   "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4": {
    "published_at": "2026-10-15",
    "slug": "nvidia__NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4"
+  },
+  "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16": {
+   "published_at": "2026-10-17",
+   "slug": "nvidia__NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16"
+  },
+  "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF": {
+   "published_at": "2026-10-17",
+   "slug": "nvidia__NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF"
   },
   "nvidia/Nemotron-3-Diarization": {
    "published_at": "2026-09-23",
@@ -657,6 +693,10 @@
   "tencent/Hy4-preview-FP8": {
    "published_at": "2026-09-05",
    "slug": "tencent__Hy4-preview-FP8"
+  },
+  "tencent/Qwen3-8B-DSpine-b16": {
+   "published_at": "2026-10-17",
+   "slug": "tencent__Qwen3-8B-DSpine-b16"
   },
   "tencent/UI-Mate-27B": {
    "published_at": "2026-09-05",
