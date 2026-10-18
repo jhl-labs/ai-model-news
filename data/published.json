@@ -82,6 +82,10 @@
    "published_at": "2026-09-11",
    "slug": "CohereLabs__North-Small-Translate-1.0"
   },
+  "Comfy-Org/MOSS-Image": {
+   "published_at": "2026-10-18",
+   "slug": "Comfy-Org__MOSS-Image"
+  },
   "Comfy-Org/Qwen-Image-2.1": {
    "published_at": "2026-09-20",
    "slug": "Comfy-Org__Qwen-Image-2.1"
@@ -501,6 +505,10 @@
   "mistralai/Timestral-209M": {
    "published_at": "2026-10-15",
    "slug": "mistralai__Timestral-209M"
+  },
+  "mistralai/Timestral-28M": {
+   "published_at": "2026-10-18",
+   "slug": "mistralai__Timestral-28M"
   },
   "mistralai/Timestral-5M": {
    "published_at": "2026-10-16",
