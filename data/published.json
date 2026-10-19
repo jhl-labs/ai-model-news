@@ -470,6 +470,10 @@
    "published_at": "2026-10-15",
    "slug": "meta-models__Muse-Spark-Open-816B-A42B"
   },
+  "meta-models/Muse-Spark-Open-816B-A42B-NVFP4": {
+   "published_at": "2026-10-19",
+   "slug": "meta-models__Muse-Spark-Open-816B-A42B-NVFP4"
+  },
   "microsoft/AesCode-32B": {
    "published_at": "2026-10-11",
    "slug": "microsoft__AesCode-32B"
@@ -609,6 +613,10 @@
   "nvidia/Nemotron-3-Diarization-preview": {
    "published_at": "2026-09-05",
    "slug": "nvidia__Nemotron-3-Diarization-preview"
+  },
+  "nvidia/Nemotron-3.5-Embed-1B-BF16": {
+   "published_at": "2026-10-19",
+   "slug": "nvidia__Nemotron-3.5-Embed-1B-BF16"
   },
   "nvidia/PixelUMM": {
    "published_at": "2026-10-02",
