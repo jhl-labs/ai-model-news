@@ -374,6 +374,10 @@
    "published_at": "2026-10-17",
    "slug": "datalab-to__indra-ocr"
   },
+  "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8": {
+   "published_at": "2026-10-20",
+   "slug": "dealignai__DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8"
+  },
   "dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8": {
    "published_at": "2026-09-14",
    "slug": "dealignai__DeepSeek-V4.1-Flash-UNCENSORED-FP8"
@@ -462,6 +466,14 @@
    "published_at": "2026-10-06",
    "slug": "jialinyyzz__humanizer"
   },
+  "lodestones/Kromoss": {
+   "published_at": "2026-10-20",
+   "slug": "lodestones__Kromoss"
+  },
+  "lodestones/MOSS-Image-SFT-8-steps-dmd": {
+   "published_at": "2026-10-20",
+   "slug": "lodestones__MOSS-Image-SFT-8-steps-dmd"
+  },
   "m-a-p/YuE2-3B": {
    "published_at": "2026-09-11",
    "slug": "m-a-p__YuE2-3B"
@@ -485,6 +497,10 @@
   "microsoft/FrogNano-4B-2609": {
    "published_at": "2026-10-03",
    "slug": "microsoft__FrogNano-4B-2609"
+  },
+  "microsoft/UserRepGen-4B": {
+   "published_at": "2026-10-20",
+   "slug": "microsoft__UserRepGen-4B"
   },
   "microsoft/VibeVoice-ASR-BitNet": {
    "published_at": "2026-09-15",
@@ -665,6 +681,10 @@
   "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit": {
    "published_at": "2026-09-18",
    "slug": "prism-ml__Ternary-Bonsai-2-27B-mlx-2bit"
+  },
+  "reflection/Beam-1.0-501B-A23B": {
+   "published_at": "2026-10-20",
+   "slug": "reflection__Beam-1.0-501B-A23B"
   },
   "speridlabs/iris-3b": {
    "published_at": "2026-10-11",
