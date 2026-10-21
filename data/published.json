@@ -230,6 +230,10 @@
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen3.8-Flash-Next-FP8"
   },
+  "RecursiveSI/flint": {
+   "published_at": "2026-10-21",
+   "slug": "RecursiveSI__flint"
+  },
   "StarDoc-AI/TeleOCR": {
    "published_at": "2026-09-25",
    "slug": "StarDoc-AI__TeleOCR"
@@ -442,6 +446,10 @@
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-8b"
   },
+  "ibm-granite/granite-speech-5.0-2b": {
+   "published_at": "2026-10-21",
+   "slug": "ibm-granite__granite-speech-5.0-2b"
+  },
   "ibm-granite/granite-switch-4.1-30b": {
    "published_at": "2026-10-17",
    "slug": "ibm-granite__granite-switch-4.1-30b"
@@ -634,6 +642,10 @@
    "published_at": "2026-10-19",
    "slug": "nvidia__Nemotron-3.5-Embed-1B-BF16"
   },
+  "nvidia/Nemotron-3.5-Rerank-8B-BF16": {
+   "published_at": "2026-10-21",
+   "slug": "nvidia__Nemotron-3.5-Rerank-8B-BF16"
+  },
   "nvidia/PixelUMM": {
    "published_at": "2026-10-02",
    "slug": "nvidia__PixelUMM"
@@ -665,6 +677,10 @@
   "orcarouter/GLM-5.3-Flash-Uncensored-FP8": {
    "published_at": "2026-09-05",
    "slug": "orcarouter__GLM-5.3-Flash-Uncensored-FP8"
+  },
+  "orcarouter/OrcaCyber-Nano-1.0": {
+   "published_at": "2026-10-21",
+   "slug": "orcarouter__OrcaCyber-Nano-1.0"
   },
   "orcarouter/OrcaSAQ-2-27B": {
    "published_at": "2026-09-29",
