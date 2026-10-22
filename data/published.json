@@ -134,6 +134,10 @@
    "published_at": "2026-10-03",
    "slug": "Infatoshi__GLM-5.3-UNCENSORED-EXL3-3.0bpw"
   },
+  "InternScience/Sage-A1.5": {
+   "published_at": "2026-10-22",
+   "slug": "InternScience__Sage-A1.5"
+  },
   "Lightricks/LTX-2.5": {
    "published_at": "2026-09-05",
    "slug": "Lightricks__LTX-2.5"
@@ -269,6 +273,10 @@
   "XHToken/Spark-X2.5-4B": {
    "published_at": "2026-09-05",
    "slug": "XHToken__Spark-X2.5-4B"
+  },
+  "XHToken/Spark-X2.6-4B": {
+   "published_at": "2026-10-22",
+   "slug": "XHToken__Spark-X2.6-4B"
   },
   "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B": {
    "published_at": "2026-09-22",
@@ -574,6 +582,10 @@
    "published_at": "2026-09-17",
    "slug": "nvidia__DeepSeek-V4.1-Flash-NVFP4"
   },
+  "nvidia/Flora-Captioner": {
+   "published_at": "2026-10-22",
+   "slug": "nvidia__Flora-Captioner"
+  },
   "nvidia/GLM-5.3-Flash-FP4-Local": {
    "published_at": "2026-10-17",
    "slug": "nvidia__GLM-5.3-Flash-FP4-Local"
@@ -662,6 +674,10 @@
    "published_at": "2026-09-05",
    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
   },
+  "nvidia/RFD4-Proteina": {
+   "published_at": "2026-10-22",
+   "slug": "nvidia__RFD4-Proteina"
+  },
   "openbmb/MiniCPM-V-4.7-1B": {
    "published_at": "2026-10-13",
    "slug": "openbmb__MiniCPM-V-4.7-1B"
@@ -737,6 +753,10 @@
   "tencent/Hy-Memory-30B-A3B": {
    "published_at": "2026-10-16",
    "slug": "tencent__Hy-Memory-30B-A3B"
+  },
+  "tencent/Hy-Memory-30B-A3B-GGUF": {
+   "published_at": "2026-10-22",
+   "slug": "tencent__Hy-Memory-30B-A3B-GGUF"
   },
   "tencent/Hy4-preview": {
    "published_at": "2026-09-05",
