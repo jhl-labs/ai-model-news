@@ -82,6 +82,10 @@
    "published_at": "2026-09-11",
    "slug": "CohereLabs__North-Small-Translate-1.0"
   },
+  "Comfy-Org/Fibo-2.0": {
+   "published_at": "2026-10-23",
+   "slug": "Comfy-Org__Fibo-2.0"
+  },
   "Comfy-Org/MOSS-Image": {
    "published_at": "2026-10-18",
    "slug": "Comfy-Org__MOSS-Image"
@@ -157,6 +161,10 @@
   "MiniMaxAI/MiniMax-H3": {
    "published_at": "2026-09-05",
    "slug": "MiniMaxAI__MiniMax-H3"
+  },
+  "MiniMaxAI/MiniMax-M3.1-Flash": {
+   "published_at": "2026-10-23",
+   "slug": "MiniMaxAI__MiniMax-M3.1-Flash"
   },
   "Mothersuperior/yue2-mothersuperior-realaudio-tokenizer-v4": {
    "published_at": "2026-09-19",
@@ -514,6 +522,10 @@
    "published_at": "2026-10-03",
    "slug": "microsoft__FrogNano-4B-2609"
   },
+  "microsoft/Sentiment-Analysis-7B": {
+   "published_at": "2026-10-23",
+   "slug": "microsoft__Sentiment-Analysis-7B"
+  },
   "microsoft/UserRepGen-4B": {
    "published_at": "2026-10-20",
    "slug": "microsoft__UserRepGen-4B"
@@ -621,6 +633,10 @@
   "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16": {
    "published_at": "2026-10-15",
    "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB": {
+   "published_at": "2026-10-23",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-E4B-4GB"
   },
   "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
    "published_at": "2026-10-15",
@@ -758,6 +774,10 @@
    "published_at": "2026-10-22",
    "slug": "tencent__Hy-Memory-30B-A3B-GGUF"
   },
+  "tencent/Hy-Nomas": {
+   "published_at": "2026-10-23",
+   "slug": "tencent__Hy-Nomas"
+  },
   "tencent/Hy4-preview": {
    "published_at": "2026-09-05",
    "slug": "tencent__Hy4-preview"
@@ -797,6 +817,10 @@
   "tencent/WeVisDoc-4B": {
    "published_at": "2026-09-18",
    "slug": "tencent__WeVisDoc-4B"
+  },
+  "tencent/WeVisOne-VL-2B": {
+   "published_at": "2026-10-23",
+   "slug": "tencent__WeVisOne-VL-2B"
   },
   "tencent/Youtu-Parsing-Omni": {
    "published_at": "2026-10-09",
