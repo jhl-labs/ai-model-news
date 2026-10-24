@@ -142,6 +142,10 @@
    "published_at": "2026-10-22",
    "slug": "InternScience__Sage-A1.5"
   },
+  "KRAFTON/Raon-1-mini-preview": {
+   "published_at": "2026-10-24",
+   "slug": "KRAFTON__Raon-1-mini-preview"
+  },
   "Lightricks/LTX-2.5": {
    "published_at": "2026-09-05",
    "slug": "Lightricks__LTX-2.5"
@@ -638,6 +642,10 @@
    "published_at": "2026-10-23",
    "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-E4B-4GB"
   },
+  "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16": {
+   "published_at": "2026-10-24",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Bolt-E4B-BF16"
+  },
   "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
    "published_at": "2026-10-15",
    "slug": "nvidia__NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
@@ -717,6 +725,10 @@
   "orcarouter/OrcaSAQ-2-27B": {
    "published_at": "2026-09-29",
    "slug": "orcarouter__OrcaSAQ-2-27B"
+  },
+  "ornith-ai/Ornith-1.5-122B": {
+   "published_at": "2026-10-24",
+   "slug": "ornith-ai__Ornith-1.5-122B"
   },
   "pablodawson/MiniMax-H3-360-Orbit-LoRA": {
    "published_at": "2026-10-02",
@@ -821,6 +833,10 @@
   "tencent/WeVisOne-VL-2B": {
    "published_at": "2026-10-23",
    "slug": "tencent__WeVisOne-VL-2B"
+  },
+  "tencent/WeVisOne-VL-4B": {
+   "published_at": "2026-10-24",
+   "slug": "tencent__WeVisOne-VL-4B"
   },
   "tencent/Youtu-Parsing-Omni": {
    "published_at": "2026-10-09",
