@@ -126,6 +126,10 @@
    "published_at": "2026-10-10",
    "slug": "FrancisRing__Prism"
   },
+  "HuggingFaceBio/Carbon-X": {
+   "published_at": "2026-10-25",
+   "slug": "HuggingFaceBio__Carbon-X"
+  },
   "IFM/K2-Horizon-7B": {
    "published_at": "2026-09-19",
    "slug": "IFM__K2-Horizon-7B"
@@ -177,6 +181,10 @@
   "NaiveAI/Naive-N0.5-Flash": {
    "published_at": "2026-10-03",
    "slug": "NaiveAI__Naive-N0.5-Flash"
+  },
+  "Nanbeige/Nanbeige4.3-33B": {
+   "published_at": "2026-10-25",
+   "slug": "Nanbeige__Nanbeige4.3-33B"
   },
   "OBLITERATUS/Qwen3.8-27B-OBLITERATED": {
    "published_at": "2026-09-05",
