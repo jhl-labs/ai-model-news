@@ -390,6 +390,10 @@
    "published_at": "2026-10-16",
    "slug": "black-forest-labs__flux-3-image-klein-pup"
   },
+  "briaai/Fibo-2.0-dev": {
+   "published_at": "2026-10-26",
+   "slug": "briaai__Fibo-2.0-dev"
+  },
   "canberkkkkkk/ema-lightning": {
    "published_at": "2026-10-07",
    "slug": "canberkkkkkk__ema-lightning"
@@ -625,6 +629,10 @@
   "nvidia/Kumo-Tabular": {
    "published_at": "2026-09-29",
    "slug": "nvidia__Kumo-Tabular"
+  },
+  "nvidia/MotionBricks": {
+   "published_at": "2026-10-26",
+   "slug": "nvidia__MotionBricks"
   },
   "nvidia/NV-Generate-CT": {
    "published_at": "2026-10-06",
