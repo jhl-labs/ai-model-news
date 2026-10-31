@@ -114,6 +114,10 @@
    "published_at": "2026-09-24",
    "slug": "Edge0__Audio8-ASR-Infinite"
   },
+  "Edge0/Audio8-TTS-Realistic-0.6b": {
+   "published_at": "2026-10-31",
+   "slug": "Edge0__Audio8-TTS-Realistic-0.6b"
+  },
   "Edge0/Edge0-35B-A3B-preview": {
    "published_at": "2026-09-12",
    "slug": "Edge0__Edge0-35B-A3B-preview"
@@ -578,6 +582,10 @@
    "published_at": "2026-10-03",
    "slug": "microsoft__FrogNano-4B-2609"
   },
+  "microsoft/Mage-VL-Cowork": {
+   "published_at": "2026-10-31",
+   "slug": "microsoft__Mage-VL-Cowork"
+  },
   "microsoft/Sentiment-Analysis-7B": {
    "published_at": "2026-10-23",
    "slug": "microsoft__Sentiment-Analysis-7B"
@@ -653,6 +661,10 @@
   "nvidia/DeepSeek-V4-Flash-0731-NVFP4": {
    "published_at": "2026-09-05",
    "slug": "nvidia__DeepSeek-V4-Flash-0731-NVFP4"
+  },
+  "nvidia/DeepSeek-V4.1-Flash-1017-NVFP4": {
+   "published_at": "2026-10-31",
+   "slug": "nvidia__DeepSeek-V4.1-Flash-1017-NVFP4"
   },
   "nvidia/DeepSeek-V4.1-Flash-NVFP4": {
    "published_at": "2026-09-17",
@@ -821,6 +833,10 @@
   "reflection/Beam-1.0-501B-A23B": {
    "published_at": "2026-10-20",
    "slug": "reflection__Beam-1.0-501B-A23B"
+  },
+  "speridlabs/idol": {
+   "published_at": "2026-10-31",
+   "slug": "speridlabs__idol"
   },
   "speridlabs/iris-3b": {
    "published_at": "2026-10-11",
