@@ -122,6 +122,10 @@
    "published_at": "2026-09-12",
    "slug": "Edge0__Edge0-35B-A3B-preview"
   },
+  "Efficient-Large-Model/Open-H3-Regenerate-2K": {
+   "published_at": "2026-11-01",
+   "slug": "Efficient-Large-Model__Open-H3-Regenerate-2K"
+  },
   "FastVideo/FastH3-Omni-Comfy": {
    "published_at": "2026-10-27",
    "slug": "FastVideo__FastH3-Omni-Comfy"
@@ -185,6 +189,10 @@
   "LiquidAI/LFM3-VL-2B": {
    "published_at": "2026-10-29",
    "slug": "LiquidAI__LFM3-VL-2B"
+  },
+  "LiquidAI/d1-2B": {
+   "published_at": "2026-11-01",
+   "slug": "LiquidAI__d1-2B"
   },
   "LiquidAI/d1-3B": {
    "published_at": "2026-10-08",
@@ -433,6 +441,10 @@
   "briaai/Fibo-2.0-dev": {
    "published_at": "2026-10-26",
    "slug": "briaai__Fibo-2.0-dev"
+  },
+  "burner22/numbat": {
+   "published_at": "2026-11-01",
+   "slug": "burner22__numbat"
   },
   "canberkkkkkk/ema-lightning": {
    "published_at": "2026-10-07",
