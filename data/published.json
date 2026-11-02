@@ -118,6 +118,10 @@
    "published_at": "2026-10-31",
    "slug": "Edge0__Audio8-TTS-Realistic-0.6b"
   },
+  "Edge0/Audio8-TTS-Realistic-Air": {
+   "published_at": "2026-11-02",
+   "slug": "Edge0__Audio8-TTS-Realistic-Air"
+  },
   "Edge0/Edge0-35B-A3B-preview": {
    "published_at": "2026-09-12",
    "slug": "Edge0__Edge0-35B-A3B-preview"
@@ -141,6 +145,10 @@
   "FrancisRing/Prism": {
    "published_at": "2026-10-10",
    "slug": "FrancisRing__Prism"
+  },
+  "FusionCow/Sulphur-3": {
+   "published_at": "2026-11-02",
+   "slug": "FusionCow__Sulphur-3"
   },
   "HuggingFaceBio/Carbon-X": {
    "published_at": "2026-10-25",
@@ -221,6 +229,10 @@
   "Nanbeige/Nanbeige4.3-33B": {
    "published_at": "2026-10-25",
    "slug": "Nanbeige__Nanbeige4.3-33B"
+  },
+  "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated": {
+   "published_at": "2026-11-02",
+   "slug": "OBLITERATUS__DeepSeek-V4.1-Flash-1017-obliterated"
   },
   "OBLITERATUS/Qwen3.8-27B-OBLITERATED": {
    "published_at": "2026-09-05",
@@ -750,6 +762,10 @@
    "published_at": "2026-10-28",
    "slug": "nvidia__NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
   },
+  "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4": {
+   "published_at": "2026-11-02",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4"
+  },
   "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16": {
    "published_at": "2026-10-17",
    "slug": "nvidia__NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16"
@@ -845,6 +861,10 @@
   "reflection/Beam-1.0-501B-A23B": {
    "published_at": "2026-10-20",
    "slug": "reflection__Beam-1.0-501B-A23B"
+  },
+  "sensenova/SenseNova-Loop-9B-Preview": {
+   "published_at": "2026-11-02",
+   "slug": "sensenova__SenseNova-Loop-9B-Preview"
   },
   "speridlabs/idol": {
    "published_at": "2026-10-31",
@@ -961,6 +981,10 @@
   "vllm-sr/d3": {
    "published_at": "2026-10-14",
    "slug": "vllm-sr__d3"
+  },
+  "xiaomi-research/Xiaomi-OCR-0": {
+   "published_at": "2026-11-02",
+   "slug": "xiaomi-research__Xiaomi-OCR-0"
   },
   "yandex/AliceAI-Foundation-80B-A3B-Base": {
    "published_at": "2026-09-21",
