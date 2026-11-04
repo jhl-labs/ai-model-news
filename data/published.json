@@ -374,6 +374,10 @@
    "published_at": "2026-09-18",
    "slug": "XingChen-AGI__Xing4.0-29B-A4B"
   },
+  "abenzerps/Qwen-Image-2.1-Turbo-Quantized": {
+   "published_at": "2026-11-04",
+   "slug": "abenzerps__Qwen-Image-2.1-Turbo-Quantized"
+  },
   "abenzerps/Qwen-Image-2.1-Uncensored-Quantized": {
    "published_at": "2026-10-12",
    "slug": "abenzerps__Qwen-Image-2.1-Uncensored-Quantized"
@@ -665,6 +669,10 @@
   "moondream/parakeet-redux": {
    "published_at": "2026-10-09",
    "slug": "moondream__parakeet-redux"
+  },
+  "moonshotai/Kimi-K3.1-Pro": {
+   "published_at": "2026-11-04",
+   "slug": "moonshotai__Kimi-K3.1-Pro"
   },
   "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2": {
    "published_at": "2026-10-10",
