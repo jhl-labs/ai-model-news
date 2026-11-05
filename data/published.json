@@ -266,6 +266,10 @@
    "published_at": "2026-10-30",
    "slug": "Pika-Labs__Pika-H3-Flex"
   },
+  "PrunaAI/P-H3-Image-Comfy": {
+   "published_at": "2026-11-05",
+   "slug": "PrunaAI__P-H3-Image-Comfy"
+  },
   "Qwen/Qwen-Drive-1.0-4B": {
    "published_at": "2026-09-05",
    "slug": "Qwen__Qwen-Drive-1.0-4B"
@@ -469,6 +473,10 @@
   "ccore/Qwen3.5-4B-3D-Coder": {
    "published_at": "2026-10-27",
    "slug": "ccore__Qwen3.5-4B-3D-Coder"
+  },
+  "ccore/Qwen3.5-4B-GLB-3D-Coder": {
+   "published_at": "2026-11-05",
+   "slug": "ccore__Qwen3.5-4B-GLB-3D-Coder"
   },
   "convaiinnovations/laya": {
    "published_at": "2026-09-19",
@@ -782,6 +790,10 @@
    "published_at": "2026-10-17",
    "slug": "nvidia__NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF"
   },
+  "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4": {
+   "published_at": "2026-11-05",
+   "slug": "nvidia__NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4"
+  },
   "nvidia/NVIDIA-NemotronLabs-RE-USE": {
    "published_at": "2026-11-03",
    "slug": "nvidia__NVIDIA-NemotronLabs-RE-USE"
@@ -873,6 +885,10 @@
   "reflection/Beam-1.0-501B-A23B": {
    "published_at": "2026-10-20",
    "slug": "reflection__Beam-1.0-501B-A23B"
+  },
+  "ricursiveAI/Ripple-65B-Preview": {
+   "published_at": "2026-11-05",
+   "slug": "ricursiveAI__Ripple-65B-Preview"
   },
   "sensenova/SenseNova-Loop-9B-Preview": {
    "published_at": "2026-11-02",
