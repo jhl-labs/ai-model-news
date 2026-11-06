@@ -422,6 +422,10 @@
    "published_at": "2026-10-13",
    "slug": "autotrust__JEV-35B-NVFP4"
   },
+  "baidu/ERNIE-5.5-Flash-Base": {
+   "published_at": "2026-11-06",
+   "slug": "baidu__ERNIE-5.5-Flash-Base"
+  },
   "baidu/Unlimited-OCR": {
    "published_at": "2026-10-14",
    "slug": "baidu__Unlimited-OCR"
@@ -730,6 +734,10 @@
    "published_at": "2026-09-29",
    "slug": "nvidia__Kumo-Tabular"
   },
+  "nvidia/MetricTrail": {
+   "published_at": "2026-11-06",
+   "slug": "nvidia__MetricTrail"
+  },
   "nvidia/MotionBricks": {
    "published_at": "2026-10-26",
    "slug": "nvidia__MotionBricks"
@@ -982,6 +990,10 @@
    "published_at": "2026-09-05",
    "slug": "tencent__WeMM-Embedding-9B"
   },
+  "tencent/WeVisCut": {
+   "published_at": "2026-11-06",
+   "slug": "tencent__WeVisCut"
+  },
   "tencent/WeVisDoc-2B": {
    "published_at": "2026-09-24",
    "slug": "tencent__WeVisDoc-2B"
@@ -1009,6 +1021,10 @@
   "vllm-sr/d3": {
    "published_at": "2026-10-14",
    "slug": "vllm-sr__d3"
+  },
+  "webAI-Official/TwIL-8B": {
+   "published_at": "2026-11-06",
+   "slug": "webAI-Official__TwIL-8B"
   },
   "xiaomi-research/Xiaomi-OCR-0": {
    "published_at": "2026-11-02",
