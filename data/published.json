@@ -270,6 +270,10 @@
    "published_at": "2026-10-30",
    "slug": "Pika-Labs__Pika-H3-Flex"
   },
+  "PrunaAI/P-H3-Image": {
+   "published_at": "2026-11-08",
+   "slug": "PrunaAI__P-H3-Image"
+  },
   "PrunaAI/P-H3-Image-Comfy": {
    "published_at": "2026-11-05",
    "slug": "PrunaAI__P-H3-Image-Comfy"
@@ -977,6 +981,10 @@
   "tencent/Qwen3-8B-DSpine-b16": {
    "published_at": "2026-10-17",
    "slug": "tencent__Qwen3-8B-DSpine-b16"
+  },
+  "tencent/Qwen3.8-27B-DSpine-b16": {
+   "published_at": "2026-11-08",
+   "slug": "tencent__Qwen3.8-27B-DSpine-b16"
   },
   "tencent/UI-Mate-27B": {
    "published_at": "2026-09-05",
