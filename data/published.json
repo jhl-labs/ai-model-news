@@ -58,6 +58,10 @@
    "published_at": "2026-09-05",
    "slug": "BreezeBlue__Breeze-TTS-2"
   },
+  "Cactus-Compute/mirage": {
+   "published_at": "2026-11-11",
+   "slug": "Cactus-Compute__mirage"
+  },
   "Cactus-Compute/needle3": {
    "published_at": "2026-09-21",
    "slug": "Cactus-Compute__needle3"
@@ -90,9 +94,17 @@
    "published_at": "2026-10-18",
    "slug": "Comfy-Org__MOSS-Image"
   },
+  "Comfy-Org/MiniMax-H3-Image": {
+   "published_at": "2026-11-11",
+   "slug": "Comfy-Org__MiniMax-H3-Image"
+  },
   "Comfy-Org/Qwen-Image-2.1": {
    "published_at": "2026-09-20",
    "slug": "Comfy-Org__Qwen-Image-2.1"
+  },
+  "Comfy-Org/RelayVSR": {
+   "published_at": "2026-11-11",
+   "slug": "Comfy-Org__RelayVSR"
   },
   "Comfy-Org/YuE2": {
    "published_at": "2026-09-16",
