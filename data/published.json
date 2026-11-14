@@ -138,6 +138,10 @@
    "published_at": "2026-11-02",
    "slug": "Edge0__Audio8-TTS-Realistic-Air"
   },
+  "Edge0/Edge0-145B-NVFP4": {
+   "published_at": "2026-11-14",
+   "slug": "Edge0__Edge0-145B-NVFP4"
+  },
   "Edge0/Edge0-35B-A3B-preview": {
    "published_at": "2026-09-12",
    "slug": "Edge0__Edge0-35B-A3B-preview"
@@ -426,6 +430,10 @@
    "published_at": "2026-10-12",
    "slug": "abenzerps__Qwen-Image-2.1-Uncensored-Quantized"
   },
+  "adventists-ai/Sophon-Realtime-v1": {
+   "published_at": "2026-11-14",
+   "slug": "adventists-ai__Sophon-Realtime-v1"
+  },
   "akatz-ai/MiniMax-H3-Character-Swap-LoRA": {
    "published_at": "2026-09-30",
    "slug": "akatz-ai__MiniMax-H3-Character-Swap-LoRA"
@@ -526,6 +534,10 @@
    "published_at": "2026-11-05",
    "slug": "ccore__Qwen3.5-4B-GLB-3D-Coder"
   },
+  "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized": {
+   "published_at": "2026-11-14",
+   "slug": "chatrlabs__Qwen-Image-2.1-Uncensored-Omni-Quantized"
+  },
   "convaiinnovations/laya": {
    "published_at": "2026-09-19",
    "slug": "convaiinnovations__laya"
@@ -590,6 +602,10 @@
    "published_at": "2026-09-17",
    "slug": "harshatheg__Qwen-2.5-1B-RLCD"
   },
+  "higurashi-ai/Haru-4B": {
+   "published_at": "2026-11-14",
+   "slug": "higurashi-ai__Haru-4B"
+  },
   "ibm-granite/granite-4.2-30b": {
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-30b"
@@ -645,6 +661,10 @@
   "m-a-p/YuE2-3B": {
    "published_at": "2026-09-11",
    "slug": "m-a-p__YuE2-3B"
+  },
+  "meituan-longcat/LongCat-2.5": {
+   "published_at": "2026-11-14",
+   "slug": "meituan-longcat__LongCat-2.5"
   },
   "meta-models/Muse-Spark-Open-816B-A42B": {
    "published_at": "2026-10-15",
