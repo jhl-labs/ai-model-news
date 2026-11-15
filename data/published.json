@@ -110,6 +110,10 @@
    "published_at": "2026-09-16",
    "slug": "Comfy-Org__YuE2"
   },
+  "ConceptCountry/qwen-concept-27b": {
+   "published_at": "2026-11-15",
+   "slug": "ConceptCountry__qwen-concept-27b"
+  },
   "Contrastive-LM/CLM-v0.1-8B": {
    "published_at": "2026-09-26",
    "slug": "Contrastive-LM__CLM-v0.1-8B"
@@ -793,6 +797,10 @@
   "nvidia/GLM-5.3-NVFP4": {
    "published_at": "2026-09-26",
    "slug": "nvidia__GLM-5.3-NVFP4"
+  },
+  "nvidia/Kimi-K3.1-Pro-NVFP4": {
+   "published_at": "2026-11-15",
+   "slug": "nvidia__Kimi-K3.1-Pro-NVFP4"
   },
   "nvidia/Kumo-Tabular": {
    "published_at": "2026-09-29",
