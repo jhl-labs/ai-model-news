@@ -250,6 +250,10 @@
    "published_at": "2026-10-23",
    "slug": "MiniMaxAI__MiniMax-M3.1-Flash"
   },
+  "MoonMath-ai/DeepSeek-V4.1-Flash-1017-uncensored": {
+   "published_at": "2026-11-17",
+   "slug": "MoonMath-ai__DeepSeek-V4.1-Flash-1017-uncensored"
+  },
   "Mothersuperior/yue2-mothersuperior-realaudio-tokenizer-v4": {
    "published_at": "2026-09-19",
    "slug": "Mothersuperior__yue2-mothersuperior-realaudio-tokenizer-v4"
@@ -654,6 +658,10 @@
    "published_at": "2026-09-18",
    "slug": "internlm__Atria-Dawn-Preview"
   },
+  "internlm/Sage-S2.1-Flash": {
+   "published_at": "2026-11-17",
+   "slug": "internlm__Sage-S2.1-Flash"
+  },
   "jialinyyzz/humanizer": {
    "published_at": "2026-10-06",
    "slug": "jialinyyzz__humanizer"
@@ -670,9 +678,17 @@
    "published_at": "2026-09-11",
    "slug": "m-a-p__YuE2-3B"
   },
+  "maxwell-model/Maxwell-V1-Flash": {
+   "published_at": "2026-11-17",
+   "slug": "maxwell-model__Maxwell-V1-Flash"
+  },
   "meituan-longcat/LongCat-2.5": {
    "published_at": "2026-11-14",
    "slug": "meituan-longcat__LongCat-2.5"
+  },
+  "meituan-longcat/LongCat-Video-Avatar-1.6": {
+   "published_at": "2026-11-17",
+   "slug": "meituan-longcat__LongCat-Video-Avatar-1.6"
   },
   "meta-models/Muse-Spark-Open-816B-A42B": {
    "published_at": "2026-10-15",
@@ -926,6 +942,10 @@
    "published_at": "2026-09-05",
    "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4"
   },
+  "nvidia/Qwen3.8-Flash-Next-NVFP4-QAD": {
+   "published_at": "2026-11-17",
+   "slug": "nvidia__Qwen3.8-Flash-Next-NVFP4-QAD"
+  },
   "nvidia/RFD4-Proteina": {
    "published_at": "2026-10-22",
    "slug": "nvidia__RFD4-Proteina"
@@ -981,6 +1001,10 @@
   "ricursiveAI/Ripple-65B-Preview": {
    "published_at": "2026-11-05",
    "slug": "ricursiveAI__Ripple-65B-Preview"
+  },
+  "sensenova/SenseNova-Loop-9B": {
+   "published_at": "2026-11-17",
+   "slug": "sensenova__SenseNova-Loop-9B"
   },
   "sensenova/SenseNova-Loop-9B-Preview": {
    "published_at": "2026-11-02",
@@ -1121,6 +1145,10 @@
   "xiaomi-research/Xiaomi-OCR-0": {
    "published_at": "2026-11-02",
    "slug": "xiaomi-research__Xiaomi-OCR-0"
+  },
+  "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic": {
+   "published_at": "2026-11-17",
+   "slug": "xtools-at__DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic"
   },
   "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic": {
    "published_at": "2026-11-07",
