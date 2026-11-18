@@ -178,6 +178,10 @@
    "published_at": "2026-10-25",
    "slug": "HuggingFaceBio__Carbon-X"
   },
+  "HuggingFaceTB/SmolVLM2-256M-Video-Instruct": {
+   "published_at": "2026-11-18",
+   "slug": "HuggingFaceTB__SmolVLM2-256M-Video-Instruct"
+  },
   "IFM/K2-Horizon-7B": {
    "published_at": "2026-09-19",
    "slug": "IFM__K2-Horizon-7B"
@@ -197,6 +201,10 @@
   "InternScience/Sage-A1.5": {
    "published_at": "2026-10-22",
    "slug": "InternScience__Sage-A1.5"
+  },
+  "KORMo-VL/KORMo-Web-11B": {
+   "published_at": "2026-11-18",
+   "slug": "KORMo-VL__KORMo-Web-11B"
   },
   "KRAFTON/Raon-1-mini-preview": {
    "published_at": "2026-10-24",
@@ -454,9 +462,25 @@
    "published_at": "2026-09-25",
    "slug": "akhilaaa3__Jev-Omni"
   },
+  "apple/FastFrames-L": {
+   "published_at": "2026-11-18",
+   "slug": "apple__FastFrames-L"
+  },
+  "apple/FastFrames-S": {
+   "published_at": "2026-11-18",
+   "slug": "apple__FastFrames-S"
+  },
   "apple/LensVLM-9B": {
    "published_at": "2026-09-23",
    "slug": "apple__LensVLM-9B"
+  },
+  "autotrust/AutoTrust-Decider-Pro-35B": {
+   "published_at": "2026-11-18",
+   "slug": "autotrust__AutoTrust-Decider-Pro-35B"
+  },
+  "autotrust/AutoTrust-Decider-Pro-Vision-27B": {
+   "published_at": "2026-11-18",
+   "slug": "autotrust__AutoTrust-Decider-Pro-Vision-27B"
   },
   "autotrust/GEV-26B-Decide": {
    "published_at": "2026-10-06",
@@ -529,6 +553,10 @@
   "briaai/Fibo-2.0-dev": {
    "published_at": "2026-10-26",
    "slug": "briaai__Fibo-2.0-dev"
+  },
+  "briaai/RMBG-3.0": {
+   "published_at": "2026-11-18",
+   "slug": "briaai__RMBG-3.0"
   },
   "burner22/numbat": {
    "published_at": "2026-11-01",
@@ -609,6 +637,10 @@
   "google/timesfm-3.0-pytorch": {
    "published_at": "2026-09-05",
    "slug": "google__timesfm-3.0-pytorch"
+  },
+  "harness-hub/Qwen3.8-27B-pi-adapted": {
+   "published_at": "2026-11-18",
+   "slug": "harness-hub__Qwen3.8-27B-pi-adapted"
   },
   "harshatheg/Qwen-2.5-1B-RLCD": {
    "published_at": "2026-09-17",
@@ -705,6 +737,10 @@
   "microsoft/AesCode-8B": {
    "published_at": "2026-10-11",
    "slug": "microsoft__AesCode-8B"
+  },
+  "microsoft/Aion-1.0-Instruct-2.3B": {
+   "published_at": "2026-11-18",
+   "slug": "microsoft__Aion-1.0-Instruct-2.3B"
   },
   "microsoft/FrogNano-4B-2609": {
    "published_at": "2026-10-03",
@@ -930,6 +966,10 @@
    "published_at": "2026-10-02",
    "slug": "nvidia__PixelUMM"
   },
+  "nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft": {
+   "published_at": "2026-11-18",
+   "slug": "nvidia__Qwen3.5-4B-Qwen3.8-27B-Draft"
+  },
   "nvidia/Qwen3.8-27B-NVFP4": {
    "published_at": "2026-09-09",
    "slug": "nvidia__Qwen3.8-27B-NVFP4"
@@ -1065,6 +1105,10 @@
   "tencent/Hy-SimulMT-30B-A3B-FP8": {
    "published_at": "2026-10-27",
    "slug": "tencent__Hy-SimulMT-30B-A3B-FP8"
+  },
+  "tencent/Hy4-flash": {
+   "published_at": "2026-11-18",
+   "slug": "tencent__Hy4-flash"
   },
   "tencent/Hy4-preview": {
    "published_at": "2026-09-05",
