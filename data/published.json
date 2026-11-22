@@ -182,6 +182,10 @@
    "published_at": "2026-10-25",
    "slug": "HuggingFaceBio__Carbon-X"
   },
+  "HuggingFaceTB/SmolVLM2-2.2B-Instruct": {
+   "published_at": "2026-11-22",
+   "slug": "HuggingFaceTB__SmolVLM2-2.2B-Instruct"
+  },
   "HuggingFaceTB/SmolVLM2-256M-Video-Instruct": {
    "published_at": "2026-11-18",
    "slug": "HuggingFaceTB__SmolVLM2-256M-Video-Instruct"
@@ -390,6 +394,10 @@
    "published_at": "2026-09-25",
    "slug": "StarDoc-AI__TeleOCR"
   },
+  "SulphurAI/Sulphur-3": {
+   "published_at": "2026-11-22",
+   "slug": "SulphurAI__Sulphur-3"
+  },
   "SupersonicLabs/Julia-1": {
    "published_at": "2026-09-28",
    "slug": "SupersonicLabs__Julia-1"
@@ -454,6 +462,10 @@
    "published_at": "2026-09-18",
    "slug": "XingChen-AGI__Xing4.0-29B-A4B"
   },
+  "YuyaoTechnology/MatterSeek-New-Materials-Reverse-Design": {
+   "published_at": "2026-11-22",
+   "slug": "YuyaoTechnology__MatterSeek-New-Materials-Reverse-Design"
+  },
   "Zyphra/ZONOS3-Mini": {
    "published_at": "2026-11-12",
    "slug": "Zyphra__ZONOS3-Mini"
@@ -481,6 +493,10 @@
   "apple/DepthPro2": {
    "published_at": "2026-11-20",
    "slug": "apple__DepthPro2"
+  },
+  "apple/DepthPro2-focal": {
+   "published_at": "2026-11-22",
+   "slug": "apple__DepthPro2-focal"
   },
   "apple/FastFrames-L": {
    "published_at": "2026-11-18",
