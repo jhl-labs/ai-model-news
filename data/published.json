@@ -494,6 +494,10 @@
    "published_at": "2026-11-20",
    "slug": "apple__DepthPro2"
   },
+  "apple/DepthPro2-H": {
+   "published_at": "2026-11-23",
+   "slug": "apple__DepthPro2-H"
+  },
   "apple/DepthPro2-focal": {
    "published_at": "2026-11-22",
    "slug": "apple__DepthPro2-focal"
@@ -718,6 +722,10 @@
    "published_at": "2026-09-16",
    "slug": "ibm-granite__granite-timeseries-patchtst-fm-r2"
   },
+  "inclusionAI/LingSante-3.1-flash": {
+   "published_at": "2026-11-23",
+   "slug": "inclusionAI__LingSante-3.1-flash"
+  },
   "inclusionAI/Ming-Image-0.1-Design": {
    "published_at": "2026-09-24",
    "slug": "inclusionAI__Ming-Image-0.1-Design"
@@ -853,6 +861,10 @@
   "n4ze3m/tiny-voca": {
    "published_at": "2026-11-16",
    "slug": "n4ze3m__tiny-voca"
+  },
+  "nari-labs/Qwen3.8-27B-NariQ-GGUF": {
+   "published_at": "2026-11-23",
+   "slug": "nari-labs__Qwen3.8-27B-NariQ-GGUF"
   },
   "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2": {
    "published_at": "2026-10-10",
