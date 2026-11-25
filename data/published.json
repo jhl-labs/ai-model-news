@@ -218,6 +218,10 @@
    "published_at": "2026-11-18",
    "slug": "KORMo-VL__KORMo-Web-11B"
   },
+  "KRAFTON/Raon-1-mini": {
+   "published_at": "2026-11-25",
+   "slug": "KRAFTON__Raon-1-mini"
+  },
   "KRAFTON/Raon-1-mini-preview": {
    "published_at": "2026-10-24",
    "slug": "KRAFTON__Raon-1-mini-preview"
@@ -261,6 +265,10 @@
   "MATLOWAI/minimax-h3-fused-turbo-int8-convrot": {
    "published_at": "2026-09-05",
    "slug": "MATLOWAI__minimax-h3-fused-turbo-int8-convrot"
+  },
+  "MemTensor/MemT-1.0-Pro": {
+   "published_at": "2026-11-25",
+   "slug": "MemTensor__MemT-1.0-Pro"
   },
   "MiniMaxAI/MiniMax-H3": {
    "published_at": "2026-09-05",
@@ -561,6 +569,10 @@
   "baidu/ERNIE-5.5-Flash-Base": {
    "published_at": "2026-11-06",
    "slug": "baidu__ERNIE-5.5-Flash-Base"
+  },
+  "baidu/ERNIE-5.5-Flash-Preview": {
+   "published_at": "2026-11-25",
+   "slug": "baidu__ERNIE-5.5-Flash-Preview"
   },
   "baidu/Unlimited-OCR": {
    "published_at": "2026-10-14",
@@ -1030,6 +1042,10 @@
    "published_at": "2026-10-21",
    "slug": "nvidia__Nemotron-3.5-Rerank-8B-BF16"
   },
+  "nvidia/Nemotron-Labs-Image-30B-A3B": {
+   "published_at": "2026-11-25",
+   "slug": "nvidia__Nemotron-Labs-Image-30B-A3B"
+  },
   "nvidia/PixelUMM": {
    "published_at": "2026-10-02",
    "slug": "nvidia__PixelUMM"
@@ -1206,6 +1222,10 @@
    "published_at": "2026-09-05",
    "slug": "tencent__Hy4-preview-FP8"
   },
+  "tencent/OmniEVIE-4B": {
+   "published_at": "2026-11-25",
+   "slug": "tencent__OmniEVIE-4B"
+  },
   "tencent/Qwen3-8B-DSpine-b16": {
    "published_at": "2026-10-17",
    "slug": "tencent__Qwen3-8B-DSpine-b16"
@@ -1221,6 +1241,10 @@
   "tencent/UI-Mate-9B": {
    "published_at": "2026-09-05",
    "slug": "tencent__UI-Mate-9B"
+  },
+  "tencent/WeMM-Ecom-35B-A3B": {
+   "published_at": "2026-11-25",
+   "slug": "tencent__WeMM-Ecom-35B-A3B"
   },
   "tencent/WeMM-Embedding-2B": {
    "published_at": "2026-09-05",
