@@ -710,6 +710,10 @@
    "published_at": "2026-11-14",
    "slug": "higurashi-ai__Haru-4B"
   },
+  "ibm-granite/granite-4.0-micro-base-GGUF": {
+   "published_at": "2026-11-26",
+   "slug": "ibm-granite__granite-4.0-micro-base-GGUF"
+  },
   "ibm-granite/granite-4.2-30b": {
    "published_at": "2026-09-05",
    "slug": "ibm-granite__granite-4.2-30b"
@@ -769,6 +773,10 @@
   "jialinyyzz/humanizer": {
    "published_at": "2026-10-06",
    "slug": "jialinyyzz__humanizer"
+  },
+  "kandinskylab/Kandinsky-ImageSR-2.0": {
+   "published_at": "2026-11-26",
+   "slug": "kandinskylab__Kandinsky-ImageSR-2.0"
   },
   "llamaindex/OCRia-nano-1": {
    "published_at": "2026-11-24",
@@ -1177,6 +1185,30 @@
   "tencent/EVIE-Preview-4.5B": {
    "published_at": "2026-09-05",
    "slug": "tencent__EVIE-Preview-4.5B"
+  },
+  "tencent/Hy-MT3-1.8B": {
+   "published_at": "2026-11-26",
+   "slug": "tencent__Hy-MT3-1.8B"
+  },
+  "tencent/Hy-MT3-1.8B-GGUF": {
+   "published_at": "2026-11-26",
+   "slug": "tencent__Hy-MT3-1.8B-GGUF"
+  },
+  "tencent/Hy-MT3-30B-A3B": {
+   "published_at": "2026-11-26",
+   "slug": "tencent__Hy-MT3-30B-A3B"
+  },
+  "tencent/Hy-MT3-30B-A3B-GGUF": {
+   "published_at": "2026-11-26",
+   "slug": "tencent__Hy-MT3-30B-A3B-GGUF"
+  },
+  "tencent/Hy-MT3-7B": {
+   "published_at": "2026-11-26",
+   "slug": "tencent__Hy-MT3-7B"
+  },
+  "tencent/Hy-MT3-7B-GGUF": {
+   "published_at": "2026-11-26",
+   "slug": "tencent__Hy-MT3-7B-GGUF"
   },
   "tencent/Hy-Memory-30B-A3B": {
    "published_at": "2026-10-16",
