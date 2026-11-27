@@ -322,6 +322,10 @@
    "published_at": "2026-10-17",
    "slug": "OpenMOSS-Team__MOSS-Image-SFT"
   },
+  "OpenUncensored/Inkling-2-Mini-Uncensored": {
+   "published_at": "2026-11-27",
+   "slug": "OpenUncensored__Inkling-2-Mini-Uncensored"
+  },
   "OpenVDN/vdn-minimax-h3": {
    "published_at": "2026-09-05",
    "slug": "OpenVDN__vdn-minimax-h3"
@@ -497,6 +501,10 @@
   "adventists-ai/Sophon-Realtime-v1": {
    "published_at": "2026-11-14",
    "slug": "adventists-ai__Sophon-Realtime-v1"
+  },
+  "ai-sage/GigaChat4-708B-A41B": {
+   "published_at": "2026-11-27",
+   "slug": "ai-sage__GigaChat4-708B-A41B"
   },
   "akatz-ai/MiniMax-H3-Character-Swap-LoRA": {
    "published_at": "2026-09-30",
@@ -1009,6 +1017,10 @@
   "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B": {
    "published_at": "2026-10-28",
    "slug": "nvidia__NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF": {
+   "published_at": "2026-11-27",
+   "slug": "nvidia__NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF"
   },
   "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4": {
    "published_at": "2026-11-02",
